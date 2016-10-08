@@ -1,0 +1,22 @@
+{
+   "resource_category" : "themesuite",
+   "resource_contents" : [
+      {
+         "category" : "launcher",
+         "resource_templateversion" : 1
+      },
+      {
+         "category" : "lockscreen",
+         "resource_templateversion" : 2
+      }
+   ],
+   "resource_description" : "lenovo",
+   "resource_designer" : "lenovo",
+   "resource_developer" : "lenovo",
+   "resource_id" : 1721,
+   "resource_name" : "雅致人生",
+   "resource_originate" : "lenovo",
+   "resource_platform" : "phone",
+   "resource_version" : 1,
+   "resource_versionname" : "1"
+}

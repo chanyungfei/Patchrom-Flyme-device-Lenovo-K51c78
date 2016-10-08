@@ -1,0 +1,7 @@
+<!-- Lenovo-SW huangyq3 add 2014-10-31 begin, app icon manager, fixed LVPCCR-19 -->
+<!-- This is the feature set for appiconintegration support -->
+
+<permissions>
+    <feature name="com.lenovo.framework.appiconintegration.support" />
+</permissions>
+<!-- Lenovo-SW huangyq3 add 2014-10-31 end, fixed LVPCCR-19 -->

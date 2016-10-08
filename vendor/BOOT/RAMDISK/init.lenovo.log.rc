@@ -1,0 +1,24 @@
+
+on boot
+    mkdir /data/local/log 0777 shell shell
+    mkdir /data/local/log/aplog 0777 shell shell
+
+service kernellog /system/bin/kernellog.sh
+    class main
+    disabled
+    oneshot
+    
+#yexh1 service copyaplog /system/bin/sh /system/bin/copy_aplog.sh
+service savelog /system/bin/savelog.sh
+    class main
+    disabled
+    oneshot
+
+on property:debug.MB.running=1
+    start kernellog
+ 
+on property:debug.MB.running=0
+    stop kernellog
+    start savelog
+ 
+

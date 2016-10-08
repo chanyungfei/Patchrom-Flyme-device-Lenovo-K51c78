@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+
+<config versioncode="1" >
+
+<!-- 文件说明 -->
+<!--
+
+该文件用于描述联想 VIBE UI 系统预置主题资源的默认初始配置
+对于该文件配置有任何问题可以联系：蔡建辉(caijh@lenovo.com)、黄振波(huangzb1@lenovo.com)
+
+-->
+
+
+<!-- 字段说明 -->
+<!-- 
+
+category:   代码资源类型 
+name:       资源类型名称
+defResId:   默认资源ID标示（任意资源都有唯一 ID 标识）
+file：      原始资源位置（用于资源使用者如桌面、锁屏、系统解析处理）
+
+-->
+
+<!-- 主题套件：包含桌面主题；锁屏主题 -->
+<category name="themesuite" defResId="1562"/>
+
+<!-- 桌面主题 -->
+<category name="launcher" defResId="1562" file="/system/etc/.LenovoTheme/themesuite/1562/content/launcher/content/res.zip" />
+
+<!-- 锁屏主题 -->
+<category name="lockscreen" defResId="104" file="/system/etc/.LenovoTheme/lockscreen/104/content/res.zip" />
+
+<!-- 字体主题 -->
+<category name="font" defResId="291" />
+
+<!-- 通话主题 -->
+<category name="callscreen" defResId="101" />
+
+<!-- 开关机主题 -->
+<!-- <category name="bootshut" defResId="0"/> -->
+
+</config>

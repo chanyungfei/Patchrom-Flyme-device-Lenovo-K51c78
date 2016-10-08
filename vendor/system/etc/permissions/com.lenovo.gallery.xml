@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <!-- 是否支持双camera (3D图片) -->
+    <SupportDualCamera>false</SupportDualCamera>
+
+    <!-- 双击放大的倍数 -->
+    <DoubleTapZoomIn>0.7</DoubleTapZoomIn>
+	
+    <!-- 设置背光的gamma系数 -->
+    <BacklightGamma>0.4</BacklightGamma>
+    <!-- 设置背光的最小值 -->
+    <BacklightMinLevel>64</BacklightMinLevel>
+    <!-- 设置背光的最大值 -->
+    <BacklightMaxLevel>230</BacklightMaxLevel>
+		
+    <!-- 是否支持Watermark -->
+    <SupportWatermark>false</SupportWatermark>
+</Root>

@@ -1,0 +1,20 @@
+#!/system/bin/sh
+
+umask 022
+FUSE_FILE=/data/system/fuse_flag
+
+TARGET_PRODUCT=$(getprop ro.build.product)
+if [ "$TARGET_PRODUCT" = "" ];then
+	echo -e "No need to export efuse_blown info\n"
+	exit 0
+fi
+
+
+if [ ! -e $FUSE_FILE ];then
+	touch $FUSE_FILE
+fi
+
+SBC_FLAG_FILE=/proc/efuse_flag
+if [ -e $SBC_FLAG_FILE ];then
+	/system/bin/cat $SBC_FLAG_FILE > $FUSE_FILE
+fi

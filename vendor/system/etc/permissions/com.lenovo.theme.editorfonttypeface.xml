@@ -1,0 +1,6 @@
+<!--This is the feature set for set editor font typeface -->
+<!-- Lenovo-sw FONT wangdfc LVPCCR-52 add 20141204, for font begin -->
+<permissions>
+    <feature name="com.lenovo.theme.editorfonttypeface" />
+</permissions>
+<!-- Lenovo-sw FONT wangdfc LVPCCR-52 add 20141204, for font end -->
