@@ -75,6 +75,16 @@
 
     .line 46
     :cond_0
+    invoke-direct/range {p0 .. p2}, Lcom/android/server/MasterClearReceiver;->flymeRebootWipeUserData(Landroid/content/Context;Landroid/content/Intent;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
+
     const-string v3, "shutdown"
 
     const/4 v4, 0x0

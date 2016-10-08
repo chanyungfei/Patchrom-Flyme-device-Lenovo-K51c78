@@ -621,6 +621,8 @@
 
     iput v1, p0, Landroid/net/wifi/WifiConfiguration;->autoConnectable:I
 
+    invoke-static/range {p0 .. p0}, Landroid/net/wifi/WifiConfiguration$FlymeInjector;->initFlymeExtraFields(Landroid/net/wifi/WifiConfiguration;)V
+
     return-void
 .end method
 
@@ -1095,6 +1097,8 @@
     iget v1, p1, Landroid/net/wifi/WifiConfiguration;->autoConnectable:I
 
     iput v1, p0, Landroid/net/wifi/WifiConfiguration;->autoConnectable:I
+
+    invoke-static/range {p0 .. p1}, Landroid/net/wifi/WifiConfiguration$FlymeInjector;->initFlymeExtraFields(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;)V
 
     .end local v0    # "i":I
     :cond_6

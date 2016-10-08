@@ -811,6 +811,20 @@
 
 
 # instance fields
+.field protected mDragSurface:Landroid/view/Surface;
+
+.field private mFlymeIgnoreIm:Z
+
+.field protected mShadowBuilder:Landroid/view/View$DragShadowBuilder;
+
+.field protected mhScrollBarPaddingLeft:I
+
+.field protected mhScrollBarPaddingRight:I
+
+.field protected mvScrollBarPaddingBottom:I
+
+.field protected mvScrollBarPaddingTop:I
+
 .field private DBG_TIMEOUT_VALUE:I
 
 .field private mAccessibilityCursorPosition:I

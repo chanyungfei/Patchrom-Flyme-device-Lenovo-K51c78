@@ -12989,6 +12989,8 @@
 
     .end local v30    # "i":I
     :cond_20
+    invoke-static/range {p0 .. p0}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->applyDarkStatusBarTheme(Lcom/android/server/wm/WindowManagerService;)V
+
     move-object/from16 v0, v20
 
     iget v4, v0, Lcom/android/server/wm/DisplayContent;->pendingLayoutChanges:I
@@ -21781,7 +21783,7 @@
 
     invoke-virtual {p0, v3}, Lcom/android/server/wm/WindowManagerService;->haltActivityResuming(Z)V
 
-    invoke-static {p0, v2}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->adjustOnOrientationChanged(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/DisplayContent;)V
+    invoke-static {p0, v4}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->adjustOnOrientationChanged(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/DisplayContent;)V
 
     goto/16 :goto_0
 
@@ -22990,6 +22992,8 @@
     move-result v1
 
     .local v1, "focusChanged":I
+    invoke-static/range {p0 .. p0}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->applyDarkStatusBarTheme(Lcom/android/server/wm/WindowManagerService;)V
+
     if-eqz v2, :cond_1
 
     iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mInputMethodWindow:Lcom/android/server/wm/WindowState;
@@ -26953,6 +26957,12 @@
     invoke-static/range {v34 .. v35}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v29
+
+    invoke-static {v0, v1}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->adjustWallpaperMoveWindow(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/WindowState;)V
+
     move-object/from16 v0, v29
 
     iget-object v0, v0, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
@@ -46254,6 +46264,14 @@
     .restart local v22    # "origId":J
     .restart local v33    # "win":Lcom/android/server/wm/WindowState;
     :cond_1
+    move-object/from16 v0, p0
+
+    move/from16 v1, p7
+
+    move-object/from16 v2, v33
+
+    invoke-static {v0, v1, v2}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->resetOnWindowChanged(Lcom/android/server/wm/WindowManagerService;ILcom/android/server/wm/WindowState;)V
+
     move-object/from16 v0, v33
 
     iget-object v0, v0, Lcom/android/server/wm/WindowState;->mWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
@@ -46721,6 +46739,14 @@
     .restart local v14    # "flagsExChanges":I
     :cond_c
     :try_start_1
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p4
+
+    move-object/from16 v2, v33
+
+    invoke-static {v0, v1, v2}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->adjustBackupWindowFlag(Lcom/android/server/wm/WindowManagerService;Landroid/view/WindowManager$LayoutParams;Lcom/android/server/wm/WindowState;)V
+
     move-object/from16 v0, v33
 
     iget-object v0, v0, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
@@ -48041,6 +48067,14 @@
 
     .end local v11    # "displayInfo":Landroid/view/DisplayInfo;
     :cond_29
+    move-object/from16 v0, p0
+
+    move/from16 v1, p7
+
+    move-object/from16 v2, v33
+
+    invoke-static {v0, v1, v2}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->adjustInputWindow(Lcom/android/server/wm/WindowManagerService;ILcom/android/server/wm/WindowState;)V
+
     move-object/from16 v0, v33
 
     iget-object v0, v0, Lcom/android/server/wm/WindowState;->mAppToken:Lcom/android/server/wm/AppWindowToken;

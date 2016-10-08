@@ -2810,6 +2810,8 @@
     .line 546
     :cond_a
     :goto_7
+    invoke-static/range {p0 .. p0}, Lcom/android/server/BatteryService$FlymeInjector;->onBatteryLow(Lcom/android/server/BatteryService;)V
+
     iget-object v0, p0, Lcom/android/server/BatteryService;->mBatteryProps:Landroid/os/BatteryProperties;
 
     iget v0, v0, Landroid/os/BatteryProperties;->batteryStatus:I

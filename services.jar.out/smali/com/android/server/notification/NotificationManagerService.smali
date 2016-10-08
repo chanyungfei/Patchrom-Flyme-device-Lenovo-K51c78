@@ -173,6 +173,12 @@
 
 
 # instance fields
+.field mFlymePowerManager:Landroid/os/PowerManager;
+
+.field mFlymeWakeLock:Landroid/os/PowerManager$WakeLock;
+
+.field mFlymeWakeUpScreenRunnable:Ljava/lang/Runnable;
+
 .field private LIGHT_TAG:Ljava/lang/String;
 
 .field private mAm:Landroid/app/IActivityManager;

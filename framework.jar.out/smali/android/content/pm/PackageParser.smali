@@ -4329,7 +4329,7 @@
 
     iput v3, v2, Landroid/content/pm/ActivityInfo;->uiOptions:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v19
 
     invoke-static {v14, v0}, Landroid/content/pm/PackageParser$FlymeInjector;->parseAccessArgsFromResource(Landroid/content/pm/PackageParser$Activity;Landroid/content/res/TypedArray;)V
 
@@ -5308,6 +5308,7 @@
     .local v16, "outerDepth":I
     :cond_21
     :goto_8
+    :goto_flyme_0
     invoke-interface/range {p3 .. p3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v22
@@ -5608,11 +5609,16 @@
 
     iput-object v2, v14, Landroid/content/pm/PackageParser$Activity;->metaData:Landroid/os/Bundle;
 
-    if-nez v2, :cond_21
+    if-nez v2, :cond_flyme_0
 
     const/4 v14, 0x0
 
     goto/16 :goto_1
+
+    :cond_flyme_0
+    invoke-static/range {v14 .. v14}, Landroid/content/pm/PackageParser$FlymeInjector;->parseAccessMetaFromResource(Landroid/content/pm/PackageParser$Activity;)V
+
+    goto/16 :goto_flyme_0
 
     :cond_2a
     const-string v2, "PackageParser"

@@ -9664,6 +9664,8 @@
     .line 4042
     .local v18, "s2":Landroid/text/Spannable;
     :goto_4
+    invoke-static/range {p0 .. p0}, Landroid/widget/TextView$FlymeInjector;->resetAutoLinkMask(Landroid/widget/TextView;)V
+
     if-eqz v14, :cond_c
 
     move-object/from16 v0, p0
@@ -24546,6 +24548,8 @@
     if-eqz v5, :cond_b
 
     :cond_8
+    invoke-static/range {p0 .. p1}, Landroid/widget/TextView$FlymeInjector;->onTouchUpEventMz(Landroid/widget/TextView;Landroid/view/MotionEvent;)V
+
     invoke-static {}, Landroid/view/inputmethod/InputMethodManager;->peekInstance()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v2

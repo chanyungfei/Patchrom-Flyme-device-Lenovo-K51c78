@@ -706,6 +706,8 @@
     iget v3, v0, Landroid/widget/AbsListView$LayoutParams;->viewType:I
 
     .local v3, "viewType":I
+    invoke-direct/range {p0 .. p1}, Landroid/widget/AbsListView$RecycleBin;->flymeProcessScrapView(Landroid/view/View;)V
+
     # getter for: Landroid/widget/AbsListView;->sDbgRecycle:Z
     invoke-static {}, Landroid/widget/AbsListView;->access$5900()Z
 

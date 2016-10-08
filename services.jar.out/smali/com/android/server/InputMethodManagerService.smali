@@ -3826,6 +3826,8 @@
     .locals 4
 
     .prologue
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/InputMethodManagerService;->flymeHideCurrentInputLocked()V
+
     invoke-virtual {p0}, Lcom/android/server/InputMethodManagerService;->hideInputMethodMenu()V
 
     new-instance v0, Landroid/content/Intent;
@@ -4318,6 +4320,10 @@
     invoke-direct {v0, v9, v1}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 
     .local v26, "settingsContext":Landroid/content/Context;
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/InputMethodManagerService;->getFlymeLightContext()Landroid/content/Context;
+
+    move-result-object v26
+
     new-instance v29, Landroid/app/AlertDialog$Builder;
 
     move-object/from16 v0, v29
@@ -4335,7 +4341,7 @@
     .line 2968
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v24
+    move-object/from16 v1, v26
 
     invoke-direct {v0, v1}, Lcom/android/server/InputMethodManagerService;->getFlymeLightAlertDialogBuilder(Landroid/content/Context;)V
 
@@ -10721,7 +10727,7 @@
 
     iget-object v12, v0, Lcom/android/server/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
-    if-eqz v12, :cond_5
+    if-eqz v12, :cond_flyme_0
 
     move-object/from16 v0, p0
 
@@ -10731,7 +10737,7 @@
 
     move-result v12
 
-    if-nez v12, :cond_5
+    if-nez v12, :cond_flyme_0
 
     .line 1670
     sget-boolean v12, Lcom/android/server/InputMethodManagerService;->DEBUG:Z

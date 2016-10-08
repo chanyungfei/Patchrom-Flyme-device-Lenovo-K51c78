@@ -368,6 +368,10 @@
 
     iput-object v2, p0, Landroid/app/Activity;->mStopAppRunnableLM:Ljava/lang/Runnable;
 
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/app/Activity;->mIsFlymeActivityFirstStart:Z
+
     return-void
 .end method
 
@@ -4214,6 +4218,8 @@
 
     .end local v1    # "wm":Landroid/view/ViewManager;
     :cond_0
+    invoke-static/range {p0 .. p0}, Landroid/app/Activity$FlymeInjector;->onStart(Landroid/app/Activity;)V
+
     invoke-static {}, Lcom/mediatek/multiwindow/MultiWindowProxy;->getInstance()Lcom/mediatek/multiwindow/MultiWindowProxy;
 
     move-result-object v0

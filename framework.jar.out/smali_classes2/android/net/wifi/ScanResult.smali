@@ -181,6 +181,8 @@
 
     iput-wide v0, p0, Landroid/net/wifi/ScanResult;->blackListTimestamp:J
 
+    invoke-static/range {p0 .. p1}, Landroid/net/wifi/ScanResult$FlymeInjector;->initFlymeExtraFields(Landroid/net/wifi/ScanResult;Landroid/net/wifi/ScanResult;)V
+
     :cond_0
     return-void
 .end method

@@ -1469,9 +1469,9 @@
 
     move/from16 v18, p4
 
-    move-object/from16 v19, v3
+    move-object/from16 v19, v6
 
-    move/from16 v20, v6
+    move/from16 v20, v11
 
     invoke-direct/range {v14 .. v20}, Landroid/widget/PopupWindow;->meansureFlymePopupPosition(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;IILandroid/graphics/Rect;Z)Landroid/view/WindowManager$LayoutParams;
 
@@ -3169,6 +3169,10 @@
     .line 1429
     .end local v6    # "res":Landroid/content/res/Resources;
     :cond_1
+    invoke-virtual {p0, v1}, Landroid/widget/PopupWindow;->computePopwindowPositionForMz(I)I
+
+    move-result v1
+
     const/4 v8, 0x1
 
     aget v8, v0, v8

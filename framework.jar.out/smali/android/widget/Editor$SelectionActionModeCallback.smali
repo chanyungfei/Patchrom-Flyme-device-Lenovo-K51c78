@@ -138,6 +138,16 @@
     .param p2, "menu"    # Landroid/view/Menu;
 
     .prologue
+    if-eqz p2, :cond_flyme_0
+
+    invoke-virtual/range {p0 .. p2}, Landroid/widget/Editor$SelectionActionModeCallback;->onCreateActionModeMz(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+
+    move-result v0
+
+    return v0
+
+    :cond_flyme_0
+
     const/4 v8, 0x6
 
     const/4 v5, 0x1
