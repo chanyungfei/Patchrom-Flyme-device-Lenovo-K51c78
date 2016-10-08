@@ -57,12 +57,10 @@
     .param p2, "style"    # Z
 
     .prologue
-    .line 90
-    const v0, 0x10405a5
+    const v0, #android:string@action_bar_up_description#t
 
     invoke-direct {p0, p1, p2, v0}, Lcom/android/internal/widget/ToolbarWidgetWrapper;-><init>(Landroid/widget/Toolbar;ZI)V
 
-    .line 91
     return-void
 .end method
 
@@ -151,7 +149,7 @@
 
     sget-object v17, Lcom/android/internal/R$styleable;->ActionBar:[I
 
-    const v18, 0x10102ce
+    const v18, #android:attr@actionBarStyle#t
 
     const/16 v19, 0x0
 
@@ -704,7 +702,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x10102d7
+    const v4, #android:attr@actionDropDownStyle#t
 
     invoke-direct {v1, v2, v3, v4}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -1910,20 +1908,17 @@
 
     iput-object v0, p0, Lcom/android/internal/widget/ToolbarWidgetWrapper;->mActionMenuPresenter:Landroid/widget/ActionMenuPresenter;
 
-    .line 387
     iget-object v0, p0, Lcom/android/internal/widget/ToolbarWidgetWrapper;->mActionMenuPresenter:Landroid/widget/ActionMenuPresenter;
 
-    const v1, 0x102003f
+    const v1, #android:id@action_menu_presenter#t
 
     invoke-virtual {v0, v1}, Landroid/widget/ActionMenuPresenter;->setId(I)V
 
-    .line 389
     :cond_0
     iget-object v0, p0, Lcom/android/internal/widget/ToolbarWidgetWrapper;->mActionMenuPresenter:Landroid/widget/ActionMenuPresenter;
 
     invoke-virtual {v0, p2}, Landroid/widget/ActionMenuPresenter;->setCallback(Lcom/android/internal/view/menu/MenuPresenter$Callback;)V
 
-    .line 390
     iget-object v0, p0, Lcom/android/internal/widget/ToolbarWidgetWrapper;->mToolbar:Landroid/widget/Toolbar;
 
     check-cast p1, Lcom/android/internal/view/menu/MenuBuilder;

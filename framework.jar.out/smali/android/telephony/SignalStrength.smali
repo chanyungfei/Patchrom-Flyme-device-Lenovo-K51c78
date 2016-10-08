@@ -3327,7 +3327,7 @@
 
     move-result-object v6
 
-    const v7, 0x10e007c
+    const v7, #android:integer@config_LTE_RSRP_threshold_type#t
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 

@@ -170,7 +170,7 @@
     .line 123
     new-instance v2, Landroid/widget/OverScroller;
 
-    const v3, 0x10c0005
+    const v3, #android:interpolator@decelerate_quint#t
 
     invoke-static {p1, v3}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 

@@ -367,7 +367,7 @@
 
     const-string v7, "android:changeTransform:intermediateMatrix"
 
-    const v8, 0x1020046
+    const v8, #android:id@transitionTransform#t
 
     invoke-virtual {v5, v8}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -380,7 +380,7 @@
 
     const-string v7, "android:changeTransform:intermediateParentMatrix"
 
-    const v8, 0x1020047
+    const v8, #android:id@parentMatrix#t
 
     invoke-virtual {v5, v8}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -851,7 +851,7 @@
     .local v0, "endParentMatrix":Landroid/graphics/Matrix;
     iget-object v4, p2, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
-    const v5, 0x1020047
+    const v5, #android:id@parentMatrix#t
 
     invoke-virtual {v4, v5, v0}, Landroid/view/View;->setTagInternal(ILjava/lang/Object;)V
 

@@ -48,59 +48,48 @@
     .param p6, "is24HourView"    # Z
 
     .prologue
-    .line 100
     invoke-static {p1, p2}, Landroid/app/TimePickerDialog;->resolveDialogTheme(Landroid/content/Context;I)I
 
     move-result v3
 
     invoke-direct {p0, p1, v3}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
-    .line 180
     new-instance v3, Landroid/app/TimePickerDialog$1;
 
     invoke-direct {v3, p0}, Landroid/app/TimePickerDialog$1;-><init>(Landroid/app/TimePickerDialog;)V
 
     iput-object v3, p0, Landroid/app/TimePickerDialog;->mValidationCallback:Landroid/widget/TimePicker$ValidationCallback;
 
-    .line 102
     iput-object p3, p0, Landroid/app/TimePickerDialog;->mTimeSetCallback:Landroid/app/TimePickerDialog$OnTimeSetListener;
 
-    .line 103
     iput p4, p0, Landroid/app/TimePickerDialog;->mInitialHourOfDay:I
 
-    .line 104
     iput p5, p0, Landroid/app/TimePickerDialog;->mInitialMinute:I
 
-    .line 105
     iput-boolean p6, p0, Landroid/app/TimePickerDialog;->mIs24HourView:Z
 
-    .line 107
     invoke-virtual {p1}, Landroid/content/Context;->isRomUI_v3()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 108
-    const v3, 0x10404e7
+    const v3, #android:string@time_picker_dialog_title#t
 
     invoke-virtual {p0, v3}, Landroid/app/TimePickerDialog;->setTitle(I)V
 
-    .line 111
     :cond_0
     invoke-virtual {p0}, Landroid/app/TimePickerDialog;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    .line 112
     .local v1, "themeContext":Landroid/content/Context;
     invoke-static {v1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    .line 113
     .local v0, "inflater":Landroid/view/LayoutInflater;
-    const v3, 0x10900e0
+    const v3, #android:layout@time_picker_dialog#t
 
     const/4 v4, 0x0
 
@@ -115,7 +104,7 @@
     .line 115
     const/4 v3, -0x1
 
-    const v4, 0x104000a
+    const v4, #android:string@ok#t
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -126,7 +115,7 @@
     .line 116
     const/4 v3, -0x2
 
-    const/high16 v4, 0x1040000
+    const/high16 v4, #android:string@cancel#i
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -134,13 +123,11 @@
 
     invoke-virtual {p0, v3, v4, p0}, Landroid/app/TimePickerDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    .line 117
     const/4 v3, 0x1
 
     invoke-virtual {p0, v3}, Landroid/app/TimePickerDialog;->setButtonPanelLayoutHint(I)V
 
-    .line 119
-    const v3, 0x10203c6
+    const v3, #android:id@timePicker#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -249,7 +236,7 @@
 
     move-result-object v1
 
-    const v2, 0x101049e
+    const v2, #android:attr@timePickerDialogTheme#t
 
     const/4 v3, 0x1
 

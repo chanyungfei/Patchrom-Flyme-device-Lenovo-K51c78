@@ -269,7 +269,7 @@
 
     move-result-object v5
 
-    const v6, 0x106004a
+    const v6, #android:color@lock_pattern_view_regular_color#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -282,7 +282,7 @@
 
     move-result-object v5
 
-    const v6, 0x106004c
+    const v6, #android:color@lock_pattern_view_error_color#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -295,7 +295,7 @@
 
     move-result-object v5
 
-    const v6, 0x106004b
+    const v6, #android:color@lock_pattern_view_success_color#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -371,7 +371,7 @@
 
     move-result-object v5
 
-    const v6, 0x105009f
+    const v6, #android:dimen@lock_pattern_dot_line_width#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -393,7 +393,7 @@
 
     move-result-object v5
 
-    const v6, 0x10500a0
+    const v6, #android:dimen@lock_pattern_dot_size#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -406,7 +406,7 @@
 
     move-result-object v5
 
-    const v6, 0x10500a1
+    const v6, #android:dimen@lock_pattern_dot_size_activated#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -533,7 +533,7 @@
     .line 304
     .end local v3    # "j":I
     :cond_4
-    const v5, 0x10c000d
+    const v5, #android:interpolator@fast_out_slow_in#t
 
     invoke-static {p1, v5}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 
@@ -541,8 +541,7 @@
 
     iput-object v5, p0, Lcom/android/internal/widget/LockPatternView;->mFastOutSlowInInterpolator:Landroid/view/animation/Interpolator;
 
-    .line 306
-    const v5, 0x10c000e
+    const v5, #android:interpolator@linear_out_slow_in#t
 
     invoke-static {p1, v5}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 
@@ -2084,24 +2083,20 @@
     .locals 2
 
     .prologue
-    .line 397
-    const v0, 0x10403bc
+    const v0, #android:string@lockscreen_access_pattern_cell_added#t
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/LockPatternView;->sendAccessEvent(I)V
 
-    .line 398
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     if-eqz v0, :cond_0
 
-    .line 399
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     iget-object v1, p0, Lcom/android/internal/widget/LockPatternView;->mPattern:Ljava/util/ArrayList;
 
     invoke-interface {v0, v1}, Lcom/android/internal/widget/LockPatternView$OnPatternListener;->onPatternCellAdded(Ljava/util/List;)V
 
-    .line 401
     :cond_0
     return-void
 .end method
@@ -2110,22 +2105,18 @@
     .locals 1
 
     .prologue
-    .line 418
-    const v0, 0x10403bb
+    const v0, #android:string@lockscreen_access_pattern_cleared#t
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/LockPatternView;->sendAccessEvent(I)V
 
-    .line 419
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     if-eqz v0, :cond_0
 
-    .line 420
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     invoke-interface {v0}, Lcom/android/internal/widget/LockPatternView$OnPatternListener;->onPatternCleared()V
 
-    .line 422
     :cond_0
     return-void
 .end method
@@ -2134,24 +2125,20 @@
     .locals 2
 
     .prologue
-    .line 411
-    const v0, 0x10403bd
+    const v0, #android:string@lockscreen_access_pattern_detected#t
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/LockPatternView;->sendAccessEvent(I)V
 
-    .line 412
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     if-eqz v0, :cond_0
 
-    .line 413
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     iget-object v1, p0, Lcom/android/internal/widget/LockPatternView;->mPattern:Ljava/util/ArrayList;
 
     invoke-interface {v0, v1}, Lcom/android/internal/widget/LockPatternView$OnPatternListener;->onPatternDetected(Ljava/util/List;)V
 
-    .line 415
     :cond_0
     return-void
 .end method
@@ -2160,22 +2147,18 @@
     .locals 1
 
     .prologue
-    .line 404
-    const v0, 0x10403ba
+    const v0, #android:string@lockscreen_access_pattern_start#t
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/LockPatternView;->sendAccessEvent(I)V
 
-    .line 405
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     if-eqz v0, :cond_0
 
-    .line 406
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     invoke-interface {v0}, Lcom/android/internal/widget/LockPatternView$OnPatternListener;->onPatternStart()V
 
-    .line 408
     :cond_0
     return-void
 .end method

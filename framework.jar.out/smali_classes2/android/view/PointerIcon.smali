@@ -237,7 +237,7 @@
 
     sget-object v5, Lcom/android/internal/R$styleable;->Pointer:[I
 
-    const v6, 0x1160028
+    const v6, #android:^attr-private@pointerStyle#t
 
     const/4 v7, 0x0
 

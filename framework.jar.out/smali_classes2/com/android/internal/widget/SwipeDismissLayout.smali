@@ -192,7 +192,7 @@
 
     move-result-object v1
 
-    const/high16 v2, 0x10e0000
+    const/high16 v2, #android:integer@config_shortAnimTime#i
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 

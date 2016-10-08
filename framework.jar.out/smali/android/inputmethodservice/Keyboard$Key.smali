@@ -98,7 +98,7 @@
     .line 296
     new-array v0, v3, [I
 
-    const v1, 0x101009f
+    const v1, #android:attr@state_checkable#t
 
     aput v1, v0, v2
 
@@ -119,7 +119,7 @@
     .line 308
     new-array v0, v3, [I
 
-    const v1, 0x10100a7
+    const v1, #android:attr@state_pressed#t
 
     aput v1, v0, v2
 
@@ -127,26 +127,24 @@
 
     return-void
 
-    .line 285
     :array_0
     .array-data 4
-        0x101009f
-        0x10100a0
+        #android:attr@state_checkable#t
+        #android:attr@state_checked#t
     .end array-data
 
-    .line 290
     :array_1
     .array-data 4
-        0x10100a7
-        0x101009f
-        0x10100a0
+        #android:attr@state_pressed#t
+        #android:attr@state_checkable#t
+        #android:attr@state_checked#t
     .end array-data
 
     .line 300
     :array_2
     .array-data 4
-        0x10100a7
-        0x101009f
+        #android:attr@state_pressed#t
+        #android:attr@state_checkable#t
     .end array-data
 .end method
 

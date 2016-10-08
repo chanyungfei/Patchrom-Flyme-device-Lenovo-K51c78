@@ -91,24 +91,20 @@
 
     const/4 v0, 0x1
 
-    .line 258
     .local v0, "isRequired":Z
     :goto_1
     if-nez v0, :cond_0
 
-    .line 262
     new-instance v1, Landroid/widget/AppSecurityPermissions$PermissionItemView$1;
 
     invoke-direct {v1, p0}, Landroid/widget/AppSecurityPermissions$PermissionItemView$1;-><init>(Landroid/widget/AppSecurityPermissions$PermissionItemView;)V
 
-    .line 270
     .local v1, "ocl":Landroid/content/DialogInterface$OnClickListener;
-    const v2, 0x104061b
+    const v2, #android:string@revoke#t
 
     invoke-virtual {p1, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 271
-    const v2, 0x104000a
+    const v2, #android:string@ok#t
 
     const/4 v3, 0x0
 
@@ -263,7 +259,7 @@
 
     move-result-object v6
 
-    const v7, 0x10404ec
+    const v7, #android:string@perms_description_app#t
 
     new-array v8, v9, [Ljava/lang/Object;
 
@@ -344,24 +340,19 @@
     .param p6, "showRevokeUI"    # Z
 
     .prologue
-    .line 162
     iput-object p1, p0, Landroid/widget/AppSecurityPermissions$PermissionItemView;->mGroup:Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;
 
-    .line 163
     iput-object p2, p0, Landroid/widget/AppSecurityPermissions$PermissionItemView;->mPerm:Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
 
-    .line 164
     move/from16 v0, p6
 
     iput-boolean v0, p0, Landroid/widget/AppSecurityPermissions$PermissionItemView;->mShowRevokeUI:Z
 
-    .line 165
     move-object/from16 v0, p5
 
     iput-object v0, p0, Landroid/widget/AppSecurityPermissions$PermissionItemView;->mPackageName:Ljava/lang/String;
 
-    .line 167
-    const v9, 0x10202e0
+    const v9, #android:id@perm_icon#t
 
     invoke-virtual {p0, v9}, Landroid/widget/AppSecurityPermissions$PermissionItemView;->findViewById(I)Landroid/view/View;
 
@@ -371,7 +362,7 @@
 
     .line 168
     .local v4, "permGrpIcon":Landroid/widget/ImageView;
-    const v9, 0x10202e1
+    const v9, #android:id@perm_name#t
 
     invoke-virtual {p0, v9}, Landroid/widget/AppSecurityPermissions$PermissionItemView;->findViewById(I)Landroid/view/View;
 

@@ -136,7 +136,7 @@
 
     move-result-object v1
 
-    const v2, 0x103030e
+    const v2, #android:style@TextAppearance.SlidingTabNormal#t
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
@@ -989,7 +989,7 @@
 
     move-result-object v6
 
-    const v7, 0x103030e
+    const v7, #android:style@TextAppearance.SlidingTabNormal#t
 
     invoke-virtual {v5, v6, v7}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
@@ -1260,19 +1260,16 @@
     :goto_1
     invoke-virtual {v4, v1}, Landroid/widget/ImageView;->setPressed(Z)V
 
-    .line 275
     const/4 v1, 0x2
 
     if-ne p1, v1, :cond_4
 
-    .line 276
     new-array v0, v2, [I
 
-    const v1, 0x10100a2
+    const v1, #android:attr@state_active#t
 
     aput v1, v0, v3
 
-    .line 277
     .local v0, "activeState":[I
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTab$Slider;->text:Landroid/widget/TextView;
 
@@ -1328,7 +1325,7 @@
 
     move-result-object v2
 
-    const v3, 0x103030f
+    const v3, #android:style@TextAppearance.SlidingTabActive#t
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
@@ -1362,7 +1359,7 @@
 
     move-result-object v2
 
-    const v3, 0x103030e
+    const v3, #android:style@TextAppearance.SlidingTabNormal#t
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 

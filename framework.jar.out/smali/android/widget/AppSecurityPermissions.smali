@@ -151,7 +151,7 @@
     .line 280
     iget-object v0, p0, Landroid/widget/AppSecurityPermissions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10404eb
+    const v1, #android:string@perms_new_perm_prefix#t
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1194,7 +1194,7 @@
     .local v1, "inflater":Landroid/view/LayoutInflater;
     if-eqz p3, :cond_1
 
-    const v0, 0x108032d
+    const v0, #android:drawable@ic_bullet_key_permission#t
 
     :goto_0
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -1231,7 +1231,7 @@
     .line 345
     .end local v5    # "icon":Landroid/graphics/drawable/Drawable;
     :cond_1
-    const v0, 0x1080438
+    const v0, #android:drawable@ic_text_dot#t
 
     goto :goto_0
 .end method
@@ -1255,7 +1255,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x1090033
+    const v1, #android:layout@app_permission_item_money#t
 
     :goto_0
     const/4 v2, 0x0
@@ -1288,7 +1288,7 @@
     .line 548
     .end local v0    # "permView":Landroid/widget/AppSecurityPermissions$PermissionItemView;
     :cond_0
-    const v1, 0x1090032
+    const v1, #android:layout@app_permission_item#t
 
     goto :goto_0
 .end method
@@ -1336,8 +1336,7 @@
     .param p5, "icon"    # Landroid/graphics/drawable/Drawable;
 
     .prologue
-    .line 558
-    const v4, 0x1090034
+    const v4, #android:layout@app_permission_item_old#t
 
     const/4 v5, 0x0
 
@@ -1347,7 +1346,7 @@
 
     .line 560
     .local v3, "permView":Landroid/view/View;
-    const v4, 0x10202e4
+    const v4, #android:id@permission_group#t
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1357,7 +1356,7 @@
 
     .line 561
     .local v2, "permGrpView":Landroid/widget/TextView;
-    const v4, 0x10202e5
+    const v4, #android:id@permission_list#t
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1367,7 +1366,7 @@
 
     .line 563
     .local v1, "permDescView":Landroid/widget/TextView;
-    const v4, 0x10202e0
+    const v4, #android:id@perm_icon#t
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1539,7 +1538,7 @@
     .line 493
     iget-object v3, p0, Landroid/widget/AppSecurityPermissions;->mInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x1090035
+    const v4, #android:layout@app_perms_summary#t
 
     const/4 v5, 0x0
 
@@ -1551,7 +1550,7 @@
 
     .line 494
     .local v2, "permsView":Landroid/widget/LinearLayout;
-    const v3, 0x10202e7
+    const v3, #android:id@perms_list#t
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -1561,7 +1560,7 @@
 
     .line 495
     .local v0, "displayList":Landroid/widget/LinearLayout;
-    const v3, 0x10202e6
+    const v3, #android:id@no_permissions#t
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

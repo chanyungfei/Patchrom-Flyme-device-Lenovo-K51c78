@@ -501,7 +501,7 @@
 
     move-result-object v3
 
-    const v4, 0x1040584
+    const v4, #android:string@add_account_button_label#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -653,8 +653,7 @@
     .param p1, "descriptionOverride"    # Ljava/lang/String;
 
     .prologue
-    .line 558
-    const v1, 0x10202df
+    const v1, #android:id@description#t
 
     invoke-virtual {p0, v1}, Landroid/accounts/ChooseTypeAndAccountActivity;->findViewById(I)Landroid/view/View;
 
@@ -693,8 +692,7 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 571
-    const v1, 0x102000a
+    const v1, #android:id@list#t
 
     invoke-virtual {p0, v1}, Landroid/accounts/ChooseTypeAndAccountActivity;->findViewById(I)Landroid/view/View;
 
@@ -706,7 +704,7 @@
     .local v0, "list":Landroid/widget/ListView;
     new-instance v1, Landroid/widget/ArrayAdapter;
 
-    const v2, 0x109000f
+    const v2, #android:layout@simple_list_item_single_choice#t
 
     invoke-direct {v1, p0, v2, p1}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
@@ -1648,27 +1646,21 @@
 
     if-eqz v6, :cond_4
 
-    .line 207
     invoke-virtual {p0, v10}, Landroid/accounts/ChooseTypeAndAccountActivity;->requestWindowFeature(I)Z
 
-    .line 208
-    const v6, 0x1090031
+    const v6, #android:layout@app_not_authorized#t
 
     invoke-virtual {p0, v6}, Landroid/accounts/ChooseTypeAndAccountActivity;->setContentView(I)V
 
-    .line 209
     iput-boolean v10, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mDontShowPicker:Z
 
-    .line 211
     :cond_4
     return-void
 
-    .line 161
     .end local v1    # "intent":Landroid/content/Intent;
     :catch_0
     move-exception v3
 
-    .line 163
     .local v3, "re":Landroid/os/RemoteException;
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1950,21 +1942,17 @@
 
     iput v3, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mSelectedItemIndex:I
 
-    .line 253
-    const v3, 0x109003f
+    const v3, #android:layout@choose_type_and_account#t
 
     invoke-virtual {p0, v3}, Landroid/accounts/ChooseTypeAndAccountActivity;->setContentView(I)V
 
-    .line 254
     iget-object v3, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mDescriptionOverride:Ljava/lang/String;
 
     invoke-direct {p0, v3}, Landroid/accounts/ChooseTypeAndAccountActivity;->overrideDescriptionIfSupplied(Ljava/lang/String;)V
 
-    .line 255
     invoke-direct {p0, v2}, Landroid/accounts/ChooseTypeAndAccountActivity;->populateUIAccountList([Ljava/lang/String;)V
 
-    .line 258
-    const v3, 0x102001a
+    const v3, #android:id@button2#t
 
     invoke-virtual {p0, v3}, Landroid/accounts/ChooseTypeAndAccountActivity;->findViewById(I)Landroid/view/View;
 

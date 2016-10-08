@@ -151,23 +151,19 @@
 
     aput-object v7, v6, v10
 
-    .line 74
     iget-object v6, p0, Landroid/webkit/DateSorter;->mLabels:[Ljava/lang/String;
 
     iget-object v7, v3, Llibcore/icu/LocaleData;->yesterday:Ljava/lang/String;
 
     aput-object v7, v6, v11
 
-    .line 76
-    const v4, 0x1140004
+    const v4, #android:plurals@last_num_days#t
 
-    .line 77
     .local v4, "resId":I
     invoke-virtual {v5, v4, v13}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 78
     .local v1, "format":Ljava/lang/String;
     iget-object v6, p0, Landroid/webkit/DateSorter;->mLabels:[Ljava/lang/String;
 
@@ -190,7 +186,7 @@
 
     const/4 v7, 0x3
 
-    const v8, 0x1040452
+    const v8, #android:string@last_month#t
 
     invoke-virtual {p1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -203,7 +199,7 @@
 
     const/4 v7, 0x4
 
-    const v8, 0x1040453
+    const v8, #android:string@older#t
 
     invoke-virtual {p1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

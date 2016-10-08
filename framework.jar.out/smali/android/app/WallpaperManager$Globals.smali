@@ -255,33 +255,27 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 360
     invoke-direct {p0, p1}, Landroid/app/WallpaperManager$Globals;->openDefaultWallpaperRes(Landroid/content/Context;)Ljava/io/InputStream;
 
     move-result-object v1
 
-    .line 361
     .local v1, "is":Ljava/io/InputStream;
     if-eqz v1, :cond_0
 
-    .line 363
     :try_start_0
     new-instance v2, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v2}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 365
     .local v2, "options":Landroid/graphics/BitmapFactory$Options;
     const/4 v4, 0x1
 
     iput-boolean v4, v2, Landroid/graphics/BitmapFactory$Options;->inPostProc:Z
 
-    .line 366
     const/4 v4, 0x1
 
     iput v4, v2, Landroid/graphics/BitmapFactory$Options;->inPostProcFlag:I
 
-    .line 367
     const/4 v4, 0x0
 
     invoke-static {v1, v4, v2}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
@@ -413,7 +407,7 @@
 
     move-result-object v4
 
-    const v5, 0x108028b
+    const v5, #android:drawable@default_wallpaper#t
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
 

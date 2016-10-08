@@ -114,11 +114,9 @@
     .locals 1
 
     .prologue
-    .line 74
     invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
 
-    .line 76
-    const v0, 0x1020014
+    const v0, #android:id@text1#t
 
     invoke-virtual {p0, v0}, Landroid/widget/TwoLineListItem;->findViewById(I)Landroid/view/View;
 
@@ -128,8 +126,7 @@
 
     iput-object v0, p0, Landroid/widget/TwoLineListItem;->mText1:Landroid/widget/TextView;
 
-    .line 77
-    const v0, 0x1020015
+    const v0, #android:id@text2#t
 
     invoke-virtual {p0, v0}, Landroid/widget/TwoLineListItem;->findViewById(I)Landroid/view/View;
 

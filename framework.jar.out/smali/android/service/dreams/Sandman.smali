@@ -53,7 +53,7 @@
 
     move-result-object v3
 
-    const v4, 0x1120061
+    const v4, #android:bool@config_dreamsActivatedOnDockByDefault#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -112,7 +112,7 @@
 
     move-result-object v3
 
-    const v4, 0x1120060
+    const v4, #android:bool@config_dreamsEnabledByDefault#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
 

@@ -106,7 +106,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x10100a0
+    const v2, #android:attr@state_checked#t
 
     aput v2, v0, v1
 
@@ -144,12 +144,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 166
-    const v0, 0x101043f
+    const v0, #android:attr@switchStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 167
     return-void
 .end method
 

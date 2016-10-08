@@ -395,19 +395,16 @@
 
     aput-object v4, v2, v0
 
-    .line 70
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 75
     :cond_1
-    const v3, 0x109003c
+    const v3, #android:layout@choose_account#t
 
     invoke-virtual {p0, v3}, Landroid/accounts/ChooseAccountActivity;->setContentView(I)V
 
-    .line 78
-    const v3, 0x102000a
+    const v3, #android:id@list#t
 
     invoke-virtual {p0, v3}, Landroid/accounts/ChooseAccountActivity;->findViewById(I)Landroid/view/View;
 
@@ -419,7 +416,7 @@
     .local v1, "list":Landroid/widget/ListView;
     new-instance v3, Landroid/accounts/ChooseAccountActivity$AccountArrayAdapter;
 
-    const v4, 0x1090003
+    const v4, #android:layout@simple_list_item_1#t
 
     invoke-direct {v3, p0, v4, v2}, Landroid/accounts/ChooseAccountActivity$AccountArrayAdapter;-><init>(Landroid/content/Context;I[Landroid/accounts/ChooseAccountActivity$AccountInfo;)V
 

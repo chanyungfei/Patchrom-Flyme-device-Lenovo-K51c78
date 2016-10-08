@@ -45,7 +45,7 @@
     .param p6, "terminalY"    # F
 
     .prologue
-    const v2, 0x1020045
+    const v2, #android:id@transitionPosition#t
 
     .line 95
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -208,7 +208,7 @@
     .line 115
     iget-object v0, p0, Landroid/transition/TranslationAnimationCreator$TransitionPositionListener;->mViewInHierarchy:Landroid/view/View;
 
-    const v1, 0x1020045
+    const v1, #android:id@transitionPosition#t
 
     iget-object v2, p0, Landroid/transition/TranslationAnimationCreator$TransitionPositionListener;->mTransitionPosition:[I
 

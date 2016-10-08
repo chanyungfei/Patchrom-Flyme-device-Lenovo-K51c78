@@ -318,47 +318,38 @@
 
     iput-object v0, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
 
-    .line 222
     iget-object v0, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
 
     iget-object v1, p0, Landroid/widget/MediaController;->mTouchListener:Landroid/view/View$OnTouchListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 223
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     invoke-virtual {v0, p0}, Landroid/view/Window;->setContentView(Landroid/view/View;)V
 
-    .line 224
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
-    const v1, 0x106000d
+    const v1, #android:color@transparent#t
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawableResource(I)V
 
-    .line 228
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setVolumeControlStream(I)V
 
-    .line 230
     invoke-virtual {p0, v2}, Landroid/widget/MediaController;->setFocusable(Z)V
 
-    .line 231
     invoke-virtual {p0, v2}, Landroid/widget/MediaController;->setFocusableInTouchMode(Z)V
 
-    .line 232
     const/high16 v0, 0x40000
 
     invoke-virtual {p0, v0}, Landroid/widget/MediaController;->setDescendantFocusability(I)V
 
-    .line 233
     invoke-virtual {p0}, Landroid/widget/MediaController;->requestFocus()Z
 
-    .line 234
     return-void
 .end method
 
@@ -936,7 +927,7 @@
 
     .line 357
     .local v0, "res":Landroid/content/res/Resources;
-    const v2, 0x104039c
+    const v2, #android:string@lockscreen_transport_play_description#t
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -944,8 +935,7 @@
 
     iput-object v2, p0, Landroid/widget/MediaController;->mPlayDescription:Ljava/lang/CharSequence;
 
-    .line 359
-    const v2, 0x104039b
+    const v2, #android:string@lockscreen_transport_pause_description#t
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -953,8 +943,7 @@
 
     iput-object v2, p0, Landroid/widget/MediaController;->mPauseDescription:Ljava/lang/CharSequence;
 
-    .line 363
-    const v2, 0x102032b
+    const v2, #android:id@pause#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -983,7 +972,7 @@
 
     .line 369
     :cond_0
-    const v2, 0x102032c
+    const v2, #android:id@ffwd#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1024,7 +1013,7 @@
 
     .line 377
     :cond_1
-    const v2, 0x102032a
+    const v2, #android:id@rew#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1063,7 +1052,7 @@
 
     .line 386
     :cond_2
-    const v2, 0x102032d
+    const v2, #android:id@next#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1093,7 +1082,7 @@
 
     .line 390
     :cond_3
-    const v2, 0x1020329
+    const v2, #android:id@prev#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1123,7 +1112,7 @@
 
     .line 395
     :cond_4
-    const v2, 0x102032f
+    const v2, #android:id@mediacontroller_progress#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1167,7 +1156,7 @@
 
     .line 404
     :cond_6
-    const v2, 0x102007f
+    const v2, #android:id@time#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1177,8 +1166,7 @@
 
     iput-object v2, p0, Landroid/widget/MediaController;->mEndTime:Landroid/widget/TextView;
 
-    .line 405
-    const v2, 0x102032e
+    const v2, #android:id@time_current#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1326,7 +1314,7 @@
 
     .line 344
     .local v0, "inflate":Landroid/view/LayoutInflater;
-    const v1, 0x109006b
+    const v1, #android:layout@media_controller#t
 
     const/4 v2, 0x0
 
@@ -2073,14 +2061,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 649
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
-    const v1, 0x1080023
+    const v1, #android:drawable@ic_media_pause#t
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 
-    .line 650
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     iget-object v1, p0, Landroid/widget/MediaController;->mPauseDescription:Ljava/lang/CharSequence;
@@ -2093,7 +2079,7 @@
     :cond_2
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
-    const v1, 0x1080024
+    const v1, #android:drawable@ic_media_play#t
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 

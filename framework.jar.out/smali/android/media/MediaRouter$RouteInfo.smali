@@ -924,63 +924,50 @@
     :goto_3
     iput-object v2, p0, Landroid/media/MediaRouter$RouteInfo;->mStatus:Ljava/lang/CharSequence;
 
-    .line 1728
     const/4 v2, 0x1
 
     goto :goto_1
 
-    .line 1707
     .end local v0    # "resId":I
     :pswitch_2
-    const v0, 0x10405e4
+    const v0, #android:string@media_route_status_scanning#t
 
-    .line 1708
     .restart local v0    # "resId":I
     goto :goto_2
 
-    .line 1710
     .end local v0    # "resId":I
     :pswitch_3
-    const v0, 0x10405e5
+    const v0, #android:string@media_route_status_connecting#t
 
-    .line 1711
     .restart local v0    # "resId":I
     goto :goto_2
 
-    .line 1713
     .end local v0    # "resId":I
     :pswitch_4
-    const v0, 0x10405e6
+    const v0, #android:string@media_route_status_available#t
 
-    .line 1714
     .restart local v0    # "resId":I
     goto :goto_2
 
-    .line 1716
     .end local v0    # "resId":I
     :pswitch_5
-    const v0, 0x10405e7
+    const v0, #android:string@media_route_status_not_available#t
 
-    .line 1717
     .restart local v0    # "resId":I
     goto :goto_2
 
-    .line 1719
     .end local v0    # "resId":I
     :pswitch_6
-    const v0, 0x10405e8
+    const v0, #android:string@media_route_status_in_use#t
 
-    .line 1720
     .restart local v0    # "resId":I
     goto :goto_2
 
-    .line 1727
     :cond_2
     const/4 v2, 0x0
 
     goto :goto_3
 
-    .line 1686
     nop
 
     :pswitch_data_0
@@ -1096,63 +1083,50 @@
     :goto_2
     iput-object v2, p0, Landroid/media/MediaRouter$RouteInfo;->mStatus:Ljava/lang/CharSequence;
 
-    .line 1787
     const/4 v2, 0x1
 
     goto :goto_0
 
-    .line 1766
     .end local v0    # "resId":I
     :pswitch_0
-    const v0, 0x10405e4
+    const v0, #android:string@media_route_status_scanning#t
 
-    .line 1767
     .restart local v0    # "resId":I
     goto :goto_1
 
-    .line 1769
     .end local v0    # "resId":I
     :pswitch_1
-    const v0, 0x10405e5
+    const v0, #android:string@media_route_status_connecting#t
 
-    .line 1770
     .restart local v0    # "resId":I
     goto :goto_1
 
-    .line 1772
     .end local v0    # "resId":I
     :pswitch_2
-    const v0, 0x10405e6
+    const v0, #android:string@media_route_status_available#t
 
-    .line 1773
     .restart local v0    # "resId":I
     goto :goto_1
 
-    .line 1775
     .end local v0    # "resId":I
     :pswitch_3
-    const v0, 0x10405e7
+    const v0, #android:string@media_route_status_not_available#t
 
-    .line 1776
     .restart local v0    # "resId":I
     goto :goto_1
 
-    .line 1778
     .end local v0    # "resId":I
     :pswitch_4
-    const v0, 0x10405e8
+    const v0, #android:string@media_route_status_in_use#t
 
-    .line 1779
     .restart local v0    # "resId":I
     goto :goto_1
 
-    .line 1786
     :cond_1
     const/4 v2, 0x0
 
     goto :goto_2
 
-    .line 1764
     nop
 
     :pswitch_data_0

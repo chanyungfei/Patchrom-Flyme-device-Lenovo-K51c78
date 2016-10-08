@@ -133,7 +133,7 @@
     .local v14, "setDate":J
     const/16 v4, 0xc
 
-    const v5, 0x10301b3
+    const v5, #android:style@TextAppearance.DeviceDefault.Small#t
 
     invoke-virtual {v10, v4, v5}, Landroid/content/res/TypedArray;->getResourceId(II)I
 

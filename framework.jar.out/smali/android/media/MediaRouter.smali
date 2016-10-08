@@ -1316,7 +1316,7 @@
 
     iget-object v1, v1, Landroid/media/MediaRouter$Static;->mResources:Landroid/content/res/Resources;
 
-    const v2, 0x10405dd
+    const v2, #android:string@wireless_display_route_description#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

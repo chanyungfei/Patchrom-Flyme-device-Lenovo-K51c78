@@ -407,7 +407,7 @@
     .line 470
     iget-object v0, p0, Landroid/service/voice/VoiceInteractionSession;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x10900e9
+    const v1, #android:layout@voice_interaction_session#t
 
     const/4 v2, 0x0
 
@@ -445,7 +445,7 @@
     .line 477
     iget-object v0, p0, Landroid/service/voice/VoiceInteractionSession;->mRootView:Landroid/view/View;
 
-    const v1, 0x1020002
+    const v1, #android:id@content#t
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -719,7 +719,7 @@
 
     .line 614
     :cond_0
-    const v0, 0x103048d
+    const v0, #android:style@Theme.DeviceDefault.VoiceInteractionSession#t
 
     goto :goto_0
 .end method

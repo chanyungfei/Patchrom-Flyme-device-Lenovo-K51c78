@@ -171,13 +171,11 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 165
-    const v1, 0x10900bd
+    const v1, #android:layout@search_bar#t
 
     invoke-virtual {p0, v1}, Landroid/app/SearchDialog;->setContentView(I)V
 
-    .line 168
-    const v1, 0x102038a
+    const v1, #android:id@search_bar#t
 
     invoke-virtual {p0, v1}, Landroid/app/SearchDialog;->findViewById(I)Landroid/view/View;
 
@@ -185,12 +183,10 @@
 
     check-cast v0, Landroid/app/SearchDialog$SearchBar;
 
-    .line 169
     .local v0, "searchBar":Landroid/app/SearchDialog$SearchBar;
     invoke-virtual {v0, p0}, Landroid/app/SearchDialog$SearchBar;->setSearchDialog(Landroid/app/SearchDialog;)V
 
-    .line 170
-    const v1, 0x102038c
+    const v1, #android:id@search_view#t
 
     invoke-virtual {p0, v1}, Landroid/app/SearchDialog;->findViewById(I)Landroid/view/View;
 
@@ -200,39 +196,33 @@
 
     iput-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
-    .line 171
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
     invoke-virtual {v1, v3}, Landroid/widget/SearchView;->setIconified(Z)V
 
-    .line 172
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
     iget-object v2, p0, Landroid/app/SearchDialog;->mOnCloseListener:Landroid/widget/SearchView$OnCloseListener;
 
     invoke-virtual {v1, v2}, Landroid/widget/SearchView;->setOnCloseListener(Landroid/widget/SearchView$OnCloseListener;)V
 
-    .line 173
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
     iget-object v2, p0, Landroid/app/SearchDialog;->mOnQueryChangeListener:Landroid/widget/SearchView$OnQueryTextListener;
 
     invoke-virtual {v1, v2}, Landroid/widget/SearchView;->setOnQueryTextListener(Landroid/widget/SearchView$OnQueryTextListener;)V
 
-    .line 174
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
     iget-object v2, p0, Landroid/app/SearchDialog;->mOnSuggestionSelectionListener:Landroid/widget/SearchView$OnSuggestionListener;
 
     invoke-virtual {v1, v2}, Landroid/widget/SearchView;->setOnSuggestionListener(Landroid/widget/SearchView$OnSuggestionListener;)V
 
-    .line 175
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
     invoke-virtual {v1}, Landroid/widget/SearchView;->onActionViewExpanded()V
 
-    .line 177
-    const v1, 0x1020027
+    const v1, #android:id@closeButton#t
 
     invoke-virtual {p0, v1}, Landroid/app/SearchDialog;->findViewById(I)Landroid/view/View;
 
@@ -252,7 +242,7 @@
     .line 186
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
-    const v2, 0x102038e
+    const v2, #android:id@search_badge#t
 
     invoke-virtual {v1, v2}, Landroid/widget/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -265,7 +255,7 @@
     .line 187
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
-    const v2, 0x1020393
+    const v2, #android:id@search_src_text#t
 
     invoke-virtual {v1, v2}, Landroid/widget/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -275,8 +265,7 @@
 
     iput-object v1, p0, Landroid/app/SearchDialog;->mSearchAutoComplete:Landroid/widget/AutoCompleteTextView;
 
-    .line 189
-    const v1, 0x102038b
+    const v1, #android:id@search_app_icon#t
 
     invoke-virtual {p0, v1}, Landroid/app/SearchDialog;->findViewById(I)Landroid/view/View;
 
@@ -289,7 +278,7 @@
     .line 190
     iget-object v1, p0, Landroid/app/SearchDialog;->mSearchView:Landroid/widget/SearchView;
 
-    const v2, 0x1020392
+    const v2, #android:id@search_plate#t
 
     invoke-virtual {v1, v2}, Landroid/widget/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -302,7 +291,7 @@
 
     move-result-object v1
 
-    const v2, 0x10805f8
+    const v2, #android:drawable@search_spinner#t
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -723,7 +712,7 @@
 
     move-result-object v1
 
-    const v2, 0x1160026
+    const v2, #android:^attr-private@searchDialogTheme#t
 
     const/4 v3, 0x1
 

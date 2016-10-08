@@ -65,7 +65,7 @@
 
     move-result-object v1
 
-    const v2, 0x1050035
+    const v2, #android:dimen@alert_dialog_round_padding#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 

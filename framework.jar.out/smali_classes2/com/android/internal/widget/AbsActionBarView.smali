@@ -126,7 +126,7 @@
 
     move-result-object v1
 
-    const v2, 0x101048d
+    const v2, #android:attr@actionBarPopupTheme#t
 
     const/4 v3, 0x1
 
@@ -667,7 +667,7 @@
 
     sget-object v3, Lcom/android/internal/R$styleable;->ActionBar:[I
 
-    const v4, 0x10102ce
+    const v4, #android:attr@actionBarStyle#t
 
     invoke-virtual {v1, v2, v3, v4, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -700,7 +700,7 @@
 
     move-result-object v1
 
-    const v2, 0x1120005
+    const v2, #android:bool@split_action_bar_is_narrow#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 

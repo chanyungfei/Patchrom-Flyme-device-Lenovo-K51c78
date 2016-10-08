@@ -312,7 +312,7 @@
 
     .line 8634
     .local v0, "e":Landroid/content/ActivityNotFoundException;
-    const v1, 0x104037d
+    const v1, #android:string@quick_contacts_not_available#t
 
     const/4 v2, 0x0
 

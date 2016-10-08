@@ -121,8 +121,7 @@
     .param p0, "view"    # Landroid/view/View;
 
     .prologue
-    .line 209
-    const v0, 0x1020043
+    const v0, #android:id@current_scene#t
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -140,7 +139,7 @@
     .param p2, "context"    # Landroid/content/Context;
 
     .prologue
-    const v3, 0x1020044
+    const v3, #android:id@scene_layoutid_cache#t
 
     .line 56
     invoke-virtual {p0, v3}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
@@ -209,12 +208,10 @@
     .param p1, "scene"    # Landroid/transition/Scene;
 
     .prologue
-    .line 198
-    const v0, 0x1020043
+    const v0, #android:id@current_scene#t
 
     invoke-virtual {p0, v0, p1}, Landroid/view/View;->setTagInternal(ILjava/lang/Object;)V
 
-    .line 199
     return-void
 .end method
 

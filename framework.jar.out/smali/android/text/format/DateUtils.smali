@@ -384,7 +384,7 @@
 
     .line 486
     .local v0, "hours":I
-    const v4, 0x1140014
+    const v4, #android:plurals@duration_hours#t
 
     new-array v5, v9, [Ljava/lang/Object;
 
@@ -420,7 +420,7 @@
 
     .line 490
     .local v1, "minutes":I
-    const v4, 0x1140013
+    const v4, #android:plurals@duration_minutes#t
 
     new-array v5, v9, [Ljava/lang/Object;
 
@@ -451,7 +451,7 @@
 
     .line 494
     .local v3, "seconds":I
-    const v4, 0x1140012
+    const v4, #android:plurals@duration_seconds#t
 
     new-array v5, v9, [Ljava/lang/Object;
 
@@ -1031,7 +1031,7 @@
 
     .line 401
     .local v17, "relativeClause":Ljava/lang/CharSequence;
-    const v4, 0x1040463
+    const v4, #android:string@relative_time#t
 
     const/4 v5, 0x2
 
@@ -1087,7 +1087,7 @@
 
     .line 404
     .local v11, "dateClause":Ljava/lang/CharSequence;
-    const v4, 0x104005a
+    const v4, #android:string@date_time#t
 
     const/4 v5, 0x2
 
@@ -1244,21 +1244,17 @@
 
     goto :goto_1
 
-    .line 449
     :cond_4
     if-eqz v7, :cond_5
 
-    .line 450
-    const v8, 0x1140005
+    const v8, #android:plurals@num_days_ago#t
 
-    .line 455
     .local v8, "resId":I
     :goto_2
     invoke-virtual {p0, v8, v4}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 456
     .local v5, "format":Ljava/lang/String;
     const/4 v11, 0x1
 
@@ -1282,7 +1278,7 @@
     .end local v5    # "format":Ljava/lang/String;
     .end local v8    # "resId":I
     :cond_5
-    const v8, 0x1140009
+    const v8, #android:plurals@in_num_days#t
 
     .restart local v8    # "resId":I
     goto :goto_2
@@ -1389,22 +1385,17 @@
 
     if-gez v7, :cond_5
 
-    .line 301
     const-wide/16 v8, 0x3e8
 
     div-long v14, v16, v8
 
-    .line 302
     .local v14, "count":J
     if-eqz v18, :cond_3
 
-    .line 303
     if-eqz v6, :cond_2
 
-    .line 304
-    const v20, 0x114000a
+    const v20, #android:plurals@abbrev_num_seconds_ago#t
 
-    .line 353
     .local v20, "resId":I
     :goto_2
     long-to-int v7, v14
@@ -1462,26 +1453,23 @@
     .restart local v16    # "duration":J
     .restart local v18    # "past":Z
     :cond_2
-    const v20, 0x1140001
+    const v20, #android:plurals@num_seconds_ago#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 309
     .end local v20    # "resId":I
     :cond_3
     if-eqz v6, :cond_4
 
-    .line 310
-    const v20, 0x114000e
+    const v20, #android:plurals@abbrev_in_num_seconds#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 312
     .end local v20    # "resId":I
     :cond_4
-    const v20, 0x1140006
+    const v20, #android:plurals@in_num_seconds#t
 
     .restart local v20    # "resId":I
     goto :goto_2
@@ -1502,47 +1490,39 @@
 
     if-gez v7, :cond_9
 
-    .line 316
     const-wide/32 v8, 0xea60
 
     div-long v14, v16, v8
 
-    .line 317
     .restart local v14    # "count":J
     if-eqz v18, :cond_7
 
-    .line 318
     if-eqz v6, :cond_6
 
-    .line 319
-    const v20, 0x114000b
+    const v20, #android:plurals@abbrev_num_minutes_ago#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 321
     .end local v20    # "resId":I
     :cond_6
-    const v20, 0x1140002
+    const v20, #android:plurals@num_minutes_ago#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 324
     .end local v20    # "resId":I
     :cond_7
     if-eqz v6, :cond_8
 
-    .line 325
-    const v20, 0x114000f
+    const v20, #android:plurals@abbrev_in_num_minutes#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 327
     .end local v20    # "resId":I
     :cond_8
-    const v20, 0x1140007
+    const v20, #android:plurals@in_num_minutes#t
 
     .restart local v20    # "resId":I
     goto :goto_2
@@ -1563,47 +1543,39 @@
 
     if-gez v7, :cond_d
 
-    .line 331
     const-wide/32 v8, 0x36ee80
 
     div-long v14, v16, v8
 
-    .line 332
     .restart local v14    # "count":J
     if-eqz v18, :cond_b
 
-    .line 333
     if-eqz v6, :cond_a
 
-    .line 334
-    const v20, 0x114000c
+    const v20, #android:plurals@abbrev_num_hours_ago#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 336
     .end local v20    # "resId":I
     :cond_a
-    const v20, 0x1140003
+    const v20, #android:plurals@num_hours_ago#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 339
     .end local v20    # "resId":I
     :cond_b
     if-eqz v6, :cond_c
 
-    .line 340
-    const v20, 0x1140010
+    const v20, #android:plurals@abbrev_in_num_hours#t
 
     .restart local v20    # "resId":I
     goto :goto_2
 
-    .line 342
     .end local v20    # "resId":I
     :cond_c
-    const v20, 0x1140008
+    const v20, #android:plurals@in_num_hours#t
 
     .restart local v20    # "resId":I
     goto :goto_2
@@ -1762,26 +1734,21 @@
 
     move-wide/from16 v6, p1
 
-    .line 917
     invoke-static/range {v3 .. v8}, Landroid/text/format/DateUtils;->formatDateRange(Landroid/content/Context;JJI)Ljava/lang/String;
 
     move-result-object v12
 
-    .line 918
     .local v12, "result":Ljava/lang/String;
-    const v2, 0x1040455
+    const v2, #android:string@preposition_for_time#t
 
-    .line 932
     .local v2, "prepositionId":I
     :goto_0
     if-eqz p3, :cond_2
 
-    .line 933
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
-    .line 934
     .local v9, "res":Landroid/content/res/Resources;
     const/4 v3, 0x1
 
@@ -1828,20 +1795,16 @@
 
     move-wide/from16 v6, p1
 
-    .line 922
     invoke-static/range {v3 .. v8}, Landroid/text/format/DateUtils;->formatDateRange(Landroid/content/Context;JJI)Ljava/lang/String;
 
     move-result-object v12
 
-    .line 925
     .restart local v12    # "result":Ljava/lang/String;
-    const v2, 0x1040454
+    const v2, #android:string@preposition_for_date#t
 
-    .line 926
     .restart local v2    # "prepositionId":I
     goto :goto_0
 
-    .line 928
     .end local v2    # "prepositionId":I
     .end local v8    # "flags":I
     .end local v12    # "result":Ljava/lang/String;
@@ -1855,19 +1818,16 @@
 
     move-wide/from16 v6, p1
 
-    .line 929
     invoke-static/range {v3 .. v8}, Landroid/text/format/DateUtils;->formatDateRange(Landroid/content/Context;JJI)Ljava/lang/String;
 
     move-result-object v12
 
-    .line 930
     .restart local v12    # "result":Ljava/lang/String;
-    const v2, 0x1040454
+    const v2, #android:string@preposition_for_date#t
 
     .restart local v2    # "prepositionId":I
     goto :goto_0
 
-    .line 936
     .end local v2    # "prepositionId":I
     .end local v8    # "flags":I
     .end local v12    # "result":Ljava/lang/String;
@@ -1940,12 +1900,10 @@
 
     if-nez v2, :cond_1
 
-    .line 469
     :cond_0
     sput-object v0, Landroid/text/format/DateUtils;->sLastConfig:Landroid/content/res/Configuration;
 
-    .line 470
-    const v2, 0x1040468
+    const v2, #android:string@elapsed_time_short_format_mm_ss#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1953,8 +1911,7 @@
 
     sput-object v2, Landroid/text/format/DateUtils;->sElapsedFormatMMSS:Ljava/lang/String;
 
-    .line 471
-    const v2, 0x1040469
+    const v2, #android:string@elapsed_time_short_format_h_mm_ss#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

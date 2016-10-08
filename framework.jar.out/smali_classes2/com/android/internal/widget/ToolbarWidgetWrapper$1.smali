@@ -49,7 +49,7 @@
 
     move-result-object v1
 
-    const v3, 0x102002c
+    const v3, #android:id@home#t
 
     iget-object v4, p0, Lcom/android/internal/widget/ToolbarWidgetWrapper$1;->this$0:Lcom/android/internal/widget/ToolbarWidgetWrapper;
 

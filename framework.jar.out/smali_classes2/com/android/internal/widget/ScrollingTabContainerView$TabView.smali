@@ -51,60 +51,48 @@
     .prologue
     const v3, 0x3fa66666    # 1.3f
 
-    .line 378
     iput-object p1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->this$0:Lcom/android/internal/widget/ScrollingTabContainerView;
 
-    .line 379
     const/4 v1, 0x0
 
-    const v2, 0x10102f3
+    const v2, #android:attr@actionBarTabStyle#t
 
     invoke-direct {p0, p2, v1, v2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 539
     const/16 v1, 0x30
 
     iput v1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->mItemOffset:I
 
-    .line 540
     const/16 v1, 0x10
 
     iput v1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->DEFAULT_TAB_OFFSET:I
 
-    .line 541
     iput v3, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->DEFAULT_SLIDER_DRAWABLE_HEIGHT:F
 
-    .line 542
     const/high16 v1, 0x40800000    # 4.0f
 
     iput v1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->mSliderDrawableHeight:F
 
-    .line 543
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->mPaint:Landroid/graphics/Paint;
 
-    .line 544
     new-instance v1, Landroid/graphics/RectF;
 
     invoke-direct {v1}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->mRect:Landroid/graphics/RectF;
 
-    .line 380
     iput-object p3, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->mTab:Landroid/app/ActionBar$Tab;
 
-    .line 382
     if-eqz p4, :cond_0
 
-    .line 383
     const v1, 0x800013
 
     invoke-virtual {p0, v1}, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->setGravity(I)V
 
-    .line 386
     :cond_0
     invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -744,7 +732,7 @@
 
     move-result-object v11
 
-    const v12, 0x10102f5
+    const v12, #android:attr@actionBarTabTextStyle#t
 
     invoke-direct {v8, v11, v13, v12}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 

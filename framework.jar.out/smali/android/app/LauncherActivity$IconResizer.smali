@@ -78,7 +78,7 @@
 
     .line 261
     .local v0, "resources":Landroid/content/res/Resources;
-    const/high16 v1, 0x1050000
+    const/high16 v1, #android:dimen@app_icon_size#i
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 

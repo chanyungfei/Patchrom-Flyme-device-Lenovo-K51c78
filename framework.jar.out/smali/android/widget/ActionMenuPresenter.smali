@@ -80,7 +80,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x10100a0
+    const v2, #android:attr@state_checked#t
 
     aput v2, v0, v1
 
@@ -94,21 +94,18 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 90
-    const v0, 0x109001d
+    const v0, #android:layout@action_menu_layout#t
 
-    const v1, 0x109001c
+    const v1, #android:layout@action_menu_item_layout#t
 
     invoke-direct {p0, p1, v0, v1}, Lcom/android/internal/view/menu/BaseMenuPresenter;-><init>(Landroid/content/Context;II)V
 
-    .line 76
     new-instance v0, Landroid/util/SparseBooleanArray;
 
     invoke-direct {v0}, Landroid/util/SparseBooleanArray;-><init>()V
 
     iput-object v0, p0, Landroid/widget/ActionMenuPresenter;->mActionButtonGroups:Landroid/util/SparseBooleanArray;
 
-    .line 86
     new-instance v0, Landroid/widget/ActionMenuPresenter$PopupPresenterCallback;
 
     const/4 v1, 0x0
@@ -1614,7 +1611,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0084
+    const v1, #android:integer@max_action_buttons#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 

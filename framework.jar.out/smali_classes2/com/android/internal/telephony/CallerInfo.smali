@@ -1612,8 +1612,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 473
-    const v0, 0x1040387
+    const v0, #android:string@emergency_call_dialog_number_for_display#t
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1621,17 +1620,14 @@
 
     iput-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 
-    .line 475
-    const v0, 0x108053f
+    const v0, #android:drawable@picture_emergency#t
 
     iput v0, p0, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
 
-    .line 476
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/internal/telephony/CallerInfo;->mIsEmergency:Z
 
-    .line 477
     return-object p0
 .end method
 

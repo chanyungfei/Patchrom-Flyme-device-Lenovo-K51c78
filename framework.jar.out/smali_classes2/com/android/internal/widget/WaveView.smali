@@ -458,7 +458,7 @@
     .line 574
     iget-object v0, p0, Lcom/android/internal/widget/WaveView;->mContext:Landroid/content/Context;
 
-    const v1, 0x10405a1
+    const v1, #android:string@description_target_unlock_tablet#t
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -566,7 +566,7 @@
     .line 173
     new-instance v3, Lcom/android/internal/widget/DrawableHolder;
 
-    const v4, 0x108074b
+    const v4, #android:drawable@unlock_ring#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/widget/WaveView;->createDrawable(I)Landroid/graphics/drawable/BitmapDrawable;
 
@@ -615,7 +615,7 @@
     .line 181
     new-instance v3, Lcom/android/internal/widget/DrawableHolder;
 
-    const v4, 0x1080749
+    const v4, #android:drawable@unlock_default#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/widget/WaveView;->createDrawable(I)Landroid/graphics/drawable/BitmapDrawable;
 
@@ -664,7 +664,7 @@
     .line 189
     new-instance v3, Lcom/android/internal/widget/DrawableHolder;
 
-    const v4, 0x108074a
+    const v4, #android:drawable@unlock_halo#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/widget/WaveView;->createDrawable(I)Landroid/graphics/drawable/BitmapDrawable;
 
@@ -674,50 +674,42 @@
 
     iput-object v3, p0, Lcom/android/internal/widget/WaveView;->mUnlockHalo:Lcom/android/internal/widget/DrawableHolder;
 
-    .line 190
     iget-object v3, p0, Lcom/android/internal/widget/WaveView;->mUnlockHalo:Lcom/android/internal/widget/DrawableHolder;
 
     iget v4, p0, Lcom/android/internal/widget/WaveView;->mLockCenterX:F
 
     invoke-virtual {v3, v4}, Lcom/android/internal/widget/DrawableHolder;->setX(F)V
 
-    .line 191
     iget-object v3, p0, Lcom/android/internal/widget/WaveView;->mUnlockHalo:Lcom/android/internal/widget/DrawableHolder;
 
     iget v4, p0, Lcom/android/internal/widget/WaveView;->mLockCenterY:F
 
     invoke-virtual {v3, v4}, Lcom/android/internal/widget/DrawableHolder;->setY(F)V
 
-    .line 192
     iget-object v3, p0, Lcom/android/internal/widget/WaveView;->mUnlockHalo:Lcom/android/internal/widget/DrawableHolder;
 
     invoke-virtual {v3, v5}, Lcom/android/internal/widget/DrawableHolder;->setScaleX(F)V
 
-    .line 193
     iget-object v3, p0, Lcom/android/internal/widget/WaveView;->mUnlockHalo:Lcom/android/internal/widget/DrawableHolder;
 
     invoke-virtual {v3, v5}, Lcom/android/internal/widget/DrawableHolder;->setScaleY(F)V
 
-    .line 194
     iget-object v3, p0, Lcom/android/internal/widget/WaveView;->mUnlockHalo:Lcom/android/internal/widget/DrawableHolder;
 
     invoke-virtual {v3, v6}, Lcom/android/internal/widget/DrawableHolder;->setAlpha(F)V
 
-    .line 195
     iget-object v3, p0, Lcom/android/internal/widget/WaveView;->mDrawables:Ljava/util/ArrayList;
 
     iget-object v4, p0, Lcom/android/internal/widget/WaveView;->mUnlockHalo:Lcom/android/internal/widget/DrawableHolder;
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 197
-    const v3, 0x108074c
+    const v3, #android:drawable@unlock_wave#t
 
     invoke-virtual {p0, v3}, Lcom/android/internal/widget/WaveView;->createDrawable(I)Landroid/graphics/drawable/BitmapDrawable;
 
     move-result-object v2
 
-    .line 198
     .local v2, "wave":Landroid/graphics/drawable/BitmapDrawable;
     const/4 v1, 0x0
 

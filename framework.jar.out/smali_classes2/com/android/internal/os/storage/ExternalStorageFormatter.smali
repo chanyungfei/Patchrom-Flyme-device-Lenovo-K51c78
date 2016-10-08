@@ -233,7 +233,7 @@
     .line 385
     .restart local v0    # "rawString":Ljava/lang/String;
     :cond_0
-    const v3, 0x10405aa
+    const v3, #android:string@storage_sd_card#t
 
     invoke-virtual {p0, v3}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->getString(I)Ljava/lang/String;
 
@@ -1143,22 +1143,18 @@
 
     if-eqz v4, :cond_2
 
-    .line 251
-    const v4, 0x10406af
+    const v4, #android:string@progress_unmounting_usbotg#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->updateProgressDialog(I)V
 
-    .line 259
     :goto_1
     invoke-virtual {p0}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->getMountService()Landroid/os/storage/IMountService;
 
     move-result-object v2
 
-    .line 260
     .local v2, "mountService":Landroid/os/storage/IMountService;
     iget-object v1, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mPath:Ljava/lang/String;
 
-    .line 263
     .local v1, "extStoragePath":Ljava/lang/String;
     :try_start_0
     const-string v4, "ro.mtk_2sdcard_swap"
@@ -1215,16 +1211,14 @@
 
     if-eqz v4, :cond_3
 
-    .line 253
-    const v4, 0x10406b0
+    const v4, #android:string@progress_unmounting_sd#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->updateProgressDialog(I)V
 
     goto :goto_1
 
-    .line 255
     :cond_3
-    const v4, 0x104056b
+    const v4, #android:string@progress_unmounting#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->updateProgressDialog(I)V
 
@@ -1285,26 +1279,21 @@
 
     if-eqz v4, :cond_7
 
-    .line 276
-    const v4, 0x10406b1
+    const v4, #android:string@progress_erasing_usbotg#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->updateProgressDialog(I)V
 
-    .line 284
     :goto_2
     invoke-virtual {p0}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->getMountService()Landroid/os/storage/IMountService;
 
     move-result-object v2
 
-    .line 285
     .restart local v2    # "mountService":Landroid/os/storage/IMountService;
     iget-object v1, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mPath:Ljava/lang/String;
 
-    .line 286
     .restart local v1    # "extStoragePath":Ljava/lang/String;
     if-eqz v2, :cond_9
 
-    .line 287
     new-instance v4, Lcom/android/internal/os/storage/ExternalStorageFormatter$4;
 
     invoke-direct {v4, p0, v2, v1}, Lcom/android/internal/os/storage/ExternalStorageFormatter$4;-><init>(Lcom/android/internal/os/storage/ExternalStorageFormatter;Landroid/os/storage/IMountService;Ljava/lang/String;)V
@@ -1327,16 +1316,14 @@
 
     if-eqz v4, :cond_8
 
-    .line 278
-    const v4, 0x10406b2
+    const v4, #android:string@progress_erasing_sd#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->updateProgressDialog(I)V
 
     goto :goto_2
 
-    .line 280
     :cond_8
-    const v4, 0x104056c
+    const v4, #android:string@progress_erasing#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->updateProgressDialog(I)V
 
@@ -1366,14 +1353,12 @@
 
     if-eqz v4, :cond_b
 
-    .line 341
-    const v4, 0x104056e
+    const v4, #android:string@media_bad_removal#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->fail(I)V
 
     goto/16 :goto_0
 
-    .line 342
     :cond_b
     const-string v4, "checking"
 
@@ -1383,14 +1368,12 @@
 
     if-eqz v4, :cond_c
 
-    .line 343
-    const v4, 0x104056f
+    const v4, #android:string@media_checking#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->fail(I)V
 
     goto/16 :goto_0
 
-    .line 344
     :cond_c
     const-string v4, "removed"
 
@@ -1400,14 +1383,12 @@
 
     if-eqz v4, :cond_d
 
-    .line 345
-    const v4, 0x1040570
+    const v4, #android:string@media_removed#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->fail(I)V
 
     goto/16 :goto_0
 
-    .line 346
     :cond_d
     const-string v4, "shared"
 
@@ -1417,20 +1398,17 @@
 
     if-eqz v4, :cond_e
 
-    .line 347
-    const v4, 0x1040571
+    const v4, #android:string@media_shared#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->fail(I)V
 
     goto/16 :goto_0
 
-    .line 349
     :cond_e
-    const v4, 0x1040572
+    const v4, #android:string@media_unknown_state#t
 
     invoke-virtual {p0, v4}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->fail(I)V
 
-    .line 350
     const-string v4, "ExternalStorageFormatter"
 
     new-instance v5, Ljava/lang/StringBuilder;

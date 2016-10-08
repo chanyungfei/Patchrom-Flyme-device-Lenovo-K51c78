@@ -34,12 +34,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 57
-    const v0, 0x1010091
+    const v0, #android:attr@dialogPreferenceStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/preference/VolumePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 58
     return-void
 .end method
 
@@ -136,7 +134,7 @@
 
     move-result-object v2
 
-    const v3, 0x1020368
+    const v3, #android:id@seekbar#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -196,18 +194,15 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 66
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
-    .line 69
     invoke-virtual {p0}, Landroid/preference/VolumePreference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v1
 
     invoke-virtual {v1, p0}, Landroid/preference/PreferenceManager;->registerOnActivityStopListener(Landroid/preference/PreferenceManager$OnActivityStopListener;)V
 
-    .line 72
-    const v1, 0x1020368
+    const v1, #android:id@seekbar#t
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

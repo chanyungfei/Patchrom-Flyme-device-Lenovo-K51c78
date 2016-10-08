@@ -115,7 +115,7 @@
 
     .line 65
     .local v1, "res":Landroid/content/res/Resources;
-    const v3, 0x1040689
+    const v3, #android:string@item_is_selected#t
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

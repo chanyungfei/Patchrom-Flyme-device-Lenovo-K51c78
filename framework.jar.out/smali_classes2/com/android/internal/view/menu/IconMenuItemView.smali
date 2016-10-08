@@ -103,7 +103,7 @@
 
     move-result-object v1
 
-    const v2, 0x1040444
+    const v2, #android:string@prepend_shortcut_label#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

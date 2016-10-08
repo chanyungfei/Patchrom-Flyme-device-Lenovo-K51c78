@@ -8804,4 +8804,5 @@
     <public type="^attr-private" name="neverEncrypt" id="0x011600ad" />
     <public type="^attr-private" name="cantSaveState" id="0x011600ae" />
     <public type="^attr-private" name="primaryUserOnly" id="0x011600af" />
+    <public type="^attr-private" name="needAccessControl" id="0x011600b0" />
 </resources>

@@ -68,12 +68,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 89
-    const v0, 0x1160016
+    const v0, #android:^attr-private@fragmentBreadCrumbsStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/app/FragmentBreadCrumbs;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 90
     return-void
 .end method
 
@@ -138,7 +136,7 @@
     .line 108
     const/4 v1, 0x1
 
-    const v2, 0x1090051
+    const v2, #android:layout@fragment_bread_crumb_item#t
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -655,7 +653,7 @@
     .line 125
     iget-object v0, p0, Landroid/app/FragmentBreadCrumbs;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x1090053
+    const v1, #android:layout@fragment_bread_crumbs#t
 
     const/4 v2, 0x0
 
@@ -947,7 +945,7 @@
 
     .line 323
     .local v8, "item":Landroid/view/View;
-    const v18, 0x1020016
+    const v18, #android:id@title#t
 
     move/from16 v0, v18
 
@@ -981,11 +979,9 @@
 
     invoke-virtual {v15, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 327
     if-nez v7, :cond_3
 
-    .line 328
-    const v18, 0x1020032
+    const v18, #android:id@left_icon#t
 
     move/from16 v0, v18
 
@@ -1089,7 +1085,7 @@
 
     .line 344
     .local v5, "child":Landroid/view/View;
-    const v18, 0x1020016
+    const v18, #android:id@title#t
 
     move/from16 v0, v18
 
@@ -1141,8 +1137,7 @@
 
     invoke-virtual {v5, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 348
-    const v18, 0x1020032
+    const v18, #android:id@left_icon#t
 
     move/from16 v0, v18
 

@@ -123,7 +123,7 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    const v5, 0x1080484
+    const v5, #android:drawable@jog_tab_target_gray#t
 
     const/4 v2, 0x1
 
@@ -194,9 +194,9 @@
     .line 465
     new-instance v2, Lcom/android/internal/widget/SlidingTab$Slider;
 
-    const v3, 0x1080476
+    const v3, #android:drawable@jog_tab_left_generic#t
 
-    const v4, 0x1080465
+    const v4, #android:drawable@jog_tab_bar_left_generic#t
 
     invoke-direct {v2, p0, v3, v4, v5}, Lcom/android/internal/widget/SlidingTab$Slider;-><init>(Landroid/view/ViewGroup;III)V
 
@@ -205,9 +205,9 @@
     .line 469
     new-instance v2, Lcom/android/internal/widget/SlidingTab$Slider;
 
-    const v3, 0x108047f
+    const v3, #android:drawable@jog_tab_right_generic#t
 
-    const v4, 0x108046e
+    const v4, #android:drawable@jog_tab_bar_right_generic#t
 
     invoke-direct {v2, p0, v3, v4, v5}, Lcom/android/internal/widget/SlidingTab$Slider;-><init>(Landroid/view/ViewGroup;III)V
 

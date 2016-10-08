@@ -88,7 +88,7 @@
 
     .line 112
     .local v0, "inflater":Landroid/view/LayoutInflater;
-    const v3, 0x1090040
+    const v3, #android:layout@date_picker_dialog#t
 
     const/4 v4, 0x0
 
@@ -103,7 +103,7 @@
     .line 114
     const/4 v3, -0x1
 
-    const v4, 0x104000a
+    const v4, #android:string@ok#t
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -114,7 +114,7 @@
     .line 115
     const/4 v3, -0x2
 
-    const/high16 v4, 0x1040000
+    const/high16 v4, #android:string@cancel#i
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -122,11 +122,9 @@
 
     invoke-virtual {p0, v3, v4, p0}, Landroid/app/DatePickerDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    .line 116
     invoke-virtual {p0, v5}, Landroid/app/DatePickerDialog;->setButtonPanelLayoutHint(I)V
 
-    .line 118
-    const v3, 0x10202ef
+    const v3, #android:id@datePicker#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -213,7 +211,7 @@
 
     move-result-object v1
 
-    const v2, 0x10104ac
+    const v2, #android:attr@datePickerDialogTheme#t
 
     const/4 v3, 0x1
 
@@ -281,32 +279,26 @@
 
     move-result-object v0
 
-    .line 184
     .local v0, "title":Ljava/lang/String;
     invoke-virtual {p0, v0}, Landroid/app/DatePickerDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 185
     iput-boolean v5, p0, Landroid/app/DatePickerDialog;->mTitleNeedsUpdate:Z
 
-    .line 192
     .end local v0    # "title":Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 187
     :cond_1
     iget-boolean v1, p0, Landroid/app/DatePickerDialog;->mTitleNeedsUpdate:Z
 
     if-eqz v1, :cond_0
 
-    .line 188
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Landroid/app/DatePickerDialog;->mTitleNeedsUpdate:Z
 
-    .line 189
-    const v1, 0x10404e8
+    const v1, #android:string@date_picker_dialog_title#t
 
     invoke-virtual {p0, v1}, Landroid/app/DatePickerDialog;->setTitle(I)V
 

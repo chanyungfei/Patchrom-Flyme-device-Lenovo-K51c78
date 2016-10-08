@@ -54,12 +54,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 52
-    const v0, 0x1010074
+    const v0, #android:attr@listViewStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/YearPickerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 53
     return-void
 .end method
 
@@ -129,7 +127,7 @@
 
     .line 67
     .local v2, "res":Landroid/content/res/Resources;
-    const v3, 0x1050090
+    const v3, #android:dimen@datepicker_view_animator_height#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -137,8 +135,7 @@
 
     iput v3, p0, Landroid/widget/YearPickerView;->mViewSize:I
 
-    .line 68
-    const v3, 0x1050092
+    const v3, #android:dimen@datepicker_year_label_height#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -146,43 +143,36 @@
 
     iput v3, p0, Landroid/widget/YearPickerView;->mChildSize:I
 
-    .line 70
     const/4 v3, 0x1
 
     invoke-virtual {p0, v3}, Landroid/widget/YearPickerView;->setVerticalFadingEdgeEnabled(Z)V
 
-    .line 71
     iget v3, p0, Landroid/widget/YearPickerView;->mChildSize:I
 
     div-int/lit8 v3, v3, 0x3
 
     invoke-virtual {p0, v3}, Landroid/widget/YearPickerView;->setFadingEdgeLength(I)V
 
-    .line 73
-    const v3, 0x1050091
+    const v3, #android:dimen@datepicker_year_picker_padding_top#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v1
 
-    .line 75
     .local v1, "paddingTop":I
     invoke-virtual {p0, v4, v1, v4, v4}, Landroid/widget/YearPickerView;->setPadding(IIII)V
 
-    .line 77
     invoke-virtual {p0, p0}, Landroid/widget/YearPickerView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 78
     invoke-virtual {p0, v4}, Landroid/widget/YearPickerView;->setDividerHeight(I)V
 
-    .line 80
     new-instance v3, Landroid/widget/YearPickerView$YearAdapter;
 
     invoke-virtual {p0}, Landroid/widget/YearPickerView;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
-    const v5, 0x10900f0
+    const v5, #android:layout@year_label_text_view#t
 
     invoke-direct {v3, p0, v4, v5}, Landroid/widget/YearPickerView$YearAdapter;-><init>(Landroid/widget/YearPickerView;Landroid/content/Context;I)V
 

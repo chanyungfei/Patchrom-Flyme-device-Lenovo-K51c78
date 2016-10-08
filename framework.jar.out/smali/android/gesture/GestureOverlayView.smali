@@ -314,12 +314,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 134
-    const v0, 0x1160014
+    const v0, #android:^attr-private@gestureOverlayViewStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/gesture/GestureOverlayView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 135
     return-void
 .end method
 

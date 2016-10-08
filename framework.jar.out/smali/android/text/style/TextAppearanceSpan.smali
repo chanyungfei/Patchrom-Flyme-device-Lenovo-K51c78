@@ -89,29 +89,23 @@
 
     iput v4, p0, Landroid/text/style/TextAppearanceSpan;->mStyle:I
 
-    .line 71
     const/16 v4, 0xc
 
     invoke-virtual {v0, v4}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 72
     .local v1, "family":Ljava/lang/String;
     if-eqz v1, :cond_1
 
-    .line 73
     iput-object v1, p0, Landroid/text/style/TextAppearanceSpan;->mTypeface:Ljava/lang/String;
 
-    .line 96
     :goto_0
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 98
     if-ltz p3, :cond_0
 
-    .line 99
-    const v4, 0x1030005
+    const v4, #android:style@Theme#t
 
     sget-object v5, Lcom/android/internal/R$styleable;->Theme:[I
 

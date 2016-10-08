@@ -231,15 +231,12 @@
 
     move-result v1
 
-    .line 165
     .local v1, "overlayMode":Z
     invoke-direct {p0, v0}, Lcom/android/internal/app/WindowDecorActionBar;->init(Landroid/view/View;)V
 
-    .line 166
     if-nez v1, :cond_0
 
-    .line 167
-    const v3, 0x1020002
+    const v3, #android:id@content#t
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -918,8 +915,7 @@
 
     const/4 v7, 0x0
 
-    .line 186
-    const v5, 0x1020385
+    const v5, #android:id@decor_content_parent#t
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -941,7 +937,7 @@
 
     .line 191
     :cond_0
-    const v5, 0x1020387
+    const v5, #android:id@action_bar#t
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -953,8 +949,7 @@
 
     iput-object v5, p0, Lcom/android/internal/app/WindowDecorActionBar;->mDecorToolbar:Lcom/android/internal/widget/DecorToolbar;
 
-    .line 192
-    const v5, 0x1020388
+    const v5, #android:id@action_context_bar#t
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -964,8 +959,7 @@
 
     iput-object v5, p0, Lcom/android/internal/app/WindowDecorActionBar;->mContextView:Lcom/android/internal/widget/ActionBarContextView;
 
-    .line 194
-    const v5, 0x1020386
+    const v5, #android:id@action_bar_container#t
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -975,8 +969,7 @@
 
     iput-object v5, p0, Lcom/android/internal/app/WindowDecorActionBar;->mContainerView:Lcom/android/internal/widget/ActionBarContainer;
 
-    .line 196
-    const v5, 0x1020389
+    const v5, #android:id@split_action_bar#t
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1124,7 +1117,7 @@
 
     sget-object v9, Lcom/android/internal/R$styleable;->ActionBar:[I
 
-    const v10, 0x10102ce
+    const v10, #android:attr@actionBarStyle#t
 
     invoke-virtual {v5, v8, v9, v10, v7}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -1901,7 +1894,7 @@
     :cond_4
     iget-object v5, p0, Lcom/android/internal/app/WindowDecorActionBar;->mContext:Landroid/content/Context;
 
-    const v6, 0x10c0002
+    const v6, #android:interpolator@accelerate_cubic#t
 
     invoke-static {v5, v6}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 
@@ -2143,7 +2136,7 @@
     :cond_4
     iget-object v5, p0, Lcom/android/internal/app/WindowDecorActionBar;->mContext:Landroid/content/Context;
 
-    const v6, 0x10c0003
+    const v6, #android:interpolator@decelerate_cubic#t
 
     invoke-static {v5, v6}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 
@@ -2534,7 +2527,7 @@
 
     .line 876
     .local v0, "currentTheme":Landroid/content/res/Resources$Theme;
-    const v3, 0x1010397
+    const v3, #android:attr@actionBarWidgetTheme#t
 
     const/4 v4, 0x1
 

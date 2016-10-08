@@ -29,7 +29,7 @@
     .param p2, "extendedSettingsClickListener"    # Landroid/view/View$OnClickListener;
 
     .prologue
-    const v4, 0x103012e
+    const v4, #android:style@Theme.DeviceDefault.Dialog#t
 
     .line 71
     const-string v3, "media_router"

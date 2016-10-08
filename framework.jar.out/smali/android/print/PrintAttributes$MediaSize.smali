@@ -239,7 +239,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104066d
+    const v3, #android:string@mediasize_unknown_portrait#t
 
     const v5, 0x7fffffff
 
@@ -254,7 +254,7 @@
 
     const-string v7, "android"
 
-    const v8, 0x104066e
+    const v8, #android:string@mediasize_unknown_landscape#t
 
     const v9, 0x7fffffff
 
@@ -271,7 +271,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104061c
+    const v3, #android:string@mediasize_iso_a0#t
 
     const v4, 0x8156
 
@@ -288,7 +288,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104061d
+    const v3, #android:string@mediasize_iso_a1#t
 
     const/16 v4, 0x5b5e
 
@@ -305,7 +305,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104061e
+    const v3, #android:string@mediasize_iso_a2#t
 
     const/16 v4, 0x409c
 
@@ -322,7 +322,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104061f
+    const v3, #android:string@mediasize_iso_a3#t
 
     const/16 v4, 0x2daa
 
@@ -339,7 +339,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040620
+    const v3, #android:string@mediasize_iso_a4#t
 
     const/16 v4, 0x204e
 
@@ -356,7 +356,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040621
+    const v3, #android:string@mediasize_iso_a5#t
 
     const/16 v4, 0x16c6
 
@@ -373,7 +373,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040622
+    const v3, #android:string@mediasize_iso_a6#t
 
     const/16 v4, 0x1022
 
@@ -390,7 +390,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040623
+    const v3, #android:string@mediasize_iso_a7#t
 
     const/16 v4, 0xb5e
 
@@ -407,7 +407,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040624
+    const v3, #android:string@mediasize_iso_a8#t
 
     const/16 v4, 0x802
 
@@ -424,7 +424,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040625
+    const v3, #android:string@mediasize_iso_a9#t
 
     const/16 v4, 0x5b4
 
@@ -441,7 +441,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040626
+    const v3, #android:string@mediasize_iso_a10#t
 
     const/16 v4, 0x3fc
 
@@ -458,7 +458,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040627
+    const v3, #android:string@mediasize_iso_b0#t
 
     const v4, 0x99ca
 
@@ -475,7 +475,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040628
+    const v3, #android:string@mediasize_iso_b1#t
 
     const/16 v4, 0x6cb6
 
@@ -492,7 +492,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040629
+    const v3, #android:string@mediasize_iso_b2#t
 
     const/16 v4, 0x4cea
 
@@ -509,7 +509,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104062a
+    const v3, #android:string@mediasize_iso_b3#t
 
     const/16 v4, 0x364c
 
@@ -526,7 +526,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104062b
+    const v3, #android:string@mediasize_iso_b4#t
 
     const/16 v4, 0x2670
 
@@ -543,7 +543,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104062c
+    const v3, #android:string@mediasize_iso_b5#t
 
     const/16 v4, 0x1b12
 
@@ -560,7 +560,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104062d
+    const v3, #android:string@mediasize_iso_b6#t
 
     const/16 v4, 0x1338
 
@@ -577,7 +577,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104062e
+    const v3, #android:string@mediasize_iso_b7#t
 
     const/16 v4, 0xd84
 
@@ -594,7 +594,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104062f
+    const v3, #android:string@mediasize_iso_b8#t
 
     const/16 v4, 0x988
 
@@ -611,7 +611,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040630
+    const v3, #android:string@mediasize_iso_b9#t
 
     const/16 v4, 0x6c2
 
@@ -628,7 +628,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040631
+    const v3, #android:string@mediasize_iso_b10#t
 
     const/16 v4, 0x4c4
 
@@ -645,7 +645,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040632
+    const v3, #android:string@mediasize_iso_c0#t
 
     const v4, 0x8d04
 
@@ -662,7 +662,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040633
+    const v3, #android:string@mediasize_iso_c1#t
 
     const/16 v4, 0x63a6
 
@@ -679,7 +679,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040634
+    const v3, #android:string@mediasize_iso_c2#t
 
     const/16 v4, 0x466e
 
@@ -696,7 +696,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040635
+    const v3, #android:string@mediasize_iso_c3#t
 
     const/16 v4, 0x31d8
 
@@ -713,7 +713,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040636
+    const v3, #android:string@mediasize_iso_c4#t
 
     const/16 v4, 0x233c
 
@@ -730,7 +730,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040637
+    const v3, #android:string@mediasize_iso_c5#t
 
     const/16 v4, 0x18ec
 
@@ -747,7 +747,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040638
+    const v3, #android:string@mediasize_iso_c6#t
 
     const/16 v4, 0x118a
 
@@ -764,7 +764,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040639
+    const v3, #android:string@mediasize_iso_c7#t
 
     const/16 v4, 0xc76
 
@@ -781,7 +781,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104063a
+    const v3, #android:string@mediasize_iso_c8#t
 
     const/16 v4, 0x8c0
 
@@ -798,7 +798,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104063b
+    const v3, #android:string@mediasize_iso_c9#t
 
     const/16 v4, 0x622
 
@@ -815,7 +815,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104063c
+    const v3, #android:string@mediasize_iso_c10#t
 
     const/16 v4, 0x44c
 
@@ -832,7 +832,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104063d
+    const v3, #android:string@mediasize_na_letter#t
 
     const/16 v4, 0x2134
 
@@ -849,7 +849,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104063e
+    const v3, #android:string@mediasize_na_gvrnmt_letter#t
 
     const/16 v5, 0x2904
 
@@ -866,7 +866,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104063f
+    const v3, #android:string@mediasize_na_legal#t
 
     const/16 v4, 0x2134
 
@@ -883,7 +883,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040640
+    const v3, #android:string@mediasize_na_junior_legal#t
 
     move v4, v11
 
@@ -900,7 +900,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040641
+    const v3, #android:string@mediasize_na_ledger#t
 
     const/16 v4, 0x4268
 
@@ -917,7 +917,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040642
+    const v3, #android:string@mediasize_na_tabloid#t
 
     const/16 v5, 0x4268
 
@@ -934,7 +934,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040643
+    const v3, #android:string@mediasize_na_index_3x5#t
 
     const/16 v4, 0xbb8
 
@@ -951,7 +951,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040644
+    const v3, #android:string@mediasize_na_index_4x6#t
 
     const/16 v4, 0xfa0
 
@@ -968,7 +968,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040645
+    const v3, #android:string@mediasize_na_index_5x8#t
 
     move v4, v13
 
@@ -985,7 +985,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040646
+    const v3, #android:string@mediasize_na_monarch#t
 
     const/16 v4, 0x1c52
 
@@ -1002,7 +1002,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040647
+    const v3, #android:string@mediasize_na_quarto#t
 
     const/16 v5, 0x2710
 
@@ -1019,7 +1019,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040648
+    const v3, #android:string@mediasize_na_foolscap#t
 
     const/16 v5, 0x32c8
 
@@ -1036,7 +1036,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040649
+    const v3, #android:string@mediasize_chinese_roc_8k#t
 
     const/16 v4, 0x2985
 
@@ -1053,7 +1053,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104064a
+    const v3, #android:string@mediasize_chinese_roc_16k#t
 
     const/16 v4, 0x1dfd
 
@@ -1070,7 +1070,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104064b
+    const v3, #android:string@mediasize_chinese_prc_1#t
 
     const/16 v4, 0xfaf
 
@@ -1087,7 +1087,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104064c
+    const v3, #android:string@mediasize_chinese_prc_2#t
 
     const/16 v4, 0xfaf
 
@@ -1104,7 +1104,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104064d
+    const v3, #android:string@mediasize_chinese_prc_3#t
 
     const/16 v4, 0x1339
 
@@ -1121,7 +1121,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104064e
+    const v3, #android:string@mediasize_chinese_prc_4#t
 
     const/16 v4, 0x10ea
 
@@ -1138,7 +1138,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104064f
+    const v3, #android:string@mediasize_chinese_prc_5#t
 
     const/16 v4, 0x10ea
 
@@ -1155,7 +1155,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040650
+    const v3, #android:string@mediasize_chinese_prc_6#t
 
     const/16 v5, 0x3137
 
@@ -1172,7 +1172,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040651
+    const v3, #android:string@mediasize_chinese_prc_7#t
 
     const/16 v4, 0x189b
 
@@ -1189,7 +1189,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040652
+    const v3, #android:string@mediasize_chinese_prc_8#t
 
     const/16 v5, 0x2f85
 
@@ -1206,7 +1206,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040653
+    const v3, #android:string@mediasize_chinese_prc_9#t
 
     const/16 v4, 0x2338
 
@@ -1223,7 +1223,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040654
+    const v3, #android:string@mediasize_chinese_prc_10#t
 
     const/16 v4, 0x31d4
 
@@ -1240,7 +1240,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040655
+    const v3, #android:string@mediasize_chinese_prc_16k#t
 
     const/16 v4, 0x1675
 
@@ -1257,7 +1257,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040656
+    const v3, #android:string@mediasize_chinese_om_pa_kai#t
 
     const/16 v4, 0x2910
 
@@ -1274,7 +1274,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040657
+    const v3, #android:string@mediasize_chinese_om_dai_pa_kai#t
 
     const/16 v4, 0x2a4b
 
@@ -1291,7 +1291,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040658
+    const v3, #android:string@mediasize_chinese_om_jurro_ku_kai#t
 
     const/16 v4, 0x1e74
 
@@ -1308,7 +1308,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040659
+    const v3, #android:string@mediasize_japanese_jis_b10#t
 
     const/16 v4, 0x4eb
 
@@ -1325,7 +1325,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104065a
+    const v3, #android:string@mediasize_japanese_jis_b9#t
 
     const/16 v4, 0x6ec
 
@@ -1342,7 +1342,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104065b
+    const v3, #android:string@mediasize_japanese_jis_b8#t
 
     const/16 v4, 0x9d8
 
@@ -1359,7 +1359,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104065c
+    const v3, #android:string@mediasize_japanese_jis_b7#t
 
     const/16 v4, 0xdff
 
@@ -1376,7 +1376,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104065d
+    const v3, #android:string@mediasize_japanese_jis_b6#t
 
     const/16 v4, 0x13b9
 
@@ -1393,7 +1393,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104065e
+    const v3, #android:string@mediasize_japanese_jis_b5#t
 
     const/16 v4, 0x1bfd
 
@@ -1410,7 +1410,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104065f
+    const v3, #android:string@mediasize_japanese_jis_b4#t
 
     const/16 v4, 0x2786
 
@@ -1427,7 +1427,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040660
+    const v3, #android:string@mediasize_japanese_jis_b3#t
 
     const/16 v4, 0x37fb
 
@@ -1444,7 +1444,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040661
+    const v3, #android:string@mediasize_japanese_jis_b2#t
 
     const/16 v4, 0x4f34
 
@@ -1461,7 +1461,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040662
+    const v3, #android:string@mediasize_japanese_jis_b1#t
 
     const/16 v4, 0x6ff5
 
@@ -1478,7 +1478,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040663
+    const v3, #android:string@mediasize_japanese_jis_b0#t
 
     const v4, 0x9e67
 
@@ -1495,7 +1495,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040664
+    const v3, #android:string@mediasize_japanese_jis_exec#t
 
     const/16 v4, 0x2138
 
@@ -1512,7 +1512,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040665
+    const v3, #android:string@mediasize_japanese_chou4#t
 
     const/16 v4, 0xdd7
 
@@ -1529,7 +1529,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040666
+    const v3, #android:string@mediasize_japanese_chou3#t
 
     const/16 v5, 0x2424
 
@@ -1546,7 +1546,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040667
+    const v3, #android:string@mediasize_japanese_chou2#t
 
     const/16 v4, 0x1116
 
@@ -1563,7 +1563,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040668
+    const v3, #android:string@mediasize_japanese_hagaki#t
 
     const/16 v4, 0xf61
 
@@ -1580,7 +1580,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x1040669
+    const v3, #android:string@mediasize_japanese_oufuku#t
 
     const/16 v4, 0x16c3
 
@@ -1597,7 +1597,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104066a
+    const v3, #android:string@mediasize_japanese_kahu#t
 
     const/16 v4, 0x24e9
 
@@ -1614,7 +1614,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104066b
+    const v3, #android:string@mediasize_japanese_kaku2#t
 
     const/16 v4, 0x24e9
 
@@ -1631,7 +1631,7 @@
 
     const-string v2, "android"
 
-    const v3, 0x104066c
+    const v3, #android:string@mediasize_japanese_you4#t
 
     const/16 v4, 0x1026
 

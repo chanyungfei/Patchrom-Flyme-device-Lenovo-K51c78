@@ -696,7 +696,7 @@
     .end local v6    # "alphaMod":I
     .restart local v19    # "stateResId":I
     :cond_7
-    const v23, 0x101031f
+    const v23, #android:attr@alpha#t
 
     move/from16 v0, v19
 
@@ -747,7 +747,7 @@
     .line 214
     .restart local v19    # "stateResId":I
     :cond_8
-    const v23, 0x10101a5
+    const v23, #android:attr@color#t
 
     move/from16 v0, v19
 

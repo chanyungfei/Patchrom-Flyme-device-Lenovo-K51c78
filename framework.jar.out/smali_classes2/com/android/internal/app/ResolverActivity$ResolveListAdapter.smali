@@ -2321,7 +2321,7 @@
     .line 1289
     iget-object v2, p0, Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x10900ac
+    const v3, #android:layout@resolve_list_item#t
 
     const/4 v4, 0x0
 

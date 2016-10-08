@@ -242,7 +242,7 @@
 
     .line 126
     .local v17, "res":Landroid/content/res/Resources;
-    const v18, 0x1040683
+    const v18, #android:string@select_hours#t
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -254,8 +254,7 @@
 
     iput-object v0, v1, Landroid/widget/TimePickerClockDelegate;->mSelectHours:Ljava/lang/String;
 
-    .line 127
-    const v18, 0x1040684
+    const v18, #android:string@select_minutes#t
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -298,7 +297,7 @@
     .line 133
     const/16 v18, 0x9
 
-    const v19, 0x10900e1
+    const v19, #android:layout@time_picker_holo#t
 
     move/from16 v0, v18
 
@@ -318,7 +317,7 @@
 
     .line 137
     .local v15, "mainView":Landroid/view/View;
-    const v18, 0x10203bf
+    const v18, #android:id@time_header#t
 
     move/from16 v0, v18
 
@@ -356,7 +355,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x10203c0
+    const v19, #android:id@hours#t
 
     invoke-virtual/range {v18 .. v19}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -394,7 +393,7 @@
 
     new-instance v19, Landroid/widget/TimePickerClockDelegate$ClickActionDelegate;
 
-    const v20, 0x1040683
+    const v20, #android:string@select_hours#t
 
     move-object/from16 v0, v19
 
@@ -413,7 +412,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x10203c1
+    const v19, #android:id@separator#t
 
     invoke-virtual/range {v18 .. v19}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -434,7 +433,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x10203c2
+    const v19, #android:id@minutes#t
 
     invoke-virtual/range {v18 .. v19}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -472,7 +471,7 @@
 
     new-instance v19, Landroid/widget/TimePickerClockDelegate$ClickActionDelegate;
 
-    const v20, 0x1040684
+    const v20, #android:string@select_minutes#t
 
     move-object/from16 v0, v19
 
@@ -598,7 +597,7 @@
     .line 165
     const/16 v18, 0xb
 
-    const v19, 0x10600fa
+    const v19, #android:color@timepicker_default_selector_color_material#t
 
     move-object/from16 v0, v17
 
@@ -634,7 +633,7 @@
 
     move-result-object v19
 
-    const v20, 0x10100a1
+    const v20, #android:attr@state_selected#t
 
     move-object/from16 v0, v19
 
@@ -663,7 +662,7 @@
 
     move-result-object v19
 
-    const v20, 0x10100a1
+    const v20, #android:attr@state_selected#t
 
     move-object/from16 v0, v19
 
@@ -682,7 +681,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x10203c3
+    const v19, #android:id@ampm_layout#t
 
     invoke-virtual/range {v18 .. v19}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -701,7 +700,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x10203c4
+    const v19, #android:id@am_label#t
 
     invoke-virtual/range {v18 .. v19}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -750,7 +749,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x10203c5
+    const v19, #android:id@pm_label#t
 
     invoke-virtual/range {v18 .. v19}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -850,7 +849,7 @@
 
     move-result-object v18
 
-    const v19, 0x1010033
+    const v19, #android:attr@disabledAlpha#t
 
     const/16 v20, 0x1
 
@@ -875,8 +874,7 @@
 
     iput v0, v1, Landroid/widget/TimePickerClockDelegate;->mDisabledAlpha:F
 
-    .line 196
-    const v18, 0x10203c7
+    const v18, #android:id@radial_picker#t
 
     move/from16 v0, v18
 
@@ -904,8 +902,7 @@
 
     iput-boolean v0, v1, Landroid/widget/TimePickerClockDelegate;->mAllowAutoAdvance:Z
 
-    .line 204
-    const v18, 0x104068c
+    const v18, #android:string@time_placeholder#t
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -917,8 +914,7 @@
 
     iput-object v0, v1, Landroid/widget/TimePickerClockDelegate;->mDoublePlaceholderText:Ljava/lang/String;
 
-    .line 205
-    const v18, 0x104068a
+    const v18, #android:string@deleted_key#t
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

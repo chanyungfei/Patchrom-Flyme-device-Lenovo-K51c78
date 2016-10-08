@@ -127,12 +127,10 @@
 
     goto :goto_0
 
-    .line 390
     :cond_2
     if-ne v1, p1, :cond_3
 
-    .line 391
-    const v2, 0x1020039
+    const v2, #android:id@fillInIntent#t
 
     iget-object v3, p0, Landroid/widget/RemoteViews$SetOnClickFillInIntent;->fillInIntent:Landroid/content/Intent;
 

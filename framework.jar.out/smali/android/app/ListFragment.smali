@@ -152,7 +152,7 @@
     .line 391
     .restart local v2    # "root":Landroid/view/View;
     :cond_4
-    const v3, 0x1020327
+    const v3, #android:id@internalEmpty#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -162,13 +162,11 @@
 
     iput-object v3, p0, Landroid/app/ListFragment;->mStandardEmptyView:Landroid/widget/TextView;
 
-    .line 393
     iget-object v3, p0, Landroid/app/ListFragment;->mStandardEmptyView:Landroid/widget/TextView;
 
     if-nez v3, :cond_5
 
-    .line 394
-    const v3, 0x1020004
+    const v3, #android:id@empty#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +176,7 @@
 
     .line 398
     :goto_3
-    const v3, 0x1020325
+    const v3, #android:id@progressContainer#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -186,8 +184,7 @@
 
     iput-object v3, p0, Landroid/app/ListFragment;->mProgressContainer:Landroid/view/View;
 
-    .line 399
-    const v3, 0x1020326
+    const v3, #android:id@listContainer#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -195,20 +192,17 @@
 
     iput-object v3, p0, Landroid/app/ListFragment;->mListContainer:Landroid/view/View;
 
-    .line 400
-    const v3, 0x102000a
+    const v3, #android:id@list#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 401
     .local v1, "rawListView":Landroid/view/View;
     instance-of v3, v1, Landroid/widget/ListView;
 
     if-nez v3, :cond_6
 
-    .line 402
     new-instance v3, Ljava/lang/RuntimeException;
 
     const-string v4, "Content has view with id attribute \'android.R.id.list\' that is not a ListView class"
@@ -306,9 +300,9 @@
     .param p2, "animate"    # Z
 
     .prologue
-    const v5, 0x10a0001
+    const v5, #android:anim@fade_out#t
 
-    const/high16 v4, 0x10a0000
+    const/high16 v4, #android:anim@fade_in#i
 
     const/16 v3, 0x8
 
@@ -526,8 +520,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 193
-    const v0, 0x1090014
+    const v0, #android:layout@list_content#t
 
     const/4 v1, 0x0
 

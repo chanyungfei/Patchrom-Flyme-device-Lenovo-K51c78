@@ -73,12 +73,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 90
-    const v0, 0x1010394
+    const v0, #android:attr@actionModeStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Lcom/android/internal/widget/ActionBarContextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 91
     return-void
 .end method
 
@@ -165,7 +163,7 @@
     .line 116
     const/4 v1, 0x5
 
-    const v2, 0x109001f
+    const v2, #android:layout@action_mode_close_item#t
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -228,13 +226,11 @@
 
     move-result-object v2
 
-    .line 208
     .local v2, "inflater":Landroid/view/LayoutInflater;
-    const v3, 0x109001a
+    const v3, #android:layout@action_bar_title_item#t
 
     invoke-virtual {v2, v3, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    .line 209
     invoke-virtual {p0}, Lcom/android/internal/widget/ActionBarContextView;->getChildCount()I
 
     move-result v3
@@ -252,7 +248,7 @@
     .line 210
     iget-object v3, p0, Lcom/android/internal/widget/ActionBarContextView;->mTitleLayout:Landroid/widget/LinearLayout;
 
-    const v7, 0x10202c0
+    const v7, #android:id@action_bar_title#t
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -265,7 +261,7 @@
     .line 211
     iget-object v3, p0, Lcom/android/internal/widget/ActionBarContextView;->mTitleLayout:Landroid/widget/LinearLayout;
 
-    const v7, 0x10202c1
+    const v7, #android:id@action_bar_subtitle#t
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -930,7 +926,7 @@
     :goto_0
     iget-object v4, p0, Lcom/android/internal/widget/ActionBarContextView;->mClose:Landroid/view/View;
 
-    const v5, 0x10202c2
+    const v5, #android:id@action_mode_close_button#t
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2353,7 +2349,7 @@
 
     move-result-object v2
 
-    const v3, 0x1120005
+    const v3, #android:bool@split_action_bar_is_narrow#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 

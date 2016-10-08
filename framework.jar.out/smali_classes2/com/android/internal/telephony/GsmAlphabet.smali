@@ -1749,7 +1749,7 @@
 
     .line 1080
     .local v0, "r":Landroid/content/res/Resources;
-    const v1, 0x107002b
+    const v1, #android:array@config_sms_enabled_single_shift_tables#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -1757,8 +1757,7 @@
 
     sput-object v1, Lcom/android/internal/telephony/GsmAlphabet;->sEnabledSingleShiftTables:[I
 
-    .line 1081
-    const v1, 0x107002c
+    const v1, #android:array@config_sms_enabled_locking_shift_tables#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getIntArray(I)[I
 

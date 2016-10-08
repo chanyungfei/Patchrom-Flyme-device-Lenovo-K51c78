@@ -30,12 +30,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 38
-    const v0, 0x101006e
+    const v0, #android:attr@editTextStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 39
     return-void
 .end method
 
@@ -221,18 +219,15 @@
 
     if-eqz v0, :cond_1
 
-    .line 109
-    const v0, 0x1020021
+    const v0, #android:id@copy#t
 
     if-ne p1, v0, :cond_0
 
     invoke-virtual {p0}, Landroid/inputmethodservice/ExtractEditText;->stopSelectionActionMode()V
 
-    .line 110
     :cond_0
     const/4 v0, 0x1
 
-    .line 112
     :goto_0
     return v0
 

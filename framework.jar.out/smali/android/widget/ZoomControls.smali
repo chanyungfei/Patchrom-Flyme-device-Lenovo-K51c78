@@ -49,14 +49,13 @@
 
     .line 51
     .local v0, "inflater":Landroid/view/LayoutInflater;
-    const v1, 0x10900f3
+    const v1, #android:layout@zoom_controls#t
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    .line 54
-    const v1, 0x10203e6
+    const v1, #android:id@zoomIn#t
 
     invoke-virtual {p0, v1}, Landroid/widget/ZoomControls;->findViewById(I)Landroid/view/View;
 
@@ -66,8 +65,7 @@
 
     iput-object v1, p0, Landroid/widget/ZoomControls;->mZoomIn:Landroid/widget/ZoomButton;
 
-    .line 55
-    const v1, 0x10203e5
+    const v1, #android:id@zoomOut#t
 
     invoke-virtual {p0, v1}, Landroid/widget/ZoomControls;->findViewById(I)Landroid/view/View;
 

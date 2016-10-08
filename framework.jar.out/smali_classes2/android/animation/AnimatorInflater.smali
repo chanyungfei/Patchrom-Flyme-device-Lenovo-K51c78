@@ -529,25 +529,21 @@
     :goto_1
     if-ge v4, v3, :cond_3
 
-    .line 222
     invoke-interface {p2, v4}, Landroid/util/AttributeSet;->getAttributeNameResource(I)I
 
     move-result v2
 
-    .line 223
     .local v2, "attrName":I
-    const v10, 0x10101cd
+    const v10, #android:attr@animation#t
 
     if-ne v2, v10, :cond_1
 
-    .line 224
     const/4 v10, 0x0
 
     invoke-interface {p2, v4, v10}, Landroid/util/AttributeSet;->getAttributeResourceValue(II)I
 
     move-result v0
 
-    .line 225
     .local v0, "animId":I
     invoke-static {p0, v0}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 

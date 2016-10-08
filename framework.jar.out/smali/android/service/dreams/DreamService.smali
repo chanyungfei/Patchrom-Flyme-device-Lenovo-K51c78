@@ -564,19 +564,15 @@
 
     move-result-object v1
 
-    .line 974
     .local v1, "lp":Landroid/view/WindowManager$LayoutParams;
     iput v8, v1, Landroid/view/WindowManager$LayoutParams;->type:I
 
-    .line 975
     iput-object p1, v1, Landroid/view/WindowManager$LayoutParams;->token:Landroid/os/IBinder;
 
-    .line 976
-    const v2, 0x10302ea
+    const v2, #android:style@Animation.Dream#t
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
-    .line 977
     iget v5, v1, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     const v6, 0x490101

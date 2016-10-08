@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0084
+    const v1, #android:integer@max_action_buttons#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    const v1, 0x1050053
+    const v1, #android:dimen@action_bar_stacked_tab_max_width#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -141,7 +141,7 @@
 
     sget-object v5, Lcom/android/internal/R$styleable;->ActionBar:[I
 
-    const v6, 0x10102ce
+    const v6, #android:attr@actionBarStyle#t
 
     invoke-virtual {v3, v4, v5, v6, v7}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -171,8 +171,7 @@
 
     if-nez v3, :cond_0
 
-    .line 71
-    const v3, 0x1050052
+    const v3, #android:dimen@action_bar_stacked_max_height#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -216,7 +215,7 @@
 
     move-result-object v1
 
-    const v2, 0x1120003
+    const v2, #android:bool@action_bar_embed_tabs#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -233,7 +232,7 @@
 
     move-result-object v1
 
-    const v2, 0x1120004
+    const v2, #android:bool@action_bar_embed_tabs_pre_jb#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 

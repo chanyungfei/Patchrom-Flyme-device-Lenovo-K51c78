@@ -16,6 +16,9 @@
         Landroid/webkit/WebView$PrivateAccess;,
         Landroid/webkit/WebView$HitTestResult;,
         Landroid/webkit/WebView$PictureListener;,
+        Landroid/webkit/WebView$ReaderTitleAndNumCallBack;,
+        Landroid/webkit/WebView$ReaderCallBack;,
+        Landroid/webkit/WebView$ReaderModeListener;,
         Landroid/webkit/WebView$FindListener;,
         Landroid/webkit/WebView$WebViewTransport;
     }
@@ -23,6 +26,8 @@
 
 
 # static fields
+.field public static final SCHEME_DATE:Ljava/lang/String; = "date:"
+
 .field public static final DATA_REDUCTION_PROXY_SETTING_CHANGED:Ljava/lang/String; = "android.webkit.DATA_REDUCTION_PROXY_SETTING_CHANGED"
 
 .field private static final LOGTAG:Ljava/lang/String; = "WebView"
@@ -88,12 +93,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 495
-    const v0, 0x1010085
+    const v0, #android:attr@webViewStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 496
     return-void
 .end method
 
@@ -1008,7 +1011,7 @@
     .end local v2    # "ex":Landroid/content/pm/PackageManager$NameNotFoundException;
     .restart local v3    # "initialApplication":Landroid/app/Application;
     :cond_1
-    const v6, 0x1040048
+    const v6, #android:string@config_webViewPackageName#t
 
     :try_start_1
     invoke-virtual {v3, v6}, Landroid/app/Application;->getString(I)Ljava/lang/String;
@@ -3788,128 +3791,18 @@
 .end method
 
 .method public savePage()Z
-    .locals 6
+    .locals 1
 
     .prologue
-    const/4 v3, 0x0
-
-    .line 1027
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
-    .line 1029
-    const-string v2, "WebView"
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
-    const-string/jumbo v4, "savePage"
+    invoke-interface {v0}, Landroid/webkit/WebViewProvider;->savePage()Z
 
-    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v0
 
-    .line 1031
-    invoke-direct {p0}, Landroid/webkit/WebView;->initChromiumClassIfNeccessary()V
-
-    .line 1032
-    iget-object v2, p0, Landroid/webkit/WebView;->mCls:Ljava/lang/Class;
-
-    if-nez v2, :cond_0
-
-    .line 1033
-    const-string v2, "WebView"
-
-    const-string v4, "Can\'t get WebViewChromium Save Page Interface"
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    move v2, v3
-
-    .line 1045
-    :goto_0
-    return v2
-
-    .line 1037
-    :cond_0
-    :try_start_0
-    iget-object v2, p0, Landroid/webkit/WebView;->mCls:Ljava/lang/Class;
-
-    const-string/jumbo v4, "savePage"
-
-    const/4 v5, 0x0
-
-    new-array v5, v5, [Ljava/lang/Class;
-
-    invoke-virtual {v2, v4, v5}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    .line 1038
-    .local v1, "savePageMethod":Ljava/lang/reflect/Method;
-    if-nez v1, :cond_1
-
-    .line 1039
-    const-string v2, "WebView"
-
-    const-string v4, "Get Null from webviewchromium savePage method"
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    move v2, v3
-
-    .line 1040
-    goto :goto_0
-
-    .line 1042
-    :cond_1
-    iget-object v2, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
-
-    const/4 v4, 0x0
-
-    new-array v4, v4, [Ljava/lang/Object;
-
-    invoke-virtual {v1, v2, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Boolean;
-
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-    :try_end_0
-    .catch Ljava/lang/ReflectiveOperationException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v2
-
-    goto :goto_0
-
-    .line 1043
-    .end local v1    # "savePageMethod":Ljava/lang/reflect/Method;
-    :catch_0
-    move-exception v0
-
-    .line 1044
-    .local v0, "ex":Ljava/lang/ReflectiveOperationException;
-    const-string v2, "WebView"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "get Save Page Interface Exception->"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    move v2, v3
-
-    .line 1045
-    goto :goto_0
+    return v0
 .end method
 
 .method public savePassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
@@ -4565,124 +4458,17 @@
 .end method
 
 .method public setSavePageClient(Landroid/webkit/SavePageClient;)V
-    .locals 6
+    .locals 1
     .param p1, "client"    # Landroid/webkit/SavePageClient;
 
     .prologue
-    .line 1793
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
-    .line 1794
-    invoke-direct {p0}, Landroid/webkit/WebView;->initChromiumClassIfNeccessary()V
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
-    .line 1795
-    iget-object v3, p0, Landroid/webkit/WebView;->mCls:Ljava/lang/Class;
+    invoke-interface {v0, p1}, Landroid/webkit/WebViewProvider;->setSavePageClient(Landroid/webkit/SavePageClient;)V
 
-    if-nez v3, :cond_0
-
-    .line 1796
-    const-string v3, "WebView"
-
-    const-string v4, "Can\'t get WebViewChromium Save Page Interface"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1811
-    :goto_0
     return-void
-
-    .line 1800
-    :cond_0
-    const/4 v3, 0x1
-
-    :try_start_0
-    new-array v1, v3, [Ljava/lang/Class;
-
-    .line 1801
-    .local v1, "p":[Ljava/lang/Class;
-    const/4 v3, 0x0
-
-    const-class v4, Landroid/webkit/SavePageClient;
-
-    aput-object v4, v1, v3
-
-    .line 1802
-    iget-object v3, p0, Landroid/webkit/WebView;->mCls:Ljava/lang/Class;
-
-    const-string/jumbo v4, "setSavePageClient"
-
-    invoke-virtual {v3, v4, v1}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v2
-
-    .line 1803
-    .local v2, "setSavePageClientMethod":Ljava/lang/reflect/Method;
-    if-nez v2, :cond_1
-
-    .line 1804
-    const-string v3, "WebView"
-
-    const-string v4, "Get Null from the webviewchromium setSavePageClient method"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/ReflectiveOperationException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 1808
-    .end local v1    # "p":[Ljava/lang/Class;
-    .end local v2    # "setSavePageClientMethod":Ljava/lang/reflect/Method;
-    :catch_0
-    move-exception v0
-
-    .line 1809
-    .local v0, "ex":Ljava/lang/ReflectiveOperationException;
-    const-string v3, "WebView"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "get set Save Page Client Interface Exception->"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 1807
-    .end local v0    # "ex":Ljava/lang/ReflectiveOperationException;
-    .restart local v1    # "p":[Ljava/lang/Class;
-    .restart local v2    # "setSavePageClientMethod":Ljava/lang/reflect/Method;
-    :cond_1
-    :try_start_1
-    iget-object v3, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
-
-    const/4 v4, 0x1
-
-    new-array v4, v4, [Ljava/lang/Object;
-
-    const/4 v5, 0x0
-
-    aput-object p1, v4, v5
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_1
-    .catch Ljava/lang/ReflectiveOperationException; {:try_start_1 .. :try_end_1} :catch_0
-
-    goto :goto_0
 .end method
 
 .method public setScrollBarStyle(I)V
@@ -4938,4 +4724,109 @@
     move-result v0
 
     return v0
+.end method
+
+.method public getTitleHeight()I
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getWebChromeClient()Landroid/webkit/WebChromeClient;
+    .locals 1
+
+    .prologue
+    invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
+
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
+
+    invoke-interface {v0}, Landroid/webkit/WebViewProvider;->getWebChromeClient()Landroid/webkit/WebChromeClient;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public readerWholeHtmlSendMessage()V
+    .locals 1
+
+    .prologue
+    invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
+
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
+
+    invoke-interface {v0}, Landroid/webkit/WebViewProvider;->readerWholeHtmlSendMessage()V
+
+    return-void
+.end method
+
+.method public selectLink()V
+    .locals 1
+
+    .prologue
+    invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
+
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
+
+    invoke-interface {v0}, Landroid/webkit/WebViewProvider;->selectLink()V
+
+    return-void
+.end method
+
+.method public setLoadReaderPageCallBack(Landroid/webkit/WebView$ReaderCallBack;)V
+    .locals 1
+    .param p1, "l"    # Landroid/webkit/WebView$ReaderCallBack;
+
+    .prologue
+    invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
+
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
+
+    invoke-interface {v0, p1}, Landroid/webkit/WebViewProvider;->setLoadReaderPageCallBack(Landroid/webkit/WebView$ReaderCallBack;)V
+
+    return-void
+.end method
+
+.method public setReaderModel()V
+    .locals 1
+
+    .prologue
+    invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
+
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
+
+    invoke-interface {v0}, Landroid/webkit/WebViewProvider;->setReaderModel()V
+
+    return-void
+.end method
+
+.method public setReaderPageListener(Landroid/webkit/WebView$ReaderModeListener;)V
+    .locals 1
+    .param p1, "l"    # Landroid/webkit/WebView$ReaderModeListener;
+
+    .prologue
+    invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
+
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
+
+    invoke-interface {v0, p1}, Landroid/webkit/WebViewProvider;->setReaderPageListener(Landroid/webkit/WebView$ReaderModeListener;)V
+
+    return-void
+.end method
+
+.method public setReaderTitleAndNumFunction(Landroid/webkit/WebView$ReaderTitleAndNumCallBack;)V
+    .locals 1
+    .param p1, "callback"    # Landroid/webkit/WebView$ReaderTitleAndNumCallBack;
+
+    .prologue
+    invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
+
+    iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
+
+    invoke-interface {v0, p1}, Landroid/webkit/WebViewProvider;->setReaderTitleAndNumFunction(Landroid/webkit/WebView$ReaderTitleAndNumCallBack;)V
+
+    return-void
 .end method

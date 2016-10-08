@@ -235,7 +235,7 @@
 
     .line 75
     .local v0, "res":Landroid/content/res/Resources;
-    const v1, 0x10806d7
+    const v1, #android:drawable@sym_keyboard_shift#t
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -243,8 +243,7 @@
 
     iput-object v1, p0, Lcom/android/internal/widget/PasswordEntryKeyboard;->mShiftIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 76
-    const v1, 0x10806d8
+    const v1, #android:drawable@sym_keyboard_shift_locked#t
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -252,8 +251,7 @@
 
     iput-object v1, p0, Lcom/android/internal/widget/PasswordEntryKeyboard;->mShiftLockIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 77
-    const v1, 0x105001b
+    const v1, #android:dimen@password_keyboard_spacebar_vertical_correction#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 

@@ -155,7 +155,7 @@
 
     .line 207
     .local v0, "res":Landroid/content/res/Resources;
-    const v1, 0x105000e
+    const v1, #android:dimen@config_minScalingTouchMajor#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -163,8 +163,7 @@
 
     iput v1, p0, Landroid/view/ScaleGestureDetector;->mTouchMinMajor:I
 
-    .line 209
-    const v1, 0x105000d
+    const v1, #android:dimen@config_minScalingSpan#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

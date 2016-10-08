@@ -69,26 +69,23 @@
 
     return-void
 
-    .line 29
     :array_0
     .array-data 4
-        0x101009e
-        0x10100a2
+        #android:attr@state_enabled#t
+        #android:attr@state_active#t
     .end array-data
 
-    .line 31
     :array_1
     .array-data 4
-        0x101009e
-        -0x10100a2
+        #android:attr@state_enabled#t
+        -#android:attr@state_active#t
     .end array-data
 
-    .line 33
     :array_2
     .array-data 4
-        0x101009e
-        -0x10100a2
-        0x101009c
+        #android:attr@state_enabled#t
+        -#android:attr@state_active#t
+        #android:attr@state_focused#t
     .end array-data
 .end method
 
@@ -642,24 +639,20 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 97
     aget v3, v2, v1
 
-    const v4, 0x101009c
+    const v4, #android:attr@state_focused#t
 
     if-ne v3, v4, :cond_0
 
-    .line 98
     const/4 v3, 0x1
 
-    .line 102
     .end local v0    # "d":Landroid/graphics/drawable/StateListDrawable;
     .end local v1    # "i":I
     .end local v2    # "states":[I
     :goto_1
     return v3
 
-    .line 96
     .restart local v0    # "d":Landroid/graphics/drawable/StateListDrawable;
     .restart local v1    # "i":I
     .restart local v2    # "states":[I

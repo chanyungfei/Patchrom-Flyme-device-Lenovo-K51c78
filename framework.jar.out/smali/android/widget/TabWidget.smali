@@ -69,12 +69,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 86
-    const v0, 0x1010083
+    const v0, #android:attr@tabWidgetStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/TabWidget;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 87
     return-void
 .end method
 
@@ -287,13 +285,11 @@
 
     if-gt v1, v2, :cond_2
 
-    .line 147
     iget-object v1, p0, Landroid/widget/TabWidget;->mLeftStrip:Landroid/graphics/drawable/Drawable;
 
     if-nez v1, :cond_0
 
-    .line 148
-    const v1, 0x10806dc
+    const v1, #android:drawable@tab_bottom_left_v4#t
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -301,14 +297,12 @@
 
     iput-object v1, p0, Landroid/widget/TabWidget;->mLeftStrip:Landroid/graphics/drawable/Drawable;
 
-    .line 151
     :cond_0
     iget-object v1, p0, Landroid/widget/TabWidget;->mRightStrip:Landroid/graphics/drawable/Drawable;
 
     if-nez v1, :cond_1
 
-    .line 152
-    const v1, 0x10806de
+    const v1, #android:drawable@tab_bottom_right_v4#t
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -316,25 +310,20 @@
 
     iput-object v1, p0, Landroid/widget/TabWidget;->mRightStrip:Landroid/graphics/drawable/Drawable;
 
-    .line 169
     :cond_1
     :goto_0
     invoke-virtual {p0, v3}, Landroid/widget/TabWidget;->setFocusable(Z)V
 
-    .line 170
     invoke-virtual {p0, p0}, Landroid/widget/TabWidget;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 171
     return-void
 
-    .line 157
     :cond_2
     iget-object v1, p0, Landroid/widget/TabWidget;->mLeftStrip:Landroid/graphics/drawable/Drawable;
 
     if-nez v1, :cond_3
 
-    .line 158
-    const v1, 0x10806db
+    const v1, #android:drawable@tab_bottom_left#t
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -342,14 +331,12 @@
 
     iput-object v1, p0, Landroid/widget/TabWidget;->mLeftStrip:Landroid/graphics/drawable/Drawable;
 
-    .line 161
     :cond_3
     iget-object v1, p0, Landroid/widget/TabWidget;->mRightStrip:Landroid/graphics/drawable/Drawable;
 
     if-nez v1, :cond_1
 
-    .line 162
-    const v1, 0x10806dd
+    const v1, #android:drawable@tab_bottom_right#t
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -492,7 +479,7 @@
 
     move-result-object v19
 
-    const v20, 0x1020016
+    const v20, #android:id@title#t
 
     invoke-virtual/range {v19 .. v20}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

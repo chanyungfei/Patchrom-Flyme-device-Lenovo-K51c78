@@ -50,10 +50,9 @@
     .end annotation
 
     .prologue
-    .line 155
-    const v0, 0x109006a
+    const v0, #android:layout@locale_picker_item#t
 
-    const v1, 0x10201c2
+    const v1, #android:id@locale#t
 
     invoke-static {p0, v0, v1}, Lcom/android/internal/app/LocalePicker;->constructAdapter(Landroid/content/Context;II)Landroid/widget/ArrayAdapter;
 
@@ -177,37 +176,30 @@
 
     invoke-direct {v5, v11}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 91
     .local v5, "localeList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-static {v5, v6}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
-    .line 94
     if-nez p1, :cond_0
 
-    .line 95
     const-string v11, "ar-XB"
 
     invoke-interface {v5, v11}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 96
     const-string v11, "en-XA"
 
     invoke-interface {v5, v11}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 99
     :cond_0
     invoke-static {v5}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
-    .line 100
-    const v11, 0x1070008
+    const v11, #android:array@special_locale_codes#t
 
     invoke-virtual {v8, v11}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
     move-result-object v9
 
-    .line 101
     .local v9, "specialLocaleCodes":[Ljava/lang/String;
-    const v11, 0x1070009
+    const v11, #android:array@special_locale_names#t
 
     invoke-virtual {v8, v11}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

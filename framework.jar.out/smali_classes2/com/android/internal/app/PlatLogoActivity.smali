@@ -227,61 +227,50 @@
 
     invoke-virtual {v7, v6, v8}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 128
     const/4 v7, 0x0
 
     invoke-virtual {v6, v7}, Landroid/view/View;->setAlpha(F)V
 
-    .line 130
     new-instance v3, Landroid/widget/ImageView;
 
     invoke-direct {v3, p0}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 131
     .local v3, "im":Landroid/widget/ImageView;
     const/high16 v7, 0x41a00000    # 20.0f
 
     invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setTranslationZ(F)V
 
-    .line 132
     const/4 v7, 0x0
 
     invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setScaleX(F)V
 
-    .line 133
     const/4 v7, 0x0
 
     invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setScaleY(F)V
 
-    .line 134
-    const v7, 0x1080540
+    const v7, #android:drawable@platlogo#t
 
     invoke-virtual {p0, v7}, Lcom/android/internal/app/PlatLogoActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
-    .line 135
     .local v4, "platlogo":Landroid/graphics/drawable/Drawable;
     const/4 v7, 0x0
 
     invoke-virtual {v4, v7}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    .line 136
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 137
     invoke-virtual {p0}, Lcom/android/internal/app/PlatLogoActivity;->makeRipple()Landroid/graphics/drawable/Drawable;
 
     move-result-object v7
 
     invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 138
     const/4 v7, 0x1
 
     invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setClickable(Z)V
 
-    .line 139
     new-instance v2, Landroid/graphics/drawable/ShapeDrawable;
 
     new-instance v7, Landroid/graphics/drawable/shapes/OvalShape;

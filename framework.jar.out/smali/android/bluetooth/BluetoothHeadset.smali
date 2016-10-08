@@ -251,7 +251,7 @@
 
     move-result-object v0
 
-    const v1, 0x112004a
+    const v1, #android:bool@config_bluetooth_sco_off_call#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 

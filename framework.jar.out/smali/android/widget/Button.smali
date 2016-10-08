@@ -29,12 +29,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 103
-    const v0, 0x1010048
+    const v0, #android:attr@buttonStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/Button;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 104
     return-void
 .end method
 

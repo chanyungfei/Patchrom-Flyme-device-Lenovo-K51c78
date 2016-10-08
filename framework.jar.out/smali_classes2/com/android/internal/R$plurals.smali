@@ -15,63 +15,63 @@
 
 
 # static fields
-.field public static final abbrev_in_num_days:I = 0x1140011
+.field public static final abbrev_in_num_days:I = #android:plurals@abbrev_in_num_days#t
 
-.field public static final abbrev_in_num_hours:I = 0x1140010
+.field public static final abbrev_in_num_hours:I = #android:plurals@abbrev_in_num_hours#t
 
-.field public static final abbrev_in_num_minutes:I = 0x114000f
+.field public static final abbrev_in_num_minutes:I = #android:plurals@abbrev_in_num_minutes#t
 
-.field public static final abbrev_in_num_seconds:I = 0x114000e
+.field public static final abbrev_in_num_seconds:I = #android:plurals@abbrev_in_num_seconds#t
 
-.field public static final abbrev_num_days_ago:I = 0x114000d
+.field public static final abbrev_num_days_ago:I = #android:plurals@abbrev_num_days_ago#t
 
-.field public static final abbrev_num_hours_ago:I = 0x114000c
+.field public static final abbrev_num_hours_ago:I = #android:plurals@abbrev_num_hours_ago#t
 
-.field public static final abbrev_num_minutes_ago:I = 0x114000b
+.field public static final abbrev_num_minutes_ago:I = #android:plurals@abbrev_num_minutes_ago#t
 
-.field public static final abbrev_num_seconds_ago:I = 0x114000a
+.field public static final abbrev_num_seconds_ago:I = #android:plurals@abbrev_num_seconds_ago#t
 
-.field public static final duration_hours:I = 0x1140014
+.field public static final duration_hours:I = #android:plurals@duration_hours#t
 
-.field public static final duration_minutes:I = 0x1140013
+.field public static final duration_minutes:I = #android:plurals@duration_minutes#t
 
-.field public static final duration_seconds:I = 0x1140012
+.field public static final duration_seconds:I = #android:plurals@duration_seconds#t
 
-.field public static final in_num_days:I = 0x1140009
+.field public static final in_num_days:I = #android:plurals@in_num_days#t
 
-.field public static final in_num_hours:I = 0x1140008
+.field public static final in_num_hours:I = #android:plurals@in_num_hours#t
 
-.field public static final in_num_minutes:I = 0x1140007
+.field public static final in_num_minutes:I = #android:plurals@in_num_minutes#t
 
-.field public static final in_num_seconds:I = 0x1140006
+.field public static final in_num_seconds:I = #android:plurals@in_num_seconds#t
 
-.field public static final last_num_days:I = 0x1140004
+.field public static final last_num_days:I = #android:plurals@last_num_days#t
 
-.field public static final matches_found:I = 0x1140017
+.field public static final matches_found:I = #android:plurals@matches_found#t
 
-.field public static final num_days_ago:I = 0x1140005
+.field public static final num_days_ago:I = #android:plurals@num_days_ago#t
 
-.field public static final num_hours_ago:I = 0x1140003
+.field public static final num_hours_ago:I = #android:plurals@num_hours_ago#t
 
-.field public static final num_minutes_ago:I = 0x1140002
+.field public static final num_minutes_ago:I = #android:plurals@num_minutes_ago#t
 
-.field public static final num_seconds_ago:I = 0x1140001
+.field public static final num_seconds_ago:I = #android:plurals@num_seconds_ago#t
 
-.field public static final pinpuk_attempts:I = 0x1140000
+.field public static final pinpuk_attempts:I = #android:plurals@pinpuk_attempts#t
 
-.field public static final restr_pin_countdown:I = 0x1140018
+.field public static final restr_pin_countdown:I = #android:plurals@restr_pin_countdown#t
 
-.field public static final wifi_available:I = 0x1140015
+.field public static final wifi_available:I = #android:plurals@wifi_available#t
 
-.field public static final wifi_available_detailed:I = 0x1140016
+.field public static final wifi_available_detailed:I = #android:plurals@wifi_available_detailed#t
 
-.field public static final zen_mode_duration_hours:I = 0x114001c
+.field public static final zen_mode_duration_hours:I = #android:plurals@zen_mode_duration_hours#t
 
-.field public static final zen_mode_duration_hours_summary:I = 0x114001a
+.field public static final zen_mode_duration_hours_summary:I = #android:plurals@zen_mode_duration_hours_summary#t
 
-.field public static final zen_mode_duration_minutes:I = 0x114001b
+.field public static final zen_mode_duration_minutes:I = #android:plurals@zen_mode_duration_minutes#t
 
-.field public static final zen_mode_duration_minutes_summary:I = 0x1140019
+.field public static final zen_mode_duration_minutes_summary:I = #android:plurals@zen_mode_duration_minutes_summary#t
 
 
 # direct methods

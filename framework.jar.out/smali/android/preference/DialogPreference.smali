@@ -57,12 +57,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 94
-    const v0, 0x1010091
+    const v0, #android:attr@dialogPreferenceStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 95
     return-void
 .end method
 
@@ -315,27 +313,22 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 362
-    const v3, 0x102000b
+    const v3, #android:id@message#t
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 364
     .local v0, "dialogMessageView":Landroid/view/View;
     if-eqz v0, :cond_2
 
-    .line 365
     invoke-virtual {p0}, Landroid/preference/DialogPreference;->getDialogMessage()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    .line 366
     .local v1, "message":Ljava/lang/CharSequence;
     const/16 v2, 0x8
 
-    .line 368
     .local v2, "newVisibility":I
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

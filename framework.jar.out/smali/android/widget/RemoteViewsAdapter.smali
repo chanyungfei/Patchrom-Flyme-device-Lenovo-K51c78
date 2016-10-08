@@ -621,25 +621,20 @@
     .param p1, "convertView"    # Landroid/view/View;
 
     .prologue
-    .line 1118
     const/4 v1, -0x1
 
-    .line 1119
     .local v1, "typeId":I
     if-eqz p1, :cond_0
 
-    .line 1120
-    const v2, 0x102003a
+    const v2, #android:id@rowTypeId#t
 
     invoke-virtual {p1, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 1121
     .local v0, "tag":Ljava/lang/Object;
     if-eqz v0, :cond_0
 
-    .line 1122
     check-cast v0, Ljava/lang/Integer;
 
     .end local v0    # "tag":Ljava/lang/Object;
@@ -2103,7 +2098,7 @@
 
     .line 1191
     .local v20, "newView":Landroid/view/View;
-    const v3, 0x102003a
+    const v3, #android:id@rowTypeId#t
 
     new-instance v4, Ljava/lang/Integer;
 

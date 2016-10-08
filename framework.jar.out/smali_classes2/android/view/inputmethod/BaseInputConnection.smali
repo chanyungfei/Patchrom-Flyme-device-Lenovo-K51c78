@@ -165,7 +165,7 @@
 
     new-array v4, v4, [I
 
-    const v5, 0x1010230
+    const v5, #android:attr@candidatesTextStyleSpans#t
 
     aput v5, v4, v6
 

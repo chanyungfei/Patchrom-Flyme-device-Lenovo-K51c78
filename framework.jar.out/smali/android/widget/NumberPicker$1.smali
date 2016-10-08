@@ -62,7 +62,7 @@
 
     move-result v0
 
-    const v1, 0x1020354
+    const v1, #android:id@increment#t
 
     if-ne v0, v1, :cond_0
 

@@ -148,12 +148,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 179
-    const v0, 0x101043e
+    const v0, #android:attr@stackViewStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/StackView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 180
     return-void
 .end method
 

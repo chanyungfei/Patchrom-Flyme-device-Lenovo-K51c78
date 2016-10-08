@@ -128,7 +128,7 @@
     .line 99
     new-array v0, v3, [I
 
-    const/high16 v1, 0x1010000
+    const/high16 v1, #android:attr@theme#i
 
     aput v1, v0, v2
 

@@ -635,8 +635,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 598
-    const v1, 0x104057a
+    const v1, #android:string@gpsNotifMessage#t
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -689,8 +688,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 582
-    const v1, 0x1040578
+    const v1, #android:string@gpsNotifTicker#t
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -743,8 +741,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 591
-    const v1, 0x1040579
+    const v1, #android:string@gpsNotifTitle#t
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1242,7 +1239,7 @@
 
     move-result-object v6
 
-    const v7, 0x108067e
+    const v7, #android:drawable@stat_sys_gps_on#t
 
     invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -1335,7 +1332,7 @@
 
     move-result-object v7
 
-    const v8, 0x1060059
+    const v8, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getColor(I)I
 

@@ -191,7 +191,7 @@
 
     .line 69
     .local v0, "p":Lcom/android/internal/app/AlertController$AlertParams;
-    const v1, 0x1040505
+    const v1, #android:string@extmedia_format_title#t
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/ExternalMediaFormatActivity;->getString(I)Ljava/lang/String;
 
@@ -199,8 +199,7 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 70
-    const v1, 0x1040506
+    const v1, #android:string@extmedia_format_message#t
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/ExternalMediaFormatActivity;->getString(I)Ljava/lang/String;
 
@@ -208,8 +207,7 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    .line 71
-    const v1, 0x1040507
+    const v1, #android:string@extmedia_format_button_format#t
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/ExternalMediaFormatActivity;->getString(I)Ljava/lang/String;
 
@@ -217,11 +215,9 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    .line 72
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 73
-    const/high16 v1, 0x1040000
+    const/high16 v1, #android:string@cancel#i
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/ExternalMediaFormatActivity;->getString(I)Ljava/lang/String;
 

@@ -134,7 +134,7 @@
 
     .line 478
     .local v8, "loadingView":Landroid/view/View;
-    const v9, 0x102003a
+    const v9, #android:id@rowTypeId#t
 
     new-instance v10, Ljava/lang/Integer;
 
@@ -220,7 +220,7 @@
     .end local v5    # "firstView":Landroid/view/View;
     :cond_1
     :goto_1
-    const v9, 0x10900ab
+    const v9, #android:layout@remote_views_adapter_default_loading_view#t
 
     const/4 v10, 0x0
 

@@ -140,15 +140,12 @@
 
     move v7, v3
 
-    .line 192
     invoke-virtual/range {v0 .. v7}, Landroid/graphics/drawable/RippleDrawable;->addLayer(Landroid/graphics/drawable/Drawable;[IIIIII)Landroid/graphics/drawable/LayerDrawable$ChildDrawable;
 
-    .line 195
     :cond_1
     if-eqz p3, :cond_2
 
-    .line 196
-    const v7, 0x102002e
+    const v7, #android:id@mask#t
 
     move-object v4, p0
 
@@ -690,7 +687,7 @@
 
     iget v3, v3, Landroid/graphics/drawable/LayerDrawable$ChildDrawable;->mId:I
 
-    const v4, 0x102002e
+    const v4, #android:id@mask#t
 
     if-eq v3, v4, :cond_0
 
@@ -920,8 +917,7 @@
     .locals 1
 
     .prologue
-    .line 996
-    const v0, 0x102002e
+    const v0, #android:id@mask#t
 
     invoke-virtual {p0, v0}, Landroid/graphics/drawable/RippleDrawable;->findDrawableByLayerId(I)Landroid/graphics/drawable/Drawable;
 
@@ -2011,7 +2007,7 @@
 
     iget v4, v4, Landroid/graphics/drawable/LayerDrawable$ChildDrawable;->mId:I
 
-    const v5, 0x102002e
+    const v5, #android:id@mask#t
 
     if-eq v4, v5, :cond_1
 
@@ -2181,18 +2177,15 @@
     .locals 1
 
     .prologue
-    .line 900
     invoke-super {p0}, Landroid/graphics/drawable/LayerDrawable;->mutate()Landroid/graphics/drawable/Drawable;
 
-    .line 904
     iget-object v0, p0, Landroid/graphics/drawable/RippleDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
     check-cast v0, Landroid/graphics/drawable/RippleDrawable$RippleState;
 
     iput-object v0, p0, Landroid/graphics/drawable/RippleDrawable;->mState:Landroid/graphics/drawable/RippleDrawable$RippleState;
 
-    .line 907
-    const v0, 0x102002e
+    const v0, #android:id@mask#t
 
     invoke-virtual {p0, v0}, Landroid/graphics/drawable/RippleDrawable;->findDrawableByLayerId(I)Landroid/graphics/drawable/Drawable;
 
@@ -2275,40 +2268,32 @@
 
     aget v7, v0, v4
 
-    .line 267
     .local v7, "state":I
-    const v8, 0x101009e
+    const v8, #android:attr@state_enabled#t
 
     if-ne v7, v8, :cond_0
 
-    .line 268
     const/4 v2, 0x1
 
-    .line 270
     :cond_0
-    const v8, 0x101009c
+    const v8, #android:attr@state_focused#t
 
     if-ne v7, v8, :cond_1
 
-    .line 271
     const/4 v3, 0x1
 
-    .line 273
     :cond_1
-    const v8, 0x10100a7
+    const v8, #android:attr@state_pressed#t
 
     if-ne v7, v8, :cond_2
 
-    .line 274
     const/4 v6, 0x1
 
-    .line 266
     :cond_2
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 278
     .end local v7    # "state":I
     :cond_3
     if-eqz v2, :cond_6
@@ -2443,26 +2428,21 @@
     .param p2, "drawable"    # Landroid/graphics/drawable/Drawable;
 
     .prologue
-    .line 378
     invoke-super {p0, p1, p2}, Landroid/graphics/drawable/LayerDrawable;->setDrawableByLayerId(ILandroid/graphics/drawable/Drawable;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 379
-    const v0, 0x102002e
+    const v0, #android:id@mask#t
 
     if-ne p1, v0, :cond_0
 
-    .line 380
     iput-object p2, p0, Landroid/graphics/drawable/RippleDrawable;->mMask:Landroid/graphics/drawable/Drawable;
 
-    .line 383
     :cond_0
     const/4 v0, 0x1
 
-    .line 386
     :goto_0
     return v0
 

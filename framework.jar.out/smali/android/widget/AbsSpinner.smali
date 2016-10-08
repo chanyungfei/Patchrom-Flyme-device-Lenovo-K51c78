@@ -130,77 +130,61 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 77
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/AdapterView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 51
     iput v4, p0, Landroid/widget/AbsSpinner;->mSelectionLeftPadding:I
 
-    .line 52
     iput v4, p0, Landroid/widget/AbsSpinner;->mSelectionTopPadding:I
 
-    .line 53
     iput v4, p0, Landroid/widget/AbsSpinner;->mSelectionRightPadding:I
 
-    .line 54
     iput v4, p0, Landroid/widget/AbsSpinner;->mSelectionBottomPadding:I
 
-    .line 55
     new-instance v3, Landroid/graphics/Rect;
 
     invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v3, p0, Landroid/widget/AbsSpinner;->mSpinnerPadding:Landroid/graphics/Rect;
 
-    .line 57
     new-instance v3, Landroid/widget/AbsSpinner$RecycleBin;
 
     invoke-direct {v3, p0}, Landroid/widget/AbsSpinner$RecycleBin;-><init>(Landroid/widget/AbsSpinner;)V
 
     iput-object v3, p0, Landroid/widget/AbsSpinner;->mRecycler:Landroid/widget/AbsSpinner$RecycleBin;
 
-    .line 78
     invoke-direct {p0}, Landroid/widget/AbsSpinner;->initAbsSpinner()V
 
-    .line 80
     sget-object v3, Lcom/android/internal/R$styleable;->AbsSpinner:[I
 
     invoke-virtual {p1, p2, v3, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 83
     .local v0, "a":Landroid/content/res/TypedArray;
     invoke-virtual {v0, v4}, Landroid/content/res/TypedArray;->getTextArray(I)[Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 84
     .local v2, "entries":[Ljava/lang/CharSequence;
     if-eqz v2, :cond_0
 
-    .line 85
     new-instance v1, Landroid/widget/ArrayAdapter;
 
-    const v3, 0x1090008
+    const v3, #android:layout@simple_spinner_item#t
 
     invoke-direct {v1, p1, v3, v2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
-    .line 88
     .local v1, "adapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Ljava/lang/CharSequence;>;"
-    const v3, 0x1090009
+    const v3, #android:layout@simple_spinner_dropdown_item#t
 
     invoke-virtual {v1, v3}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    .line 89
     invoke-virtual {p0, v1}, Landroid/widget/AbsSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    .line 92
     .end local v1    # "adapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Ljava/lang/CharSequence;>;"
     :cond_0
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 93
     return-void
 .end method
 

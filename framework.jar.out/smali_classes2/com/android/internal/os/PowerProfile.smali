@@ -116,10 +116,8 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 172
-    const v4, 0x111000e
+    const v4, #android:xml@power_profile#t
 
-    .line 173
     .local v4, "id":I
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

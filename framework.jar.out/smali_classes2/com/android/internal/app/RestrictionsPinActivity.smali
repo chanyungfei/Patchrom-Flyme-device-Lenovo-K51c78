@@ -97,7 +97,7 @@
 
     move-result-object v3
 
-    const v4, 0x1140018
+    const v4, #android:plurals@restr_pin_countdown#t
 
     invoke-virtual {v3, v4, v2}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
@@ -174,7 +174,7 @@
     :cond_1
     iget-object v3, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mPinErrorMessage:Landroid/widget/TextView;
 
-    const v4, 0x104067e
+    const v4, #android:string@restr_pin_try_later#t
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -188,7 +188,7 @@
     .restart local v0    # "enableInput":Z
     iget-object v3, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mPinErrorMessage:Landroid/widget/TextView;
 
-    const v4, 0x1040677
+    const v4, #android:string@restr_pin_incorrect#t
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -227,7 +227,7 @@
 
     .line 62
     .local v0, "ap":Lcom/android/internal/app/AlertController$AlertParams;
-    const v2, 0x1040675
+    const v2, #android:string@restr_pin_enter_admin_pin#t
 
     invoke-virtual {p0, v2}, Lcom/android/internal/app/RestrictionsPinActivity;->getString(I)Ljava/lang/String;
 
@@ -246,7 +246,7 @@
 
     .line 65
     .local v1, "inflater":Landroid/view/LayoutInflater;
-    const v2, 0x10900b0
+    const v2, #android:layout@restrictions_pin_challenge#t
 
     const/4 v3, 0x0
 
@@ -259,7 +259,7 @@
     .line 67
     iget-object v2, v0, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    const v3, 0x102037a
+    const v3, #android:id@pin_error_message#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -272,7 +272,7 @@
     .line 68
     iget-object v2, v0, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    const v3, 0x1020379
+    const v3, #android:id@pin_text#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -285,7 +285,7 @@
     .line 69
     iget-object v2, v0, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    const v3, 0x102037c
+    const v3, #android:id@pin_ok_button#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -298,7 +298,7 @@
     .line 70
     iget-object v2, v0, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    const v3, 0x102037b
+    const v3, #android:id@pin_cancel_button#t
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -543,43 +543,34 @@
 
     move-result v0
 
-    .line 132
     .local v0, "result":I
     if-ne v0, v3, :cond_1
 
-    .line 133
     invoke-virtual {p0, v3}, Lcom/android/internal/app/RestrictionsPinActivity;->setResult(I)V
 
-    .line 134
     invoke-virtual {p0}, Lcom/android/internal/app/RestrictionsPinActivity;->finish()V
 
-    .line 141
     :cond_0
     :goto_0
     return-void
 
-    .line 135
     :cond_1
     if-ltz v0, :cond_0
 
-    .line 136
     iget-object v1, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mPinErrorMessage:Landroid/widget/TextView;
 
-    const v2, 0x1040677
+    const v2, #android:string@restr_pin_incorrect#t
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 137
     iget-object v1, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mPinErrorMessage:Landroid/widget/TextView;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 138
     invoke-direct {p0, v0}, Lcom/android/internal/app/RestrictionsPinActivity;->updatePinTimer(I)Z
 
-    .line 139
     iget-object v1, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mPinText:Landroid/widget/EditText;
 
     const-string v2, ""

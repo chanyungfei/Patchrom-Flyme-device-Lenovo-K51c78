@@ -163,29 +163,25 @@
     .prologue
     const/4 v2, 0x3
 
-    .line 122
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
-    .line 124
     invoke-virtual {p0}, Lcom/android/internal/app/MediaRouteChooserDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/view/Window;->requestFeature(I)Z
 
-    .line 126
-    const v0, 0x109006c
+    const v0, #android:layout@media_route_chooser_dialog#t
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/MediaRouteChooserDialog;->setContentView(I)V
 
-    .line 127
     iget v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog;->mRouteTypes:I
 
     const/4 v1, 0x4
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x10405e0
+    const v0, #android:string@media_route_chooser_title_for_remote_display#t
 
     :goto_0
     invoke-virtual {p0, v0}, Lcom/android/internal/app/MediaRouteChooserDialog;->setTitle(I)V
@@ -195,7 +191,7 @@
 
     move-result-object v0
 
-    const v1, 0x10803b2
+    const v1, #android:drawable@ic_media_route_off_holo_dark#t
 
     invoke-virtual {v0, v2, v1}, Landroid/view/Window;->setFeatureDrawableResource(II)V
 
@@ -210,8 +206,7 @@
 
     iput-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog;->mAdapter:Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;
 
-    .line 136
-    const v0, 0x1020330
+    const v0, #android:id@media_route_list#t
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/MediaRouteChooserDialog;->findViewById(I)Landroid/view/View;
 
@@ -238,7 +233,7 @@
     .line 139
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog;->mListView:Landroid/widget/ListView;
 
-    const v1, 0x1020004
+    const v1, #android:id@empty#t
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/MediaRouteChooserDialog;->findViewById(I)Landroid/view/View;
 
@@ -246,8 +241,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
-    .line 141
-    const v0, 0x1020331
+    const v0, #android:id@media_route_extended_settings_button#t
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/MediaRouteChooserDialog;->findViewById(I)Landroid/view/View;
 
@@ -265,7 +259,7 @@
 
     .line 127
     :cond_0
-    const v0, 0x10405df
+    const v0, #android:string@media_route_chooser_title#t
 
     goto :goto_0
 .end method

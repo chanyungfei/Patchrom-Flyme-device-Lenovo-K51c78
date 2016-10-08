@@ -399,7 +399,7 @@
     .locals 4
 
     .prologue
-    const v3, 0x10e0053
+    const v3, #android:integer@config_screenBrightnessSettingDefault#t
 
     .line 476
     sget-boolean v2, Landroid/os/PowerManager;->MTK_ULTRA_DIMMING_SUPPORT:Z
@@ -465,7 +465,7 @@
     .locals 4
 
     .prologue
-    const v3, 0x10e0052
+    const v3, #android:integer@config_screenBrightnessSettingMaximum#t
 
     .line 454
     sget-boolean v2, Landroid/os/PowerManager;->MTK_ULTRA_DIMMING_SUPPORT:Z
@@ -550,7 +550,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0051
+    const v1, #android:integer@config_screenBrightnessSettingMinimum#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 

@@ -532,25 +532,21 @@
 
     move-result v0
 
-    .line 452
     .local v0, "originIsManaged":Z
     :goto_0
     invoke-virtual {v3}, Landroid/os/UserManager;->isManagedProfile()Z
 
     move-result v2
 
-    .line 453
     .local v2, "targetIsManaged":Z
     if-eqz v0, :cond_2
 
     if-nez v2, :cond_2
 
-    .line 454
-    const v4, 0x104054b
+    const v4, #android:string@forward_intent_to_owner#t
 
     iput v4, p0, Lcom/android/internal/app/ResolverActivity;->mProfileSwitchMessageId:I
 
-    .line 459
     .end local v0    # "originIsManaged":Z
     .end local v1    # "originUserInfo":Landroid/content/pm/UserInfo;
     .end local v2    # "targetIsManaged":Z
@@ -575,8 +571,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 456
-    const v4, 0x104054c
+    const v4, #android:string@forward_intent_to_work#t
 
     iput v4, p0, Lcom/android/internal/app/ResolverActivity;->mProfileSwitchMessageId:I
 
@@ -678,7 +673,7 @@
     .line 433
     iget-object v3, p0, Lcom/android/internal/app/ResolverActivity;->mProfileView:Landroid/view/View;
 
-    const v4, 0x1020006
+    const v4, #android:id@icon#t
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -690,7 +685,7 @@
     .local v1, "icon":Landroid/widget/ImageView;
     iget-object v3, p0, Lcom/android/internal/app/ResolverActivity;->mProfileView:Landroid/view/View;
 
-    const v4, 0x1020014
+    const v4, #android:id@text1#t
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1151,7 +1146,7 @@
     move v2, v1
 
     :goto_0
-    const v1, 0x1020378
+    const v1, #android:id@button_always#t
 
     if-ne v0, v1, :cond_1
 
@@ -1427,7 +1422,7 @@
 
     move-result-object v2
 
-    const v3, 0x10e0073
+    const v3, #android:integer@config_maxResolverActivityColumns#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1534,17 +1529,13 @@
 
     if-eqz v2, :cond_3
 
-    .line 275
-    const v18, 0x10900af
+    const v18, #android:layout@resolver_list_with_default#t
 
-    .line 276
     .local v18, "layoutId":I
     const/16 p7, 0x0
 
-    .line 277
     const/16 v24, 0x1
 
-    .line 282
     .local v24, "useHeader":Z
     :goto_2
     move/from16 v0, p7
@@ -1585,7 +1576,7 @@
     .end local v22    # "sinceTime":J
     .end local v24    # "useHeader":Z
     :cond_2
-    const v2, 0x1030494
+    const v2, #android:style@Theme.DeviceDefault.Resolver#t
 
     move-object/from16 v0, p0
 
@@ -1607,21 +1598,18 @@
 
     goto/16 :goto_1
 
-    .line 279
     .end local v14    # "e":Landroid/os/RemoteException;
     .restart local v10    # "am":Landroid/app/ActivityManager;
     .restart local v22    # "sinceTime":J
     :cond_3
     const/16 v24, 0x0
 
-    .line 280
     .restart local v24    # "useHeader":Z
-    const v18, 0x10900ae
+    const v18, #android:layout@resolver_list#t
 
     .restart local v18    # "layoutId":I
     goto :goto_2
 
-    .line 290
     :cond_4
     move-object/from16 v0, p0
 
@@ -1661,8 +1649,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/internal/app/ResolverActivity;->setContentView(I)V
 
-    .line 293
-    const v2, 0x1020376
+    const v2, #android:id@resolver_list#t
 
     move-object/from16 v0, p0
 
@@ -1748,7 +1735,7 @@
 
     move-result-object v3
 
-    const v4, 0x10900ad
+    const v4, #android:layout@resolver_different_item_header#t
 
     move-object/from16 v0, p0
 
@@ -1773,8 +1760,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/Window;->clearFlags(I)V
 
-    .line 329
-    const v2, 0x10202d0
+    const v2, #android:id@contentPanel#t
 
     move-object/from16 v0, p0
 
@@ -1824,8 +1810,7 @@
 
     if-nez v2, :cond_c
 
-    .line 343
-    const v2, 0x1020016
+    const v2, #android:id@title#t
 
     move-object/from16 v0, p0
 
@@ -1857,7 +1842,7 @@
     .line 350
     .end local v21    # "titleView":Landroid/widget/TextView;
     :cond_c
-    const v2, 0x1020006
+    const v2, #android:id@icon#t
 
     move-object/from16 v0, p0
 
@@ -1974,7 +1959,7 @@
 
     .line 374
     :cond_e
-    const v2, 0x1020373
+    const v2, #android:id@select_bar#t
 
     move-object/from16 v0, p0
 
@@ -1984,19 +1969,16 @@
 
     check-cast v20, Landroid/view/ViewGroup;
 
-    .line 375
     .local v20, "selectLayout":Landroid/view/ViewGroup;
     if-eqz v20, :cond_12
 
-    .line 376
     const/4 v2, 0x0
 
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 378
-    const v2, 0x1020374
+    const v2, #android:id@select_bar_cb#t
 
     move-object/from16 v0, v20
 
@@ -2010,8 +1992,7 @@
 
     iput-object v2, v0, Lcom/android/internal/app/ResolverActivity;->mSelectBox:Landroid/widget/CheckBox;
 
-    .line 379
-    const v2, 0x1020375
+    const v2, #android:id@select_bar_title#t
 
     move-object/from16 v0, v20
 
@@ -2067,7 +2048,7 @@
     .end local v20    # "selectLayout":Landroid/view/ViewGroup;
     :cond_f
     :goto_5
-    const v2, 0x1020372
+    const v2, #android:id@profile_button#t
 
     move-object/from16 v0, p0
 
@@ -2151,14 +2132,13 @@
 
     .line 317
     :cond_11
-    const v2, 0x10900ae
+    const v2, #android:layout@resolver_list#t
 
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v2}, Lcom/android/internal/app/ResolverActivity;->setContentView(I)V
 
-    .line 319
-    const v2, 0x1020004
+    const v2, #android:id@empty#t
 
     move-object/from16 v0, p0
 
@@ -2168,14 +2148,12 @@
 
     check-cast v15, Landroid/widget/TextView;
 
-    .line 320
     .local v15, "empty":Landroid/widget/TextView;
     const/4 v2, 0x0
 
     invoke-virtual {v15, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 322
-    const v2, 0x1020376
+    const v2, #android:id@resolver_list#t
 
     move-object/from16 v0, p0
 
@@ -2236,7 +2214,7 @@
 
     .line 393
     :cond_14
-    const v2, 0x1020364
+    const v2, #android:id@button_bar#t
 
     move-object/from16 v0, p0
 
@@ -2246,17 +2224,14 @@
 
     check-cast v12, Landroid/view/ViewGroup;
 
-    .line 394
     .local v12, "buttonLayout":Landroid/view/ViewGroup;
     if-eqz v12, :cond_16
 
-    .line 395
     const/4 v2, 0x0
 
     invoke-virtual {v12, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 396
-    const v2, 0x1020378
+    const v2, #android:id@button_always#t
 
     invoke-virtual {v12, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -2268,8 +2243,7 @@
 
     iput-object v2, v0, Lcom/android/internal/app/ResolverActivity;->mAlwaysButton:Landroid/widget/Button;
 
-    .line 397
-    const v2, 0x1020377
+    const v2, #android:id@button_once#t
 
     invoke-virtual {v12, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -3100,7 +3074,7 @@
 
     move-result-object v5
 
-    const v6, 0x10405d6
+    const v6, #android:string@activity_resolver_work_profiles_support#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

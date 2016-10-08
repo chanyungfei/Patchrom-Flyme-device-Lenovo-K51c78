@@ -131,12 +131,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 150
-    const v0, 0x101035c
+    const v0, #android:attr@datePickerStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/SimpleMonthView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 151
     return-void
 .end method
 
@@ -253,7 +251,7 @@
 
     .line 161
     .local v0, "res":Landroid/content/res/Resources;
-    const v1, 0x104068f
+    const v1, #android:string@day_of_week_label_typeface#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -261,8 +259,7 @@
 
     iput-object v1, p0, Landroid/widget/SimpleMonthView;->mDayOfWeekTypeface:Ljava/lang/String;
 
-    .line 162
-    const v1, 0x104068e
+    const v1, #android:string@sans_serif#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -292,8 +289,7 @@
 
     iput-object v1, p0, Landroid/widget/SimpleMonthView;->mFormatter:Ljava/util/Formatter;
 
-    .line 167
-    const v1, 0x105008b
+    const v1, #android:dimen@datepicker_day_number_size#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -301,8 +297,7 @@
 
     iput v1, p0, Landroid/widget/SimpleMonthView;->mMiniDayNumberTextSize:I
 
-    .line 168
-    const v1, 0x105008c
+    const v1, #android:dimen@datepicker_month_label_size#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -310,8 +305,7 @@
 
     iput v1, p0, Landroid/widget/SimpleMonthView;->mMonthLabelTextSize:I
 
-    .line 169
-    const v1, 0x105008d
+    const v1, #android:dimen@datepicker_month_day_label_text_size#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -319,8 +313,7 @@
 
     iput v1, p0, Landroid/widget/SimpleMonthView;->mMonthDayLabelTextSize:I
 
-    .line 171
-    const v1, 0x105008e
+    const v1, #android:dimen@datepicker_month_list_item_header_height#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -328,8 +321,7 @@
 
     iput v1, p0, Landroid/widget/SimpleMonthView;->mMonthHeaderSize:I
 
-    .line 173
-    const v1, 0x105008f
+    const v1, #android:dimen@datepicker_day_number_select_circle_radius#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -337,8 +329,7 @@
 
     iput v1, p0, Landroid/widget/SimpleMonthView;->mDaySelectedCircleSize:I
 
-    .line 176
-    const v1, 0x1050090
+    const v1, #android:dimen@datepicker_view_animator_height#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -2086,7 +2077,7 @@
     .local v0, "res":Landroid/content/res/Resources;
     sget-object v1, Landroid/widget/SimpleMonthView;->ENABLED_STATE_SET:[I
 
-    const v2, 0x10600a7
+    const v2, #android:color@datepicker_default_normal_text_color_holo_light#t
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2115,7 +2106,7 @@
     .line 204
     sget-object v1, Landroid/widget/SimpleMonthView;->EMPTY_STATE_SET:[I
 
-    const v2, 0x10600a9
+    const v2, #android:color@datepicker_default_disabled_text_color_holo_light#t
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2137,7 +2128,7 @@
     .line 208
     sget-object v1, Landroid/widget/SimpleMonthView;->ENABLED_SELECTED_STATE_SET:[I
 
-    const v2, 0x1060012
+    const v2, #android:color@holo_blue_light#t
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
 

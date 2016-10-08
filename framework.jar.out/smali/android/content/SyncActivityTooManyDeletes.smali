@@ -193,7 +193,7 @@
 
     move-result-object v9
 
-    const v10, 0x104057f
+    const v10, #android:string@sync_really_delete#t
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -207,7 +207,7 @@
 
     move-result-object v9
 
-    const v10, 0x1040580
+    const v10, #android:string@sync_undo_deletes#t
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -221,7 +221,7 @@
 
     move-result-object v9
 
-    const v10, 0x1040581
+    const v10, #android:string@sync_do_nothing#t
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -233,9 +233,9 @@
     .local v5, "options":[Ljava/lang/CharSequence;
     new-instance v0, Landroid/widget/ArrayAdapter;
 
-    const v8, 0x1090003
+    const v8, #android:layout@simple_list_item_1#t
 
-    const v9, 0x1020014
+    const v9, #android:id@text1#t
 
     invoke-direct {v0, p0, v8, v9, v5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II[Ljava/lang/Object;)V
 
@@ -268,7 +268,7 @@
 
     move-result-object v8
 
-    const v9, 0x104057e
+    const v9, #android:string@sync_too_many_deletes_desc#t
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

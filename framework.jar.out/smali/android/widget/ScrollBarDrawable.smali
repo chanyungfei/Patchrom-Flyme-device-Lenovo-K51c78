@@ -49,7 +49,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x101009e
+    const v2, #android:attr@state_enabled#t
 
     aput v2, v0, v1
 
