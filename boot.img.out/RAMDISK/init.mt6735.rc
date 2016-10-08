@@ -1586,11 +1586,13 @@ on property:sys.vm.drop_caches=*
     sync
     write /proc/sys/vm/drop_caches ${sys.vm.drop_caches}
 
-service rpserver /sbin/rpserver
-    class main
-    user root
-    oneshot
-    seclabel u:r:rpserver:s0
+#Yaphet.Chan fix 2016-09-2５ Begin
+#service rpserver /sbin/rpserver
+#   class main
+#   user root
+#   oneshot
+#   seclabel u:r:rpserver:s0
+#Yaphet.Chan fix 2016-09-2５ End
 
 #lenovo-sw jixj 2014.1.3 add begin for customsn	
     service custom_sn /system/bin/custom_sn
