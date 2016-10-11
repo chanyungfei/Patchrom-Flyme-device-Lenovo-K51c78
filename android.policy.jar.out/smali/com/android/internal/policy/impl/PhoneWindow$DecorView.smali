@@ -2663,7 +2663,7 @@
 
     :cond_flyme_0
 
-    if-nez v2, :cond_0
+    #if-nez v2, :cond_0
 
     # getter for: Lcom/android/internal/policy/impl/PhoneWindow;->DBG_MOTION:Z
     invoke-static {}, Lcom/android/internal/policy/impl/PhoneWindow;->access$1100()Z
