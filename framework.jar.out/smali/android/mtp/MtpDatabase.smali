@@ -1146,11 +1146,11 @@
     if-eqz v12, :cond_6
 
     .line 439
-    iget-object v2, p0, Landroid/mtp/MtpDatabase;->mMediaProvider:Landroid/content/IContentProvider;
+    #iget-object v2, p0, Landroid/mtp/MtpDatabase;->mMediaProvider:Landroid/content/IContentProvider;
 
-    move-object/from16 v0, p1
+    #move-object/from16 v0, p1
 
-    invoke-direct {p0, v2, v0}, Landroid/mtp/MtpDatabase;->notifyBeginSend(Landroid/content/IContentProvider;Ljava/lang/String;)V
+    #invoke-direct {p0, v2, v0}, Landroid/mtp/MtpDatabase;->notifyBeginSend(Landroid/content/IContentProvider;Ljava/lang/String;)V
 
     .line 441
     invoke-virtual {v12}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
@@ -3321,9 +3321,9 @@
     invoke-static {v0, v1}, Lcom/mediatek/xlog/SXlog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1341
-    iget-object v0, p0, Landroid/mtp/MtpDatabase;->mMediaProvider:Landroid/content/IContentProvider;
+    #iget-object v0, p0, Landroid/mtp/MtpDatabase;->mMediaProvider:Landroid/content/IContentProvider;
 
-    invoke-direct {p0, v0, p1}, Landroid/mtp/MtpDatabase;->notifyBeginSend(Landroid/content/IContentProvider;Ljava/lang/String;)V
+    #invoke-direct {p0, v0, p1}, Landroid/mtp/MtpDatabase;->notifyBeginSend(Landroid/content/IContentProvider;Ljava/lang/String;)V
 
     .line 1342
     return-void
