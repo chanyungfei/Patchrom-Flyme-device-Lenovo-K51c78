@@ -1,0 +1,14 @@
+{
+"resource_description":"lenovo",
+"resource_originate":"lenovo",
+"resource_developer":"lenovo",
+"resource_designer":"lenovo",
+"resource_version":"1",
+"resource_versionname":"1.0",
+"resource_category":"lockscreen",
+"resource_platform":"phone",
+"resource_id":1234,
+"resource_name":"悦动",
+"resource_templateversion":2,
+"resource_subtype":"disable"
+}

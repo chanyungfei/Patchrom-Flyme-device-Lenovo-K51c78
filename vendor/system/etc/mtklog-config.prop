@@ -1,0 +1,9 @@
+mtklog_path = internal_sd
+com.mediatek.log.mobile.enabled = false
+com.mediatek.log.mobile.maxsize = 3000
+com.mediatek.log.mobile.totalmaxsize = 5000
+com.mediatek.log.modem.enabled = false
+com.mediatek.log.modem.maxsize = 2000
+com.mediatek.log.net.enabled = false
+com.mediatek.log.net.maxsize = 200
+com.mediatek.log.gps.enabled = false

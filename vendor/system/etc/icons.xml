@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 浏览器 / 互联网 start-->
+    <drawable name="com_android_browser__ic_launcher_browser">@drawable/com_android_browser__ic_launcher_browser</drawable>
+    <drawable name="com_android_browser__ic_launcher_browser_evdo">@drawable/com_android_browser__ic_launcher_browser</drawable>
+    <drawable name="com_lenovo_browser__ic_launcher_browser">@drawable/com_android_browser__ic_launcher_browser</drawable>
+	<drawable name="com_lenovo_browser_ic_laucher">@drawable/com_android_browser__ic_launcher_browser</drawable>
+	<drawable name="com_android_browser__icon_launcher_browser">@drawable/com_android_browser__ic_launcher_browser</drawable>
+	<drawable name="com_lenovo_browser__ic_launcher_browseractivity">@drawable/com_android_browser__ic_launcher_browser</drawable>
+    <!-- 浏览器 / 互联网 end-->
+    
+    <!-- 计算器 start-->
+    <drawable name="com_android_calculator2__ic_launcher_calculator">@drawable/com_android_calculator2__ic_launcher_calculator</drawable>
+    <drawable name="com_android_calculator2__icon">@drawable/com_android_calculator2__ic_launcher_calculator</drawable>
+    <drawable name="com_lenovo_calculator__icon">@drawable/com_android_calculator2__ic_launcher_calculator</drawable>
+	<drawable name="com_android_calculator2__icon_launcher_calculator">@drawable/com_android_calculator2__ic_launcher_calculator</drawable>
+    <!-- 计算器 end-->
+    
+    <!-- 日历 start-->
+    <drawable name="com_android_calendar__ic_launcher_calendar">@drawable/com_android_calendar__ic_launcher_calendar</drawable>
+    <drawable name="com_android_calendar__app_icon">@drawable/com_android_calendar__ic_launcher_calendar</drawable>
+    <drawable name="com_lenovo_app_calendar__calendar_app_icon">@drawable/com_android_calendar__ic_launcher_calendar</drawable>
+    <drawable name="com_lenovo_calendar__ic_launcher_calendar">@drawable/com_android_calendar__ic_launcher_calendar</drawable>
+	<drawable name="com_android_providers_calendar__app_icon">@drawable/com_android_calendar__ic_launcher_calendar</drawable>
+    <!-- 日历 end-->
+    
+    <!-- 相机 start-->
+	<drawable name="com_android_camera__ic_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <drawable name="com_android_camera__icon_supercamera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <drawable name="com_android_gallery3d__ic_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <drawable name="com_lenovo_scg__ic_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <drawable name="con_android_gallery3d__ic_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <drawable name="com_lenovo_scgmtk__ic_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <drawable name="com_lenovo_scgqc__ic_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+	<drawable name="com_android_camera__icon_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <drawable name="com_android_camera2__ic_launcher_camera">@drawable/com_android_camera__ic_launcher_camera</drawable>
+    <!-- 相机 end-->
+    
+    <!-- 通话记录 start-->
+    <drawable name="com_android_contacts__ic_launcher_calllog">@drawable/com_android_contacts__ic_launcher_calllog</drawable>
+    <drawable name="com_android_contacts__ic_launcher_contacts_calllog">@drawable/com_android_contacts__ic_launcher_calllog</drawable>
+	<drawable name="com_lenovo_ideafriend__ic_launcher_contacts_calllog">@drawable/com_android_contacts__ic_launcher_calllog</drawable>
+    <!-- 通话记录 end-->
+    
+    <!-- 联系人 start-->
+    <drawable name="com_lenovo_ideafriend__ic_launcher_contacts">@drawable/com_android_contacts__ic_launcher_contacts</drawable>
+    <drawable name="com_android_htccontacts__cust_icon_launcher_people">@drawable/com_android_contacts__ic_launcher_contacts</drawable>
+    <drawable name="com_android_contacts__ic_launcher_contacts">@drawable/com_android_contacts__ic_launcher_contacts</drawable>
+    <!-- shortcut -->
+    <drawable name="com_lenovo_ideafriend__ic_launcher_shortcut_contact">@drawable/com_android_contacts__ic_launcher_contacts</drawable>
+    <drawable name="com_lenovo_ideafriend__logo_quick_contacts_color_44in48dp">@drawable/com_android_contacts__ic_launcher_contacts</drawable>
+    <!-- 联系人 end-->
+    
+    <!-- 拨号 start-->
+	<drawable name="com_android_contacts__ic_launcher_phone">@drawable/com_android_contacts__ic_launcher_phone</drawable>
+    <drawable name="com_lenovo_ideafriend__ic_launcher_phone">@drawable/com_android_contacts__ic_launcher_phone</drawable>
+    <drawable name="com_google_android_dialer__ic_launcher_google_phone">@drawable/com_android_contacts__ic_launcher_phone</drawable>
+    <drawable name="com_android_htccontacts__cust_icon_launcher_phone">@drawable/com_android_contacts__ic_launcher_phone</drawable>
+    <drawable name="com_lenovo_ideafriend__logo_quick_contacts_dialer_color_44in48dp">@drawable/com_android_contacts__ic_launcher_phone</drawable>
+    <!-- 拨号 end-->
+    
+    <!-- 时钟 start-->
+    <drawable name="com_lenovomobile_deskclock__ic_launcher_alarmclock">@drawable/com_android_deskclock__ic_launcher_alarmclock</drawable>
+    <drawable name="com_lenovo_deskclock__ic_launcher_alarmclock">@drawable/com_android_deskclock__ic_launcher_alarmclock</drawable>
+    <drawable name="com_htc_android_worldclock__icon_launcher_world_clock">@drawable/com_android_deskclock__ic_launcher_alarmclock</drawable>
+     <drawable name="com_android_deskclock__ic_launcher_alarmclock">@drawable/com_android_deskclock__ic_launcher_alarmclock</drawable>
+    <!-- 时钟 end-->
+    
+    <!-- 邮件 start-->
+    <drawable name="com_lenovo_email__ic_launcher_email">@drawable/com_android_email__ic_launcher_email</drawable>
+    <drawable name="com_android_email__ic_launcher_email">@drawable/com_android_email__ic_launcher_email</drawable>
+    <drawable name="com_lenovo_email__ic_launcher_mail">@drawable/com_android_email__ic_launcher_email</drawable>
+    <drawable name="com_htc_android_mail__icon_launcher_mail">@drawable/com_android_email__ic_launcher_email</drawable>
+    <!-- 邮件 end-->
+    
+    <!-- 图库 start-->
+	<drawable name="com_android_gallery3d__ic_launcher_gallery">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+    <drawable name="com_baidu_gallery3d__ic_launcher_gallery">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+    <drawable name="com_lenovo_scg__ic_launcher_gallery">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+    <drawable name="com_android_camera__ic_launcher_gallery">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+    <drawable name="com_htc_album__icon_launcher_albums">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+    <drawable name="com_lenovo_scgmtk__ic_launcher_gallery">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+    <drawable name="com_lenovo_scgqc__ic_launcher_gallery">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+	<drawable name="com_lenovo_gallery__ic_launcher_gallery">@drawable/com_android_gallery3d__ic_launcher_gallery</drawable>
+    <!-- 图库 end-->
+    
+    <!-- 短信 / 信息 start-->
+	<drawable name="com_android_mms__ic_launcher_smsmms">@drawable/com_android_mms__ic_launcher_smsmms</drawable>
+    <drawable name="com_lenovo_mms__ic_launcher_smsmms">@drawable/com_android_mms__ic_launcher_smsmms</drawable>
+    <drawable name="com_lenovo_ideafriend__ic_launcher_smsmms">@drawable/com_android_mms__ic_launcher_smsmms</drawable>
+    <drawable name="com_android_mms__icon_launcher_messages">@drawable/com_android_mms__ic_launcher_smsmms</drawable>
+    <drawable name="com_lenovo_ideafriend__logo_quick_contacts_mail_color_44in48dp">@drawable/com_android_mms__ic_launcher_smsmms</drawable>
+    <!-- 短信 / 信息 end-->
+    
+    <!-- 音乐 start-->
+	<drawable name="com_android_music__app_music">@drawable/com_android_music__app_music</drawable>
+    <drawable name="com_android_music__icon">@drawable/com_android_music__app_music</drawable>
+    <drawable name="com_baidu_musicplayer__icon">@drawable/com_android_music__app_music</drawable>
+    <drawable name="com_lenovo_music__app_music">@drawable/com_android_music__app_music</drawable>
+    <drawable name="com_lenovo_music__lemusic_notify_unknown_artist">@drawable/com_android_music__app_music</drawable>
+    <drawable name="com_lenovo_music__app_music_logo">@drawable/com_android_music__app_music</drawable>
+<drawable name="com_lenovo_music__logo">@drawable/com_android_music__app_music</drawable>
+    <!-- 音乐 end-->
+    
+    <!-- 视频 start-->
+	<drawable name="com_android_music__app_video">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_android_videoplayer__icon">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_baidu_videoplayer__ic_element_appicon_videoplayer">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_mediatek_videoplayer__ic_video_app">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_lenovo_videoplayer__icon">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_android_videoplayer__ic_video_app">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_lenovo_videoplayer__ic_video_app">@drawable/com_android_music__app_video</drawable>
+	<drawable name="com_lenovo_videoplayer__video_icon">@drawable/com_android_music__app_video</drawable>
+	<drawable name="com_lenovo_videoplarer__ic_video_app">@drawable/com_android_music__app_video</drawable>
+	<drawable name="com_lenovo_video__ic_launcher_lenovo">@drawable/com_android_music__app_video</drawable>
+    <!-- 视频 end-->
+    
+    <!-- 搜索 start-->
+    <drawable name="com_lenovo_lenovosearch__search_app_icon">@drawable/com_android_quicksearchbox__search_app_icon</drawable>
+	<drawable name="com_android_quicksearchbox__search_app_icon">@drawable/com_android_quicksearchbox__search_app_icon</drawable>
+	<drawable name="com_uc_lenovoshenmafolat__ic_launcher">@drawable/com_android_quicksearchbox__search_app_icon</drawable>
+<drawable name="com_lenovo_launcher__search_app_icon">@drawable/com_android_quicksearchbox__search_app_icon</drawable>
+    <!-- 搜索 end-->
+    
+    <!-- 设置 / 系统设置 start-->
+    <drawable name="com_android_settings__ic_launcher_settings">@drawable/com_android_settings__ic_launcher_settings</drawable>
+    <drawable name="com_android_settings__icon_launcher_settings">@drawable/com_android_settings__ic_launcher_settings</drawable>
+    <!-- 设置 / 系统设置 end-->
+    
+    <!-- 录音机 start-->
+    <drawable name="com_baidu_soundrecorder__ic_recorder">@drawable/com_android_soundrecorder__ic_launcher_soundrecorder</drawable>
+    <drawable name="com_lenovo_soundrecorder__ic_launcher_soundrecorder">@drawable/com_android_soundrecorder__ic_launcher_soundrecorder</drawable>
+    <drawable name="com_htc_soundrecorder__icon_launcher_voice_recorder">@drawable/com_android_soundrecorder__ic_launcher_soundrecorder</drawable>
+	<drawable name="com_lenovo_recorder__ic_launcher_soundrecorder">@drawable/com_android_soundrecorder__ic_launcher_soundrecorder</drawable>
+	<drawable name="com_android_soundrecorder__ic_launcher_soundrecorder">@drawable/com_android_soundrecorder__ic_launcher_soundrecorder</drawable>
+	<drawable name="com_lenovo_recorder__ic_launcher">@drawable/com_android_soundrecorder__ic_launcher_soundrecorder</drawable>
+    <!-- 录音机 end-->
+        
+    <!-- 备份与恢复 start-->
+	<drawable name="com_lenovo_backuprestore__icon">@drawable/com_lenovo_backuprestore__icon</drawable>
+    <drawable name="com_baidu_backuprestore__ic_backup_launcher">@drawable/com_lenovo_backuprestore__icon</drawable>
+    <drawable name="com_lenovo_bakrestore__icon">@drawable/com_lenovo_backuprestore__icon</drawable>
+    <drawable name="com_mediatek_backuprestore__ic_backuprestore_launcher">@drawable/com_lenovo_backuprestore__icon</drawable>
+    <drawable name="com_lenovo_backuprestore__ic_backuprestore">@drawable/com_lenovo_backuprestore__icon</drawable>
+    <!-- 备份与恢复 end-->
+    
+    <!-- 文件管理器 start-->
+	<drawable name="com_lenovo_filebrowser__icon">@drawable/com_lenovo_filebrowser__icon</drawable>
+    <drawable name="com_baidu_resmanager__ic_launcher_folder">@drawable/com_lenovo_filebrowser__icon</drawable>
+    <drawable name="com_lenovo_leos_filebrowser__icon">@drawable/com_lenovo_filebrowser__icon</drawable>
+    <drawable name="com_mediatek_filemanager__app_filemanager">@drawable/com_lenovo_filebrowser__icon</drawable>
+    <drawable name="com_htc_htccnfilemanager__icon_launcher_folder">@drawable/com_lenovo_filebrowser__icon</drawable>
+	<drawable name="com_mediatek_wo3g_wo3g">@drawable/com_lenovo_filebrowser__icon</drawable>
+    <!-- 文件管理器 end-->
+    
+    <!-- 记事本 / 乐记事 / 联想记事 start-->
+	<drawable name="com_lenovo_notepad__app_notes">@drawable/com_lenovo_notepad__app_notes</drawable>
+    <drawable name="com_snda_inote_lenovo__icon">@drawable/com_lenovo_notepad__app_notes</drawable>
+    <drawable name="com_baidu_notepad__app_notes">@drawable/com_lenovo_notepad__app_notes</drawable>
+    <drawable name="com_lenovo_notepad__lenovo_notes">@drawable/com_lenovo_notepad__app_notes</drawable>
+    <drawable name="com_snda_in_maiku_lenovo__icon">@drawable/com_lenovo_notepad__app_notes</drawable>
+	<drawable name="com_mediatek_notebook__app_notes">@drawable/com_lenovo_notepad__app_notes</drawable>
+	<drawable name="com_lenovo_notebook__app_notes">@drawable/com_lenovo_notepad__app_notes</drawable>
+    <!-- 记事本 / 乐记事 / 联想记事 end-->
+	
+	<!-- 乐云记事 start-->
+	<drawable name="com_lenovo_note__ic_launcher">@drawable/com_lenovo_note__ic_launcher</drawable>
+    <drawable name="com_lenovo_supernote__ic_launcher">@drawable/com_lenovo_note__ic_launcher</drawable>
+    <!-- 乐云记事 end-->
+    
+    <!-- 乐安全 start-->
+	<drawable name="com_lenovo_safecenter__icon">@drawable/com_lenovo_safecenter__icon</drawable>
+    <drawable name="com_lenovo_safebox__icon">@drawable/com_lenovo_safecenter__icon</drawable>
+    <drawable name="com_lenovo_safecenter_plugin__icon">@drawable/com_lenovo_safecenter__icon</drawable>
+    <drawable name="com_lenovo_safecenterpad__icon">@drawable/com_lenovo_safecenter__icon</drawable>
+    <drawable name="com_lenovo_safecenter__icon_launcher">@drawable/com_lenovo_safecenter__icon</drawable>
+	<drawable name="com_lenovo_safecenter_ww__icon">@drawable/com_lenovo_safecenter__icon</drawable>
+	<drawable name="com_lenovo_safecenter__ic_launcher">@drawable/com_lenovo_safecenter__icon</drawable>
+	<drawable name="com_lenovo_security__launch_icon">@drawable/com_lenovo_safecenter__icon</drawable>
+    <!-- 乐安全 end-->
+    
+    <!-- 安装文件浏览器 / 安装包搜索 start-->
+    <!--<drawable name="com_lenovo_sdapkinstaller__icon">@drawable/com_lenovo_sdapkinstaller__icon</drawable>-->
+    <!-- 安装文件浏览器 / 安装包搜索 end-->
+    
+    <!-- 天气 start-->
+    <drawable name="com_lenovo_android_lenovosinaweather__icon">@drawable/com_lenovo_weather__ic_launcher_settings</drawable>
+	<drawable name="com_lenovo_weather__ic_launcher_settings">@drawable/com_lenovo_weather__ic_launcher_settings</drawable>
+	<drawable name="com_lenovo_lewea__ic_launcher">@drawable/com_lenovo_weather__ic_launcher_settings</drawable>
+    <!-- 天气 end-->
+    
+    <!-- FM收音机 start-->
+	<drawable name="com_lenovo_leos_fmradio__ic_launcher_fmradio">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <drawable name="com_mediatek_fmradio__ic_launcher_temp">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <drawable name="com_broadcom_bt_app_fm__icon">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <drawable name="com_lenovo_fm__ic_launcher_fmradio">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <drawable name="com_lenovo_fm__ic_launcher_temp">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <drawable name="com_htc_fm__icon_launcher_fm_radio">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <drawable name="com_lenovo_fm__ic_launcher">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <drawable name="com_lenovo_fm__ic_launcher_oversea">@drawable/com_lenovo_leos_fmradio__ic_launcher_fmradio</drawable>
+    <!-- FM收音机 end-->
+    
+    <!-- 个人热点 start-->
+	<drawable name="com_android_settings__ic_launcher_mobile_ap">@drawable/com_android_settings__ic_launcher_mobile_ap</drawable>
+    <drawable name="com_mediatek_fmtransmitter__fmtx_ic_launcher">@drawable/com_android_settings__ic_launcher_mobile_ap</drawable>
+    <drawable name="com_lenovo_android_settings_tether__icon">@drawable/com_android_settings__ic_launcher_mobile_ap</drawable>
+    <!-- 个人热点 end-->
+    
+    <!-- SIM卡应用 / UIM卡应用 start-->
+	<!--<drawable name="com_android_stk__ic_launcher_sim1_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>-->
+    <!--<drawable name="com_mediatek_stkselection__ic_launcher_sim_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>-->
+    <!--<drawable name="com_android_stk__ic_launcher_sim_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>-->
+    <!--<drawable name="com_android_stk__ic_launcher_sim2_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>-->
+    <!--<drawable name="com_android_stk__ic_launcher_uim_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>  -->
+    <!-- SIM卡应用 / UIM卡应用 end-->
+    
+    <!-- 玩家教程 start-->
+	<drawable name="com_novicetutorial__icon">@drawable/com_novicetutorial__icon</drawable>
+    <drawable name="com_lenovo_playerstutorial__ic_launcher">@drawable/com_novicetutorial__icon</drawable>    
+    <drawable name="com_lenovo_playerstutorial__icon">@drawable/com_novicetutorial__icon</drawable>    
+    <!-- 玩家教程 end-->
+    
+    <!-- 乐服务 start-->
+    <!--<drawable name="com_lenovo_service__icon">@drawable/com_lenovo_service__icon</drawable>-->
+    <!-- 乐服务 end-->
+    
+    <!-- 乐关联 start-->
+    <!--<drawable name="com_lenovo_leos_dc_portal__icon">@drawable/com_lenovo_leos_dc_portal__icon</drawable>-->
+    <!-- 乐关联 end-->
+    
+    <!-- 茄子快传 start-->
+	<drawable name="com_lenovo_anyshare_gps__ic_launcher">@drawable/com_lenovo_anyshare__ic_launcher</drawable>
+    <drawable name="com_lenovo_anyshare__ic_launcher">@drawable/com_lenovo_anyshare__ic_launcher</drawable>
+    <!-- 茄子快传 end-->
+    
+    <!-- 乐语音 start-->
+    <!--<drawable name="com_lenovo_levoice__lv_main_homepage_logo">@drawable/com_lenovo_levoice__lv_main_homepage_logo</drawable>-->
+    <!-- 乐语音 end-->
+    
+    <!-- 手电筒 start-->
+    <!--<drawable name="com_lenovo_lenovohdllight__ic_launcher">@drawable/com_lenovo_lenovohdllight__ic_launcher</drawable>-->
+    <!-- 手电筒 end-->
+    
+    <!-- 乐商店 start-->
+	<drawable name="com_lenovo_leos_appstore__default_icon">@drawable/com_lenovo_leos_appstore__default_icon</drawable>
+    <drawable name="com_lenovo_leos_appstore_pad__default_icon">@drawable/com_lenovo_leos_appstore__default_icon</drawable>
+    <!-- 乐商店 end-->
+    
+    <!-- 乐同步 / 乐云同步 start-->
+	<drawable name="com_lenovo_leos_cloud_sync_row__logo">@drawable/com_lenovo_leos_cloud_sync__logo</drawable>
+    <drawable name="com_lenovo_lps_cloud_sync__icon">@drawable/com_lenovo_leos_cloud_sync__logo</drawable>
+	<drawable name="com_lenovo_leos_cloud_sync__logo">@drawable/com_lenovo_leos_cloud_sync__logo</drawable>
+	<drawable name="com_lenovo_mbg_cloud_sync__logo">@drawable/com_lenovo_leos_cloud_sync__logo</drawable>
+    <!-- 乐同步 / 乐云同步 end-->
+    
+    <!-- 用户中心 start-->
+    <!--<drawable name="com_lenovo_leos_lenovoservicesetting__icon">@drawable/com_lenovo_leos_lenovoservicesetting__icon</drawable>-->
+    <!-- 用户中心 end-->
+    
+    <!-- 乐省电 start-->
+	<drawable name="com_lenovo_powersaving__icon_battery">@drawable/com_lenovo_powersaving__icon_battery</drawable>
+    <drawable name="com_android_savepower__le_save">@drawable/com_lenovo_powersaving__icon_battery</drawable>
+    <drawable name="com_android_savepower__lesave">@drawable/com_lenovo_powersaving__icon_battery</drawable>
+    <drawable name="com_lenovo_safe_powercenter__icon_battery">@drawable/com_lenovo_powersaving__icon_battery</drawable>
+    <drawable name="com_lenovo_powercenter__icon_battery">@drawable/com_lenovo_powersaving__icon_battery</drawable>
+    <drawable name="com_lenovo_safe_powercenter_hd__icon_battery">@drawable/com_lenovo_powersaving__icon_battery</drawable>
+    <drawable name="com_lenovo_powercenter_hd__icon_battery">@drawable/com_lenovo_powersaving__icon_battery</drawable>
+    <!-- 乐省电 end-->
+    
+    <!-- 定位 start-->
+    <!-- <drawable name="lenovo_citynum__icon">@drawable/lenovo_citynum__icon</drawable> -->
+    <!-- 定位 end-->
+    
+    <!-- 乐升级 start-->
+    <drawable name="com_lenovo_ota__icon">@drawable/com_lenovo_ota__icon</drawable>
+	<drawable name="com_lenovo_update__icon">@drawable/com_lenovo_ota__icon</drawable>
+<drawable name="com_lenovo_ota__ota_icon">@drawable/com_lenovo_ota__icon</drawable>
+    <!-- 乐升级 end-->
+    
+    <!-- 主题中心 start-->
+    <drawable name="com_lenovo_themecenter__ic_launcher">@drawable/com_lenovo_themecenter__ic_launcher</drawable>
+    <drawable name="com_lenovo_launcher__ic_le_menutheme">@drawable/com_lenovo_themecenter__ic_launcher</drawable>
+    <!-- 主题中心 end-->
+	
+	<!-- 我的主题 start-->
+    <!-- <drawable name="com_lenovo_launcher__ic_launcher_theme_shortcut">@drawable/com_lenovo_themecenter__ic_launcher</drawable> -->
+    <!-- 我的主题 end-->
+	
+	<!-- 手机管家 start-->
+	<drawable name="com_lenovo_magicplus__ee_icon">@drawable/com_lenovo_magicplus__ee_icon</drawable>
+    <drawable name="com_lenovo_magicplus__main_icon">@drawable/com_lenovo_magicplus__ee_icon</drawable>
+    <!-- 手机管家 end-->
+	
+	<!-- 美丽魔镜 start-->
+	<drawable name="com_lenovo_mcamera__ic_launcher_mcamera">@drawable/com_lenovo_mcamera__ic_launcher_mcamera</drawable>
+    <!-- 美丽魔镜 end-->
+	
+	<!-- 乐桌面 start-->
+	<drawable name="com_lenovo_launcher__ic_launcher_home">@drawable/com_lenovo_launcher__ic_launcher_home</drawable>
+	<drawable name="com_lenovo_launcher__idea_desktop_home">@drawable/com_lenovo_launcher__ic_launcher_home</drawable>
+    <!-- 乐桌面 end-->
+	
+	<!-- 归属地 start-->
+	<drawable name="lenovo_citynum__icon">@drawable/lenovo_citynum__icon</drawable>
+    <!-- 归属地 end-->
+    
+    <!-- 联想省电 start-->
+    <!-- <drawable name="com_lenovo_safe_powercenter_hd__launch_battery">@drawable/com_lenovo_safe_powercenter__launch_battery</drawable> -->
+    <!-- 联想省电 end-->
+    
+    <!-- 下载管理 start-->
+    <!-- <drawable name="com_android_providers_downloads_ui__ic_launcher_download">@drawable/com_android_providers_downloads_ui__ic_launcher_download</drawable> -->
+    <!-- 下载管理 end-->
+    
+    <!-- 联想罗盘 start-->
+    <!-- <drawable name="com_lenovo_compass__icon">@drawable/com_lenovo_compass__icon</drawable> -->
+    <!-- 联想罗盘 end-->
+    
+    <!-- 一键锁屏 start-->
+    <!-- <drawable name="com_lenovo_onkeylock__ic_launcher">@drawable/com_lenovo_onkeylock__ic_launcher</drawable> -->
+    <!-- 一键锁屏 end-->
+    
+    <!-- 报警求救 start-->
+    <!-- <drawable name="com_lenovo_sos__ic_launcher">@drawable/com_lenovo_sos__ic_launcher</drawable> -->
+    <!-- 报警求救 end-->
+	
+	<!-- 车载工具 start-->
+    <!-- <drawable name="com_lenovo_carapplication__ic_launcher">@drawable/com_lenovo_carapplication__ic_launcher</drawable> -->
+	<!-- <drawable name="com_lenovo_levoice_car__app_logo">@drawable/com_lenovo_carapplication__ic_launcher</drawable> -->
+    <!-- 车载工具 end-->
+    
+    <!-- 多宝盒 start-->
+    <!-- <drawable name="com_lenovo_ladybox__ic_launcher">@drawable/com_lenovo_ladybox__ic_launcher</drawable> -->
+    <!-- 多宝盒 end-->
+    
+    <!-- Wo.3G start-->
+    <!-- <drawable name="com_mediatek_wo3g__wo3g">@drawable/com_lenovo_wo3g__wo3g</drawable> -->
+    <!-- Wo.3G end-->
+    
+    <!-- 防扰助手 start-->
+    <!-- <drawable name="com_lenovosecure_filterlist__icon">@drawable/com_lenovosecure_filterlist__icon</drawable> -->
+    <!-- 防扰助手 end-->
+    
+    <!-- 任务管理器 start-->
+    <!-- <drawable name="com_lenovo_taskmanager__ic_launcher">@drawable/com_lenovo_taskmanager__ic_launcher</drawable> -->
+    <!-- 任务管理器 end-->
+    
+    <!-- 国际漫游设置 start-->
+    <!-- <drawable name="com_qualcomm_ctroamingsettings__roaming_setting">@drawable/com_qualcomm_ctroamingsettings__roaming_setting</drawable> -->
+	<!-- <drawable name="com_android_phone__ic_launcher_interl_roam">@drawable/com_qualcomm_ctroamingsettings__roaming_setting</drawable> -->
+	<!-- <drawable name="com_lenovo_leos_roamsettings__ic_launcher_interl_roam">@drawable/com_qualcomm_ctroamingsettings__roaming_setting</drawable> -->
+    <!-- 国际漫游设置 end-->
+    
+    <!-- 客户服务 start-->
+    <!-- <drawable name="com_lenovo_leos_customerservice_telecom__icon">@drawable/com_android_customerservice__icon</drawable> -->
+    <!-- 客户服务 end-->
+    
+    <!-- 互联星空 start-->
+    <!-- <drawable name="com_lenovo_chinavnet__vnet_mobi">@drawable/com_lenovo_vnet__ic_launcher</drawable> -->
+    <!-- 互联星空 end-->
+	
+	<!-- 快速设置 start-->
+    <!-- <drawable name="shutcut_widget_app_icon">@drawable/shutcut_widget_app_icon</drawable> -->
+	<!-- <drawable name="shutcut_widget_icon">@drawable/shutcut_widget_app_icon</drawable> -->
+    <!-- 快速设置 end-->
+    
+    <!-- WLAN分享 start-->
+    <drawable name="com_lenovo_wifidirect_share__ic_launcher">@drawable/com_lenovo_wifidirect_share__ic_launcher</drawable>
+	<drawable name="com_android_settings__ic_settings_wireless">@drawable/com_lenovo_wifidirect_share__ic_launcher</drawable>
+    <!--    <drawable name="com_mediatek_op01_plugin__ic_launcher_settings">@drawable/com_lenovo_wifidirect_share__ic_launcher</drawable> -->
+    <!-- WLAN分享 end-->
+    
+    <!-- 股票小工具 start-->
+    <drawable name="com_lenovo_stockappwidget__ic_launcher">@drawable/com_lenovo_stockappwidget__ic_launcher</drawable>
+    <!-- 股票小工具 end-->
+    
+    <!-- 189邮箱 start-->
+    <!-- <drawable name="com_lenovo_mail189__mail189_72px">@drawable/com_lenovo_mail189__mail189_72px</drawable> -->
+    <!-- 189邮箱 end-->
+    
+    <!-- 网址导航 start-->
+	<drawable name="com_lenovo_lps_simple__ic_launcher">@drawable/com_lenovo_lps_simple__launcher_ic</drawable>
+    <drawable name="com_lenovo_lps_simple__launcher_ic">@drawable/com_lenovo_lps_simple__launcher_ic</drawable>
+    <drawable name="com_lenovo_lps_simple__ic_lanucher_browser">@drawable/com_lenovo_lps_simple__launcher_ic</drawable>
+    <drawable name="com_lenovo_lps_simple_hd__lancher_ic">@drawable/com_lenovo_lps_simple__launcher_ic</drawable>
+    <drawable name="com_lenovo_lps_simple__lancher_ic">@drawable/com_lenovo_lps_simple__launcher_ic</drawable>
+    <drawable name="com_lenovo_lps_simple_hd__ic_laucher">@drawable/com_lenovo_lps_simple__launcher_ic</drawable>
+	<drawable name="com_lenovo_lps_simple__ic_laucher">@drawable/com_lenovo_lps_simple__launcher_ic</drawable>
+    <!-- 网址导航 end-->
+
+
+    <!--  游戏世界 start-->
+    <drawable name="com_lenovo_gameworld__ic_launcher">@drawable/com_lenovo_gameworldphone__ic_launcher</drawable>
+	<drawable name="com_lenovo_gameworldphone__ic_launcher">@drawable/com_lenovo_gameworldphone__ic_launcher</drawable>
+    <!--  end-->
+
+    <!--   友约 start-->
+    <drawable name="com_lenovo_videotalk_pad__weaver_icon">@drawable/com_lenovo_videotalk_phone__weaver_icon</drawable>
+	<drawable name="com_lenovo_videotalk_phone__weaver_icon">@drawable/com_lenovo_videotalk_phone__weaver_icon</drawable>
+    <!--  end-->
+    
+    <!--   一键清理 start-->
+    <drawable name="com_lenovo_safecenter__perf_shortcut_icon">@drawable/com_lenovo_safecenter__perf_shortcut_icon</drawable>
+	<drawable name="com_lenovo_safecenter__onkey_shurtcut_green">@drawable/com_lenovo_safecenter__perf_shortcut_icon</drawable>
+	<drawable name="com_lenovo_safecenterpad__onkey_shutcut_green">@drawable/com_lenovo_safecenter__perf_shortcut_icon</drawable>
+	<drawable name="com_lenovo_safecenter__onkey_shutcut_green">@drawable/com_lenovo_safecenter__perf_shortcut_icon</drawable>
+	<drawable name="com_lenovo_safecenter_ww__onkey_shutcut_green">@drawable/com_lenovo_safecenter__perf_shortcut_icon</drawable>
+    <!--  end-->
+   
+    <!--   指南针 start-->
+    <drawable name="com_lenovo_compass__ic_launcher">@drawable/com_lenovo_compass__icon</drawable>
+    <!--  end-->
+	
+	<!-- 无线同屏 start-->
+    <drawable name="com_lenovo_miracast__ic_launcher">@drawable/com_lenovo_miracast__ic_launcher</drawable>
+    <!-- 无线同屏 end-->
+	
+	<!-- 电影工作室 start-->
+    <drawable name="com_android_videoeditor__ic_launcher_moviestudio">@drawable/com_android_videoeditor__ic_launcher_moviestudio</drawable>
+    <!-- 电影工作室 end-->
+	
+	<!-- 联想用户注册 start-->
+    <drawable name="com_huantai_salesclient_activity__ec3_sales_client_icon">@drawable/com_huantai_salesclient_activity__ec3_sales_client_icon</drawable>
+    <!-- 联想用户注册 end-->
+	
+	<!-- NFC 应用 start-->
+    <drawable name="com_lenovo_lenovonfc__ic_launcher">@drawable/com_lenovo_lenovonfc__ic_launcher</drawable>
+    <!-- NFC 应用 end-->
+	
+	<!-- 茄子换机 start-->
+    <drawable name="com_lenovo_anyshare__clone_ic_launcher">@drawable/com_lenovo_anyshare__clone_ic_launcher</drawable>
+    <!-- 茄子换机 end-->
+	
+	<!-- 直接拨打 start-->
+    <drawable name="com_lenovo_ideafriend__ic_launcher_shortcut_directdial">@drawable/com_lenovo_ideafriend__ic_launcher_shortcut_directdial</drawable>
+    <!-- 直接拨打 end-->
+	
+	<!-- 直接发送短信 start-->
+    <drawable name="com_lenovo_ideafriend__ic_launcher_shortcut_directmessage">@drawable/com_lenovo_ideafriend__ic_launcher_shortcut_directmessage</drawable>
+    <!-- 直接发送短信 end-->
+	
+    <!-- 猜你喜欢 start-->
+	<!-- <drawable name="com_lenovo_leos_hw__ic_launcher">@drawable/com_lenovo_leos_hw__ic_launcher</drawable> -->
+    <!-- 猜你喜欢 end-->
+
+    <!-- 找图标 start-->
+	<drawable name="com_lenovo_lenovosearch_searchactivity__search_app_icon">@drawable/com_lenovo_lenovosearch_searchactivity__search_app_icon</drawable>
+    <drawable name="ic_le_searchapp">@drawable/com_lenovo_lenovosearch_searchactivity__search_app_icon</drawable>
+    <drawable name="com_lenovo_launcher__ic_le_searchapp">@drawable/com_lenovo_lenovosearch_searchactivity__search_app_icon</drawable>
+    <!-- 找图标 end-->
+	
+	<!-- 桌面设置 start-->
+	<drawable name="com_lenovo_launcher__ic_le_menudesktop">@drawable/com_lenovo_launcher__ic_le_menudesktop</drawable>
+    <drawable name="le_menudesktop">@drawable/com_lenovo_launcher__ic_le_menudesktop</drawable>
+    <!-- 桌面设置 end-->
+	
+	<!-- 壁纸 start-->
+	<drawable name="com_lenovo_launcher__ic_le_menuwallpaper">@drawable/com_lenovo_launcher__ic_le_menuwallpaper</drawable>
+    <drawable name="ic_le_menuwallpaper">@drawable/com_lenovo_launcher__ic_le_menudesktop</drawable>
+    <!-- 壁纸 end-->
+	
+	<!-- 主题 start-->
+	<drawable name="com_lenovo_launcher__ic_le_menutheme">@drawable/com_lenovo_launcher__ic_le_menutheme</drawable>
+    <drawable name="ic_le_menutheme">@drawable/com_lenovo_launcher__ic_le_menudesktop</drawable>
+    <!-- 主题 end-->
+	
+	<!-- 一键锁屏 start-->
+	<drawable name="com_lenovo_launcher__ic_le_onekeylock">@drawable/com_lenovo_launcher__ic_le_onekeylock</drawable>
+    <drawable name="ic_le_onekeylock">@drawable/com_lenovo_launcher__ic_le_onekeylock</drawable>
+    <!-- 一键锁屏 end-->
+	
+	<!-- 和包 start-->
+    <drawable name="com_cyber_wallet__ic_launcher">@drawable/com_cyber_wallet__ic_launcher</drawable>
+    <!-- 和包 end-->   
+	
+	<!-- 和地图 start-->
+    <drawable name="com_autonavi_cmccmap__logo">@drawable/com_autonavi_cmccmap__logo</drawable>
+    <!-- 和地图 end--> 
+	
+	<!-- 和通讯录 start-->
+    <drawable name="com_chinamobile_contacts_im__ic_launcher">@drawable/com_chinamobile_contacts_im__ic_launcher</drawable>
+    <!-- 和通讯录 end-->  
+	
+	<!-- 和游戏 start-->
+    <drawable name="cn_emagsoftware_gamehall__ic_launcher">@drawable/cn_emagsoftware_gamehall__ic_launcher</drawable>
+    <!-- 和游戏 end-->  
+	
+	<!-- 和阅读 start-->
+    <drawable name="com_ophone_reader_ui__cmcc_mainmenu_mobilereader">@drawable/com_ophone_reader_ui__cmcc_mainmenu_mobilereader</drawable>
+    <!-- 和阅读 end--> 
+	
+	<!-- 139邮箱 start-->
+    <drawable name="cn_cj_pe__ic_app">@drawable/cn_cj_pe__ic_app</drawable>
+    <!-- 139邮箱 end-->
+	
+	<!-- 灵犀语音助手 start-->
+    <drawable name="com_iflytek_cmcc__viafly_ico_home_app">@drawable/com_iflytek_cmcc__viafly_ico_home_app</drawable>
+    <!-- 灵犀语音助手 end--> 
+	
+	<!-- 随e行WLAN start-->
+    <drawable name="com_chinamobile_cmccwifi__icon">@drawable/com_chinamobile_cmccwifi__icon</drawable>
+    <!-- 随e行WLAN end--> 
+	
+	<!-- MM商场 start-->
+    <drawable name="com_aspire_mm__icon">@drawable/com_aspire_mm__icon</drawable>
+    <!-- MM商场 end-->
+	
+	<!-- 飞信 start-->
+    <drawable name="com_aspire_mm__icon">@drawable/com_aspire_mm__icon</drawable>
+    <!-- 飞信 end-->  
+	
+	<!-- 移动门户 start-->
+    <drawable name="com_chinamobile_home__ic_launcher_10086">@drawable/com_chinamobile_home__ic_launcher_10086</drawable>
+    <!-- 移动门户 end-->  
+	
+	<!-- 116114 电话导航 start-->
+    <drawable name="com_neusoft_td_android_wo116114__icon">@drawable/com_neusoft_td_android_wo116114__icon</drawable>
+    <!-- 116114 电话导航 end--> 
+	
+	<!-- USIM卡应用1 start-->
+    <drawable name="com_android_stk__ic_launcher_usim_toolkit1">@drawable/com_android_stk__ic_launcher_usim_toolkit1</drawable>
+    <!-- USIM卡应用1 end--> 
+	
+	<!-- USIM卡应用2 start-->
+    <drawable name="com_android_stk__ic_launcher_usim_toolkit2">@drawable/com_android_stk__ic_launcher_usim_toolkit2</drawable>
+    <!-- USIM卡应用2 end--> 
+	
+	<!-- 手机营业厅 start-->
+    <drawable name="com_sinovatech_unicom_ui__icon_zi">@drawable/com_sinovatech_unicom_ui__icon_zi</drawable>
+    <!-- 手机营业厅 end-->  
+	
+	<!-- 手机邮箱 start-->
+    <drawable name="com_asiainfo_android__wo">@drawable/com_asiainfo_android__wo</drawable>
+    <!-- 手机邮箱 end-->
+	
+	<!-- 沃门户 start-->
+    <drawable name="com_lenovo_wo3g__wo3g">@drawable/com_lenovo_wo3g__wo3g</drawable>
+    <!-- 沃门户 end-->
+	
+	<!-- 沃商店 start-->
+    <drawable name="com_infinit_wostore_ui__icon">@drawable/com_infinit_wostore_ui__icon</drawable>
+    <!-- 沃商店 end-->
+	
+	<!-- 沃游戏 start-->
+    <drawable name="com_infinit_wostore_ui__icon">@drawable/com_infinit_wostore_ui__icon</drawable>
+    <!-- 沃游戏 end-->
+	
+	<!-- 电信UIM卡应用 start-->
+    <drawable name="com_android_stk__ic_launcher_uim_toolkit">@drawable/com_android_stk__ic_launcher_uim_toolkit</drawable>
+    <!-- 电信UIM卡应用 end-->
+	
+	<!-- WPS start-->
+    <drawable name="cn_wps_moffice_eng__public_icon">@drawable/cn_wps_moffice_eng__public_icon</drawable>
+    <drawable name="com_lenovo_office__public_home_icon">@drawable/cn_wps_moffice_eng__public_icon</drawable>
+    <drawable name="com_lenovo_office__public_icon">@drawable/cn_wps_moffice_eng__public_icon</drawable>
+    <!-- WPS end-->
+	
+	<!-- 高德地图 start-->
+    <drawable name="com_autonavi_minimap__v2_icon">@drawable/com_autonavi_minimap__v2_icon</drawable>
+	<drawable name="com_autonavi_minimap__v3_icon">@drawable/com_autonavi_minimap__v2_icon</drawable>
+    <!-- 高德地图 end-->
+	
+	<!-- 高德导航 start-->
+    <drawable name="com_autonavi_xmgd_navigator__icon">@drawable/com_autonavi_xmgd_navigator__icon</drawable>
+	<drawable name="com_autonavi_xmgd_navigatorq__icon">@drawable/com_autonavi_xmgd_navigator__icon</drawable>
+    <!-- 高德导航 end-->
+	
+	<!-- 百度 start-->
+    <drawable name="com_baidu_searchbox__icon">@drawable/com_baidu_searchbox__icon</drawable>
+	<drawable name="com_baidu_searchbox_lenovo__icon">@drawable/com_baidu_searchbox__icon</drawable>
+    <!-- 百度 end-->
+	
+	<!-- 百度视频 start-->
+    <drawable name="com_baidu_tvplay__ic_launcher">@drawable/com_baidu_tvplay__ic_launcher</drawable>
+    <!-- 百度视频 end-->
+	
+	<!-- 掌阅iReader start-->
+    <drawable name="com_chaozh_ireaderfree15__icon">@drawable/com_chaozh_ireaderfree15__icon</drawable>
+    <!-- 掌阅iReader end-->
+	
+	<!-- 博雅斗地主 start-->
+    <drawable name="com_boyaa_lordland_sina__icon">@drawable/com_boyaa_lordland_sina__icon</drawable>
+    <!-- 博雅斗地主 end-->
+	
+	<!-- 讯飞输入法 start-->
+    <drawable name="com_iflytek_inputmethod__lenovo_icon">@drawable/com_iflytek_inputmethod__lenovo_icon</drawable>
+	<drawable name="com_iflytek_inputmethod_oem__app_high_icon">@drawable/com_iflytek_inputmethod__lenovo_icon</drawable>
+	<drawable name="com_iflytek_viafly__viafly_ico_mic_app">@drawable/com_iflytek_inputmethod__lenovo_icon</drawable>
+    <!-- 讯飞输入法 end-->
+	
+	<!-- ZAKER  start-->
+    <drawable name="com_myzaker_phone__icon">@drawable/com_myzaker_phone__icon</drawable>
+	<drawable name="com_myzaker_zaker_phone__icon">@drawable/com_myzaker_phone__icon</drawable>
+    <!-- ZAKER  end-->
+	
+	<!-- 欧鹏浏览器 start-->
+    <drawable name="com_oupeng_browserpre_cmcc__icon">@drawable/com_oupeng_browserpre_cmcc__icon</drawable>
+	<drawable name="com_oupeng_mini_android__app_icon">@drawable/com_oupeng_browserpre_cmcc__icon</drawable>
+    <!-- 欧鹏浏览器 end-->
+	
+	<!-- 微博 start-->
+    <drawable name="com_sina_weibo__logo">@drawable/com_sina_weibo__logo</drawable>
+	<drawable name="com_sina_weibog3__logo">@drawable/com_sina_weibo__logo</drawable>
+    <!-- 微博 end-->
+	
+	<!-- 搜狗输入法 start-->
+    <drawable name="com_sohu_inputmethod_sogou__logo">@drawable/com_sohu_inputmethod_sogou__logo</drawable>
+	<drawable name="com_sohu_inputmethod_sogouoem__logo">@drawable/com_sohu_inputmethod_sogou__logo</drawable>
+    <!-- 搜狗输入法 end-->
+	
+	<!-- 淘宝 start-->
+    <drawable name="com_taobao_taobao__icon">@drawable/com_taobao_taobao__icon</drawable>
+    <!-- 淘宝 end-->
+	
+	<!-- 天猫 start-->
+    <drawable name="com_tmall_wireless__ic_launcher">@drawable/com_tmall_wireless__ic_launcher</drawable>
+    <!-- 天猫 end-->
+	
+	<!-- QQ start-->
+    <drawable name="com_tencent_mobileqq__icon">@drawable/com_tencent_mobileqq__icon</drawable>
+    <drawable name="com_tencent_mobileqq__hcw">@drawable/com_tencent_mobileqq__icon</drawable>
+    <!-- QQ end-->
+	
+	<!-- 腾讯视频 start-->
+    <drawable name="com_tencent_qqlive__icon">@drawable/com_tencent_qqlive__icon</drawable>
+    <!-- 腾讯视频 end-->
+	
+	<!-- QQ音乐 start-->
+    <drawable name="com_tencent_qqmusic__icon">@drawable/com_tencent_qqmusic__icon</drawable>
+    <!-- QQ音乐 end-->
+	
+	<!-- 天气通 start-->
+    <drawable name="sina_mobile_tianqitong__app_ic_launcher">@drawable/sina_mobile_tianqitong__app_ic_launcher</drawable>
+    <!-- 天气通 end-->
+	
+	<!-- 粉色日历 start-->
+    <drawable name="cn_etouch_ecalendar_ladies__icon">@drawable/cn_etouch_ecalendar_ladies__icon</drawable>
+    <!-- 粉色日历 end-->
+	
+	<!-- 豌豆荚 start-->
+    <drawable name="com_wandoujia_phoenix2__icon">@drawable/com_wandoujia_phoenix2__icon</drawable>
+    <!-- 豌豆荚 end-->
+	
+	<!-- 小绿人 start-->
+    <drawable name="android__sym_def_app_icon">@drawable/android__sym_def_app_icon</drawable>
+	<drawable name="com_example_getapplist__ic_launcher">@drawable/android__sym_def_app_icon</drawable>
+	<drawable name="com_lenovo_callscreen_theme_lovecorner__ic_launcher">@drawable/android__sym_def_app_icon</drawable>
+	<drawable name="com_lenovo_runinsupport__ic_launcher">@drawable/android__sym_def_app_icon</drawable>
+	<drawable name="lenovo_notification_icon_android">@drawable/android__sym_def_app_icon</drawable>
+    <!-- 小绿人 end-->
+	
+	<!-- Android 系统 start-->
+    <drawable name="android__ic_launcher_android">@drawable/android__ic_launcher_android</drawable>
+    <!-- Android 系统 end-->
+	
+	<!-- 照片屏幕保护程序  start-->
+    <drawable name="com_android_dreams_phototable__ic_launcher_phototable">@drawable/com_android_dreams_phototable__ic_launcher_phototable</drawable>
+    <!-- 照片屏幕保护程序  end-->
+	
+	<!-- 黑洞 start-->
+    <drawable name="com_android_galaxy4__icon">@drawable/com_android_galaxy4__icon</drawable>
+	<drawable name="com_android_wallpaper__ic_launcher_wallpaper">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- 黑洞 end-->
+	
+	<!-- Android 键盘 start-->
+    <drawable name="com_android_inputmethod_latin__ic_ime_settings">@drawable/com_android_inputmethod_latin__ic_ime_settings</drawable>
+	<drawable name="lenovo_notification_icon_input">@drawable/com_android_inputmethod_latin__ic_ime_settings</drawable>
+    <!-- Android 键盘 end-->
+	
+	<!-- 魔幻烟雾壁纸 start-->
+    <drawable name="com_android_magicsmoke__ic_launcher_wallpaper">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- 魔幻烟雾壁纸 end-->
+	
+	<!-- 音乐可视化壁纸 start-->
+    <drawable name="com_android_musicvis__ic_launcher_wallpaper">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- 音乐可视化壁纸 end-->
+	
+	<!-- 泡泡 start-->
+    <drawable name="com_android_noisefield__icon">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- 泡泡 end-->
+	
+	<!-- 镭光 start-->
+    <drawable name="com_android_phasebeam__icon">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- 镭光 end-->
+	
+	<!-- 手机 start-->
+	<!-- <drawable name="com_android_phone__ic_launcher_phone">@drawable/com_android_phone__ic_launcher_phone</drawable> -->
+    <!-- 手机 end-->
+	
+	<!-- 联系人存储 start-->
+	<!-- <drawable name="com_android_providers_contacts__app_icon">@drawable/com_android_providers_contacts__app_icon</drawable> -->
+    <!-- 联系人存储 end-->
+	
+	<!-- 设置存储 start-->
+	<!-- <drawable name="com_android_providers_settings__ic_launcher_settings">@drawable/com_android_providers_settings__ic_launcher_settings</drawable> -->
+    <!-- 设置存储 end-->
+	
+	<!-- 电话 / 信息存储 start-->
+	<!-- <drawable name="com_android_providers_telephony__ic_launcher_phone">@drawable/com_android_providers_telephony__ic_launcher_phone</drawable> -->
+    <!-- 电话 / 信息存储 end-->
+	
+	<!-- 通知中心 start-->
+	<drawable name="com_android_systemui__ic_launcher">@drawable/com_android_systemui__ic_launcher</drawable>
+	<drawable name="lenovo_notification_icon_self">@drawable/com_android_systemui__ic_launcher</drawable>
+    <!-- 通知中心 end-->
+	
+	<!-- Live Wallpaper Picker start-->
+	<drawable name="com_android_wallpaper_livepicker__ic_launcher_live_wallpaper">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- Live Wallpaper Picker end-->
+	
+	<!-- Exchange 服务 start-->
+	<!-- <drawable name="com_lenovo_exchange__icon">@drawable/com_lenovo_exchange__icon</drawable> -->
+    <!-- Exchange 服务 end-->
+	
+	<!-- 快捷语音 start-->
+	<!-- <drawable name="com_lenovo_levoice_dock__app_logo">@drawable/com_lenovo_levoice_dock__app_logo</drawable> -->
+    <!-- 快捷语音 end-->
+	
+	<!-- 灯效 start-->
+	<drawable name="com_lenovo_lightsettings__icon">@drawable/com_lenovo_lightsettings__icon</drawable>
+    <!-- 灯效 end-->
+	
+	<!-- 私密保险箱 start-->
+	<drawable name="com_lenovo_safebox__icon">@drawable/com_lenovo_safebox__icon</drawable>
+    <!-- 私密保险箱 end-->
+	
+	<!-- 快速入门 start-->
+	<!-- <drawable name="com_lenovo_settingwizard__ic_launcher">@drawable/com_lenovo_settingwizard__ic_launcher</drawable> -->
+    <!-- 快速入门 end-->
+	
+	<!-- 语音通讯录 start-->
+	<drawable name="com_lenovo_supercontacts__lv_lock_icon">@drawable/com_lenovo_supercontacts__lv_lock_icon</drawable>
+    <!-- 语音通讯录 end-->
+	
+	<!-- 联想天气壁纸 start-->
+	<drawable name="com_lenovo_weatherlivewallpaper__ic_launcher">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- 联想天气壁纸 end-->
+	
+	<!-- WLAN位置绑定 start-->
+	<!-- <drawable name="com_lenovo_wifiswitch__icon">@drawable/com_lenovo_wifiswitch__icon</drawable> -->
+        <drawable name="com_mediatek_op01_plugin__ic_launcher_settings">@drawable/com_lenovo_wifiswitch__icon</drawable>
+        <drawable name="com_android_wifi__ic_launcher_settings">@drawable/com_lenovo_wifiswitch__icon</drawable>
+        <drawable name="com_android_wifi__empty_icon">@drawable/com_lenovo_wifiswitch__icon</drawable>
+    <!-- WLAN位置绑定 end-->
+	
+	<!-- 蓝牙 start-->
+	<drawable name="com_mediatek_bluetooth__bluetooth">@drawable/com_mediatek_bluetooth__bluetooth</drawable>
+	<drawable name="lenovo_notification_icon_bluetooth">@drawable/com_mediatek_bluetooth__bluetooth</drawable>
+    <!-- 蓝牙 end-->
+	
+	<!-- 定时开关机 start-->
+	<!-- <drawable name="com_mediatek_schpwronoff__ic_launcher_settings">@drawable/com_mediatek_schpwronoff__ic_launcher_settings</drawable> -->
+    <!-- 定时开关机 end-->
+	
+	<!-- 最爱联系人 start-->
+	<!-- <drawable name="com_mediatek_videofavorites__app_icon">@drawable/com_mediatek_videofavorites__app_icon</drawable> -->
+    <!-- 最爱联系人 end-->
+	
+	<!-- MTK 动态壁纸 start-->
+	<drawable name="com_mediatek_vlw__ic_launcher_wallpaper">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- MTK 动态壁纸 end-->
+	
+	<!-- VoiceCommand start-->
+	<!-- <drawable name="com_mediatek_voicecommand__ic_launcher_settings">@drawable/com_mediatek_voicecommand__ic_launcher_settings</drawable> -->
+    <!-- VoiceCommand end-->
+	
+	<!-- 语音解锁 start-->
+	<!-- <drawable name="com_mediatek_voiceunlock__ic_launcher_settings">@drawable/com_mediatek_voiceunlock__ic_launcher_settings</drawable> -->
+    <!-- 语音解锁 end-->
+	
+	<!-- YGPS start-->
+	<!-- <drawable name="com_mediatek_ygps__icon">@drawable/com_mediatek_ygps__icon</drawable> -->
+    <!-- YGPS end-->
+	
+	<!-- 乐壁纸 start-->
+	<drawable name="com_vlife_lenovo_wallpaper__icon">@drawable/com_android_galaxy4__icon</drawable>
+    <!-- 乐壁纸 end-->
+	
+	<!-- 联想通讯录 start-->
+	<!-- <drawable name="com_lenovo_ideafriend__ideafriend">@drawable/com_lenovo_ideafriend__ideafriend</drawable> -->
+    <!-- 联想通讯录 end-->
+	
+	<!-- LASF SDK Lite start-->
+	<!-- <drawable name="com_lenovo_lasf_lite__lasf_lite_icon">@drawable/com_lenovo_lasf_lite__lasf_lite_icon</drawable> -->
+    <!-- LASF SDK Lite end-->
+	
+	<!-- RomUpdateAssist start-->
+	<drawable name="com_lenovo_dm__ic_launcher">@drawable/android__sym_def_app_icon</drawable>
+    <!-- RomUpdateAssist end-->
+	
+	<!-- BatteryWarning -->
+	<!-- <drawable name="com_mediatek_batterywarning__ic_launcher_settings">@drawable/com_mediatek_batterywarning__ic_launcher_settings</drawable> -->
+    <!-- BatteryWarning end-->
+	
+	<!-- Common Data Service start-->
+	<drawable name="com_mediatek_connectivity__ic_launcher">@drawable/android__sym_def_app_icon</drawable>
+    <!-- Common Data Service end-->
+	
+	<!-- KC-->
+	<drawable name="com_lenovo_lockscreen_theme_summerherbs__ic_launcher">@drawable/com_lenovo_lockscreen_theme_summerherbs__ic_launcher</drawable>
+    <!-- KC end-->
+	
+	<!-- GPRS定位-->
+	<drawable name="lenovo_notification_icon_gps">@drawable/lenovo_notification_icon_gps</drawable>
+    <!-- GPRS定位 end-->
+	
+	<!-- USB连接-->
+	<drawable name="lenovo_notification_icon_android_usb">@drawable/lenovo_notification_icon_android_usb</drawable>
+    <!-- USB连接 end-->
+	
+	<!-- 计时器-->
+	<drawable name="lenovo_notification_icon_timer">@drawable/lenovo_notification_icon_timer</drawable>
+    <!-- 计时器 end-->
+	
+	<!-- 截图-->
+	<drawable name="lenovo_notification_icon_screenshot">@drawable/lenovo_notification_icon_screenshot</drawable>
+    <!-- 截图 end-->
+	
+	<!-- 秒表-->
+	<drawable name="lenovo_notification_icon_stopwatch">@drawable/lenovo_notification_icon_stopwatch</drawable>
+    <!-- 秒表 end-->
+	
+	<!-- 未接电话-->
+	<drawable name="lenovo_notification_icon_phone_unreceive">@drawable/lenovo_notification_icon_phone_unreceive</drawable>
+    <!-- 未接电话 end-->
+	
+	<!-- otg-->
+	<drawable name="lenovo_notification_icon_otg">@drawable/lenovo_notification_icon_otg</drawable>
+    <!-- otg end-->
+ 
+</resources>

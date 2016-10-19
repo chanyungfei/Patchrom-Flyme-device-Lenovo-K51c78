@@ -1,0 +1,7 @@
+<!-- Lenovo-sw wangdfc add 2014-10-24 begin LVPCCR-52 -->
+<!-- lenovo-sw add by wangdfc on 20141024. This is the feature for font switch -->
+
+<permissions>
+    <feature name="com.lenovo.theme.fontsupport" />
+</permissions>
+<!-- Lenovo-sw wangdfc add 2014-10-24 end LVPCCR-52 -->
