@@ -3661,6 +3661,10 @@
     const/4 v8, 0x1
 
     :cond_1
+    invoke-static {p0, v8}, Landroid/view/inputmethod/InputMethodManager$FlymeInjector;->onWindowFocus(Landroid/view/inputmethod/InputMethodManager;Z)Z
+
+    move-result v8
+
     if-eqz p2, :cond_4
 
     move-object v0, p2

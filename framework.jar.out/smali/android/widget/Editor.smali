@@ -71,6 +71,26 @@
 
 
 # instance fields
+.field public mCursorOffsetX:I
+
+.field public mEnableDragSelection:Z
+
+.field public mHandler:Landroid/widget/Editor$OptionHandle;
+
+.field public mIsInDragSelectionMode:Z
+
+.field public mLastLayoutHeight:I
+
+.field public mLastScrollTime:J
+
+.field public mOptionWrapper:Landroid/widget/Editor$OptionWrapper;
+
+.field public mSelectionActionModeCallback:Landroid/widget/Editor$SelectionActionModeCallback;
+
+.field public mSelectonActionModeRunnable:Ljava/lang/Runnable;
+
+.field public mStartActionModeResult:Z
+
 .field public final SHOW_OR_HIDE_ACTION_MENU:I
 
 .field public final SHOW_POP_MENU:I
@@ -332,6 +352,9 @@
 
     .line 296
     :cond_1
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->initFlymeExtraFields(Landroid/widget/Editor;)V
+
     return-void
 .end method
 
@@ -7858,6 +7881,8 @@
 
     invoke-direct {p0}, Landroid/widget/Editor;->hideCursorControllers()V
 
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->stopDragSelectionMode(Landroid/widget/Editor;)V
+
     const/4 v0, 0x1
 
     sput-boolean v0, Landroid/widget/Editor;->isTextJustChanged:Z
@@ -8025,6 +8050,18 @@
     .locals 8
 
     .prologue
+    iget-object v0, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_flyme_0
+
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/Editor;->startSelectionActionModeMz()Z
+
+    move-result v0
+
+    return v0
+
+    :cond_flyme_0
+
     const/4 v7, 0x0
 
     const/4 v2, 0x1
@@ -8233,6 +8270,8 @@
     .locals 2
 
     .prologue
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->removeSelectonActionModeRunnable(Landroid/widget/Editor;)V
+
     const-string v0, "TextView"
 
     const-string v1, "stopSelectionActionMode()"
@@ -8261,6 +8300,9 @@
     invoke-virtual {v0}, Landroid/widget/Editor$SelectPopupWindow;->finish()V
 
     :cond_1
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->hideSelectionModifierCursorController(Landroid/widget/Editor;)V
+
     return-void
 .end method
 

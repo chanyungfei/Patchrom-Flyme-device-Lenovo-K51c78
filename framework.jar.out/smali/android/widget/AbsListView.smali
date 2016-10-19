@@ -2489,6 +2489,12 @@
 
     .line 1285
     :cond_3
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->flymeContentFits(Landroid/widget/AbsListView;)Z
+
+    move-result v3
+
+    return v3
+
     invoke-virtual {p0, v2}, Landroid/widget/AbsListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
@@ -3248,6 +3254,9 @@
 
     .line 911
     :cond_0
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->initFlymeExtraFields(Landroid/widget/AbsListView;)V
+
     return-void
 .end method
 
@@ -14736,6 +14745,9 @@
     invoke-virtual {v2, v3, v4}, Landroid/widget/FastScroller;->onItemCountChanged(II)V
 
     :cond_5
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->mzOnLayout2(Landroid/widget/AbsListView;)V
+
     return-void
 
     :cond_6
@@ -15169,6 +15181,8 @@
     invoke-virtual {p0}, Landroid/widget/AbsListView;->invalidateParentIfNeeded()V
 
     invoke-virtual {p0}, Landroid/widget/AbsListView;->awakenScrollBars()Z
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->flymeOnOverScrolled(Landroid/widget/AbsListView;)V
 
     :cond_1
     return-void
@@ -16090,6 +16104,9 @@
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/widget/FastScroller;->onSizeChanged(IIII)V
 
     :cond_2
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->flymeOnSizeChanged(Landroid/widget/AbsListView;)V
+
     return-void
 .end method
 
@@ -16542,43 +16559,37 @@
 
     if-ne v15, v0, :cond_9
 
-    .line 3860
     invoke-direct/range {p0 .. p1}, Landroid/widget/AbsListView;->onSecondaryPointerUp(Landroid/view/MotionEvent;)V
 
-    .line 3862
     :cond_9
     const/4 v15, 0x1
 
     goto/16 :goto_0
 
-    .line 3866
     .end local v5    # "countFromAdapter":I
     :cond_a
     invoke-direct/range {p0 .. p0}, Landroid/widget/AbsListView;->initVelocityTrackerIfNotExists()V
 
-    .line 3867
     invoke-static/range {p1 .. p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v12
 
-    .line 3869
     .local v12, "vtev":Landroid/view/MotionEvent;
+    invoke-static/range {p0 .. p1}, Landroid/widget/AbsListView$FlymeInjector;->flymeOnTouchEvent(Landroid/widget/AbsListView;Landroid/view/MotionEvent;)V
+
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v3
 
-    .line 3870
     .local v3, "actionMasked":I
     if-nez v3, :cond_b
 
-    .line 3871
     const/4 v15, 0x0
 
     move-object/from16 v0, p0
 
     iput v15, v0, Landroid/widget/AbsListView;->mNestedYOffset:I
 
-    .line 3873
     :cond_b
     const/4 v15, 0x0
 
@@ -17336,6 +17347,8 @@
     const/4 v1, 0x0
 
     invoke-super {p0, p1}, Landroid/widget/AdapterView;->onWindowFocusChanged(Z)V
+
+    invoke-static/range {p0 .. p1}, Landroid/widget/AbsListView$FlymeInjector;->flymeOnWindowFocusChanged(Landroid/widget/AbsListView;Z)V
 
     const-string v3, "AbsListView"
 
@@ -22544,7 +22557,7 @@
     .local v3, "absIncrementalDeltaY":I
     move/from16 v0, v25
 
-    if-lt v0, v3, :cond_12
+    if-le v0, v3, :cond_12
 
     move/from16 v0, v26
 

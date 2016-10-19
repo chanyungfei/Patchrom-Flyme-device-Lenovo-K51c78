@@ -1523,6 +1523,8 @@
 
     invoke-virtual {v4, v2, v3, v6, v6}, Landroid/widget/PopupWindow;->update(IIII)V
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->flymeSendShowMessage()V
+
     .end local v2    # "positionX":I
     .end local v3    # "positionY":I
     :cond_4

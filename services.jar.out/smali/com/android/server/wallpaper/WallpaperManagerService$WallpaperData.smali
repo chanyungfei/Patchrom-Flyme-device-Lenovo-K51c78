@@ -122,11 +122,12 @@
 
     iput-object v0, p0, Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;->wallpaperFile:Ljava/io/File;
 
-    .line 261
     :goto_0
+
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;->initFlymeWallpaperData()V
+
     return-void
 
-    .line 259
     :cond_0
     new-instance v0, Ljava/io/File;
 

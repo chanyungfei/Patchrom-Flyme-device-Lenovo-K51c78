@@ -368,6 +368,10 @@
 
     iput-object v2, p0, Landroid/app/Activity;->mStopAppRunnableLM:Ljava/lang/Runnable;
 
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/app/Activity;->mIsFlymeActivityFirstStart:Z
+
     return-void
 .end method
 
@@ -4232,6 +4236,8 @@
     invoke-virtual {v0, v2, v4}, Lcom/mediatek/multiwindow/MultiWindowProxy;->setFloatDecorVisibility(Landroid/os/IBinder;I)V
 
     :cond_1
+    invoke-static/range {p0 .. p0}, Landroid/app/Activity$FlymeInjector;->onStart(Landroid/app/Activity;)V
+
     iget-object v2, p0, Landroid/app/Activity;->mDecor:Landroid/view/View;
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V

@@ -549,6 +549,12 @@
     .param p1, "type"    # I
 
     .prologue
+    invoke-static/range {p0 .. p1}, Landroid/media/MzRingtoneManager;->getActualDefaultRingtoneUri(Landroid/content/Context;I)Landroid/net/Uri;
+
+    move-result-object v2
+
+    return-object v2
+
     const/4 v4, 0x0
 
     .line 892
@@ -2482,6 +2488,8 @@
     move-result-object v3
 
     invoke-static {v2, v1, v3}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    invoke-static/range {p0 .. p2}, Landroid/media/RingtoneManager;->setFlymeActualDefaultRingtoneUri(Landroid/content/Context;ILandroid/net/Uri;)V
 
     .line 1064
     const-string v2, "RingtoneManager"

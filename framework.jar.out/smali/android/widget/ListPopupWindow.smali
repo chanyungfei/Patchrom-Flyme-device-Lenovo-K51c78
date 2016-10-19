@@ -780,6 +780,10 @@
 
     .line 1168
     .local v16, "maxHeight":I
+    invoke-direct/range {p0 .. p0}, Landroid/widget/ListPopupWindow;->adjustFlymeWindowPositionHeight()I
+
+    move-result v16
+
     const-string v1, "ListPopupWindow"
 
     new-instance v3, Ljava/lang/StringBuilder;

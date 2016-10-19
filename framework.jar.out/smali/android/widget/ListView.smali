@@ -32,6 +32,62 @@
 
 
 # instance fields
+.field public mDividerPadding:Landroid/widget/ListView$DividerPadding;
+
+.field private mFlymeDividerFilterListener:Landroid/widget/ListView$DividerFilter;
+
+.field private mFlymeDividerH:I
+
+.field private mFlymeDragDownPosition:I
+
+.field private mFlymeDragMotionPosition:I
+
+.field private mFlymeDragMotionViewBottom:I
+
+.field private mFlymeDragMotionViewTop:I
+
+.field private mFlymeDragMotionY:I
+
+.field private mFlymeDragRegionRect:Landroid/graphics/Rect;
+
+.field private mFlymeDragSelectListener:Landroid/widget/ListView$OnDragSelectListener;
+
+.field private mFlymeDragSlop:I
+
+.field private mFlymeDragWidth:I
+
+.field private mFlymeEnableDragSelectDuringNormal:Z
+
+.field private mFlymeEnableDragSelection:Z
+
+.field private mFlymeFocuseRect:Landroid/graphics/Rect;
+
+.field private mFlymeIntercepeDragMotionX:I
+
+.field private mFlymeIntercepeDragMotionY:I
+
+.field private mFlymeLastDragMotionY:I
+
+.field private mFlymeLongPressPosition:I
+
+.field private mFlymeScrollSelection:Landroid/widget/ListView$MzScrollSelectionRunnable;
+
+.field private mFlymeSelectToBottom:Z
+
+.field private mIsFlymeBeginDragSelect:Z
+
+.field private mIsFlymeCheckBoxAnim:Z
+
+.field private mIsFlymeDividerInside:Z
+
+.field private mIsFlymeOutOfDragRegion:Z
+
+.field private mIsFlymeOutOfListContent:Z
+
+.field protected mLastDownSelectPosition:I
+
+.field protected mLastUpSelectPosition:I
+
 .field private mAbandonActiveViews:Z
 
 .field private mAreAllItemsSelectable:Z

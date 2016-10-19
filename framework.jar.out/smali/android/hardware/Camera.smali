@@ -337,7 +337,7 @@
 
     iput-object v1, p0, Landroid/hardware/Camera;->mObjectCallbackLock:Ljava/lang/Object;
 
-    invoke-direct {p0, p1}, Landroid/hardware/Camera;->cameraInitNormal(I)I
+    invoke-direct {p0, p1}, Landroid/hardware/Camera;->hook_cameraInitNormal(I)I
 
     move-result v0
 
