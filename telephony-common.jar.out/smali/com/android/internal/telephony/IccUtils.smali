@@ -345,7 +345,7 @@
 
     .line 263
     .local v2, "defaultCharset":Ljava/lang/String;
-    const v10, 0x104002e
+    const v10, #android:string@gsm_alphabet_default_charset#t
 
     :try_start_1
     invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

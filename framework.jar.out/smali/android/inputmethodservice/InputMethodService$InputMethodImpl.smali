@@ -583,22 +583,22 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 401
     :cond_0
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->onUnbindInput()V
 
-    .line 402
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
     iput-object v3, v0, Landroid/inputmethodservice/InputMethodService;->mInputBinding:Landroid/view/inputmethod/InputBinding;
 
-    .line 403
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
     iput-object v3, v0, Landroid/inputmethodservice/InputMethodService;->mInputConnection:Landroid/view/inputmethod/InputConnection;
 
-    .line 404
+    iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-static {v0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->unbindInputExit(Landroid/inputmethodservice/InputMethodService;)V
+
     return-void
 .end method
