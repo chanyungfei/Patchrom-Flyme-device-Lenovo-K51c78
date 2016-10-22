@@ -1,0 +1,96 @@
+.class Lcom/lenovo/internal/view/menu/MenuItemWrapperICS$OnActionExpandListenerWrapper;
+.super Lcom/lenovo/internal/view/menu/BaseWrapper;
+.source "MenuItemWrapperICS.java"
+
+# interfaces
+.implements Landroid/view/MenuItem$OnActionExpandListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "OnActionExpandListenerWrapper"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/lenovo/internal/view/menu/BaseWrapper",
+        "<",
+        "Landroid/view/MenuItem$OnActionExpandListener;",
+        ">;",
+        "Landroid/view/MenuItem$OnActionExpandListener;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;
+
+
+# direct methods
+.method constructor <init>(Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;Landroid/view/MenuItem$OnActionExpandListener;)V
+    .locals 0
+    .param p2, "object"    # Landroid/view/MenuItem$OnActionExpandListener;
+
+    .prologue
+    .line 378
+    iput-object p1, p0, Lcom/lenovo/internal/view/menu/MenuItemWrapperICS$OnActionExpandListenerWrapper;->this$0:Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;
+
+    .line 379
+    invoke-direct {p0, p2}, Lcom/lenovo/internal/view/menu/BaseWrapper;-><init>(Ljava/lang/Object;)V
+
+    .line 380
+    return-void
+.end method
+
+
+# virtual methods
+.method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
+    .locals 2
+    .param p1, "item"    # Landroid/view/MenuItem;
+
+    .prologue
+    .line 389
+    iget-object v0, p0, Lcom/lenovo/internal/view/menu/MenuItemWrapperICS$OnActionExpandListenerWrapper;->mWrappedObject:Ljava/lang/Object;
+
+    check-cast v0, Landroid/view/MenuItem$OnActionExpandListener;
+
+    iget-object v1, p0, Lcom/lenovo/internal/view/menu/MenuItemWrapperICS$OnActionExpandListenerWrapper;->this$0:Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;
+
+    invoke-virtual {v1, p1}, Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;->getMenuItemWrapper(Landroid/view/MenuItem;)Lcom/lenovo/internal/view/SupportMenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Landroid/view/MenuItem$OnActionExpandListener;->onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
+    .locals 2
+    .param p1, "item"    # Landroid/view/MenuItem;
+
+    .prologue
+    .line 384
+    iget-object v0, p0, Lcom/lenovo/internal/view/menu/MenuItemWrapperICS$OnActionExpandListenerWrapper;->mWrappedObject:Ljava/lang/Object;
+
+    check-cast v0, Landroid/view/MenuItem$OnActionExpandListener;
+
+    iget-object v1, p0, Lcom/lenovo/internal/view/menu/MenuItemWrapperICS$OnActionExpandListenerWrapper;->this$0:Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;
+
+    invoke-virtual {v1, p1}, Lcom/lenovo/internal/view/menu/MenuItemWrapperICS;->getMenuItemWrapper(Landroid/view/MenuItem;)Lcom/lenovo/internal/view/SupportMenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Landroid/view/MenuItem$OnActionExpandListener;->onMenuItemActionExpand(Landroid/view/MenuItem;)Z
+
+    move-result v0
+
+    return v0
+.end method

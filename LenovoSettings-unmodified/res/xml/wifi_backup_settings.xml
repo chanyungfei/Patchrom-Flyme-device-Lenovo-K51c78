@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/privacy_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/wifi_backup_category_title">
+        <PreferenceScreen android:layout="@layout/lenovo_preference_rom20" android:title="@string/wifi_backup_title" android:key="lenovo_backup_wifi" android:summary="@string/wifi_backup_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/wifi_restore_category_title">
+        <PreferenceScreen android:layout="@layout/lenovo_preference_rom20" android:title="@string/wifi_restore_title" android:key="lenovo_restore_wifi" android:summary="@string/wifi_restore_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

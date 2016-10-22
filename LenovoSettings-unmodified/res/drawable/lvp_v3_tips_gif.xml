@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_1" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_2" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_3" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_4" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_5" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_6" />
+    <item android:duration="1000" android:drawable="@drawable/lvp_v3_tips_7" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_8" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_9" />
+    <item android:duration="200" android:drawable="@drawable/lvp_v3_tips_10" />
+    <item android:duration="300" android:drawable="@drawable/lvp_v3_tips_11" />
+    <item android:duration="500" android:drawable="@drawable/lvp_v3_tips_12" />
+</animation-list>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingStart="@dimen/item_preference_pading_left" android:paddingEnd="@dimen/item_preference_pading_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/main_frame" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:scaleType="centerInside" android:minWidth="44.0dip" android:layout_marginEnd="12.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_marginEnd="6.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_below="@android:id/title" android:layout_alignParentRight="true" android:layout_alignStart="@android:id/title" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/lenovo_has_next" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_select" />
+</LinearLayout>

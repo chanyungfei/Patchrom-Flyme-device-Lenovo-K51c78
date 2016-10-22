@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_sync_settings" />
+    <PreferenceScreen android:title="@string/sync_interval_settings">
+        <intent android:action="com.lenovo.facebook.SYNC_INTERVAL_SETTINGS" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/try_sso_again" android:key="try_sso_again" android:summary="@string/for_syncing">
+        <intent android:action="com.lenovo.facebook.TRY_SSO_AGAIN" />
+    </PreferenceScreen>
+</PreferenceScreen>

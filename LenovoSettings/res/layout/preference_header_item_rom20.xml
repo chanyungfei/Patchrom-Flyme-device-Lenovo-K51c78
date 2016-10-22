@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="?android:activatedBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="52.0dip" android:minHeight="?android:listPreferredItemHeightSmall" android:paddingStart="@dimen/item_preference_pading_left" android:paddingEnd="@dimen/item_preference_pading_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/icon_layout" android:layout_width="@dimen/header_icon_width" android:layout_height="@dimen/header_icon_height" android:layout_marginStart="0.0dip" android:layout_marginEnd="6.0dip">
+        <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|right" android:id="@id/lenovo_has_next" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_select" />
+    </LinearLayout>
+</LinearLayout>

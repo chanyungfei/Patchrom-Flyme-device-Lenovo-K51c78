@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <header android:icon="@drawable/ic_settings_wireless" android:id="@id/wifi_settings" android:title="@string/wifi_settings" android:breadCrumbShortTitle="wifi">
+        <intent android:targetPackage="com.android.wifi" android:action="android.intent.action.MAIN" android:targetClass="com.android.wifi.Settings$WifiSettingsActivity">
+            <extra android:name="home_as_up_enable" android:value="true" />
+        </intent>
+    </header>
+    <header android:icon="@drawable/ic_settings_dataconnect" android:id="@id/header_id_plugin" android:title="@string/mobile_network_settings_title" android:dependency="toggle_airplane" android:breadCrumbTitle="mobile_network_settings" android:breadCrumbShortTitle="mobile">
+        <intent android:targetPackage="com.lenovo.simsettings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.simsettings.MobileNetworkSettings" />
+    </header>
+    <header android:icon="@drawable/ic_settings_dataconnect" android:id="@id/header_id_plugin" android:title="@string/mobile_network_settings_title" android:dependency="toggle_airplane" android:breadCrumbTitle="mobile_network_settings" android:breadCrumbShortTitle="mobile">
+        <intent android:targetPackage="com.lenovo.leos.mobileNetworkSettings" android:action="android.settings.DATA_ROAMING_SETTINGS" android:targetClass="com.lenovo.leos.mobileNetworkSettings.MobileNetworkSettings" />
+    </header>
+    <header android:icon="@drawable/ic_settings_4g" android:id="@id/open_4g" android:title="@string/open_4g" android:breadCrumbShortTitle="open_4g" />
+    <header android:icon="@drawable/ic_settings_multisim" android:id="@id/header_id_plugin" android:title="@string/gemini_sim_management_title" android:dependency="toggle_airplane" android:breadCrumbTitle="multi_sim_settings" android:breadCrumbShortTitle="sim">
+        <intent android:targetPackage="com.lenovo.geminisettings" android:action="android.settings.GEMINI_MANAGEMENT" android:targetClass="com.lenovo.geminisettings.Settings" />
+    </header>
+    <header android:icon="@drawable/ic_settings_multisim" android:id="@id/header_id_plugin" android:title="@string/gemini_sim_management_title" android:dependency="toggle_airplane" android:breadCrumbTitle="multi_sim_settings" android:breadCrumbShortTitle="sim">
+        <intent android:targetPackage="com.lenovo.leos.simsettings" android:action="android.intent.action.SimSettings" android:targetClass="com.lenovo.leos.simsettings.SimSettingsActivity" />
+    </header>
+    <header android:icon="@drawable/ic_settings_bluetooth2" android:id="@id/bluetooth_settings" android:title="@string/bluetooth_settings_title" android:fragment="com.android.settings.bluetooth.BluetoothSettings" android:breadCrumbShortTitle="bluetooth" />
+    <header android:icon="@drawable/ic_settings_nfc" android:id="@id/nfc_settings" android:title="@string/nfc_quick_toggle_title" android:fragment="com.lenovo.settings.nfc.NfcSettings" android:breadCrumbShortTitle="nfc" />
+    <header android:id="@id/operator_settings" android:fragment="com.android.settings.WirelessSettings" android:breadCrumbShortTitle="operator">
+        <intent android:action="com.android.settings.OPERATOR_APPLICATION_SETTING" />
+    </header>
+    <header android:icon="@drawable/ic_settings_more" android:id="@id/wireless_settings" android:title="@string/radio_controls_title" android:fragment="com.lenovo.settings.LenovoWirelessSettings" android:breadCrumbTitle="@string/radio_controls_title" android:breadCrumbShortTitle="wirelessmore" />
+    <header android:id="@id/personal_section" android:title="@string/header_category_personal" android:breadCrumbShortTitle="section" />
+    <header android:icon="@drawable/ic_settings_volumn" android:id="@id/header_id_plugin" android:title="@string/ringtone_settings" android:breadCrumbTitle="ringtone_settings" android:breadCrumbShortTitle="ringtone">
+        <intent android:targetPackage="com.android.profilesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.profilesettings.profile.SoundSettings" />
+    </header>
+    <header android:icon="@drawable/ic_settings_display" android:id="@id/display_settings" android:title="@string/display_settings" android:fragment="com.android.settings.DisplaySettings" android:breadCrumbShortTitle="display" />
+    <header android:icon="@drawable/ic_settings_lockscreen" android:id="@id/header_id_plugin" android:title="@string/locks_settings_title" android:breadCrumbTitle="lock_settings" android:breadCrumbShortTitle="lock">
+        <intent android:targetPackage="com.lenovo.keyguard.settings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.keyguard.settings.KeyguardSettingsActivity" />
+    </header>
+    <header android:icon="@drawable/ic_settings_notification" android:id="@id/header_id_plugin" android:title="@string/notification_settings_title" android:breadCrumbTitle="notification_settings" android:breadCrumbShortTitle="notification">
+        <intent android:targetPackage="com.android.systemui" android:action="android.intent.action.MAIN" android:targetClass="com.android.systemui.lenovo.settings.NotificationSettings" />
+    </header>
+    <header android:icon="@drawable/ic_char_settings" android:id="@id/character_settings" android:title="@string/character_settings" android:fragment="com.lenovo.settings.CharSettings" android:breadCrumbShortTitle="character" />
+    <header android:id="@id/base_section" android:title="@string/base_settings_title" android:breadCrumbShortTitle="section" />
+    <header android:icon="@drawable/ic_settings_date_time" android:id="@id/date_time_settings" android:title="@string/date_and_time_settings_title" android:fragment="com.android.settings.DateTimeSettings" android:breadCrumbShortTitle="date" />
+    <header android:icon="@drawable/ic_settings_language" android:id="@id/language_settings" android:title="@string/language_settings" android:fragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings" android:breadCrumbShortTitle="language" />
+    <header android:icon="@drawable/ic_settings_schpwronoff" android:id="@id/header_id_plugin" android:title="@string/schedule_power_on_off_settings_title" android:breadCrumbTitle="power_setting" android:breadCrumbShortTitle="poweronoff">
+        <intent android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING" />
+    </header>
+    <header android:id="@id/account_settings" android:title="@string/header_category_account_settings" android:breadCrumbShortTitle="section" />
+    <header android:icon="@drawable/ic_lenovo_id" android:id="@id/lenovo_account" android:title="@string/lenovo_account" android:breadCrumbShortTitle="cloud">
+        <intent android:action="com.lenovo.lsf.lenovoid.action.USER_CENTER" />
+    </header>
+    <header android:icon="@drawable/ic_settings_accounts" android:id="@id/account_add" android:title="@string/account_settings" android:fragment="com.android.settings.accounts.AccountSettings" android:breadCrumbShortTitle="account" />
+    <header android:id="@id/system_section" android:title="@string/system_settings_title" android:breadCrumbShortTitle="section" />
+    <header android:icon="@drawable/ic_settings_security" android:id="@id/security_settings" android:title="@string/security_settings_title" android:fragment="com.android.settings.SecuritySettings" android:breadCrumbShortTitle="security" />
+    <header android:icon="@drawable/ic_settings_location" android:id="@id/location_settings" android:title="@string/location_settings_title" android:fragment="com.android.settings.location.LocationSettings" android:breadCrumbShortTitle="location" />
+    <header android:icon="@drawable/ic_settings_lepower" android:id="@id/header_id_plugin" android:title="@string/lepower_settings_title" android:breadCrumbTitle="lepower_settings" android:breadCrumbShortTitle="lepower">
+        <intent android:action="com.lenovo.powersetting.intent.action.ACTION_START_MAIN" />
+    </header>
+    <header android:icon="@drawable/ic_settings_applications" android:id="@id/header_id_plugin" android:title="@string/applications_settings_title" android:breadCrumbTitle="applications_settings" android:breadCrumbShortTitle="applications">
+        <intent android:targetPackage="com.lenovo.security" android:action="android.intent.action.MAIN" android:targetClass="com.android.settingsapplication.ApplicationActivity" />
+    </header>
+    <header android:icon="@drawable/ic_char_settings" android:id="@id/sysapp_settings" android:title="@string/sysapp_settings_title" android:fragment="com.lenovo.settings.SysAppSettings" android:breadCrumbShortTitle="sysapp" />
+    <header android:icon="@drawable/ic_settings_storage" android:id="@id/storage_settings" android:title="@string/storage_settings" android:fragment="com.android.settings.deviceinfo.Memory" android:breadCrumbShortTitle="storage" />
+    <header android:icon="@drawable/ic_settings_backup" android:id="@id/privacy_settings" android:title="@string/privacy_settings" android:fragment="com.android.settings.PrivacySettings" android:breadCrumbShortTitle="backup" />
+    <header android:icon="@drawable/ic_settings_accessibility" android:id="@id/accessibility_settings" android:title="@string/accessibility_settings" android:fragment="com.android.settings.accessibility.AccessibilitySettings" android:breadCrumbShortTitle="accessibility" />
+    <header android:icon="@drawable/ic_settings_print" android:id="@id/print_settings" android:title="@string/print_settings" android:fragment="com.android.settings.print.PrintSettingsFragment" android:breadCrumbShortTitle="print" />
+    <header android:icon="@drawable/ic_settings_development" android:id="@id/development_settings" android:title="@string/development_settings_title" android:fragment="com.android.settings.DevelopmentSettings" android:breadCrumbShortTitle="development" />
+    <header android:icon="@drawable/ic_settings_about" android:id="@id/about_settings" android:title="@string/about_settings" android:fragment="com.lenovo.settings.AboutActivity" android:breadCrumbShortTitle="about" />
+</preference-headers>

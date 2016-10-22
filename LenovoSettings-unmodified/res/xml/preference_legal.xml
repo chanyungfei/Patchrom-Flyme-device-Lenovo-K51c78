@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/legal_information"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/lenovo_preference_rom20" android:title="@string/copyright_title" android:key="copyright">
+        <intent android:action="android.settings.COPYRIGHT" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/license_title" android:key="license">
+        <intent android:action="android.settings.LICENSE" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/terms_title" android:key="terms">
+        <intent android:action="android.settings.TERMS" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/lenovo_license_title" android:key="lenovo_license">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.settings.SettingsLenovoLicenseActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

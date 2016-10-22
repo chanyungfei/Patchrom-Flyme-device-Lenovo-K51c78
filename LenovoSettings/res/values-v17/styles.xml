@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="">
+        <item name="android:paddingEnd">8.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem" parent="">
+        <item name="android:paddingEnd">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.InternalGroup" parent="">
+        <item name="android:layout_marginStart">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.Text" parent="">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+</resources>

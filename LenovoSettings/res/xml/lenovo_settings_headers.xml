@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <header android:icon="@drawable/ic_settings_dataconnect" android:id="@id/header_id_plugin" android:title="@string/mobile_network_settings_title" android:dependency="toggle_airplane" android:breadCrumbTitle="mobile_network_settings" android:breadCrumbShortTitle="mobile">
+        <intent android:targetPackage="com.lenovo.simsettings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.simsettings.MobileNetworkSettings" />
+    </header>
+    <header android:icon="@drawable/ic_settings_dataconnect" android:id="@id/header_id_plugin" android:title="@string/mobile_network_settings_title" android:dependency="toggle_airplane" android:breadCrumbTitle="mobile_network_settings" android:breadCrumbShortTitle="mobile">
+        <intent android:targetPackage="com.lenovo.leos.mobileNetworkSettings" android:action="flyme.deviceoriginalsettings.DATA_ROAMING_SETTINGS" android:targetClass="com.lenovo.leos.mobileNetworkSettings.MobileNetworkSettings" />
+    </header>
+    <header android:icon="@drawable/ic_settings_multisim" android:id="@id/header_id_plugin" android:title="@string/gemini_sim_management_title" android:dependency="toggle_airplane" android:breadCrumbTitle="multi_sim_settings" android:breadCrumbShortTitle="sim">
+        <intent android:targetPackage="com.lenovo.leos.simsettings" android:action="android.intent.action.SimSettings" android:targetClass="com.lenovo.leos.simsettings.SimSettingsActivity" />
+    </header>
+    <header android:id="@id/operator_settings" android:fragment="com.flyme.deviceoriginalsettings.WirelessSettings" android:breadCrumbShortTitle="operator">
+        <intent android:action="com.flyme.deviceoriginalsettings.OPERATOR_APPLICATION_SETTING" />
+    </header>
+    <header android:id="@id/personal_section" android:title="@string/header_category_personal" android:breadCrumbShortTitle="section" />
+    <header android:icon="@drawable/ic_settings_display" android:id="@id/display_settings" android:title="@string/display_settings" android:fragment="com.flyme.deviceoriginalsettings.DisplaySettings" android:breadCrumbShortTitle="display" />
+    <header android:icon="@drawable/ic_settings_notification" android:id="@id/header_id_plugin" android:title="@string/notification_settings_title" android:breadCrumbTitle="notification_settings" android:breadCrumbShortTitle="notification">
+        <intent android:targetPackage="com.android.systemui" android:action="android.intent.action.MAIN" android:targetClass="com.android.systemui.lenovo.settings.NotificationSettings" />
+    </header>
+    <header android:icon="@drawable/ic_char_settings" android:id="@id/character_settings" android:title="@string/character_settings" android:fragment="com.lenovo.settings.CharSettings" android:breadCrumbShortTitle="character" />
+    <header android:id="@id/base_section" android:title="@string/base_settings_title" android:breadCrumbShortTitle="section" />
+    <header android:icon="@drawable/ic_settings_schpwronoff" android:id="@id/header_id_plugin" android:title="@string/schedule_power_on_off_settings_title" android:breadCrumbTitle="power_setting" android:breadCrumbShortTitle="poweronoff">
+        <intent android:action="com.flyme.deviceoriginalsettings.SCHEDULE_POWER_ON_OFF_SETTING" />
+    </header>
+    <header android:icon="@drawable/ic_settings_security" android:id="@id/security_settings" android:title="@string/security_settings_title" android:fragment="com.flyme.deviceoriginalsettings.SecuritySettings" android:breadCrumbShortTitle="security" />
+    <header android:icon="@drawable/ic_settings_lepower" android:id="@id/header_id_plugin" android:title="@string/lepower_settings_title" android:breadCrumbTitle="lepower_settings" android:breadCrumbShortTitle="lepower">
+        <intent android:action="com.lenovo.powersetting.intent.action.ACTION_START_MAIN" />
+    </header>
+    <header android:icon="@drawable/ic_settings_storage" android:id="@id/storage_settings" android:title="@string/storage_settings" android:fragment="com.flyme.deviceoriginalsettings.deviceinfo.Memory" android:breadCrumbShortTitle="storage" />
+    <header android:icon="@drawable/ic_settings_development" android:id="@id/development_settings" android:title="@string/development_settings_title" android:fragment="com.flyme.deviceoriginalsettings.DevelopmentSettings" android:breadCrumbShortTitle="development" />
+</preference-headers>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/security_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/fingerprint_settings_title" android:key="fingerprint_settings_title">
+        <intent android:targetPackage="com.lenovo.lenovofingerprintsettings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.lenovofingerprintsettings.FingerprintManagerActivity" />
+    </Preference>
+</PreferenceScreen>

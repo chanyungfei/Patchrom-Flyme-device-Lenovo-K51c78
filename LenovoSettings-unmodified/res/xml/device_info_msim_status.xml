@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/device_status_activity_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/select_subscription" android:key="button_aboutphone_msim_status">
+        <intent android:targetPackage="com.lenovo.geminisettings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.geminisettings.SimStatus" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/select_subscription" android:key="button_aboutphone_msim_status_qcom_single">
+        <intent android:targetPackage="com.lenovo.leos.simsettings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.leos.simsettings.MSimSubscriptionStatus" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/select_subscription" android:key="button_aboutphone_msim_status_qcom_dual">
+        <intent android:targetPackage="com.lenovo.leos.simsettings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.leos.simsettings.SelectSubscription">
+            <extra android:name="PACKAGE" android:value="com.lenovo.leos.simsettings" />
+            <extra android:name="TARGET_CLASS" android:value="com.lenovo.leos.simsettings.MSimSubscriptionStatus" />
+        </intent>
+    </PreferenceScreen>
+    <Preference android:persistent="false" android:title="@string/battery_status_title" android:key="battery_status" android:summary="@string/device_info_not_available" android:widgetLayout="@null" />
+    <Preference android:persistent="false" android:title="@string/battery_level_title" android:key="battery_level" android:summary="@string/device_info_not_available" android:widgetLayout="@null" />
+    <Preference android:persistent="false" android:title="@string/wifi_advanced_ip_address_title" android:key="wifi_ip_address" android:summary="@string/device_info_not_available" android:widgetLayout="@null" />
+    <Preference android:persistent="false" android:title="@string/status_wifi_mac_address" android:key="wifi_mac_address" android:summary="@string/device_info_not_available" android:widgetLayout="@null" />
+    <Preference android:persistent="false" android:title="@string/status_bt_address" android:key="bt_address" android:summary="@string/device_info_not_available" android:widgetLayout="@null" />
+    <Preference android:persistent="false" android:title="@string/status_serial_number" android:key="serial_number" android:summary="@string/device_info_not_available" android:widgetLayout="@null" />
+    <Preference android:persistent="false" android:title="@string/status_up_time" android:key="up_time" android:summary="@string/device_info_not_available" android:widgetLayout="@null" />
+</PreferenceScreen>

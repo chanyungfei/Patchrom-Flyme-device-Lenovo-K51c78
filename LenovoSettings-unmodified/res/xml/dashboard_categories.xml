@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dashboard-categories
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <dashboard-tile android:icon="@drawable/ic_settings_nfc_payment" android:id="@id/nfc_payment_settings" android:title="@string/nfc_payment_settings_title" android:fragment="com.android.settings.nfc.PaymentSettings" />
+</dashboard-categories>

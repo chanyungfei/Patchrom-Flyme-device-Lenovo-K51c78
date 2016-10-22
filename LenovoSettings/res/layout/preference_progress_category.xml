@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingStart="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="?android:colorAccent" android:layout_gravity="start|center" android:id="@android:id/title" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="16.0dip" />
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/scanning_progress" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" android:text="@string/progress_scanning" />
+</LinearLayout>

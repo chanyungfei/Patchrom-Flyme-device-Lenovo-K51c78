@@ -1,0 +1,24 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: LenovoSettings.apk
+compressionType: false
+doNotCompress:
+- arsc
+- assets/config
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '21'
+sharedLibrary: false
+unknownFiles:
+  com/android/settings/EventLogTags.logtags: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.1-04d478-SNAPSHOT
+versionInfo:
+  versionCode: '10010755'
+  versionName: 1.1.755.160112.1994fd3_xxhdpi

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sysapp_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:lenovo="http://schemas.android.com/apk/res/com.android.settings"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceScreen android:title="@string/call_settings" android:key="call_settings">
+        <intent android:targetPackage="com.lenovo.callsetting" android:targetClass="com.mediatek.settings.CallSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/contact" android:key="contact">
+        <intent android:action="com.lenovo.ideafriend.action.CONTACT.SETTING" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/message" android:key="message">
+        <intent android:action="com.lenovo.ideafriend.action.MESSAGE.SETTING" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/email" android:key="email">
+        <intent android:targetPackage="com.lenovo.email" android:targetClass="com.lenovo.email.activity.setup.ACCOUNT_MANAGER_ENTRY" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/video" android:key="video">
+        <intent android:targetPackage="com.lenovo.video" android:targetClass="com.qiyi.video.manager.activity.SettingActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/calendar" android:key="calendar">
+        <intent android:targetPackage="com.lenovo.calendar" android:targetClass="com.lenovo.calendar.GenernalSettingsActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/file_manager" android:key="file_manager">
+        <intent android:targetPackage="com.lenovo.FileBrowser" android:targetClass="com.lenovo.FileBrowser.FileSettingActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

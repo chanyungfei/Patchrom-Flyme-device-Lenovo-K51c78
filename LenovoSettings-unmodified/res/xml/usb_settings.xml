@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/usb_connection_category" android:key="usb_select" />
+    <PreferenceCategory android:title="@string/enable_adb" android:key="key_enable_adb" />
+</PreferenceScreen>

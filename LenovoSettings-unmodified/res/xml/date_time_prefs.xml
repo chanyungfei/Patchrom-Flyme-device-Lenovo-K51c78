@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/date_and_time_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/auto_time_entries" android:title="@string/date_time_auto" android:key="auto_time_list" android:entryValues="@array/auto_time_entries" />
+    <SwitchPreference android:title="@string/date_time_auto" android:key="auto_time_checkbox" android:summaryOn="@string/auto_time_on" android:summaryOff="@string/auto_time_on" />
+    <SwitchPreference android:title="@string/zone_auto" android:key="auto_zone" android:summaryOn="@string/zone_auto_summaryOn" android:summaryOff="@string/zone_auto_summaryOff" />
+    <Preference android:title="@string/date_time_set_date" android:key="date" />
+    <Preference android:title="@string/date_time_set_time" android:key="time" />
+    <PreferenceScreen android:title="@string/date_time_set_timezone" android:key="timezone" android:fragment="com.android.settings.ZonePicker" />
+    <SwitchPreference android:title="@string/date_time_24hour" android:key="24 hour" />
+    <ListPreference android:title="@string/date_time_date_format" android:key="date_format" />
+    <PreferenceCategory android:title="@string/roaming_time_settings_category" android:key="internal_roaming_time_settings_category">
+        <Preference android:title="@string/roaming_time_settings_zone" android:key="roaming_time_settings_zone" />
+        <Preference android:title="@string/roaming_time_settings_time_display" android:key="roaming_time_settings_time_display" />
+    </PreferenceCategory>
+</PreferenceScreen>

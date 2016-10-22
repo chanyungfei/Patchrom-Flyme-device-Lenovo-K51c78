@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/leac_actionbar_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="action_layer_b" android:animation="@anim/leac_scale_b" />
+    <target android:name="action_layer_path_b" android:animation="@anim/leac_alpha_b" />
+    <target android:name="action_layer_d" android:animation="@anim/leac_scale_d" />
+    <target android:name="action_layer_path_d" android:animation="@anim/leac_alpha_d" />
+    <target android:name="action_layer_c" android:animation="@anim/leac_scale_c" />
+    <target android:name="action_layer_path_c" android:animation="@anim/leac_alpha_c" />
+    <target android:name="action_layer_a" android:animation="@anim/leac_scale_a" />
+    <target android:name="action_layer_path_a" android:animation="@anim/leac_alpha_a" />
+</animated-vector>

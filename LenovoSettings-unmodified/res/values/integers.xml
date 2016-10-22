@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="leac_max_action_buttons">4</integer>
+    <integer name="maximum_user_dictionary_word_length">48</integer>
+    <integer name="keyguard_appwidget_picker_cols">1</integer>
+    <integer name="preference_fragment_scrollbarStyle">0x2000000</integer>
+    <integer name="preference_scrollbar_style">33554432</integer>
+</resources>

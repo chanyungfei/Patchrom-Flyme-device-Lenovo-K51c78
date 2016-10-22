@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:lenovo="http://schemas.android.com/apk/res/com.flyme.deviceoriginalsettings"
+  xmlns:settings="http://schemas.android.com/apk/res/com.flyme.deviceoriginalsettings">
+    <PreferenceScreen android:id="@id/brightness_recent_id" android:enabled="false" android:title="@string/brightness" android:key="brightness">
+        <intent android:action="android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
+    </PreferenceScreen>
+    <ListPreference android:persistent="false" android:enabled="false" android:entries="@array/entries_smart_rotation" android:id="@id/smart_rotation_recent_id" android:title="@string/smart_rotete_cbox_title" android:key="smart_rotation" android:entryValues="@array/entryvalues_smart_rotation" />
+    <SwitchPreference android:title="@string/accelerometer_title" android:enabled="false" android:key="accelerometer" />
+    <ListPreference android:persistent="false" android:enabled="false" android:entries="@array/screen_timeout_entries" android:id="@id/screen_timeout_recent_id" android:title="@string/screen_timeout" android:key="screen_timeout" android:entryValues="@array/screen_timeout_values" />
+    <PreferenceScreen android:id="@id/screensaver_recent_id" android:enabled="false" android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.flyme.deviceoriginalsettings.DreamSettings" />
+    <com.flyme.deviceoriginalsettings.WarnedListPreference android:enabled="false" android:entries="@array/entries_font_size" android:id="@id/font_size_recent_id" android:title="@string/title_font_size" android:key="font_size" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <SwitchPreference android:id="@id/lcd_invert_recent_id" android:enabled="false" android:title="@string/title_lcd_invert" android:key="lcd_invert" settings:hasSubPreference="false" />
+    <SwitchPreference android:persistent="false" android:enabled="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" />
+    <PreferenceScreen android:id="@id/wifi_display_recent_id" android:enabled="false" android:title="@string/wifi_display_settings_title" android:key="wifi_display" android:fragment="com.flyme.deviceoriginalsettings.wfd.WifiDisplaySettings" />
+    <PreferenceScreen android:id="@id/home_settings_id" android:enabled="false" android:title="@string/home_settings" android:key="home" android:fragment="com.flyme.deviceoriginalsettings.HomeSettings" />
+    <SwitchPreference android:title="@string/night_mode" android:enabled="false" android:key="night_mode" android:summary="@string/night_mode_summary" />
+    <ListPreference android:entries="@array/entries_button_brightness" android:enabled="false" android:id="@id/keyboard_lights_recent_id" android:title="@string/button_brightness" android:key="button_brightness" android:defaultValue="auto" android:dialogTitle="@string/dialog_title_button_brightness" android:entryValues="@array/entryvalues_button_brightness" />
+    <SwitchPreference android:id="@id/clear_motion_id" android:enabled="false" android:title="@string/clear_motion_title" android:key="clear_motion" android:summary="@string/clear_motion_summary" />
+</PreferenceScreen>
