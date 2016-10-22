@@ -1,0 +1,17 @@
+{
+    "resource_description": "lenovo",
+    "resource_originate": "lenovo",
+    "resource_developer": "lenovo",
+    "resource_designer":"lenovo",
+
+    "resource_version": 1,    
+    "resource_versionname": "1.0",  
+
+    "resource_category": "lockscreen", 
+    "resource_platform" : "phone",
+    
+    "resource_id": 101, 
+    "resource_name": "简约", 
+    "resource_templateversion": 102,
+    "resource_subtype" : "script_1"
+}

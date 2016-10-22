@@ -1,0 +1,10 @@
+﻿{
+    id:-1,
+    stage:1,
+    name:"VIBE锁屏",
+    magazineId:-1,
+    openLinkFlag:1,
+    minPageNum:7,
+    maxPageNum:9999,
+    pubTimeInMills:1427817600000
+}

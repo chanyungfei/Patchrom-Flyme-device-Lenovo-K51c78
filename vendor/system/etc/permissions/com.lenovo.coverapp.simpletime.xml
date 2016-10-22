@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <!-- 整数范例 -->
+    <ExampleInt>100</ExampleInt>
+    <!-- 布尔范例 -->
+    <ExampleBool>true</ExampleBool>
+    <!-- 实数范例 -->
+    <ExampleFloat>-0.5</ExampleFloat>
+    <!-- 字串范例 -->
+    <ExampleString>hello</ExampleString>
+
+    <!-- 是否使用测试服务器，默认false -->
+    <!-- <TestServer>true</TestServer> -->
+
+    <!-- 是否处于开发模式，默认false -->
+    <!-- <Develope>true</Develope> -->
+    
+    <!-- 预置期刊平均观看次数门限值，默认值5，超过门限值是删除预置期刊的条件之一 -->
+    <WatchThreshold>4</WatchThreshold>
+    
+    <!-- 默认勾选订阅的杂志Id, 以分号隔开-->
+    <SubscribedList>2;3;5;7;8;9;17</SubscribedList>
+
+    <!-- 预置快捷0-->
+    <PresetShortCut0>com.lenovo.ideafriend/com.lenovo.ideafriend.alias.DialtactsActivity</PresetShortCut0>
+
+    <!-- 预置快捷1-->
+    <PresetShortCut1>com.lenovo.calendar/com.lenovo.calendar.SplashActivity</PresetShortCut1>
+
+    <!-- 预置快捷2-->
+    <PresetShortCut2>func_torch</PresetShortCut2>
+
+    <!-- 预置快捷3-->
+    <PresetShortCut3>com.lenovo.calculator/com.lenovo.calculator.Calculator</PresetShortCut3>
+
+    <!-- 预置快捷4-->
+    <PresetShortCut4>com.lenovo.ideafriend/com.lenovo.ideafriend.alias.MmsActivity</PresetShortCut4>
+
+</Root>
