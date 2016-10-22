@@ -475,7 +475,7 @@
 
     move-result-object v2
 
-    const v3, 0x1120068
+    const v3, #android:bool@config_syncstorageengine_masterSyncAutomatically#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 

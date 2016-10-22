@@ -653,7 +653,7 @@
 
     if-ge v4, v5, :cond_c
 
-    const v4, 0x1030005
+    const v4, #android:style@Theme#t
 
     :goto_2
     iput v4, p0, Lcom/android/server/am/ActivityRecord;->realTheme:I
@@ -1037,19 +1037,16 @@
 
     goto/16 :goto_0
 
-    .line 465
     :cond_b
     const/4 v4, 0x0
 
     goto/16 :goto_1
 
-    .line 480
     :cond_c
-    const v4, 0x103006b
+    const v4, #android:style@Theme.Holo#t
 
     goto/16 :goto_2
 
-    .line 494
     :cond_d
     move-object/from16 v0, p7
 

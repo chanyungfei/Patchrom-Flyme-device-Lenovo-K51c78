@@ -153,7 +153,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0002
+    const v1, #android:integer@config_longAnimTime#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 

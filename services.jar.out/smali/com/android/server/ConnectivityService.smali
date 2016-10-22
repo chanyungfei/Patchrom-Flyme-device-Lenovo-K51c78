@@ -858,7 +858,7 @@
 
     move-result-object v2
 
-    const v3, 0x104002a
+    const v3, #android:string@config_default_dns_server#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1032,7 +1032,7 @@
 
     move-result-object v2
 
-    const v3, 0x10e000d
+    const v3, #android:integer@config_networkTransitionTimeout#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1113,7 +1113,7 @@
 
     move-result-object v2
 
-    const v3, 0x107000d
+    const v3, #android:array@networkAttributes#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1505,7 +1505,7 @@
 
     move-result-object v2
 
-    const v3, 0x107000e
+    const v3, #android:array@config_protectedNetworks#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -13593,7 +13593,7 @@
 
     .line 3438
     :pswitch_0
-    const v9, 0x10404c0
+    const v9, #android:string@network_available_sign_in#t
 
     const/4 v10, 0x1
 
@@ -13615,7 +13615,7 @@
 
     .line 3439
     .local v8, "title":Ljava/lang/CharSequence;
-    const v9, 0x10404c1
+    const v9, #android:string@network_available_sign_in_detailed#t
 
     const/4 v10, 0x1
 
@@ -13629,36 +13629,30 @@
 
     move-result-object v2
 
-    .line 3441
     .local v2, "details":Ljava/lang/CharSequence;
-    const v3, 0x108064e
+    const v3, #android:drawable@stat_notify_rssi_in_range#t
 
-    .line 3445
     .local v3, "icon":I
     :goto_0
     const-wide/16 v10, 0x0
 
     iput-wide v10, v4, Landroid/app/Notification;->when:J
 
-    .line 3446
     iput v3, v4, Landroid/app/Notification;->icon:I
 
-    .line 3447
     const/16 v9, 0x10
 
     iput v9, v4, Landroid/app/Notification;->flags:I
 
-    .line 3448
     iput-object v8, v4, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
-    .line 3449
     iget-object v9, p0, Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
-    const v10, 0x1060059
+    const v10, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -13700,7 +13694,7 @@
     .line 3424
     .restart local v4    # "notification":Landroid/app/Notification;
     :pswitch_1
-    const v9, 0x10404bf
+    const v9, #android:string@wifi_available_sign_in#t
 
     const/4 v10, 0x1
 
@@ -13722,7 +13716,7 @@
 
     .line 3425
     .restart local v8    # "title":Ljava/lang/CharSequence;
-    const v9, 0x10404c1
+    const v9, #android:string@network_available_sign_in_detailed#t
 
     const/4 v10, 0x1
 
@@ -13736,20 +13730,17 @@
 
     move-result-object v2
 
-    .line 3427
     .restart local v2    # "details":Ljava/lang/CharSequence;
-    const v3, 0x1080652
+    const v3, #android:drawable@stat_notify_wifi_in_range#t
 
-    .line 3428
     .restart local v3    # "icon":I
     goto :goto_0
 
-    .line 3431
     .end local v2    # "details":Ljava/lang/CharSequence;
     .end local v3    # "icon":I
     .end local v8    # "title":Ljava/lang/CharSequence;
     :pswitch_2
-    const v9, 0x10404c0
+    const v9, #android:string@network_available_sign_in#t
 
     const/4 v10, 0x1
 
@@ -13777,19 +13768,15 @@
 
     move-result-object v2
 
-    .line 3435
     .restart local v2    # "details":Ljava/lang/CharSequence;
-    const v3, 0x108064e
+    const v3, #android:drawable@stat_notify_rssi_in_range#t
 
-    .line 3436
     .restart local v3    # "icon":I
     goto :goto_0
 
-    .line 3456
     :catch_0
     move-exception v6
 
-    .line 3457
     .local v6, "npe":Ljava/lang/NullPointerException;
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -19194,7 +19181,7 @@
 
     move-result-object v2
 
-    const v3, 0x104002c
+    const v3, #android:string@mobile_provisioning_url#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -19338,7 +19325,7 @@
 
     move-result-object v1
 
-    const v2, 0x104002d
+    const v2, #android:string@mobile_redirected_provisioning_url#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -22010,7 +21997,7 @@
 
     move-result-object v1
 
-    const v4, 0x1120085
+    const v4, #android:bool@config_networkSamplingWakesDevice#t
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
 

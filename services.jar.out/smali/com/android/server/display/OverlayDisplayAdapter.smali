@@ -492,7 +492,7 @@
 
     move-result-object v2
 
-    const v3, 0x10405eb
+    const v3, #android:string@display_manager_overlay_display_name#t
 
     const/16 v20, 0x1
 

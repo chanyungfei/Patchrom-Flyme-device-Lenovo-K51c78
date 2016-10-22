@@ -983,7 +983,7 @@
 
     move-result-object v2
 
-    const v3, 0x10400e8
+    const v3, #android:string@contentServiceTooManyDeletesNotificationDesc#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1004,7 +1004,7 @@
     .local v9, "contextForUser":Landroid/content/Context;
     new-instance v10, Landroid/app/Notification;
 
-    const v2, 0x1080651
+    const v2, #android:drawable@stat_notify_sync_error#t
 
     move-object/from16 v0, p0
 
@@ -1015,7 +1015,7 @@
 
     move-result-object v3
 
-    const v5, 0x10400e6
+    const v5, #android:string@contentServiceSync#t
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1033,7 +1033,7 @@
 
     move-result-object v2
 
-    const v3, 0x1060059
+    const v3, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1041,8 +1041,7 @@
 
     iput v2, v10, Landroid/app/Notification;->color:I
 
-    .line 3214
-    const v2, 0x10400e7
+    const v2, #android:string@contentServiceSyncNotificationTitle#t
 
     invoke-virtual {v9, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

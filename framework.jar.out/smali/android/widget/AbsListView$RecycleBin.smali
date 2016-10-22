@@ -687,30 +687,24 @@
     .prologue
     const/4 v7, 0x1
 
-    .line 7048
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/AbsListView$LayoutParams;
 
-    .line 7049
     .local v0, "lp":Landroid/widget/AbsListView$LayoutParams;
     if-nez v0, :cond_1
 
-    .line 7125
     :cond_0
     :goto_0
     return-void
 
-    .line 7053
     :cond_1
     iput p2, v0, Landroid/widget/AbsListView$LayoutParams;->scrappedFromPosition:I
 
-    .line 7057
     iget v3, v0, Landroid/widget/AbsListView$LayoutParams;->viewType:I
 
-    .line 7058
     .local v3, "viewType":I
     # getter for: Landroid/widget/AbsListView;->sDbgRecycle:Z
     invoke-static {}, Landroid/widget/AbsListView;->access$5900()Z
@@ -2693,6 +2687,56 @@
 
     :cond_0
     const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private flymeProcessScrapView(Landroid/view/View;)V
+    .locals 3
+    .param p1, "scrap"    # Landroid/view/View;
+
+    .prologue
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/AbsListView$LayoutParams;
+
+    .local v0, "lp":Landroid/widget/AbsListView$LayoutParams;
+    if-nez v0, :cond_1
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    iget v1, v0, Landroid/widget/AbsListView$LayoutParams;->viewType:I
+
+    .local v1, "viewType":I
+    invoke-virtual {p0, v1}, Landroid/widget/AbsListView$RecycleBin;->shouldRecycleViewType(I)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const/4 v2, -0x2
+
+    if-eq v1, v2, :cond_0
+
+    iget-object v2, p0, Landroid/widget/AbsListView$RecycleBin;->mSkippedScrap:Ljava/util/ArrayList;
+
+    if-nez v2, :cond_2
+
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v2, p0, Landroid/widget/AbsListView$RecycleBin;->mSkippedScrap:Ljava/util/ArrayList;
+
+    :cond_2
+    iget-object v2, p0, Landroid/widget/AbsListView$RecycleBin;->mSkippedScrap:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 .end method

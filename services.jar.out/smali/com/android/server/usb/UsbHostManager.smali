@@ -123,7 +123,7 @@
 
     move-result-object v0
 
-    const v1, 0x107001a
+    const v1, #android:array@config_usbHostBlacklist#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

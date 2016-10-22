@@ -16,21 +16,17 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 27
     invoke-direct {p0, p1}, Lcom/android/server/am/BaseErrorDialog;-><init>(Landroid/content/Context;)V
 
-    .line 42
     new-instance v1, Lcom/android/server/am/FactoryErrorDialog$1;
 
     invoke-direct {v1, p0}, Lcom/android/server/am/FactoryErrorDialog$1;-><init>(Lcom/android/server/am/FactoryErrorDialog;)V
 
     iput-object v1, p0, Lcom/android/server/am/FactoryErrorDialog;->mHandler:Landroid/os/Handler;
 
-    .line 28
     invoke-virtual {p0, v4}, Lcom/android/server/am/FactoryErrorDialog;->setCancelable(Z)V
 
-    .line 29
-    const v1, 0x10403dc
+    const v1, #android:string@factorytest_failed#t
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -44,7 +40,7 @@
     .line 31
     const/4 v1, -0x1
 
-    const v2, 0x10403df
+    const v2, #android:string@factorytest_reboot#t
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

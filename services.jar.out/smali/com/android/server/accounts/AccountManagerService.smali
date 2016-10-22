@@ -1642,7 +1642,7 @@
     .local v10, "authTokenLabel":Ljava/lang/String;
     new-instance v14, Landroid/app/Notification;
 
-    const v4, 0x108008a
+    const v4, #android:drawable@stat_sys_warning#t
 
     const/4 v5, 0x0
 
@@ -1656,7 +1656,7 @@
 
     iget-object v4, v0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x104054a
+    const v5, #android:string@permission_request_notification_with_subtitle#t
 
     const/4 v6, 0x1
 
@@ -1736,7 +1736,7 @@
 
     move-result-object v4
 
-    const v5, 0x1060059
+    const v5, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1920,7 +1920,7 @@
     .line 3006
     new-instance v11, Landroid/app/Notification;
 
-    const v4, 0x108008a
+    const v4, #android:drawable@stat_sys_warning#t
 
     const/4 v5, 0x0
 
@@ -1946,7 +1946,7 @@
 
     .line 3010
     .local v10, "contextForUser":Landroid/content/Context;
-    const v4, 0x10400e5
+    const v4, #android:string@notification_title#t
 
     invoke-virtual {v10, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1962,7 +1962,7 @@
 
     move-result-object v4
 
-    const v5, 0x1060059
+    const v5, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2584,7 +2584,7 @@
 
     move-result-object v21
 
-    const v22, 0x1040045
+    const v22, #android:string@config_appsAuthorizedForSharedAccounts#t
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

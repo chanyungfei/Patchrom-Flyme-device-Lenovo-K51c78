@@ -3,6 +3,14 @@
 .source "MasterClearReceiver.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/server/MasterClearReceiver$FlymeRebootThread;
+    }
+.end annotation
+
+
 # static fields
 .field private static final TAG:Ljava/lang/String; = "MasterClear"
 
@@ -103,4 +111,22 @@
     invoke-virtual {v2}, Ljava/lang/Thread;->start()V
 
     goto :goto_0
+.end method
+
+.method private flymeRebootWipeUserData(Landroid/content/Context;Landroid/content/Intent;)Z
+    .locals 2
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
+
+    .prologue
+    new-instance v0, Lcom/android/server/MasterClearReceiver$FlymeRebootThread;
+
+    invoke-direct {v0, p1, p2}, Lcom/android/server/MasterClearReceiver$FlymeRebootThread;-><init>(Landroid/content/Context;Landroid/content/Intent;)V
+
+    .local v0, "flymeRebootThread":Lcom/android/server/MasterClearReceiver$FlymeRebootThread;
+    invoke-virtual {v0}, Lcom/android/server/MasterClearReceiver$FlymeRebootThread;->start()V
+
+    const/4 v1, 0x1
+
+    return v1
 .end method

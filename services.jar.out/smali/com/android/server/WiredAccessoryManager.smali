@@ -176,7 +176,7 @@
 
     move-result-object v2
 
-    const v3, 0x112006c
+    const v3, #android:bool@config_useDevInputEventForAudioJack#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -184,28 +184,24 @@
 
     iput-boolean v2, p0, Lcom/android/server/WiredAccessoryManager;->mUseDevInputEventForAudioJack:Z
 
-    .line 118
     new-instance v2, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
 
     invoke-direct {v2, p0}, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;-><init>(Lcom/android/server/WiredAccessoryManager;)V
 
     iput-object v2, p0, Lcom/android/server/WiredAccessoryManager;->mObserver:Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
 
-    .line 119
     new-instance v0, Landroid/content/IntentFilter;
 
     const-string v2, "android.intent.action.BOOT_COMPLETED"
 
     invoke-direct {v0, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    .line 120
     .local v0, "filter":Landroid/content/IntentFilter;
     const-string v2, "android.intent.action.LAUNCH_POWEROFF_ALARM"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 122
-    const v2, 0x1040071
+    const v2, #android:string@unsupported_headset_warning#t
 
     const/16 v3, 0x3e8
 

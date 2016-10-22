@@ -1430,7 +1430,7 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x1040472
+    const v3, #android:string@low_internal_storage_view_text#t
 
     :goto_0
     invoke-virtual {v0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -1453,7 +1453,7 @@
 
     invoke-direct {v1, v0}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x108064b
+    const v3, #android:drawable@stat_notify_disk_full#t
 
     invoke-virtual {v1, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -1467,7 +1467,7 @@
 
     move-result-object v3
 
-    const v5, 0x1060059
+    const v5, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1543,7 +1543,7 @@
     .end local v7    # "intent":Landroid/app/PendingIntent;
     .end local v9    # "notification":Landroid/app/Notification;
     :cond_0
-    const v3, 0x1040473
+    const v3, #android:string@low_internal_storage_view_text_no_boot#t
 
     goto :goto_0
 .end method

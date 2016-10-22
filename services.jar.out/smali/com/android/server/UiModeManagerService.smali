@@ -228,7 +228,7 @@
     .prologue
     const/4 v4, 0x0
 
-    const v10, 0x1040561
+    const v10, #android:string@car_mode_disable_notification_title#t
 
     const/4 v1, 0x0
 
@@ -289,57 +289,48 @@
 
     iput-object v3, p0, Lcom/android/server/UiModeManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
-    .line 593
     :cond_2
     iget-object v3, p0, Lcom/android/server/UiModeManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
     if-eqz v3, :cond_3
 
-    .line 594
     iget-boolean v3, p0, Lcom/android/server/UiModeManagerService;->mCarModeEnabled:Z
 
     if-eqz v3, :cond_5
 
-    .line 595
     new-instance v2, Landroid/content/Intent;
 
     const-class v3, Lcom/android/internal/app/DisableCarModeActivity;
 
     invoke-direct {v2, v0, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 597
     .local v2, "carModeOffIntent":Landroid/content/Intent;
     new-instance v6, Landroid/app/Notification;
 
     invoke-direct {v6}, Landroid/app/Notification;-><init>()V
 
-    .line 598
     .local v6, "n":Landroid/app/Notification;
-    const v3, 0x1080648
+    const v3, #android:drawable@stat_notify_car_mode#t
 
     iput v3, v6, Landroid/app/Notification;->icon:I
 
-    .line 599
     const/4 v3, 0x4
 
     iput v3, v6, Landroid/app/Notification;->defaults:I
 
-    .line 600
     const/4 v3, 0x2
 
     iput v3, v6, Landroid/app/Notification;->flags:I
 
-    .line 601
     const-wide/16 v8, 0x0
 
     iput-wide v8, v6, Landroid/app/Notification;->when:J
 
-    .line 602
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    const v5, 0x1060059
+    const v5, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -352,7 +343,7 @@
 
     move-result-object v7
 
-    const v3, 0x1040562
+    const v3, #android:string@car_mode_disable_notification_message#t
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1292,7 +1283,7 @@
 
     move-result-object v2
 
-    const v5, 0x10e003e
+    const v5, #android:integer@config_defaultUiModeType#t
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1305,7 +1296,7 @@
 
     move-result-object v2
 
-    const v5, 0x10e003c
+    const v5, #android:integer@config_carDockKeepsScreenOn#t
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1323,7 +1314,7 @@
 
     move-result-object v2
 
-    const v5, 0x10e003a
+    const v5, #android:integer@config_deskDockKeepsScreenOn#t
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getInteger(I)I
 

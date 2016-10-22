@@ -627,7 +627,7 @@
 
     .line 345
     :cond_0
-    const v2, 0x10e0051
+    const v2, #android:integer@config_screenBrightnessSettingMinimum#t
 
     move-object/from16 v0, v16
 
@@ -652,7 +652,7 @@
 
     .line 351
     :cond_1
-    const v2, 0x10e0054
+    const v2, #android:integer@config_screenBrightnessDoze#t
 
     move-object/from16 v0, v16
 
@@ -670,8 +670,7 @@
 
     iput v2, v0, Lcom/android/server/display/DisplayPowerController;->mScreenBrightnessDozeConfig:I
 
-    .line 354
-    const v2, 0x10e0055
+    const v2, #android:integer@config_screenBrightnessDim#t
 
     move-object/from16 v0, v16
 
@@ -689,8 +688,7 @@
 
     iput v2, v0, Lcom/android/server/display/DisplayPowerController;->mScreenBrightnessDimConfig:I
 
-    .line 357
-    const v2, 0x10e0056
+    const v2, #android:integer@config_screenBrightnessDark#t
 
     move-object/from16 v0, v16
 
@@ -863,8 +861,7 @@
 
     iput v2, v0, Lcom/android/server/display/DisplayPowerController;->mScreenBrightnessRangeMaximum:I
 
-    .line 377
-    const v2, 0x112001e
+    const v2, #android:bool@config_automatic_brightness_available#t
 
     move-object/from16 v0, v16
 
@@ -876,8 +873,7 @@
 
     iput-boolean v2, v0, Lcom/android/server/display/DisplayPowerController;->mUseSoftwareAutoBrightnessConfig:Z
 
-    .line 380
-    const v2, 0x1120041
+    const v2, #android:bool@config_allowAutoBrightnessWhileDozing#t
 
     move-object/from16 v0, v16
 
@@ -889,15 +885,13 @@
 
     iput-boolean v2, v0, Lcom/android/server/display/DisplayPowerController;->mAllowAutoBrightnessWhileDozingConfig:Z
 
-    .line 383
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/android/server/display/DisplayPowerController;->mUseSoftwareAutoBrightnessConfig:Z
 
     if-eqz v2, :cond_4
 
-    .line 384
-    const v2, 0x1070024
+    const v2, #android:array@config_autoBrightnessLevels#t
 
     move-object/from16 v0, v16
 
@@ -907,7 +901,7 @@
 
     .line 386
     .local v15, "lux":[I
-    const v2, 0x1070025
+    const v2, #android:array@config_autoBrightnessLcdBacklightValues#t
 
     move-object/from16 v0, v16
 
@@ -917,7 +911,7 @@
 
     .line 388
     .local v17, "screenBrightness":[I
-    const v2, 0x10e0057
+    const v2, #android:integer@config_lightSensorWarmupTime#t
 
     move-object/from16 v0, v16
 
@@ -927,7 +921,7 @@
 
     .line 390
     .local v8, "lightSensorWarmUpTimeConfig":I
-    const v2, 0x1130001
+    const v2, #android:fraction@config_screenAutoBrightnessDozeScaleFactor#t
 
     const/4 v3, 0x1
 
@@ -1041,8 +1035,7 @@
 
     iput v9, v0, Lcom/android/server/display/DisplayPowerController;->mScreenBrightnessRangeMinimum:I
 
-    .line 445
-    const v2, 0x1120022
+    const v2, #android:bool@config_animateScreenLights#t
 
     move-object/from16 v0, v16
 

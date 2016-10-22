@@ -1841,7 +1841,7 @@
 
     iget-object v4, v4, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x1040114
+    const v5, #android:string@android_system_label#t
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1856,7 +1856,7 @@
 
     iget-object v4, v4, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x10406a1
+    const v5, #android:string@system_error_wipe_data#t
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1873,7 +1873,7 @@
 
     iget-object v5, v5, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v6, 0x104000a
+    const v6, #android:string@ok#t
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1945,7 +1945,7 @@
 
     iget-object v4, v4, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x1040114
+    const v5, #android:string@android_system_label#t
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1960,7 +1960,7 @@
 
     iget-object v4, v4, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x10406a2
+    const v5, #android:string@system_error_manufacturer#t
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1977,7 +1977,7 @@
 
     iget-object v5, v5, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v6, 0x104000a
+    const v6, #android:string@ok#t
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -2369,7 +2369,7 @@
 
     iget-object v4, v4, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x10404a3
+    const v5, #android:string@heavy_weight_notification#t
 
     const/4 v6, 0x1
 
@@ -2403,7 +2403,7 @@
 
     .line 1739
     .local v51, "notification":Landroid/app/Notification;
-    const v4, 0x1080653
+    const v4, #android:drawable@stat_sys_adb#t
 
     move-object/from16 v0, v51
 
@@ -2462,7 +2462,7 @@
 
     move-result-object v4
 
-    const v5, 0x1060059
+    const v5, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2479,7 +2479,7 @@
 
     iget-object v4, v4, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x10404a4
+    const v5, #android:string@heavy_weight_notification_detail#t
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -2545,7 +2545,7 @@
 
     const/16 v22, 0x0
 
-    const v23, 0x10404a3
+    const v23, #android:string@heavy_weight_notification#t
 
     move-object/from16 v0, v62
 
@@ -2625,7 +2625,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x10404a3
+    const v6, #android:string@heavy_weight_notification#t
 
     move-object/from16 v0, p1
 

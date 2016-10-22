@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    const v2, 0x102031c
+    const v2, #android:id@hard_keyboard_section#t
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

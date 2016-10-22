@@ -630,7 +630,7 @@
 
     move-result-object v1
 
-    const v2, 0x10405e9
+    const v2, #android:string@display_manager_built_in_display_name#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -729,7 +729,7 @@
 
     move-result-object v1
 
-    const v2, 0x10405ea
+    const v2, #android:string@display_manager_hdmi_display_name#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

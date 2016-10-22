@@ -484,7 +484,7 @@
 
     iget-object v2, v0, Lcom/android/server/notification/DowntimeConditionProvider;->mContext:Landroid/content/Context;
 
-    const v7, 0x1040699
+    const v7, #android:string@downtime_condition_summary#t
 
     const/4 v8, 0x1
 
@@ -504,7 +504,7 @@
 
     iget-object v2, v0, Lcom/android/server/notification/DowntimeConditionProvider;->mContext:Landroid/content/Context;
 
-    const v7, 0x104069a
+    const v7, #android:string@downtime_condition_line_one#t
 
     invoke-virtual {v2, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1618,7 +1618,7 @@
 
     const-string v2, "downtime.condition.lookahead"
 
-    const v3, 0x10e007e
+    const v3, #android:integer@config_downtime_condition_lookahead_threshold_hrs#t
 
     invoke-static {v1, v2, v3}, Lcom/android/server/notification/PropConfig;->getInt(Landroid/content/Context;Ljava/lang/String;I)I
 

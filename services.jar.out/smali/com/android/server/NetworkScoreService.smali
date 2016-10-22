@@ -833,7 +833,7 @@
 
     move-result-object v2
 
-    const v3, 0x1040046
+    const v3, #android:string@config_defaultNetworkScorerPackageName#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

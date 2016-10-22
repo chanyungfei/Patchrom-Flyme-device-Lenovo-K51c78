@@ -652,7 +652,7 @@
 
     .line 405
     .local v4, "r":Landroid/content/res/Resources;
-    const v9, 0x112008b
+    const v9, #android:bool@config_sms_force_7bit_encoding#t
 
     invoke-virtual {v4, v9}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1020,7 +1020,7 @@
 
     .line 1181
     .local v5, "r":Landroid/content/res/Resources;
-    const v10, 0x112008b
+    const v10, #android:bool@config_sms_force_7bit_encoding#t
 
     invoke-virtual {v5, v10}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1734,28 +1734,23 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 894
     sget-boolean v4, Landroid/telephony/SmsMessage;->mIsNoEmsSupportConfigListLoaded:Z
 
     if-nez v4, :cond_1
 
-    .line 895
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    .line 896
     .local v2, "r":Landroid/content/res/Resources;
     if-eqz v2, :cond_1
 
-    .line 897
-    const v4, 0x107003a
+    const v4, #android:array@no_ems_support_sim_operators#t
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
     move-result-object v1
 
-    .line 899
     .local v1, "listArray":[Ljava/lang/String;
     if-eqz v1, :cond_0
 
@@ -2179,7 +2174,7 @@
 
     .line 1272
     .local v4, "r":Landroid/content/res/Resources;
-    const v10, 0x112008b
+    const v10, #android:bool@config_sms_force_7bit_encoding#t
 
     invoke-virtual {v4, v10}, Landroid/content/res/Resources;->getBoolean(I)Z
 

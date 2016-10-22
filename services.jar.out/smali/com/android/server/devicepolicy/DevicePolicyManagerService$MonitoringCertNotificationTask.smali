@@ -152,7 +152,7 @@
 
     const/4 v2, 0x0
 
-    const v4, 0x10400ea
+    const v4, #android:string@ssl_ca_cert_warning#t
 
     move-object/from16 v0, p1
 
@@ -265,17 +265,15 @@
 
     iget-object v1, v1, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x10400ec
+    const v2, #android:string@ssl_ca_cert_noti_by_administrator#t
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 1762
     .local v7, "contentText":Ljava/lang/String;
-    const v14, 0x1080672
+    const v14, #android:drawable@stat_sys_certificate_info#t
 
-    .line 1771
     .local v14, "smallIconId":I
     :goto_2
     new-instance v3, Landroid/content/Intent;
@@ -351,7 +349,7 @@
 
     iget-object v2, v2, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v4, 0x10400ea
+    const v4, #android:string@ssl_ca_cert_warning#t
 
     invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -391,7 +389,7 @@
 
     move-result-object v2
 
-    const v4, 0x1060059
+    const v4, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -418,7 +416,7 @@
 
     const/4 v2, 0x0
 
-    const v4, 0x10400ea
+    const v4, #android:string@ssl_ca_cert_warning#t
 
     move-object/from16 v0, p1
 
@@ -443,7 +441,7 @@
 
     iget-object v1, v1, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x10400ed
+    const v2, #android:string@ssl_ca_cert_noti_managed#t
 
     const/4 v4, 0x1
 
@@ -457,14 +455,12 @@
 
     move-result-object v7
 
-    .line 1765
     .restart local v7    # "contentText":Ljava/lang/String;
-    const v14, 0x1080672
+    const v14, #android:drawable@stat_sys_certificate_info#t
 
     .restart local v14    # "smallIconId":I
     goto/16 :goto_2
 
-    .line 1767
     .end local v7    # "contentText":Ljava/lang/String;
     .end local v14    # "smallIconId":I
     :cond_4
@@ -474,26 +470,23 @@
 
     iget-object v1, v1, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x10400eb
+    const v2, #android:string@ssl_ca_cert_noti_by_unknown#t
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 1768
     .restart local v7    # "contentText":Ljava/lang/String;
-    const v14, 0x108008a
+    const v14, #android:drawable@stat_sys_warning#t
 
     .restart local v14    # "smallIconId":I
     goto/16 :goto_2
 
-    .line 1781
     .restart local v3    # "dialogIntent":Landroid/content/Intent;
     .restart local v12    # "notifyIntent":Landroid/app/PendingIntent;
     :catch_3
     move-exception v8
 
-    .line 1782
     .local v8, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     const-string v1, "DevicePolicyManagerService"
 

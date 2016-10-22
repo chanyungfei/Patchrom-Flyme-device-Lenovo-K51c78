@@ -1387,19 +1387,19 @@
 
     move-result-object v1
 
-    const v2, 0x10406aa
+    const v2, #android:string@notify_sd_remove_title#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x10406ab
+    const v2, #android:string@notify_sd_remove_text#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x10406ac
+    const v2, #android:string@sd_reboot#t
 
     new-instance v3, Lcom/android/server/MountService$18;
 
@@ -9335,10 +9335,8 @@
 
     if-eqz v3, :cond_2
 
-    .line 2671
-    const v21, 0x1110012
+    const v21, #android:xml@storage_list#t
 
-    .line 2676
     :goto_0
     move-object/from16 v0, v26
 
@@ -9447,7 +9445,7 @@
     .end local v22    # "index":I
     .end local v24    # "parser":Landroid/content/res/XmlResourceParser;
     :cond_2
-    const v21, 0x1110013
+    const v21, #android:xml@storage_list_mount_external#t
 
     goto :goto_0
 
@@ -10886,19 +10884,19 @@
 
     move-result-object v1
 
-    const v2, 0x10406ad
+    const v2, #android:string@switch_storage_nosd_warning_title#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x10406ae
+    const v2, #android:string@switch_storage_nosd_warning_body#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x104000a
+    const v2, #android:string@ok#t
 
     const/4 v3, 0x0
 

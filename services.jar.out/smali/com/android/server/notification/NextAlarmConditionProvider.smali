@@ -326,7 +326,7 @@
 
     iget-object v1, p0, Lcom/android/server/notification/NextAlarmConditionProvider;->mContext:Landroid/content/Context;
 
-    const v2, 0x104069e
+    const v2, #android:string@zen_mode_next_alarm_summary#t
 
     new-array v3, v7, [Ljava/lang/Object;
 
@@ -338,7 +338,7 @@
 
     iget-object v1, p0, Lcom/android/server/notification/NextAlarmConditionProvider;->mContext:Landroid/content/Context;
 
-    const v3, 0x104069f
+    const v3, #android:string@zen_mode_next_alarm_line_one#t
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -954,7 +954,7 @@
 
     const-string v1, "nextalarm.condition.lookahead"
 
-    const v2, 0x10e007d
+    const v2, #android:integer@config_next_alarm_condition_lookahead_threshold_hrs#t
 
     invoke-static {v0, v1, v2}, Lcom/android/server/notification/PropConfig;->getInt(Landroid/content/Context;Ljava/lang/String;I)I
 

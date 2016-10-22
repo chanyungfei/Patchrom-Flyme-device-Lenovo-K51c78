@@ -219,7 +219,7 @@
 
     move-result-object v11
 
-    const v12, 0x1040019
+    const v12, #android:string@config_mobile_hotspot_provision_app_no_ui#t
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -245,7 +245,7 @@
 
     move-result-object v11
 
-    const v12, 0x104001b
+    const v12, #android:string@config_wifi_tether_enable#t
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

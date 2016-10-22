@@ -106,7 +106,7 @@
 
     move-result-object v4
 
-    const v6, 0x1040615
+    const v6, #android:string@user_switched#t
 
     const/4 v7, 0x1
 

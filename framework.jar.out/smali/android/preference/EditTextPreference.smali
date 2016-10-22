@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/preference/EditTextPreference$FlymeInjector;,
         Landroid/preference/EditTextPreference$SavedState;
     }
 .end annotation
@@ -38,12 +39,10 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 83
-    const v0, 0x1010092
+    const v0, #android:attr@editTextPreferenceStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/preference/EditTextPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 84
     return-void
 .end method
 
@@ -71,38 +70,34 @@
     .param p4, "defStyleRes"    # I
 
     .prologue
-    .line 59
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 61
     new-instance v0, Landroid/widget/EditText;
 
     invoke-direct {v0, p1, p2}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     iput-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
 
-    .line 64
+    invoke-static/range {p0 .. p2}, Landroid/preference/EditTextPreference$FlymeInjector;->flymeSetDialogStyleEditText(Landroid/preference/EditTextPreference;Landroid/content/Context;Landroid/util/AttributeSet;)V
+
     iget-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
 
-    const v1, 0x1020003
+    const v1, #android:id@edit#t
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setId(I)V
 
-    .line 67
     iget-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
 
     const/4 v1, 0x5
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setTextDirection(I)V
 
-    .line 75
     iget-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    .line 76
     return-void
 .end method
 
@@ -144,8 +139,7 @@
     .param p2, "editText"    # Landroid/widget/EditText;
 
     .prologue
-    .line 139
-    const v1, 0x102035f
+    const v1, #android:id@edittext_container#t
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -187,6 +181,8 @@
     move-result-object v2
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-static/range {p0 .. p0}, Landroid/preference/EditTextPreference$FlymeInjector;->flymeSetEditTextSelection(Landroid/preference/EditTextPreference;)V
 
     .line 124
     invoke-virtual {v0}, Landroid/widget/EditText;->getParent()Landroid/view/ViewParent;
@@ -454,4 +450,23 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method flymeGetFieldEditText()Landroid/widget/EditText;
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
+
+    return-object v0
+.end method
+
+.method flymeSetFieldEditText(Landroid/widget/EditText;)V
+    .locals 0
+    .param p1, "editText"    # Landroid/widget/EditText;
+
+    .prologue
+    iput-object p1, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
+
+    return-void
 .end method

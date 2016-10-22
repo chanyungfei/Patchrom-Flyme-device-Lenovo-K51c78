@@ -57,7 +57,7 @@
 
 .field private static final LOG_TAG:Ljava/lang/String; = "DevicePolicyManagerService"
 
-.field private static final MONITORING_CERT_NOTIFICATION_ID:I = 0x10400ea
+.field private static final MONITORING_CERT_NOTIFICATION_ID:I = #android:string@ssl_ca_cert_warning#t
 
 .field private static final MS_PER_DAY:J = 0x5265c00L
 

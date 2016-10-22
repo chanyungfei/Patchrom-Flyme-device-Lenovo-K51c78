@@ -329,7 +329,7 @@
     .line 147
     const/4 v11, -0x2
 
-    const v12, 0x1040491
+    const v12, #android:string@force_close#t
 
     invoke-virtual {v10, v12}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -359,7 +359,7 @@
     .line 152
     const/4 v11, -0x1
 
-    const v12, 0x1040492
+    const v12, #android:string@report#t
 
     invoke-virtual {v10, v12}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -410,7 +410,7 @@
 
     .line 171
     :cond_3
-    const v11, 0x1040489
+    const v11, #android:string@aerr_title#t
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -542,7 +542,7 @@
     .end local v2    # "attrs":Landroid/view/WindowManager$LayoutParams;
     .end local v8    # "message":Ljava/lang/CharSequence;
     :cond_5
-    const v11, 0x104048a
+    const v11, #android:string@aerr_application#t
 
     const/4 v12, 0x2
 
@@ -702,7 +702,7 @@
 
     .line 131
     :cond_a
-    const v11, 0x104048b
+    const v11, #android:string@aerr_process#t
 
     const/4 v12, 0x1
 

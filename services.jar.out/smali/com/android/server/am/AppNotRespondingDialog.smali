@@ -102,13 +102,10 @@
 
     if-eqz v2, :cond_4
 
-    .line 57
     if-eqz v1, :cond_3
 
-    .line 58
-    const v4, 0x104048d
+    const v4, #android:string@anr_activity_application#t
 
-    .line 74
     .local v4, "resid":I
     :goto_1
     if-eqz v2, :cond_6
@@ -137,7 +134,7 @@
     .line 78
     const/4 v5, -0x1
 
-    const v6, 0x1040491
+    const v6, #android:string@force_close#t
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -154,7 +151,7 @@
     .line 81
     const/4 v5, -0x2
 
-    const v6, 0x1040493
+    const v6, #android:string@wait#t
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -176,7 +173,7 @@
     .line 86
     const/4 v5, -0x3
 
-    const v6, 0x1040492
+    const v6, #android:string@report#t
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -194,7 +191,7 @@
 
     .line 91
     :cond_0
-    const v5, 0x104048c
+    const v5, #android:string@anr_title#t
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -275,47 +272,38 @@
 
     goto/16 :goto_0
 
-    .line 60
     .restart local v1    # "name1":Ljava/lang/CharSequence;
     .restart local v2    # "name2":Ljava/lang/CharSequence;
     :cond_3
     move-object v1, v2
 
-    .line 61
     iget-object v2, p3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
-    .line 62
-    const v4, 0x104048f
+    const v4, #android:string@anr_application_process#t
 
     .restart local v4    # "resid":I
     goto/16 :goto_1
 
-    .line 65
     .end local v4    # "resid":I
     :cond_4
     if-eqz v1, :cond_5
 
-    .line 66
     iget-object v2, p3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
-    .line 67
-    const v4, 0x104048e
+    const v4, #android:string@anr_activity_process#t
 
     .restart local v4    # "resid":I
     goto/16 :goto_1
 
-    .line 69
     .end local v4    # "resid":I
     :cond_5
     iget-object v1, p3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
-    .line 70
-    const v4, 0x1040490
+    const v4, #android:string@anr_process#t
 
     .restart local v4    # "resid":I
     goto/16 :goto_1
 
-    .line 74
     :cond_6
     new-array v5, v8, [Ljava/lang/Object;
 

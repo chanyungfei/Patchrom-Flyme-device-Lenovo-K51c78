@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0049
+    const v1, #android:integer@config_notificationsBatteryLowARGB#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e004a
+    const v1, #android:integer@config_notificationsBatteryMediumARGB#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -82,7 +82,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e004b
+    const v1, #android:integer@config_notificationsBatteryFullARGB#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e004c
+    const v1, #android:integer@config_notificationsBatteryLedOn#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e004d
+    const v1, #android:integer@config_notificationsBatteryLedOff#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
