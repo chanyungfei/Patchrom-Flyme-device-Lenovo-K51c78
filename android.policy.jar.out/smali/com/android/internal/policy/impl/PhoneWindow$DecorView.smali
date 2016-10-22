@@ -2693,6 +2693,18 @@
 
     .line 2447
     :cond_5
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->flymeDispatchKeyEvent(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/KeyEvent;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_flyme_0
+
+    const/4 v7, 0x1
+
+    return v7
+
+    :cond_flyme_0
+
     if-eqz v2, :cond_8
 
     move v6, v7
@@ -3193,6 +3205,8 @@
     .line 2905
     .end local v0    # "paint":Landroid/graphics/Paint;
     :cond_1
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->flymeDrawStatusBarBackground(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/graphics/Canvas;)V
+
     return-void
 .end method
 

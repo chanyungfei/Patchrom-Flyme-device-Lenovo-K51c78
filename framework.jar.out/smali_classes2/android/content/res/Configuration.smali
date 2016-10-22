@@ -1016,6 +1016,12 @@
 
     or-int/2addr v0, p1
 
+    or-int/lit16 v0, v0, 0x4000
+
+    const v1, 0x8000
+
+    or-int/2addr v0, v1
+
     const/high16 v1, 0x20000000
 
     or-int/2addr v0, v1
@@ -2773,6 +2779,10 @@
 
     move-result v2
 
+    invoke-static {p0, p1, v2}, Landroid/content/res/Configuration$FlymeInjector;->compareTo(Landroid/content/res/Configuration;Landroid/content/res/Configuration;I)I
+
+    move-result v2
+
     goto/16 :goto_0
 .end method
 
@@ -3086,6 +3096,10 @@
 
     or-int/2addr v0, v2
 
+    invoke-static {p0, p1, v0}, Landroid/content/res/Configuration$FlymeInjector;->diff(Landroid/content/res/Configuration;Landroid/content/res/Configuration;I)I
+
+    move-result v0
+
     return v0
 .end method
 
@@ -3298,6 +3312,10 @@
     move-result v2
 
     add-int v0, v1, v2
+
+    invoke-static {p0, v0}, Landroid/content/res/Configuration$FlymeInjector;->hashCode(Landroid/content/res/Configuration;I)I
+
+    move-result v0
 
     return v0
 
@@ -3571,6 +3589,8 @@
 
     invoke-virtual {v0, p1}, Landroid/content/res/VibeExtraConfiguration;->readFromParcel(Landroid/os/Parcel;)V
 
+    invoke-static/range {p0 .. p1}, Landroid/content/res/Configuration$FlymeInjector;->readFromParcel(Landroid/content/res/Configuration;Landroid/os/Parcel;)V
+
     return-void
 
     :cond_1
@@ -3741,6 +3761,8 @@
 
     invoke-virtual {v0, v1}, Landroid/content/res/VibeExtraConfiguration;->setTo(Landroid/content/res/VibeExtraConfiguration;)V
 
+    invoke-static/range {p0 .. p1}, Landroid/content/res/Configuration$FlymeInjector;->initFlymeExtraFields(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)V
+
     return-void
 .end method
 
@@ -3805,6 +3827,8 @@
     iget-object v0, p0, Landroid/content/res/Configuration;->mVibeExtraConfiguration:Landroid/content/res/VibeExtraConfiguration;
 
     invoke-virtual {v0}, Landroid/content/res/VibeExtraConfiguration;->setToDefaults()V
+
+    invoke-static/range {p0 .. p0}, Landroid/content/res/Configuration$FlymeInjector;->initFlymeExtraFields(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -5103,6 +5127,10 @@
 
     or-int/2addr v0, v2
 
+    invoke-static {p0, p1, v0}, Landroid/content/res/Configuration$FlymeInjector;->updateFrom(Landroid/content/res/Configuration;Landroid/content/res/Configuration;I)I
+
+    move-result v0
+
     return v0
 
     .end local v1    # "deltaScreenLayoutDir":I
@@ -5234,6 +5262,8 @@
     iget-object v0, p0, Landroid/content/res/Configuration;->mVibeExtraConfiguration:Landroid/content/res/VibeExtraConfiguration;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/VibeExtraConfiguration;->writeToParcel(Landroid/os/Parcel;I)V
+
+    invoke-static/range {p0 .. p2}, Landroid/content/res/Configuration$FlymeInjector;->writeToParcel(Landroid/content/res/Configuration;Landroid/os/Parcel;I)V
 
     return-void
 

@@ -854,7 +854,7 @@
     :cond_4
     iget v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_flyme_0
 
     sget-boolean v0, Landroid/inputmethodservice/InputMethodService;->DEBUG:Z
 
@@ -5077,6 +5077,8 @@
     invoke-virtual {p0, v7}, Landroid/inputmethodservice/InputMethodService;->startExtractingText(Z)V
 
     :cond_8
+    invoke-static/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->updateCoverViewShown(Landroid/inputmethodservice/InputMethodService;)V
+
     if-nez v2, :cond_a
 
     sget-boolean v3, Landroid/inputmethodservice/InputMethodService;->DEBUG:Z

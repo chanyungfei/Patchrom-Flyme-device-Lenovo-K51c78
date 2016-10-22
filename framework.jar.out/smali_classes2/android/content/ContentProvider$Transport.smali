@@ -211,6 +211,18 @@
 
     invoke-virtual {v0, p2, p3}, Landroid/content/ContentProvider;->enforceWritePermissionInner(Landroid/net/Uri;Landroid/os/IBinder;)V
 
+    invoke-direct/range {p0 .. p1}, Landroid/content/ContentProvider$Transport;->hook_enforceWritePermission(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_flyme_0
+
     iget-object v0, p0, Landroid/content/ContentProvider$Transport;->this$0:Landroid/content/ContentProvider;
 
     iget-object v1, p0, Landroid/content/ContentProvider$Transport;->this$0:Landroid/content/ContentProvider;

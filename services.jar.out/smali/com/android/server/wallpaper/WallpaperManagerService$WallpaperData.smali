@@ -124,6 +124,8 @@
 
     .line 261
     :goto_0
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;->initFlymeWallpaperData()V
+
     return-void
 
     .line 259

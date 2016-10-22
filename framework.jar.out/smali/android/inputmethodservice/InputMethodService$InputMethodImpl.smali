@@ -586,6 +586,10 @@
     :cond_0
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
+    invoke-static {v0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->unbindInputEnter(Landroid/inputmethodservice/InputMethodService;)V
+
+    iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
+
     invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->onUnbindInput()V
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;

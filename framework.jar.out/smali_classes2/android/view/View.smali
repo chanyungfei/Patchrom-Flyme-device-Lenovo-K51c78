@@ -813,6 +813,20 @@
 # instance fields
 .field private DBG_TIMEOUT_VALUE:I
 
+.field protected mDragSurface:Landroid/view/Surface;
+
+.field private mFlymeIgnoreIm:Z
+
+.field protected mShadowBuilder:Landroid/view/View$DragShadowBuilder;
+
+.field protected mhScrollBarPaddingLeft:I
+
+.field protected mhScrollBarPaddingRight:I
+
+.field protected mvScrollBarPaddingBottom:I
+
+.field protected mvScrollBarPaddingTop:I
+
 .field private mAccessibilityCursorPosition:I
 
 .field mAccessibilityDelegate:Landroid/view/View$AccessibilityDelegate;

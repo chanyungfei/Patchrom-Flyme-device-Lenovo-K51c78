@@ -33,6 +33,8 @@
 # instance fields
 .field hallCover:Lcom/android/server/CoverObserver;
 
+.field mFlymeAccessControlManager:Lmeizu/security/AccessControlManager;
+
 .field private final mActivityManagerInternal:Landroid/app/ActivityManagerInternal;
 
 .field private mActualInteractiveState:I

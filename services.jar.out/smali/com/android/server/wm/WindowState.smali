@@ -22,6 +22,8 @@
 # instance fields
 .field private isSinglehandSupport:Z
 
+.field mWindowStateExt:Lcom/android/server/wm/WindowStateExt;
+
 .field mAppFreezing:Z
 
 .field final mAppOp:I

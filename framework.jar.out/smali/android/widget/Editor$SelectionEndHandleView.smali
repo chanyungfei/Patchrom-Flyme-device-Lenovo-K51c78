@@ -222,6 +222,10 @@
 
     move-result v3
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$SelectionEndHandleView;->flymeGetSelectionEnd()I
+
+    move-result v3
+
     const/4 v4, 0x0
 
     invoke-virtual {p0, v3, v4}, Landroid/widget/Editor$SelectionEndHandleView;->positionAtCursorOffset(IZ)V

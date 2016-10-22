@@ -1030,6 +1030,12 @@
 
     invoke-virtual {v7, v0, v1, v8}, Landroid/util/LongSparseArray;->put(JLjava/lang/Object;)V
 
+    move-wide/from16 v0, p5
+
+    move-wide/from16 v2, p7
+
+    invoke-static {p0, p3, v0, v1, v2}, Landroid/content/res/Resources$FlymeInjector;->putFlymeBoostCachedDrawable(Landroid/content/res/Resources;ZJLandroid/graphics/drawable/Drawable;)V
+
     monitor-exit v9
 
     goto/16 :goto_0

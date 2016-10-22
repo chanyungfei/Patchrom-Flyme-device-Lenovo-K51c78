@@ -804,6 +804,10 @@
 
     invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/ListPopupWindow;->adjustFlymeWindowPositionHeight()I
+
+    move-result v16
+
     move-object/from16 v0, p0
 
     iget-boolean v1, v0, Landroid/widget/ListPopupWindow;->mDropDownAlwaysVisible:Z
