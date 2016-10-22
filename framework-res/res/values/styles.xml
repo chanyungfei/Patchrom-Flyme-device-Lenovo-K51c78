@@ -2280,7 +2280,7 @@
         <item name="titleTextStyle">@style/TextAppearance.Holo.Widget.ActionMode.Title.Inverse</item>
         <item name="subtitleTextStyle">@style/TextAppearance.Holo.Widget.ActionMode.Subtitle.Inverse</item>
     </style>
-    <style name="Theme.DeviceDefault" parent="@lenovo:style/Theme.DeviceDefault">
+    <style name="Theme.DeviceDefault" parent="@style/Theme.Material">
         <item name="textAppearance">@style/TextAppearance.DeviceDefault</item>
         <item name="textAppearanceInverse">@style/TextAppearance.DeviceDefault.Inverse</item>
         <item name="textAppearanceLarge">@style/TextAppearance.DeviceDefault.Large</item>
@@ -2392,9 +2392,9 @@
         <item name="preferenceFrameLayoutStyle">@style/Widget.DeviceDefault.PreferenceFrameLayout</item>
         <item name="keyboardViewStyle">@style/Widget.DeviceDefault.KeyboardView</item>
     </style>
-    <style name="Theme.DeviceDefault.NoActionBar" parent="@lenovo:style/Theme.DeviceDefault.NoActionBar" />
-    <style name="Theme.DeviceDefault.NoActionBar.Fullscreen" parent="@lenovo:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
-    <style name="Theme.DeviceDefault.Light" parent="@lenovo:style/Theme.DeviceDefault.Light">
+    <style name="Theme.DeviceDefault.NoActionBar" parent="@style/Theme.Material.NoActionBar" />
+    <style name="Theme.DeviceDefault.NoActionBar.Fullscreen" parent="@style/Theme.Material.NoActionBar.Fullscreen" />
+    <style name="Theme.DeviceDefault.Light" parent="@style/Theme.Material.Light">
         <item name="textAppearance">@style/TextAppearance.DeviceDefault</item>
         <item name="textAppearanceInverse">@style/TextAppearance.DeviceDefault.Inverse</item>
         <item name="textAppearanceLarge">@style/TextAppearance.DeviceDefault.Large</item>
@@ -2504,9 +2504,9 @@
         <item name="searchDialogTheme">@style/Theme.DeviceDefault.Light.SearchBar</item>
         <item name="keyboardViewStyle">@style/Widget.DeviceDefault.KeyboardView</item>
     </style>
-    <style name="Theme.DeviceDefault.Light.NoActionBar" parent="@lenovo:style/Theme.DeviceDefault.Light.NoActionBar" />
-    <style name="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" parent="@lenovo:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" />
-    <style name="Theme.DeviceDefault.Dialog" parent="@lenovo:style/Theme.DeviceDefault.Dialog">
+    <style name="Theme.DeviceDefault.Light.NoActionBar" parent="@style/Theme.Material.Light.NoActionBar" />
+    <style name="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" parent="@style/Theme.Material.Light.NoActionBar.Fullscreen" />
+    <style name="Theme.DeviceDefault.Dialog" parent="@style/Theme.Material.Dialog">
         <item name="textAppearance">@style/TextAppearance.DeviceDefault</item>
         <item name="textAppearanceInverse">@style/TextAppearance.DeviceDefault.Inverse</item>
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault</item>
@@ -2514,10 +2514,10 @@
         <item name="borderlessButtonStyle">@style/Widget.DeviceDefault.Button.Borderless.Small</item>
         <item name="buttonBarStyle">@style/DeviceDefault.ButtonBar.AlertDialog</item>
     </style>
-    <style name="Theme.DeviceDefault.Dialog.MinWidth" parent="@lenovo:style/Theme.DeviceDefault.Dialog.MinWidth" />
-    <style name="Theme.DeviceDefault.Dialog.NoActionBar" parent="@lenovo:style/Theme.DeviceDefault.Dialog.NoActionBar" />
-    <style name="Theme.DeviceDefault.Dialog.NoActionBar.MinWidth" parent="@lenovo:style/Theme.DeviceDefault.Dialog.NoActionBar.MinWidth" />
-    <style name="Theme.DeviceDefault.Light.Dialog" parent="@lenovo:style/Theme.DeviceDefault.Light.Dialog">
+    <style name="Theme.DeviceDefault.Dialog.MinWidth" parent="@style/Theme.Material.Dialog.MinWidth" />
+    <style name="Theme.DeviceDefault.Dialog.NoActionBar" parent="@style/Theme.Material.Dialog.NoActionBar" />
+    <style name="Theme.DeviceDefault.Dialog.NoActionBar.MinWidth" parent="@style/Theme.Material.Dialog.NoActionBar.MinWidth" />
+    <style name="Theme.DeviceDefault.Light.Dialog" parent="@style/Theme.Material.Light.Dialog">
         <item name="textAppearance">@style/TextAppearance.DeviceDefault</item>
         <item name="textAppearanceInverse">@style/TextAppearance.DeviceDefault.Inverse</item>
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault.Light</item>
@@ -2525,168 +2525,168 @@
         <item name="borderlessButtonStyle">@style/Widget.DeviceDefault.Light.Button.Borderless.Small</item>
         <item name="buttonBarStyle">@style/DeviceDefault.Light.ButtonBar.AlertDialog</item>
     </style>
-    <style name="Theme.DeviceDefault.Light.Dialog.MinWidth" parent="@lenovo:style/Theme.DeviceDefault.Light.Dialog.MinWidth" />
-    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar" parent="@lenovo:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" />
-    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" parent="@lenovo:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" />
-    <style name="Theme.DeviceDefault.DialogWhenLarge" parent="@lenovo:style/Theme.DeviceDefault.DialogWhenLarge" />
-    <style name="Theme.DeviceDefault.DialogWhenLarge.NoActionBar" parent="@lenovo:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar" />
-    <style name="Theme.DeviceDefault.Light.DialogWhenLarge" parent="@lenovo:style/Theme.DeviceDefault.Light.DialogWhenLarge" />
-    <style name="Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" parent="@lenovo:style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" />
-    <style name="Theme.DeviceDefault.Panel" parent="@lenovo:style/Theme.DeviceDefault.Panel" />
-    <style name="Theme.DeviceDefault.Light.Panel" parent="@lenovo:style/Theme.DeviceDefault.Light.Panel" />
-    <style name="Theme.DeviceDefault.Wallpaper" parent="@lenovo:style/Theme.DeviceDefault.Wallpaper" />
-    <style name="Theme.DeviceDefault.Wallpaper.NoTitleBar" parent="@lenovo:style/Theme.DeviceDefault.Wallpaper.NoTitleBar" />
-    <style name="Theme.DeviceDefault.InputMethod" parent="@lenovo:style/Theme.DeviceDefault.InputMethod" />
-    <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@lenovo:style/Theme.DeviceDefault.Light.DarkActionBar" />
-    <style name="Widget.DeviceDefault" parent="@lenovo:style/Widget.DeviceDefault" />
-    <style name="Widget.DeviceDefault.Button" parent="@lenovo:style/Widget.DeviceDefault.Button" />
-    <style name="Widget.DeviceDefault.Button.Small" parent="@lenovo:style/Widget.DeviceDefault.Button.Small" />
-    <style name="Widget.DeviceDefault.Button.Inset" parent="@lenovo:style/Widget.DeviceDefault.Button.Inset" />
-    <style name="Widget.DeviceDefault.Button.Toggle" parent="@lenovo:style/Widget.DeviceDefault.Button.Toggle" />
-    <style name="Widget.DeviceDefault.Button.Borderless.Small" parent="@lenovo:style/Widget.DeviceDefault.Button.Borderless.Small" />
-    <style name="Widget.DeviceDefault.TextView" parent="@lenovo:style/Widget.DeviceDefault.TextView" />
-    <style name="Widget.DeviceDefault.AutoCompleteTextView" parent="@lenovo:style/Widget.DeviceDefault.AutoCompleteTextView" />
-    <style name="Widget.DeviceDefault.CompoundButton.CheckBox" parent="@lenovo:style/Widget.DeviceDefault.CompoundButton.CheckBox" />
-    <style name="Widget.DeviceDefault.ListView.DropDown" parent="@lenovo:style/Widget.DeviceDefault.ListView.DropDown" />
-    <style name="Widget.DeviceDefault.EditText" parent="@lenovo:style/Widget.DeviceDefault.EditText" />
-    <style name="Widget.DeviceDefault.ExpandableListView" parent="@lenovo:style/Widget.DeviceDefault.ExpandableListView" />
-    <style name="Widget.DeviceDefault.GridView" parent="@lenovo:style/Widget.DeviceDefault.GridView" />
-    <style name="Widget.DeviceDefault.ImageButton" parent="@lenovo:style/Widget.DeviceDefault.ImageButton" />
-    <style name="Widget.DeviceDefault.ListView" parent="@lenovo:style/Widget.DeviceDefault.ListView" />
-    <style name="Widget.DeviceDefault.PopupWindow" parent="@lenovo:style/Widget.DeviceDefault.PopupWindow" />
-    <style name="Widget.DeviceDefault.ProgressBar" parent="@lenovo:style/Widget.DeviceDefault.ProgressBar" />
-    <style name="Widget.DeviceDefault.ProgressBar.Horizontal" parent="@lenovo:style/Widget.DeviceDefault.ProgressBar.Horizontal" />
-    <style name="Widget.DeviceDefault.ProgressBar.Small" parent="@lenovo:style/Widget.DeviceDefault.ProgressBar.Small" />
-    <style name="Widget.DeviceDefault.ProgressBar.Small.Title" parent="@lenovo:style/Widget.DeviceDefault.ProgressBar.Small.Title" />
-    <style name="Widget.DeviceDefault.ProgressBar.Large" parent="@lenovo:style/Widget.DeviceDefault.ProgressBar.Large" />
-    <style name="Widget.DeviceDefault.SeekBar" parent="@lenovo:style/Widget.DeviceDefault.SeekBar" />
-    <style name="Widget.DeviceDefault.RatingBar" parent="@lenovo:style/Widget.DeviceDefault.RatingBar" />
-    <style name="Widget.DeviceDefault.RatingBar.Indicator" parent="@lenovo:style/Widget.DeviceDefault.RatingBar.Indicator" />
-    <style name="Widget.DeviceDefault.RatingBar.Small" parent="@lenovo:style/Widget.DeviceDefault.RatingBar.Small" />
-    <style name="Widget.DeviceDefault.CompoundButton.RadioButton" parent="@lenovo:style/Widget.DeviceDefault.CompoundButton.RadioButton" />
-    <style name="Widget.DeviceDefault.ScrollView" parent="@lenovo:style/Widget.DeviceDefault.ScrollView" />
-    <style name="Widget.DeviceDefault.HorizontalScrollView" parent="@lenovo:style/Widget.DeviceDefault.HorizontalScrollView" />
-    <style name="Widget.DeviceDefault.Spinner" parent="@lenovo:style/Widget.DeviceDefault.Spinner" />
-    <style name="Widget.DeviceDefault.CompoundButton.Star" parent="@lenovo:style/Widget.DeviceDefault.CompoundButton.Star" />
-    <style name="Widget.DeviceDefault.TabWidget" parent="@lenovo:style/Widget.DeviceDefault.TabWidget" />
-    <style name="Widget.DeviceDefault.WebTextView" parent="@lenovo:style/Widget.DeviceDefault.WebTextView" />
-    <style name="Widget.DeviceDefault.WebView" parent="@lenovo:style/Widget.DeviceDefault.WebView" />
-    <style name="Widget.DeviceDefault.DropDownItem" parent="@lenovo:style/Widget.DeviceDefault.DropDownItem" />
-    <style name="Widget.DeviceDefault.DropDownItem.Spinner" parent="@lenovo:style/Widget.DeviceDefault.DropDownItem.Spinner" />
-    <style name="Widget.DeviceDefault.TextView.SpinnerItem" parent="@lenovo:style/Widget.DeviceDefault.TextView.SpinnerItem" />
-    <style name="Widget.DeviceDefault.ListPopupWindow" parent="@lenovo:style/Widget.DeviceDefault.ListPopupWindow" />
-    <style name="Widget.DeviceDefault.PopupMenu" parent="@lenovo:style/Widget.DeviceDefault.PopupMenu" />
-    <style name="Widget.DeviceDefault.ActionButton" parent="@lenovo:style/Widget.DeviceDefault.ActionButton" />
-    <style name="Widget.DeviceDefault.ActionButton.Overflow" parent="@lenovo:style/Widget.DeviceDefault.ActionButton.Overflow" />
-    <style name="Widget.DeviceDefault.ActionButton.TextButton" parent="@lenovo:style/Widget.DeviceDefault.ActionButton.TextButton" />
-    <style name="Widget.DeviceDefault.ActionMode" parent="@lenovo:style/Widget.DeviceDefault.ActionMode" />
-    <style name="Widget.DeviceDefault.ActionButton.CloseMode" parent="@lenovo:style/Widget.DeviceDefault.ActionButton.CloseMode" />
-    <style name="Widget.DeviceDefault.ActionBar" parent="@lenovo:style/Widget.DeviceDefault.ActionBar" />
-    <style name="Widget.DeviceDefault.Button.Borderless" parent="@lenovo:style/Widget.DeviceDefault.Button.Borderless" />
-    <style name="Widget.DeviceDefault.Tab" parent="@lenovo:style/Widget.DeviceDefault.Tab" />
-    <style name="Widget.DeviceDefault.CalendarView" parent="@lenovo:style/Widget.DeviceDefault.CalendarView" />
-    <style name="Widget.DeviceDefault.DatePicker" parent="@lenovo:style/Widget.DeviceDefault.DatePicker" />
-    <style name="Widget.DeviceDefault.ActionBar.TabView" parent="@lenovo:style/Widget.DeviceDefault.ActionBar.TabView" />
-    <style name="Widget.DeviceDefault.ActionBar.TabText" parent="@lenovo:style/Widget.DeviceDefault.ActionBar.TabText" />
-    <style name="Widget.DeviceDefault.ActionBar.TabBar" parent="@lenovo:style/Widget.DeviceDefault.ActionBar.TabBar" />
-    <style name="Widget.DeviceDefault.ActionBar.Solid" parent="@lenovo:style/Widget.DeviceDefault.ActionBar.Solid" />
-    <style name="Widget.DeviceDefault.Light" parent="@lenovo:style/Widget.DeviceDefault.Light" />
-    <style name="Widget.DeviceDefault.Light.Button" parent="@lenovo:style/Widget.DeviceDefault.Light.Button" />
-    <style name="Widget.DeviceDefault.Light.Button.Small" parent="@lenovo:style/Widget.DeviceDefault.Light.Button.Small" />
-    <style name="Widget.DeviceDefault.Light.Button.Inset" parent="@lenovo:style/Widget.DeviceDefault.Light.Button.Inset" />
-    <style name="Widget.DeviceDefault.Light.Button.Toggle" parent="@lenovo:style/Widget.DeviceDefault.Light.Button.Toggle" />
-    <style name="Widget.DeviceDefault.Light.Button.Borderless.Small" parent="@lenovo:style/Widget.DeviceDefault.Light.Button.Borderless.Small" />
-    <style name="Widget.DeviceDefault.Light.TextView" parent="@lenovo:style/Widget.DeviceDefault.Light.TextView" />
-    <style name="Widget.DeviceDefault.Light.AutoCompleteTextView" parent="@lenovo:style/Widget.DeviceDefault.Light.AutoCompleteTextView" />
-    <style name="Widget.DeviceDefault.Light.CompoundButton.CheckBox" parent="@lenovo:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox" />
-    <style name="Widget.DeviceDefault.Light.ListView.DropDown" parent="@lenovo:style/Widget.DeviceDefault.Light.ListView.DropDown" />
-    <style name="Widget.DeviceDefault.Light.EditText" parent="@lenovo:style/Widget.DeviceDefault.Light.EditText" />
-    <style name="Widget.DeviceDefault.Light.ExpandableListView" parent="@lenovo:style/Widget.DeviceDefault.Light.ExpandableListView" />
-    <style name="Widget.DeviceDefault.Light.GridView" parent="@lenovo:style/Widget.DeviceDefault.Light.GridView" />
-    <style name="Widget.DeviceDefault.Light.ImageButton" parent="@lenovo:style/Widget.DeviceDefault.Light.ImageButton" />
-    <style name="Widget.DeviceDefault.Light.ListView" parent="@lenovo:style/Widget.DeviceDefault.Light.ListView" />
-    <style name="Widget.DeviceDefault.Light.PopupWindow" parent="@lenovo:style/Widget.DeviceDefault.Light.PopupWindow" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar.Horizontal" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar.Small" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar.Small" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar.Small.Title" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar.Small.Title" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar.Large" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar.Large" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar.Inverse" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar.Small.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar.Small.Inverse" />
-    <style name="Widget.DeviceDefault.Light.ProgressBar.Large.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ProgressBar.Large.Inverse" />
-    <style name="Widget.DeviceDefault.Light.SeekBar" parent="@lenovo:style/Widget.DeviceDefault.Light.SeekBar" />
-    <style name="Widget.DeviceDefault.Light.RatingBar" parent="@lenovo:style/Widget.DeviceDefault.Light.RatingBar" />
-    <style name="Widget.DeviceDefault.Light.RatingBar.Indicator" parent="@lenovo:style/Widget.DeviceDefault.Light.RatingBar.Indicator" />
-    <style name="Widget.DeviceDefault.Light.RatingBar.Small" parent="@lenovo:style/Widget.DeviceDefault.Light.RatingBar.Small" />
-    <style name="Widget.DeviceDefault.Light.CompoundButton.RadioButton" parent="@lenovo:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton" />
-    <style name="Widget.DeviceDefault.Light.ScrollView" parent="@lenovo:style/Widget.DeviceDefault.Light.ScrollView" />
-    <style name="Widget.DeviceDefault.Light.HorizontalScrollView" parent="@lenovo:style/Widget.DeviceDefault.Light.HorizontalScrollView" />
-    <style name="Widget.DeviceDefault.Light.Spinner" parent="@lenovo:style/Widget.DeviceDefault.Light.Spinner" />
-    <style name="Widget.DeviceDefault.Light.CompoundButton.Star" parent="@lenovo:style/Widget.DeviceDefault.Light.CompoundButton.Star" />
-    <style name="Widget.DeviceDefault.Light.TabWidget" parent="@lenovo:style/Widget.DeviceDefault.Light.TabWidget" />
-    <style name="Widget.DeviceDefault.Light.WebTextView" parent="@lenovo:style/Widget.DeviceDefault.Light.WebTextView" />
-    <style name="Widget.DeviceDefault.Light.WebView" parent="@lenovo:style/Widget.DeviceDefault.Light.WebView" />
-    <style name="Widget.DeviceDefault.Light.DropDownItem" parent="@lenovo:style/Widget.DeviceDefault.Light.DropDownItem" />
-    <style name="Widget.DeviceDefault.Light.DropDownItem.Spinner" parent="@lenovo:style/Widget.DeviceDefault.Light.DropDownItem.Spinner" />
-    <style name="Widget.DeviceDefault.Light.TextView.SpinnerItem" parent="@lenovo:style/Widget.DeviceDefault.Light.TextView.SpinnerItem" />
-    <style name="Widget.DeviceDefault.Light.ListPopupWindow" parent="@lenovo:style/Widget.DeviceDefault.Light.ListPopupWindow" />
-    <style name="Widget.DeviceDefault.Light.PopupMenu" parent="@lenovo:style/Widget.DeviceDefault.Light.PopupMenu" />
-    <style name="Widget.DeviceDefault.Light.Tab" parent="@lenovo:style/Widget.DeviceDefault.Light.Tab" />
-    <style name="Widget.DeviceDefault.Light.CalendarView" parent="@lenovo:style/Widget.DeviceDefault.Light.CalendarView" />
-    <style name="Widget.DeviceDefault.Light.ActionButton" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionButton" />
-    <style name="Widget.DeviceDefault.Light.ActionButton.Overflow" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionButton.Overflow" />
-    <style name="Widget.DeviceDefault.Light.ActionMode" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionMode" />
-    <style name="Widget.DeviceDefault.Light.ActionButton.CloseMode" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionButton.CloseMode" />
-    <style name="Widget.DeviceDefault.Light.ActionBar" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.TabView" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.TabView" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.TabText" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.TabText" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.TabBar" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.TabBar" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.Solid" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.Solid" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.Solid.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.Solid.Inverse" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.TabBar.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.TabBar.Inverse" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.TabView.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.TabView.Inverse" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.TabText.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionBar.TabText.Inverse" />
-    <style name="Widget.DeviceDefault.Light.ActionMode.Inverse" parent="@lenovo:style/Widget.DeviceDefault.Light.ActionMode.Inverse" />
-    <style name="TextAppearance.DeviceDefault" parent="@lenovo:style/TextAppearance.DeviceDefault" />
-    <style name="TextAppearance.DeviceDefault.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Inverse" />
-    <style name="TextAppearance.DeviceDefault.Large" parent="@lenovo:style/TextAppearance.DeviceDefault.Large" />
-    <style name="TextAppearance.DeviceDefault.Large.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Large.Inverse" />
-    <style name="TextAppearance.DeviceDefault.Medium" parent="@lenovo:style/TextAppearance.DeviceDefault.Medium" />
-    <style name="TextAppearance.DeviceDefault.Medium.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Medium.Inverse" />
-    <style name="TextAppearance.DeviceDefault.Small" parent="@lenovo:style/TextAppearance.DeviceDefault.Small" />
-    <style name="TextAppearance.DeviceDefault.Small.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Small.Inverse" />
-    <style name="TextAppearance.DeviceDefault.SearchResult.Title" parent="@lenovo:style/TextAppearance.DeviceDefault.SearchResult.Title" />
-    <style name="TextAppearance.DeviceDefault.SearchResult.Subtitle" parent="@lenovo:style/TextAppearance.DeviceDefault.SearchResult.Subtitle" />
-    <style name="TextAppearance.DeviceDefault.WindowTitle" parent="@lenovo:style/TextAppearance.DeviceDefault.WindowTitle" />
-    <style name="TextAppearance.DeviceDefault.DialogWindowTitle" parent="@lenovo:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
-    <style name="TextAppearance.DeviceDefault.Widget" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget" />
-    <style name="TextAppearance.DeviceDefault.Widget.Button" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.Button" />
-    <style name="TextAppearance.DeviceDefault.Widget.IconMenu.Item" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.IconMenu.Item" />
-    <style name="TextAppearance.DeviceDefault.Widget.TabWidget" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.TabWidget" />
-    <style name="TextAppearance.DeviceDefault.Widget.TextView" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.TextView" />
-    <style name="TextAppearance.DeviceDefault.Widget.TextView.PopupMenu" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.PopupMenu" />
-    <style name="TextAppearance.DeviceDefault.Widget.DropDownHint" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.DropDownHint" />
-    <style name="TextAppearance.DeviceDefault.Widget.DropDownItem" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.DropDownItem" />
-    <style name="TextAppearance.DeviceDefault.Widget.TextView.SpinnerItem" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.TextView.SpinnerItem" />
-    <style name="TextAppearance.DeviceDefault.Widget.EditText" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.EditText" />
-    <style name="TextAppearance.DeviceDefault.Widget.PopupMenu" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.PopupMenu" />
-    <style name="TextAppearance.DeviceDefault.Widget.PopupMenu.Large" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large" />
-    <style name="TextAppearance.DeviceDefault.Widget.PopupMenu.Small" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Title" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Title" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionMode.Title" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Subtitle" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionMode.Subtitle" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Title.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title.Inverse" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle.Inverse" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Title.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionMode.Title.Inverse" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Subtitle.Inverse" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionMode.Subtitle.Inverse" />
-    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Menu" parent="@lenovo:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu" />
-    <style name="DeviceDefault.ButtonBar" parent="@lenovo:style/DeviceDefault.ButtonBar" />
-    <style name="DeviceDefault.ButtonBar.AlertDialog" parent="@lenovo:style/DeviceDefault.ButtonBar.AlertDialog" />
-    <style name="DeviceDefault.SegmentedButton" parent="@lenovo:style/DeviceDefault.SegmentedButton" />
-    <style name="DeviceDefault.Light.ButtonBar" parent="@lenovo:style/DeviceDefault.Light.ButtonBar" />
-    <style name="DeviceDefault.Light.ButtonBar.AlertDialog" parent="@lenovo:style/DeviceDefault.Light.ButtonBar.AlertDialog" />
-    <style name="DeviceDefault.Light.SegmentedButton" parent="@lenovo:style/DeviceDefault.Light.SegmentedButton" />
+    <style name="Theme.DeviceDefault.Light.Dialog.MinWidth" parent="@style/Theme.Material.Light.Dialog.MinWidth" />
+    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar" parent="@style/Theme.Material.Light.Dialog.NoActionBar" />
+    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" parent="@style/Theme.Material.Light.Dialog.NoActionBar.MinWidth" />
+    <style name="Theme.DeviceDefault.DialogWhenLarge" parent="@style/Theme.Material.DialogWhenLarge" />
+    <style name="Theme.DeviceDefault.DialogWhenLarge.NoActionBar" parent="@style/Theme.Material.DialogWhenLarge.NoActionBar" />
+    <style name="Theme.DeviceDefault.Light.DialogWhenLarge" parent="@style/Theme.Material.Light.DialogWhenLarge" />
+    <style name="Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" parent="@style/Theme.Material.Light.DialogWhenLarge.NoActionBar" />
+    <style name="Theme.DeviceDefault.Panel" parent="@style/Theme.Material.Panel" />
+    <style name="Theme.DeviceDefault.Light.Panel" parent="@style/Theme.Material.Light.Panel" />
+    <style name="Theme.DeviceDefault.Wallpaper" parent="@style/Theme.Material.Wallpaper" />
+    <style name="Theme.DeviceDefault.Wallpaper.NoTitleBar" parent="@style/Theme.Material.Wallpaper.NoTitleBar" />
+    <style name="Theme.DeviceDefault.InputMethod" parent="@style/Theme.Material.InputMethod" />
+    <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@style/Theme.Material.Light.DarkActionBar" />
+    <style name="Widget.DeviceDefault" parent="@style/Widget.Material" />
+    <style name="Widget.DeviceDefault.Button" parent="@style/Widget.Material.Button" />
+    <style name="Widget.DeviceDefault.Button.Small" parent="@style/Widget.Material.Button.Small" />
+    <style name="Widget.DeviceDefault.Button.Inset" parent="@style/Widget.Material.Button.Inset" />
+    <style name="Widget.DeviceDefault.Button.Toggle" parent="@style/Widget.Material.Button.Toggle" />
+    <style name="Widget.DeviceDefault.Button.Borderless.Small" parent="@style/Widget.Material.Button.Borderless.Small" />
+    <style name="Widget.DeviceDefault.TextView" parent="@style/Widget.Material.TextView" />
+    <style name="Widget.DeviceDefault.AutoCompleteTextView" parent="@style/Widget.Material.AutoCompleteTextView" />
+    <style name="Widget.DeviceDefault.CompoundButton.CheckBox" parent="@style/Widget.Material.CompoundButton.CheckBox" />
+    <style name="Widget.DeviceDefault.ListView.DropDown" parent="@style/Widget.Material.ListView.DropDown" />
+    <style name="Widget.DeviceDefault.EditText" parent="@style/Widget.Material.EditText" />
+    <style name="Widget.DeviceDefault.ExpandableListView" parent="@style/Widget.Material.ExpandableListView" />
+    <style name="Widget.DeviceDefault.GridView" parent="@style/Widget.Material.GridView" />
+    <style name="Widget.DeviceDefault.ImageButton" parent="@style/Widget.Material.ImageButton" />
+    <style name="Widget.DeviceDefault.ListView" parent="@style/Widget.Material.ListView" />
+    <style name="Widget.DeviceDefault.PopupWindow" parent="@style/Widget.Material.PopupWindow" />
+    <style name="Widget.DeviceDefault.ProgressBar" parent="@style/Widget.Material.ProgressBar" />
+    <style name="Widget.DeviceDefault.ProgressBar.Horizontal" parent="@style/Widget.Material.ProgressBar.Horizontal" />
+    <style name="Widget.DeviceDefault.ProgressBar.Small" parent="@style/Widget.Material.ProgressBar.Small" />
+    <style name="Widget.DeviceDefault.ProgressBar.Small.Title" parent="@style/Widget.Material.ProgressBar.Small.Title" />
+    <style name="Widget.DeviceDefault.ProgressBar.Large" parent="@style/Widget.Material.ProgressBar.Large" />
+    <style name="Widget.DeviceDefault.SeekBar" parent="@style/Widget.Material.SeekBar" />
+    <style name="Widget.DeviceDefault.RatingBar" parent="@style/Widget.Material.RatingBar" />
+    <style name="Widget.DeviceDefault.RatingBar.Indicator" parent="@style/Widget.Material.RatingBar.Indicator" />
+    <style name="Widget.DeviceDefault.RatingBar.Small" parent="@style/Widget.Material.RatingBar.Small" />
+    <style name="Widget.DeviceDefault.CompoundButton.RadioButton" parent="@style/Widget.Material.CompoundButton.RadioButton" />
+    <style name="Widget.DeviceDefault.ScrollView" parent="@style/Widget.Material.ScrollView" />
+    <style name="Widget.DeviceDefault.HorizontalScrollView" parent="@style/Widget.Material.HorizontalScrollView" />
+    <style name="Widget.DeviceDefault.Spinner" parent="@style/Widget.Material.Spinner" />
+    <style name="Widget.DeviceDefault.CompoundButton.Star" parent="@style/Widget.Material.CompoundButton.Star" />
+    <style name="Widget.DeviceDefault.TabWidget" parent="@style/Widget.Material.TabWidget" />
+    <style name="Widget.DeviceDefault.WebTextView" parent="@style/Widget.Material.WebTextView" />
+    <style name="Widget.DeviceDefault.WebView" parent="@style/Widget.Material.WebView" />
+    <style name="Widget.DeviceDefault.DropDownItem" parent="@style/Widget.Material.DropDownItem" />
+    <style name="Widget.DeviceDefault.DropDownItem.Spinner" parent="@style/Widget.Material.DropDownItem.Spinner" />
+    <style name="Widget.DeviceDefault.TextView.SpinnerItem" parent="@style/Widget.Material.TextView.SpinnerItem" />
+    <style name="Widget.DeviceDefault.ListPopupWindow" parent="@style/Widget.Material.ListPopupWindow" />
+    <style name="Widget.DeviceDefault.PopupMenu" parent="@style/Widget.Material.PopupMenu" />
+    <style name="Widget.DeviceDefault.ActionButton" parent="@style/Widget.Material.ActionButton" />
+    <style name="Widget.DeviceDefault.ActionButton.Overflow" parent="@style/Widget.Material.ActionButton.Overflow" />
+    <style name="Widget.DeviceDefault.ActionButton.TextButton" parent="@style/Widget.Material.ActionButton" />
+    <style name="Widget.DeviceDefault.ActionMode" parent="@style/Widget.Material.ActionMode" />
+    <style name="Widget.DeviceDefault.ActionButton.CloseMode" parent="@style/Widget.Material.ActionButton.CloseMode" />
+    <style name="Widget.DeviceDefault.ActionBar" parent="@style/Widget.Material.ActionBar" />
+    <style name="Widget.DeviceDefault.Button.Borderless" parent="@style/Widget.Material.Button.Borderless" />
+    <style name="Widget.DeviceDefault.Tab" parent="@style/Widget.Material.Tab" />
+    <style name="Widget.DeviceDefault.CalendarView" parent="@style/Widget.Material.CalendarView" />
+    <style name="Widget.DeviceDefault.DatePicker" parent="@style/Widget.Material.DatePicker" />
+    <style name="Widget.DeviceDefault.ActionBar.TabView" parent="@style/Widget.Material.ActionBar.TabView" />
+    <style name="Widget.DeviceDefault.ActionBar.TabText" parent="@style/Widget.Material.ActionBar.TabText" />
+    <style name="Widget.DeviceDefault.ActionBar.TabBar" parent="@style/Widget.Material.ActionBar.TabBar" />
+    <style name="Widget.DeviceDefault.ActionBar.Solid" parent="@style/Widget.Material.ActionBar.Solid" />
+    <style name="Widget.DeviceDefault.Light" parent="@style/Widget.Material.Light" />
+    <style name="Widget.DeviceDefault.Light.Button" parent="@style/Widget.Material.Light.Button" />
+    <style name="Widget.DeviceDefault.Light.Button.Small" parent="@style/Widget.Material.Light.Button.Small" />
+    <style name="Widget.DeviceDefault.Light.Button.Inset" parent="@style/Widget.Material.Light.Button.Inset" />
+    <style name="Widget.DeviceDefault.Light.Button.Toggle" parent="@style/Widget.Material.Light.Button.Toggle" />
+    <style name="Widget.DeviceDefault.Light.Button.Borderless.Small" parent="@style/Widget.Material.Light.Button.Borderless.Small" />
+    <style name="Widget.DeviceDefault.Light.TextView" parent="@style/Widget.Material.Light.TextView" />
+    <style name="Widget.DeviceDefault.Light.AutoCompleteTextView" parent="@style/Widget.Material.Light.AutoCompleteTextView" />
+    <style name="Widget.DeviceDefault.Light.CompoundButton.CheckBox" parent="@style/Widget.Material.Light.CompoundButton.CheckBox" />
+    <style name="Widget.DeviceDefault.Light.ListView.DropDown" parent="@style/Widget.Material.Light.ListView.DropDown" />
+    <style name="Widget.DeviceDefault.Light.EditText" parent="@style/Widget.Material.Light.EditText" />
+    <style name="Widget.DeviceDefault.Light.ExpandableListView" parent="@style/Widget.Material.Light.ExpandableListView" />
+    <style name="Widget.DeviceDefault.Light.GridView" parent="@style/Widget.Material.Light.GridView" />
+    <style name="Widget.DeviceDefault.Light.ImageButton" parent="@style/Widget.Material.Light.ImageButton" />
+    <style name="Widget.DeviceDefault.Light.ListView" parent="@style/Widget.Material.Light.ListView" />
+    <style name="Widget.DeviceDefault.Light.PopupWindow" parent="@style/Widget.Material.Light.PopupWindow" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar" parent="@style/Widget.Material.Light.ProgressBar" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar.Horizontal" parent="@style/Widget.Material.Light.ProgressBar.Horizontal" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar.Small" parent="@style/Widget.Material.Light.ProgressBar.Small" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar.Small.Title" parent="@style/Widget.Material.Light.ProgressBar.Small.Title" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar.Large" parent="@style/Widget.Material.Light.ProgressBar.Large" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar.Inverse" parent="@style/Widget.Material.Light.ProgressBar.Inverse" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar.Small.Inverse" parent="@style/Widget.Material.Light.ProgressBar.Small.Inverse" />
+    <style name="Widget.DeviceDefault.Light.ProgressBar.Large.Inverse" parent="@style/Widget.Material.Light.ProgressBar.Large.Inverse" />
+    <style name="Widget.DeviceDefault.Light.SeekBar" parent="@style/Widget.Material.Light.SeekBar" />
+    <style name="Widget.DeviceDefault.Light.RatingBar" parent="@style/Widget.Material.Light.RatingBar" />
+    <style name="Widget.DeviceDefault.Light.RatingBar.Indicator" parent="@style/Widget.Material.Light.RatingBar.Indicator" />
+    <style name="Widget.DeviceDefault.Light.RatingBar.Small" parent="@style/Widget.Material.Light.RatingBar.Small" />
+    <style name="Widget.DeviceDefault.Light.CompoundButton.RadioButton" parent="@style/Widget.Material.Light.CompoundButton.RadioButton" />
+    <style name="Widget.DeviceDefault.Light.ScrollView" parent="@style/Widget.Material.Light.ScrollView" />
+    <style name="Widget.DeviceDefault.Light.HorizontalScrollView" parent="@style/Widget.Material.Light.HorizontalScrollView" />
+    <style name="Widget.DeviceDefault.Light.Spinner" parent="@style/Widget.Material.Light.Spinner" />
+    <style name="Widget.DeviceDefault.Light.CompoundButton.Star" parent="@style/Widget.Material.Light.CompoundButton.Star" />
+    <style name="Widget.DeviceDefault.Light.TabWidget" parent="@style/Widget.Material.Light.TabWidget" />
+    <style name="Widget.DeviceDefault.Light.WebTextView" parent="@style/Widget.Material.Light.WebTextView" />
+    <style name="Widget.DeviceDefault.Light.WebView" parent="@style/Widget.Material.Light.WebView" />
+    <style name="Widget.DeviceDefault.Light.DropDownItem" parent="@style/Widget.Material.Light.DropDownItem" />
+    <style name="Widget.DeviceDefault.Light.DropDownItem.Spinner" parent="@style/Widget.Material.Light.DropDownItem.Spinner" />
+    <style name="Widget.DeviceDefault.Light.TextView.SpinnerItem" parent="@style/Widget.Material.Light.TextView.SpinnerItem" />
+    <style name="Widget.DeviceDefault.Light.ListPopupWindow" parent="@style/Widget.Material.Light.ListPopupWindow" />
+    <style name="Widget.DeviceDefault.Light.PopupMenu" parent="@style/Widget.Material.Light.PopupMenu" />
+    <style name="Widget.DeviceDefault.Light.Tab" parent="@style/Widget.Material.Light.Tab" />
+    <style name="Widget.DeviceDefault.Light.CalendarView" parent="@style/Widget.Material.Light.CalendarView" />
+    <style name="Widget.DeviceDefault.Light.ActionButton" parent="@style/Widget.Material.Light.ActionButton" />
+    <style name="Widget.DeviceDefault.Light.ActionButton.Overflow" parent="@style/Widget.Material.Light.ActionButton.Overflow" />
+    <style name="Widget.DeviceDefault.Light.ActionMode" parent="@style/Widget.Material.Light.ActionMode" />
+    <style name="Widget.DeviceDefault.Light.ActionButton.CloseMode" parent="@style/Widget.Material.Light.ActionButton.CloseMode" />
+    <style name="Widget.DeviceDefault.Light.ActionBar" parent="@style/Widget.Material.Light.ActionBar" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabView" parent="@style/Widget.Material.Light.ActionBar.TabView" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabText" parent="@style/Widget.Material.Light.ActionBar.TabText" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabBar" parent="@style/Widget.Material.Light.ActionBar.TabBar" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.Solid" parent="@style/Widget.Material.Light.ActionBar.Solid" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.Solid.Inverse" parent="@style/Widget.Holo.Light.ActionBar.Solid.Inverse" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabBar.Inverse" parent="@style/Widget.Holo.Light.ActionBar.TabBar.Inverse" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabView.Inverse" parent="@style/Widget.Holo.Light.ActionBar.TabView.Inverse" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabText.Inverse" parent="@style/Widget.Holo.Light.ActionBar.TabText.Inverse" />
+    <style name="Widget.DeviceDefault.Light.ActionMode.Inverse" parent="@style/Widget.Holo.Light.ActionMode.Inverse" />
+    <style name="TextAppearance.DeviceDefault" parent="@style/TextAppearance.Material" />
+    <style name="TextAppearance.DeviceDefault.Inverse" parent="@style/TextAppearance.Material.Inverse" />
+    <style name="TextAppearance.DeviceDefault.Large" parent="@style/TextAppearance.Material.Large" />
+    <style name="TextAppearance.DeviceDefault.Large.Inverse" parent="@style/TextAppearance.Material.Large.Inverse" />
+    <style name="TextAppearance.DeviceDefault.Medium" parent="@style/TextAppearance.Material.Medium" />
+    <style name="TextAppearance.DeviceDefault.Medium.Inverse" parent="@style/TextAppearance.Material.Medium.Inverse" />
+    <style name="TextAppearance.DeviceDefault.Small" parent="@style/TextAppearance.Material.Small" />
+    <style name="TextAppearance.DeviceDefault.Small.Inverse" parent="@style/TextAppearance.Material.Small.Inverse" />
+    <style name="TextAppearance.DeviceDefault.SearchResult.Title" parent="@style/TextAppearance.Material.SearchResult.Title" />
+    <style name="TextAppearance.DeviceDefault.SearchResult.Subtitle" parent="@style/TextAppearance.Material.SearchResult.Subtitle" />
+    <style name="TextAppearance.DeviceDefault.WindowTitle" parent="@style/TextAppearance.Material.WindowTitle" />
+    <style name="TextAppearance.DeviceDefault.DialogWindowTitle" parent="@style/TextAppearance.Material.DialogWindowTitle" />
+    <style name="TextAppearance.DeviceDefault.Widget" parent="@style/TextAppearance.Material.Widget" />
+    <style name="TextAppearance.DeviceDefault.Widget.Button" parent="@style/TextAppearance.Material.Widget.Button" />
+    <style name="TextAppearance.DeviceDefault.Widget.IconMenu.Item" parent="@style/TextAppearance.Material.Widget.IconMenu.Item" />
+    <style name="TextAppearance.DeviceDefault.Widget.TabWidget" parent="@style/TextAppearance.Material.Widget.TabWidget" />
+    <style name="TextAppearance.DeviceDefault.Widget.TextView" parent="@style/TextAppearance.Material.Widget.TextView" />
+    <style name="TextAppearance.DeviceDefault.Widget.TextView.PopupMenu" parent="@style/TextAppearance.Material.Widget.TextView.PopupMenu" />
+    <style name="TextAppearance.DeviceDefault.Widget.DropDownHint" parent="@style/TextAppearance.Material.Widget.DropDownHint" />
+    <style name="TextAppearance.DeviceDefault.Widget.DropDownItem" parent="@style/TextAppearance.Material.Widget.DropDownItem" />
+    <style name="TextAppearance.DeviceDefault.Widget.TextView.SpinnerItem" parent="@style/TextAppearance.Material.Widget.TextView.SpinnerItem" />
+    <style name="TextAppearance.DeviceDefault.Widget.EditText" parent="@style/TextAppearance.Material.Widget.EditText" />
+    <style name="TextAppearance.DeviceDefault.Widget.PopupMenu" parent="@style/TextAppearance.Material.Widget.PopupMenu" />
+    <style name="TextAppearance.DeviceDefault.Widget.PopupMenu.Large" parent="@style/TextAppearance.Material.Widget.PopupMenu.Large" />
+    <style name="TextAppearance.DeviceDefault.Widget.PopupMenu.Small" parent="@style/TextAppearance.Material.Widget.PopupMenu.Small" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Title" parent="@style/TextAppearance.Material.Widget.ActionBar.Title" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle" parent="@style/TextAppearance.Material.Widget.ActionBar.Subtitle" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Title" parent="@style/TextAppearance.Material.Widget.ActionMode.Title" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Subtitle" parent="@style/TextAppearance.Material.Widget.ActionMode.Subtitle" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Title.Inverse" parent="@style/TextAppearance.Material.Widget.ActionBar.Title.Inverse" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle.Inverse" parent="@style/TextAppearance.Material.Widget.ActionBar.Subtitle.Inverse" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Title.Inverse" parent="@style/TextAppearance.Material.Widget.ActionMode.Title.Inverse" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionMode.Subtitle.Inverse" parent="@style/TextAppearance.Material.Widget.ActionMode.Subtitle.Inverse" />
+    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Menu" parent="@style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="DeviceDefault.ButtonBar" parent="@style/Widget.Material.ButtonBar" />
+    <style name="DeviceDefault.ButtonBar.AlertDialog" parent="@style/Widget.Material.ButtonBar.AlertDialog" />
+    <style name="DeviceDefault.SegmentedButton" parent="@style/Widget.Material.SegmentedButton" />
+    <style name="DeviceDefault.Light.ButtonBar" parent="@style/Widget.Material.Light.ButtonBar" />
+    <style name="DeviceDefault.Light.ButtonBar.AlertDialog" parent="@style/Widget.Material.Light.ButtonBar.AlertDialog" />
+    <style name="DeviceDefault.Light.SegmentedButton" parent="@style/Widget.Material.Light.SegmentedButton" />
     <style name="Widget.Holo.MediaRouteButton" parent="@style/Widget.Holo">
         <item name="background">?selectableItemBackground</item>
         <item name="focusable">true</item>
@@ -2698,12 +2698,12 @@
     <style name="Widget.Holo.Light.MediaRouteButton" parent="@style/Widget.Holo.MediaRouteButton">
         <item name="externalRouteEnabledDrawable">@drawable/ic_media_route_holo_light</item>
     </style>
-    <style name="Widget.DeviceDefault.MediaRouteButton" parent="@lenovo:style/Widget.DeviceDefault.MediaRouteButton" />
-    <style name="Widget.DeviceDefault.Light.MediaRouteButton" parent="@lenovo:style/Widget.DeviceDefault.Light.MediaRouteButton" />
+    <style name="Widget.DeviceDefault.MediaRouteButton" parent="@style/Widget.Material.MediaRouteButton" />
+    <style name="Widget.DeviceDefault.Light.MediaRouteButton" parent="@style/Widget.Material.Light.MediaRouteButton" />
     <style name="Widget.Holo.CheckedTextView" parent="@style/Widget.CheckedTextView" />
     <style name="Widget.Holo.Light.CheckedTextView" parent="@style/Widget.CheckedTextView" />
-    <style name="Widget.DeviceDefault.CheckedTextView" parent="@lenovo:style/Widget.DeviceDefault.CheckedTextView" />
-    <style name="Widget.DeviceDefault.Light.CheckedTextView" parent="@lenovo:style/Widget.DeviceDefault.Light.CheckedTextView" />
+    <style name="Widget.DeviceDefault.CheckedTextView" parent="@style/Widget.Material.CheckedTextView" />
+    <style name="Widget.DeviceDefault.Light.CheckedTextView" parent="@style/Widget.Material.Light.CheckedTextView" />
     <style name="Theme.Holo.NoActionBar.Overscan" parent="@style/Theme.Holo.NoActionBar">
         <item name="windowContentOverlay">@null</item>
         <item name="windowFullscreen">true</item>
@@ -2714,8 +2714,8 @@
         <item name="windowFullscreen">true</item>
         <item name="windowOverscan">true</item>
     </style>
-    <style name="Theme.DeviceDefault.NoActionBar.Overscan" parent="@lenovo:style/Theme.DeviceDefault.NoActionBar.Overscan" />
-    <style name="Theme.DeviceDefault.Light.NoActionBar.Overscan" parent="@lenovo:style/Theme.DeviceDefault.Light.NoActionBar.Overscan" />
+    <style name="Theme.DeviceDefault.NoActionBar.Overscan" parent="@style/Theme.Material.NoActionBar.Overscan" />
+    <style name="Theme.DeviceDefault.Light.NoActionBar.Overscan" parent="@style/Theme.Material.Light.NoActionBar.Overscan" />
     <style name="Theme.Holo.NoActionBar.TranslucentDecor" parent="@style/Theme.Holo.NoActionBar">
         <item name="windowContentOverlay">@null</item>
         <item name="windowTranslucentStatus">true</item>
@@ -2726,8 +2726,8 @@
         <item name="windowTranslucentStatus">true</item>
         <item name="windowTranslucentNavigation">true</item>
     </style>
-    <style name="Theme.DeviceDefault.NoActionBar.TranslucentDecor" parent="@lenovo:style/Theme.DeviceDefault.NoActionBar.TranslucentDecor" />
-    <style name="Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor" parent="@lenovo:style/Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor" />
+    <style name="Theme.DeviceDefault.NoActionBar.TranslucentDecor" parent="@style/Theme.Material.NoActionBar.TranslucentDecor" />
+    <style name="Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor" parent="@style/Theme.Material.Light.NoActionBar.TranslucentDecor" />
     <style name="Widget.FastScroll" parent="@style/Widget">
         <item name="textSize">52.0sp</item>
         <item name="textColor">?fastScrollTextColor</item>
@@ -2764,8 +2764,8 @@
         <item name="scaleType">center</item>
         <item name="minWidth">56.0dip</item>
     </style>
-    <style name="Widget.DeviceDefault.FastScroll" parent="@lenovo:style/Widget.DeviceDefault.FastScroll" />
-    <style name="Widget.DeviceDefault.StackView" parent="@lenovo:style/Widget.DeviceDefault.StackView" />
+    <style name="Widget.DeviceDefault.FastScroll" parent="@style/Widget.Material.FastScroll" />
+    <style name="Widget.DeviceDefault.StackView" parent="@style/Widget.Material.StackView" />
     <style name="Widget.DeviceDefault.Light.FastScroll" parent="@style/Widget.Material.Light.FastScroll" />
     <style name="Widget.DeviceDefault.Light.StackView" parent="@style/Widget.Material.Light.StackView" />
     <style name="TextAppearance.Material" parent="@style/TextAppearance">
@@ -4069,7 +4069,7 @@
     <style name="Widget.Material.Light.EditText" parent="@style/Widget.Material.EditText" />
     <style name="Widget.Material.Light.ExpandableListView" parent="@style/Widget.Material.ExpandableListView" />
     <style name="Widget.Material.Light.FastScroll" parent="@style/Widget.Material.FastScroll" />
-    <style name="Widget.Material.Light.GridView" parent="@lenovo:style/Widget.Material.Light.GridView" />
+    <style name="Widget.Material.Light.GridView" parent="@style/Widget.Material.GridView" />
     <style name="Widget.Material.Light.HorizontalScrollView" parent="@style/Widget.Material.HorizontalScrollView" />
     <style name="Widget.Material.Light.ImageButton" parent="@style/Widget.Material.ImageButton" />
     <style name="Widget.Material.Light.ListPopupWindow" parent="@style/Widget.Material.ListPopupWindow" />
@@ -4130,10 +4130,10 @@
         <item name="colorBackgroundCacheHint">@null</item>
         <item name="textAppearanceListItem">@style/TextAppearance.Leanback.FormWizard.ListItem</item>
     </style>
-    <style name="Theme.DeviceDefault.Dialog.Alert" parent="@lenovo:style/Theme.DeviceDefault.Dialog.Alert">
+    <style name="Theme.DeviceDefault.Dialog.Alert" parent="@style/Theme.Material.Dialog.Alert">
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault</item>
     </style>
-    <style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="@lenovo:style/Theme.DeviceDefault.Light.Dialog.Alert">
+    <style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="@style/Theme.Material.Light.Dialog.Alert">
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault.Light</item>
     </style>
     <style name="WindowTitleBackground">
@@ -4624,9 +4624,9 @@
         <item name="layout_height">wrap_content</item>
     </style>
     <style name="Widget.DeviceDefault.AbsListView" parent="@style/Widget.Material.AbsListView" />
-    <style name="Widget.DeviceDefault.Spinner.DropDown.ActionBar" parent="@lenovo:style/Widget.DeviceDefault.Spinner.DropDown.ActionBar" />
+    <style name="Widget.DeviceDefault.Spinner.DropDown.ActionBar" parent="@style/Widget.Material.Spinner.DropDown.ActionBar" />
     <style name="Widget.DeviceDefault.PopupWindow.ActionMode" parent="@style/Widget.Material.PopupWindow.ActionMode" />
-    <style name="Widget.DeviceDefault.CompoundButton.Switch" parent="@lenovo:style/Widget.DeviceDefault.CompoundButton.Switch" />
+    <style name="Widget.DeviceDefault.CompoundButton.Switch" parent="@style/Widget.Material.CompoundButton.Switch" />
     <style name="Widget.DeviceDefault.ExpandableListView.White" parent="@style/Widget.Material.ExpandableListView.White" />
     <style name="Widget.DeviceDefault.FragmentBreadCrumbs" parent="@style/Widget.Holo.FragmentBreadCrumbs" />
     <style name="Widget.DeviceDefault.Gallery" parent="@style/Widget.Material.Gallery" />
@@ -4645,33 +4645,33 @@
     <style name="Widget.DeviceDefault.QuickContactBadgeSmall.WindowLarge" parent="@style/Widget.Material.QuickContactBadgeSmall.WindowLarge" />
     <style name="Widget.DeviceDefault.QuickContactBadgeSmall.WindowMedium" parent="@style/Widget.Material.QuickContactBadgeSmall.WindowMedium" />
     <style name="Widget.DeviceDefault.QuickContactBadgeSmall.WindowSmall" parent="@style/Widget.Material.QuickContactBadgeSmall.WindowSmall" />
-    <style name="Widget.DeviceDefault.Spinner.DropDown" parent="@lenovo:style/Widget.DeviceDefault.Spinner.DropDown" />
+    <style name="Widget.DeviceDefault.Spinner.DropDown" parent="@style/Widget.Material.Spinner.DropDown" />
     <style name="Widget.DeviceDefault.TextSelectHandle" parent="@style/Widget.Material.TextSelectHandle" />
     <style name="Widget.DeviceDefault.TextSuggestionsPopupWindow" parent="@style/Widget.Material.TextSuggestionsPopupWindow" />
-    <style name="Widget.DeviceDefault.TextView.ListSeparator" parent="@lenovo:style/Widget.DeviceDefault.TextView.ListSeparator" />
+    <style name="Widget.DeviceDefault.TextView.ListSeparator" parent="@style/Widget.Material.TextView.ListSeparator" />
     <style name="Widget.DeviceDefault.TimePicker" parent="@style/Widget.Material.TimePicker" />
     <style name="Widget.DeviceDefault.Light.FragmentBreadCrumbs" parent="@style/Widget.Holo.Light.FragmentBreadCrumbs" />
     <style name="Widget.DeviceDefault.Light.AbsListView" parent="@style/Widget.Material.Light.AbsListView" />
-    <style name="Widget.DeviceDefault.Light.Spinner.DropDown.ActionBar" parent="@lenovo:style/Widget.DeviceDefault.Light.Spinner.DropDown.ActionBar" />
+    <style name="Widget.DeviceDefault.Light.Spinner.DropDown.ActionBar" parent="@style/Widget.Material.Light.Spinner.DropDown.ActionBar" />
     <style name="Widget.DeviceDefault.Light.PopupWindow.ActionMode" parent="@style/Widget.Material.Light.PopupWindow.ActionMode" />
     <style name="Widget.DeviceDefault.Light.Button.Borderless" parent="@style/Widget.Material.Light.Button.Borderless" />
-    <style name="Widget.DeviceDefault.Light.DatePicker" parent="@lenovo:style/Widget.DeviceDefault.Light.DatePicker" />
+    <style name="Widget.DeviceDefault.Light.DatePicker" parent="@style/Widget.Material.Light.DatePicker" />
     <style name="Widget.DeviceDefault.Light.ExpandableListView.White" parent="@style/Widget.Material.Light.ExpandableListView.White" />
     <style name="Widget.DeviceDefault.Light.Gallery" parent="@style/Widget.Material.Light.Gallery" />
     <style name="Widget.DeviceDefault.Light.GestureOverlayView" parent="@style/Widget.Material.Light.GestureOverlayView" />
     <style name="Widget.DeviceDefault.Light.ImageWell" parent="@style/Widget.Material.Light.ImageWell" />
     <style name="Widget.DeviceDefault.Light.ListView.White" parent="@style/Widget.Material.Light.ListView.White" />
-    <style name="Widget.DeviceDefault.Light.NumberPicker" parent="@lenovo:style/Widget.DeviceDefault.Light.NumberPicker" />
-    <style name="Widget.DeviceDefault.Light.Spinner.DropDown" parent="@lenovo:style/Widget.DeviceDefault.Light.Spinner.DropDown" />
-    <style name="Widget.DeviceDefault.Light.TextView.ListSeparator" parent="@lenovo:style/Widget.DeviceDefault.Light.TextView.ListSeparator" />
-    <style name="Widget.DeviceDefault.Light.TimePicker" parent="@lenovo:style/Widget.DeviceDefault.Light.TimePicker" />
+    <style name="Widget.DeviceDefault.Light.NumberPicker" parent="@style/Widget.Material.Light.NumberPicker" />
+    <style name="Widget.DeviceDefault.Light.Spinner.DropDown" parent="@style/Widget.Material.Light.Spinner.DropDown" />
+    <style name="Widget.DeviceDefault.Light.TextView.ListSeparator" parent="@style/Widget.Material.Light.TextView.ListSeparator" />
+    <style name="Widget.DeviceDefault.Light.TimePicker" parent="@style/Widget.Material.Light.TimePicker" />
     <style name="Widget.DeviceDefault.Light.TextSuggestionsPopupWindow" parent="@style/Widget.Material.Light.TextSuggestionsPopupWindow" />
     <style name="TextAppearance.DeviceDefault.DatePicker.DayOfWeekLabel" parent="@style/TextAppearance.Material.DatePicker.DayOfWeekLabel" />
     <style name="TextAppearance.DeviceDefault.DatePicker.MonthLabel" parent="@style/TextAppearance.Material.DatePicker.MonthLabel" />
     <style name="TextAppearance.DeviceDefault.DatePicker.DayOfMonthLabel" parent="@style/TextAppearance.Material.DatePicker.DayOfMonthLabel" />
     <style name="TextAppearance.DeviceDefault.DatePicker.YearLabel" parent="@style/TextAppearance.Material.DatePicker.YearLabel" />
-    <style name="Preference.DeviceDefault" parent="@lenovo:style/Preference.DeviceDefault" />
-    <style name="Preference.DeviceDefault.Category" parent="@lenovo:style/Preference.DeviceDefault.Category" />
+    <style name="Preference.DeviceDefault" parent="@style/Preference.Material" />
+    <style name="Preference.DeviceDefault.Category" parent="@style/Preference.Material.Category" />
     <style name="Preference.DeviceDefault.CheckBoxPreference" parent="@style/Preference.Material.CheckBoxPreference" />
     <style name="Preference.DeviceDefault.DialogPreference" parent="@style/Preference.Material.DialogPreference" />
     <style name="Preference.DeviceDefault.DialogPreference.EditTextPreference" parent="@style/Preference.Material.DialogPreference.EditTextPreference" />
@@ -4682,9 +4682,9 @@
     <style name="Preference.DeviceDefault.SwitchPreference" parent="@style/Preference.Material.SwitchPreference" />
     <style name="Preference.DeviceDefault.SeekBarPreference" parent="@style/Preference.Material.SeekBarPreference" />
     <style name="AlertDialog.DeviceDefault" parent="@style/AlertDialog.Material" />
-    <style name="AlertDialog.DeviceDefault.Light" parent="@lenovo:style/AlertDialog.DeviceDefault.Light" />
+    <style name="AlertDialog.DeviceDefault.Light" parent="@style/AlertDialog.Material.Light" />
     <style name="Animation.DeviceDefault.Activity" parent="@style/Animation.Material.Activity" />
-    <style name="Animation.DeviceDefault.Dialog" parent="@lenovo:style/Animation.DeviceDefault.Dialog" />
+    <style name="Animation.DeviceDefault.Dialog" parent="@style/Animation.Material.Dialog" />
     <style name="DialogWindowTitle.DeviceDefault" parent="@style/DialogWindowTitle.Material" />
     <style name="DialogWindowTitle.DeviceDefault.Light" parent="@style/DialogWindowTitle.Material.Light" />
     <style name="WindowTitle.DeviceDefault" parent="@style/WindowTitle.Material" />
@@ -5432,7 +5432,7 @@
         <item name="maxLines">1</item>
         <item name="scrollHorizontally">true</item>
     </style>
-    <style name="DialogWindowTitle.Material.Light" parent="@lenovo:style/DialogWindowTitle.Material.Light" />
+    <style name="DialogWindowTitle.Material.Light" parent="@style/DialogWindowTitle.Material" />
     <style name="Animation.Micro" parent="@style/Animation" />
     <style name="Animation.Micro.Activity" parent="@style/Animation.Holo.Activity">
         <item name="activityOpenEnterAnimation">@anim/slide_in_micro</item>
