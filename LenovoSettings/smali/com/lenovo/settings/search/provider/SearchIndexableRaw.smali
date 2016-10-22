@@ -1,0 +1,31 @@
+.class public Lcom/lenovo/settings/search/provider/SearchIndexableRaw;
+.super Lcom/lenovo/settings/search/provider/SearchIndexableData;
+.source "SearchIndexableRaw.java"
+
+
+# instance fields
+.field public entries:Ljava/lang/String;
+
+.field public keywords:Ljava/lang/String;
+
+.field public screenTitle:Ljava/lang/String;
+
+.field public summaryOff:Ljava/lang/String;
+
+.field public summaryOn:Ljava/lang/String;
+
+.field public title:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+    .param p1, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 46
+    invoke-direct {p0, p1}, Lcom/lenovo/settings/search/provider/SearchIndexableData;-><init>(Landroid/content/Context;)V
+
+    .line 47
+    return-void
+.end method

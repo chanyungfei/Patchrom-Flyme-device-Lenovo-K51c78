@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/character_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:lenovo="http://schemas.android.com/apk/res/com.flyme.deviceoriginalsettings"
+  xmlns:settings="http://schemas.android.com/apk/res/com.flyme.deviceoriginalsettings" />

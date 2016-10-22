@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:paddingLeft="16.0dip" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="52.0dip" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/usb_notify_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/auto_popup" android:singleLine="true" />
+</LinearLayout>

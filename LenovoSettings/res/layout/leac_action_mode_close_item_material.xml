@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ImageView android:id="@id/action_mode_close_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?android:actionModeCloseDrawable" android:contentDescription="@string/leac_action_mode_done" android:paddingStart="16.0dip" android:paddingEnd="32.0dip" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="?android:attr/actionModeCloseButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0" android:layout_marginStart="15.0dip" android:layout_marginEnd="6.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" />
+        </LinearLayout>
+        <RadioButton android:layout_gravity="center|right" android:id="@id/radioButton" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/switchusbmass" android:layout_width="190.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/usbsetting_usbmassstorage_open" />
+    <ProgressBar android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyle" />
+</LinearLayout>

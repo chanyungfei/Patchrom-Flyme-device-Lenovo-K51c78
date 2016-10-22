@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/radio_controls_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.settings.deviceinfo.RadioButtonPreference android:title="@string/ese_type_hce_title" android:key="ese_type_hce_settings" android:summary="@string/ese_type_hce_summary" />
+    <com.lenovo.settings.deviceinfo.RadioButtonPreference android:title="@string/ese_type_ese_title" android:key="ese_type_ese_settings" android:summary="@string/ese_type_ese_summary" />
+    <com.lenovo.settings.deviceinfo.RadioButtonPreference android:title="@string/ese_type_sim_title" android:key="ese_type_sim_settings" android:summary="@string/ese_type_sim_summary" />
+</PreferenceScreen>

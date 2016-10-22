@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.internal.widget.FitWindowsLinearLayout android:orientation="vertical" android:id="@id/action_bar_root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.view.ViewStub android:id="@id/action_mode_bar_stub" android:layout="@layout/leac_action_mode_bar" android:inflatedId="@id/action_mode_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.lenovo.internal.widget.NativeActionModeAwareLayout android:id="@id/action_bar_activity_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:foreground="?android:windowContentOverlay" android:layout_weight="1.0" android:foregroundGravity="fill_horizontal|center|top" />
+    <com.lenovo.internal.widget.SplitActionBarView android:id="@id/split_action_bar" android:layout_width="fill_parent" android:layout_height="@dimen/leac_split_bar_heigh_size" style="?android:attr/actionBarSplitStyle" />
+</com.lenovo.internal.widget.FitWindowsLinearLayout>

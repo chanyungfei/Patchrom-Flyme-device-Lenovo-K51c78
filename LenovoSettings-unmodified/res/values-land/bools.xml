@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="leac_split_action_bar_is_narrow">false</bool>
+    <bool name="leac_split_action_mode_is_narrow">true</bool>
+    <bool name="leac_action_bar_menu_used_control_color">false</bool>
+</resources>

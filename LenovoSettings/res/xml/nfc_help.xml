@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/radio_controls_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/nfc_emulation_title" android:summary="@string/nfc_emulation_summary" android:widgetLayout="@null" />
+    <PreferenceScreen android:title="@string/nfc_writetag_title" android:summary="@string/nfc_writetag_summary" android:widgetLayout="@null" />
+    <PreferenceScreen android:title="@string/nfc_readtag_title" android:summary="@string/nfc_readtag_summary" android:widgetLayout="@null" />
+    <PreferenceScreen android:title="@string/nfc_readbus_title" android:summary="@string/nfc_readbus_summary" android:widgetLayout="@null" />
+    <PreferenceScreen android:layout="@layout/lenovo_preference_with_help_img" android:title="@string/nfc_tips_title" android:key="nfc_tips" android:summary="@string/nfc_tips_summary" />
+</PreferenceScreen>

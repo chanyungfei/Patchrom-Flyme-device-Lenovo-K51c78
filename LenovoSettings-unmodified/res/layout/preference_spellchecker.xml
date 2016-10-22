@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/pref_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/pref_left_button" android:layout_width="wrap_content" android:layout_height="72.0dip" android:layout_weight="1.0">
+        <RadioButton android:id="@id/pref_radio" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="6.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="13.0sp" android:textColor="?android:textColorSecondary" android:id="@android:id/summary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/pref_right_button1" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/input_method_audioprofile_settings_select" android:contentDescription="@string/spellchecker_quick_settings" />
+    <ImageView android:layout_gravity="center" android:id="@id/pref_right_button2" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/specllchecker_settings_n" android:contentDescription="@string/spellchecker_language" />
+</LinearLayout>

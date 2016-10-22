@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="leac_action_bar_embed_tabs">true</bool>
+    <bool name="leac_action_bar_embed_tabs_pre_jb">true</bool>
+    <bool name="leac_action_bar_expanded_action_views_exclusive">true</bool>
+    <bool name="leac_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="leac_split_action_bar_is_narrow">true</bool>
+    <bool name="leac_split_action_mode_is_narrow">true</bool>
+    <bool name="leac_action_bar_menu_used_control_color">true</bool>
+    <bool name="leac_config_allowActionMenuItemTextWithIcon">true</bool>
+    <bool name="leac_config_actionMenuItemAllCaps">false</bool>
+    <bool name="leac_window_action_bar_overlay">false</bool>
+    <bool name="has_dock_settings">false</bool>
+    <bool name="has_silent_mode">true</bool>
+    <bool name="has_powercontrol_widget">true</bool>
+    <bool name="config_additional_system_update_setting_enable">false</bool>
+    <bool name="auto_confirm_bluetooth_activation_dialog">false</bool>
+    <bool name="config_show_regulatory_info">false</bool>
+    <bool name="config_show_mobile_plan">true</bool>
+    <bool name="config_msid_enable">false</bool>
+    <bool name="character_settings_smart_answer_call_enabled">true</bool>
+    <bool name="character_settings_float_button_enabled">true</bool>
+    <bool name="character_settings_smart_call_enabled">false</bool>
+</resources>

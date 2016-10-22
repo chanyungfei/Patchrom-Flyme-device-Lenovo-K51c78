@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" coreApp="true" package="com.flyme.deviceoriginalsettings" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <original-package android:name="com.flyme.deviceoriginalsettings"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.certinstaller.INSTALL_AS_USER"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOVE_PACKAGE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.BACKUP"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.MANAGE_USB"/>
+    <uses-permission android:name="android.permission.SET_POINTER_SPEED"/>
+    <uses-permission android:name="android.permission.SET_KEYBOARD_LAYOUT"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.COPY_PROTECTED_DATA"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS"/>
+    <uses-permission android:name="com.lenovo.permission.READ_SEARCH_INDEXABLES"/>
+    <application android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_settings" android:label="@string/settings_label" android:name="com.lenovo.settings.LenovoApplication" android:requiredForAllUsers="true" android:supportsRtl="true" android:taskAffinity="" android:theme="@style/Theme.Settings">
+        <meta-data android:name="lenovo:applicationToken" android:value="QW8S81R54JDM"/>
+        <meta-data android:name="lenovo:sendType" android:value="3"/>
+        <activity android:exported="true" android:label="@string/settings_label_launcher" android:launchMode="singleTask" android:name="com.flyme.deviceoriginalsettings.Settings" android:taskAffinity="com.flyme.deviceoriginalsettings" android:theme="@style/Theme.Settings.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.android.settings.ADDITIONAL_APPLICATION_SETTING"/>
+                <action android:name="flyme.deviceoriginalsettings.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:name="com.flyme.deviceoriginalsettings.SubSettings" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings" android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:label="@string/settings_shortcut" android:name="com.flyme.deviceoriginalsettings.CreateShortcut" android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/wireless_networks_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$WirelessSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.WIRELESS_SETTINGS"/>
+                <action android:name="flyme.deviceoriginalsettings.AIRPLANE_MODE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.lenovo.settings.LenovoWirelessSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/wireless_settings"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/bluetooth_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$BluetoothSettingsActivity" android:taskAffinity="" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.BLUETOOTH_SETTINGS"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.bluetooth.BluetoothSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/bluetooth_settings"/>
+        </activity>
+        <activity-alias android:clearTaskOnLaunch="true" android:exported="true" android:label="@string/bluetooth_settings_title" android:name="com.flyme.deviceoriginalsettings.bluetooth.BluetoothSettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$BluetoothSettingsActivity" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.bluetooth.BluetoothSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/bluetooth_settings"/>
+        </activity-alias>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|screenSize" android:label="@string/device_picker" android:name="com.flyme.deviceoriginalsettings.bluetooth.DevicePickerActivity" android:theme="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.bluetooth.devicepicker.action.LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/tether_settings_title_all" android:name="com.flyme.deviceoriginalsettings.Settings$TetherSettingsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.TetherSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/wireless_settings"/>
+        </activity>
+        <activity-alias android:clearTaskOnLaunch="true" android:exported="true" android:label="@string/tether_settings_title_all" android:name="com.flyme.deviceoriginalsettings.TetherSettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$TetherSettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.TetherSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/wireless_settings"/>
+        </activity-alias>
+        <activity-alias android:clearTaskOnLaunch="true" android:exported="true" android:label="@string/tether_settings_title_all" android:name="com.flyme.deviceoriginalsettings.wifi.hotspot.TetherWifiSettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$TetherSettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.TetherSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/wireless_settings"/>
+        </activity-alias>
+        <activity android:name="com.flyme.deviceoriginalsettings.Settings$WifiP2pSettingsActivity" android:parentActivityName="Settings$WifiSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.wifi.p2p.WifiP2pSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/wireless_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/wireless_networks_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$WirelessSettingsActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/vpn_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$VpnSettingsActivity" android:taskAffinity="" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.net.vpn.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.vpn2.VpnSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/wireless_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/wireless_networks_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$WirelessSettingsActivity"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/date_and_time" android:name="com.flyme.deviceoriginalsettings.Settings$DateTimeSettingsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.DATE_SETTINGS"/>
+                <action android:name="android.intent.action.QUICK_CLOCK"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DateTimeSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/date_time_settings"/>
+        </activity>
+        <activity android:label="@string/language_picker_title" android:name="com.flyme.deviceoriginalsettings.Settings$LocalePickerActivity" android:parentActivityName="Settings$InputMethodAndLanguageSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.LOCALE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.LocalePicker"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+        </activity>
+        <activity android:label="@string/language_keyboard_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$InputMethodAndLanguageSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.INPUT_METHOD_SETTINGS"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.inputmethod.InputMethodAndLanguageSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:label="@string/keyboard_layout_picker_title" android:name="com.flyme.deviceoriginalsettings.Settings$KeyboardLayoutPickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.inputmethod.KeyboardLayoutPickerFragment"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+        </activity>
+        <activity-alias android:clearTaskOnLaunch="true" android:exported="true" android:label="@string/language_keyboard_settings_title" android:name="com.flyme.deviceoriginalsettings.LanguageSettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$InputMethodAndLanguageSettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.inputmethod.InputMethodAndLanguageSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+        </activity-alias>
+        <activity android:label="@string/spellcheckers_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$SpellCheckersSettingsActivity" android:parentActivityName="Settings$InputMethodAndLanguageSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.inputmethod.SpellCheckersSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/language_keyboard_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$InputMethodAndLanguageSettingsActivity"/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:label="" android:name="com.flyme.deviceoriginalsettings.inputmethod.InputMethodAndSubtypeEnablerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.INPUT_METHOD_SUBTYPE_SETTINGS"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:name="com.flyme.deviceoriginalsettings.inputmethod.InputMethodDialogReceiver">
+            <intent-filter>
+                <action android:name="flyme.deviceoriginalsettings.SHOW_INPUT_METHOD_PICKER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:label="@string/user_dict_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$UserDictionarySettingsActivity" android:parentActivityName="Settings$InputMethodAndLanguageSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.USER_DICTIONARY_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.inputmethod.UserDictionaryList"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/language_keyboard_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$InputMethodAndLanguageSettingsActivity"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/user_dict_settings_title" android:name="com.flyme.deviceoriginalsettings.inputmethod.UserDictionaryAddWordActivity" android:noHistory="true" android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <action android:name="com.flyme.deviceoriginalsettings.USER_DICTIONARY_INSERT"/>
+                <action android:name="com.flyme.deviceoriginalsettings.USER_DICTIONARY_EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:label="@string/user_dict_settings_title" android:name="com.flyme.deviceoriginalsettings.UserDictionarySettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$UserDictionarySettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.UserDictionarySettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/language_keyboard_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$InputMethodAndLanguageSettingsActivity"/>
+        </activity-alias>
+        <activity android:excludeFromRecents="true" android:label="@string/display_settings" android:name="com.flyme.deviceoriginalsettings.Settings$DisplaySettingsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.flyme.deviceoriginalsettings.DISPLAY_SETTINGS"/>
+                <action android:name="flyme.deviceoriginalsettings.DISPLAY_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DisplaySettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings"/>
+        </activity>
+        <activity-alias android:exported="true" android:label="@string/display_settings" android:name="com.flyme.deviceoriginalsettings.DisplaySettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$DisplaySettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DisplaySettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings"/>
+        </activity-alias>
+        <activity android:label="@string/device_info_settings" android:name="com.flyme.deviceoriginalsettings.Settings$DeviceInfoSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings" android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.DEVICE_INFO_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.lenovo.settings.AboutActivity"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/about_settings"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_license_activity_title" android:launchMode="singleTop" android:name="com.flyme.deviceoriginalsettings.SettingsLicenseActivity">
+            <intent-filter>
+                <action android:name="flyme.deviceoriginalsettings.LICENSE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/sound_category_notification_title" android:name="com.flyme.deviceoriginalsettings.Settings$NotificationStationActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.NotificationStation"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/location_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$LocationSettingsActivity" android:taskAffinity="" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.LOCATION_SOURCE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.location.LocationSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/location_settings"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/security_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$SecuritySettingsActivity" android:parentActivityName="Settings" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.SECURITY_SETTINGS"/>
+                <action android:name="android.credentials.UNLOCK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.SecuritySettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/security_settings"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/ssl_ca_cert_dialog_title" android:name="com.flyme.deviceoriginalsettings.MonitoringCertInfoActivity" android:taskAffinity="" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.flyme.deviceoriginalsettings.MONITORING_CERT_INFO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/trusted_credentials" android:name="com.lenovo.settings.TrustedCredentialsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.flyme.deviceoriginalsettings.TRUSTED_CREDENTIALS"/>
+                <action android:name="com.flyme.deviceoriginalsettings.TRUSTED_CREDENTIALS_USER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.TrustedCredentialsSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/security_settings"/>
+        </activity>
+        <activity-alias android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/security_settings_title" android:name="com.flyme.deviceoriginalsettings.SecuritySettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$SecuritySettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.SecuritySettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/security_settings"/>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/privacy_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$PrivacySettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.PRIVACY_SETTINGS"/>
+                <action android:name="flyme.deviceoriginalsettings.BACKUP_AND_RESET_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.PrivacySettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/privacy_settings"/>
+        </activity>
+        <activity android:label="@string/wifi_backup" android:name="com.flyme.deviceoriginalsettings.Settings$WifiBackupSettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.lenovo.settings.wifi.WifiBackupSettings"/>
+        </activity>
+        <activity android:exported="false" android:name="com.flyme.deviceoriginalsettings.SetFullBackupPassword"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.flyme.deviceoriginalsettings.CredentialStorage" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.android.credentials.UNLOCK"/>
+                <action android:name="com.android.credentials.INSTALL"/>
+                <action android:name="com.android.credentials.RESET"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/device_admin_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$DeviceAdminSettingsActivity" android:parentActivityName="Settings$SecuritySettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DeviceAdminSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/security_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/security_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$SecuritySettingsActivity"/>
+        </activity>
+        <activity-alias android:exported="true" android:label="@string/device_admin_settings_title" android:name="com.flyme.deviceoriginalsettings.DeviceAdminSettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$DeviceAdminSettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DeviceAdminSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/security_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/security_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$SecuritySettingsActivity"/>
+        </activity-alias>
+        <activity android:clearTaskOnLaunch="true" android:label="@string/device_admin_add_title" android:name="com.flyme.deviceoriginalsettings.DeviceAdminAdd">
+            <intent-filter>
+                <action android:name="android.app.action.ADD_DEVICE_ADMIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/accessibility_settings" android:name="com.flyme.deviceoriginalsettings.Settings$AccessibilitySettingsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.ACCESSIBILITY_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.accessibility.AccessibilitySettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/accessibility_settings"/>
+        </activity>
+        <activity android:label="@string/accessibility_captioning_title" android:name="com.flyme.deviceoriginalsettings.Settings$CaptioningSettingsActivity" android:parentActivityName="Settings$AccessibilitySettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.CAPTIONING_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.accessibility.CaptionPropertiesFragment"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/accessibility_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PRIMARY_PROFILE_CONTROLLED" android:value="true"/>
+        </activity>
+        <activity android:label="@string/tts_settings" android:name="com.flyme.deviceoriginalsettings.Settings$TextToSpeechSettingsActivity" android:parentActivityName="Settings$InputMethodAndLanguageSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.flyme.deviceoriginalsettings.TTS_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.tts.TextToSpeechSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings"/>
+        </activity>
+        <activity android:name="com.flyme.deviceoriginalsettings.ConfirmLockPattern"/>
+        <activity android:name="com.flyme.deviceoriginalsettings.ConfirmLockPassword" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:excludeFromRecents="true" android:label="@string/lockpassword_choose_lock_generic_header" android:name="com.flyme.deviceoriginalsettings.ChooseLockGeneric">
+            <intent-filter>
+                <action android:name="android.app.action.SET_NEW_PASSWORD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:label="@string/lockpassword_choose_lock_generic_header" android:name="com.flyme.deviceoriginalsettings.ChooseLockGeneric$InternalActivity"/>
+        <activity android:exported="false" android:name="com.flyme.deviceoriginalsettings.ChooseLockPattern"/>
+        <activity android:exported="false" android:name="com.flyme.deviceoriginalsettings.ChooseLockPassword" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:label="@string/device_status_activity_title" android:name="com.flyme.deviceoriginalsettings.deviceinfo.Status" android:process="com.android.phone" android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/storage_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$StorageSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.INTERNAL_STORAGE_SETTINGS"/>
+                <action android:name="flyme.deviceoriginalsettings.MEMORY_CARD_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.deviceinfo.Memory"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/storage_settings"/>
+        </activity>
+        <activity android:label="@string/media_format_title" android:name="com.flyme.deviceoriginalsettings.MediaFormat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/development_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$DevelopmentSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.APPLICATION_DEVELOPMENT_SETTINGS"/>
+                <action android:name="com.flyme.deviceoriginalsettings.APPLICATION_DEVELOPMENT_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DevelopmentSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/development_settings"/>
+        </activity>
+        <activity android:label="@string/print_settings" android:name="com.flyme.deviceoriginalsettings.Settings$PrintSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.ACTION_PRINT_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.print.PrintSettingsFragment"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/print_settings"/>
+        </activity>
+        <activity android:label="@string/print_print_job" android:name="com.flyme.deviceoriginalsettings.Settings$PrintJobSettingsActivity" android:parentActivityName="Settings$PrintSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="flyme.deviceoriginalsettings.ACTION_PRINT_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:pathPattern="*" android:scheme="printjob"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.print.PrintJobSettingsFragment"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/print_settings"/>
+        </activity>
+        <activity-alias android:exported="true" android:label="@string/development_settings_title" android:name="com.flyme.deviceoriginalsettings.DevelopmentSettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$DevelopmentSettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DevelopmentSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/development_settings"/>
+        </activity-alias>
+        <activity android:label="@string/select_application" android:name="com.flyme.deviceoriginalsettings.AppPicker" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity android:clearTaskOnLaunch="true" android:label="@string/storage_title_usb" android:launchMode="singleInstance" android:name="com.flyme.deviceoriginalsettings.Settings$UsbSettingsActivity" android:parentActivityName="Settings$StorageSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.STORAGE_USB_SETTINGS"/>
+                <action android:name="com.flyme.deviceoriginalsettings.STORAGE_USB_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.deviceinfo.UsbSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/storage_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/storage_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$StorageSettingsActivity"/>
+        </activity>
+        <receiver android:name="com.flyme.deviceoriginalsettings.deviceinfo.UsbStateReceiver">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_STATE"/>
+            </intent-filter>
+        </receiver>
+        <activity-alias android:exported="true" android:label="@string/storage_title_usb" android:name="com.flyme.deviceoriginalsettings.UsbSettings" android:targetActivity="com.flyme.deviceoriginalsettings.Settings$DevelopmentSettingsActivity">
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.deviceinfo.UsbSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/storage_settings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/storage_settings_title"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PARENT_FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.Settings$StorageSettingsActivity"/>
+        </activity-alias>
+        <activity android:excludeFromRecents="true" android:label="@string/bluetooth_pairing_request" android:name="com.flyme.deviceoriginalsettings.bluetooth.BluetoothPairingDialog" android:theme="@style/Theme.AlertDialog" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.flyme.deviceoriginalsettings.bluetooth.BluetoothDiscoveryReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED"/>
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_FINISHED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flyme.deviceoriginalsettings.bluetooth.DockEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOCK_EVENT"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.headset.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.a2dp.action.SINK_STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.flyme.deviceoriginalsettings.bluetooth.DockService"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/bluetooth_permission_request" android:name="com.flyme.deviceoriginalsettings.bluetooth.RequestPermissionActivity" android:permission="android.permission.BLUETOOTH" android:theme="@style/Theme.AlertDialog">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.REQUEST_DISCOVERABLE"/>
+                <action android:name="android.bluetooth.adapter.action.REQUEST_ENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/bluetooth_pairing_request" android:name="com.flyme.deviceoriginalsettings.bluetooth.RequestPermissionHelperActivity" android:permission="android.permission.BLUETOOTH" android:theme="@style/Theme.AlertDialog"/>
+        <receiver android:name="com.flyme.deviceoriginalsettings.bluetooth.BluetoothPairingRequest">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+                <action android:name="android.bluetooth.device.action.PAIRING_CANCEL"/>
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flyme.deviceoriginalsettings.bluetooth.BluetoothPermissionRequest" android:permission="android.permission.BLUETOOTH_ADMIN">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_REQUEST"/>
+                <action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_CANCEL"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:label="@string/bluetooth_connection_permission_request" android:name="com.flyme.deviceoriginalsettings.bluetooth.BluetoothPermissionActivity" android:permission="android.permission.BLUETOOTH_ADMIN" android:theme="@style/Theme.AlertDialog">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_REQUEST"/>
+                <action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_CANCEL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnCloseSystemDialogs="true" android:label="@string/activity_picker_label" android:name="com.flyme.deviceoriginalsettings.ActivityPicker" android:theme="@android:style/Theme.Holo.Dialog.Alert">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/android_beam_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$AndroidBeamSettingsActivity" android:parentActivityName="Settings$WirelessSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.NFCSHARING_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.nfc.AndroidBeam"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/wifi_display_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$WifiDisplaySettingsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.WIFI_DISPLAY_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.wfd.WifiDisplaySettings"/>
+        </activity>
+        <activity android:label="@string/battery_info_label" android:name="com.flyme.deviceoriginalsettings.BatteryInfo" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/phone_info_label" android:name="com.flyme.deviceoriginalsettings.RadioInfo" android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:label="@string/proxy_settings_label" android:name="com.flyme.deviceoriginalsettings.ProxySelector" android:targetActivity="com.flyme.deviceoriginalsettings.Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.flyme.deviceoriginalsettings.BandMode" android:process="com.android.phone" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/testing" android:name="com.flyme.deviceoriginalsettings.TestingSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.flyme.deviceoriginalsettings.TestingSettingsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE"/>
+                <data android:host="4636" android:scheme="android_secret_code"/>
+            </intent-filter>
+        </receiver>
+        <activity android:finishOnCloseSystemDialogs="true" android:label="@string/widget_picker_title" android:name="com.flyme.deviceoriginalsettings.AppWidgetPickActivity" android:theme="@android:style/Theme.Holo.Dialog.Alert">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" android:name="com.flyme.deviceoriginalsettings.AllowBindAppWidgetActivity" android:theme="@android:style/Theme.Holo.Dialog.Alert">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_BIND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/usage_stats_label" android:name="com.flyme.deviceoriginalsettings.UsageStatsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/account_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$AccountSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.SYNC_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.accounts.AccountSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.PRIMARY_PROFILE_CONTROLLED" android:value="true"/>
+        </activity>
+        <activity android:label="@string/account_sync_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$AccountSyncSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.ACCOUNT_SYNC_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.accounts.AccountSyncSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/account_settings"/>
+        </activity>
+        <activity android:label="@string/account_sync_settings_title" android:name="com.flyme.deviceoriginalsettings.accounts.SyncSettingsActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.lenovo.beforeL.flyme.deviceoriginalsettings.SYNC_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/header_add_an_account" android:name="com.flyme.deviceoriginalsettings.accounts.AddAccountSettings" android:parentActivityName="Settings$ManageAccountsSettingsActivity" android:taskAffinity="com.flyme.deviceoriginalsettings" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.ADD_ACCOUNT_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/header_add_an_account" android:name="com.flyme.deviceoriginalsettings.accounts.ChooseAccountActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|mcc|mnc|uiMode" android:excludeFromRecents="true" android:immersive="true" android:launchMode="singleTop" android:name="com.flyme.deviceoriginalsettings.CryptKeeper" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Holo.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:priority="10">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:immersive="true" android:launchMode="singleTop" android:name="com.flyme.deviceoriginalsettings.CryptKeeperConfirm$Blank" android:theme="@style/CryptKeeperBlankTheme"/>
+        <activity android:label="@string/crypt_keeper_encrypt_title" android:name="com.flyme.deviceoriginalsettings.Settings$CryptKeeperSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.app.action.START_ENCRYPTION"/>
+                <category android:name="android.intent.category.DEFAULT"/> /&gt;
+</intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.CryptKeeperSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/security_settings"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/screensaver_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$DreamSettingsActivity" android:taskAffinity="" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.DREAM_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.flyme.deviceoriginalsettings.SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.DreamSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/nfc_payment_settings_title" android:name="com.flyme.deviceoriginalsettings.Settings$PaymentSettingsActivity" android:taskAffinity="" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.NFC_PAYMENT_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.nfc.PaymentSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/nfc_payment_settings"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/nfc_payment_set_default_label" android:name="com.flyme.deviceoriginalsettings.nfc.PaymentDefaultDialog" android:theme="@android:style/Theme.Holo.Light.Dialog.Alert">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.ACTION_CHANGE_DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/sms_application_title" android:name="com.flyme.deviceoriginalsettings.SmsDefaultDialog" android:theme="@android:style/Theme.Holo.Light.Dialog.Alert">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.ACTION_CHANGE_DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/manage_notification_access" android:name="com.flyme.deviceoriginalsettings.Settings$NotificationAccessSettingsActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.ACTION_NOTIFICATION_LISTENER_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.flyme.deviceoriginalsettings.NotificationAccessSettings"/>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/security_settings"/>
+        </activity>
+        <receiver android:name="com.flyme.deviceoriginalsettings.bluetooth.BluetoothDiscoverableTimeoutReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.intent.DISCOVERABLE_TIMEOUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flyme.deviceoriginalsettings.users.ProfileUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Contacts.PROFILE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.flyme.deviceoriginalsettings.files" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:excludeFromRecents="true" android:label="@string/version_info" android:name="com.lenovo.settings.VersionInfoSettingsActivity">
+            <intent-filter>
+                <action android:name="com.lenovo.ota.Intent.StartVersionInfoSettingsActivity"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.flyme.deviceoriginalsettings.Settings$CharacterSetting">
+            <intent-filter>
+                <action android:name="com.lenovo.settings.pluginItem.AbstractSettingItem"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.lenovo.settings.CharSettings"/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:label="@string/select_subscription" android:name="com.flyme.deviceoriginalsettings.SelectSubscription" android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/device_status_activity_title" android:name="com.flyme.deviceoriginalsettings.deviceinfo.msim.MSimStatus" android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.lenovo.settings.db" android:exported="false" android:multiprocess="false" android:name="com.lenovo.settings.provider.SettingsProvider"/>
+        <activity android:launchMode="singleTop" android:name="com.flyme.deviceoriginalsettings.deviceinfo.LegalInformationActivity"/>
+        <activity android:label="@string/lenovo_license_title" android:name="com.lenovo.settings.SettingsLenovoLicenseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.settings.LenovoUEServiceActivity" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.lenovo.action.LENOVO_UE_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.flyme.deviceoriginalsettings.search" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.lenovo.settings.search.SettingsSearchIndexablesProvider" android:permission="com.lenovo.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="com.lenovo.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.lenovo.settings.provider.RecentSettingSyncProvider" android:exported="true" android:name="com.lenovo.settings.recentsettings.provider.RecentSettingsSyncProvider"/>
+        <activity android:label="@string/reset_headers_tips_title" android:name="com.lenovo.settings.TipsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/nfc_quick_toggle_title" android:name="com.flyme.deviceoriginalsettings.Settings$NfcSettingsActivity" android:parentActivityName="Settings" android:taskAffinity="com.flyme.deviceoriginalsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="flyme.deviceoriginalsettings.NFC_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.flyme.deviceoriginalsettings.FRAGMENT_CLASS" android:value="com.lenovo.settings.nfc.NfcSettings"/>
+        </activity>
+        <meta-data android:name="lenovo_app_suskey" android:value="xxhdpi"/>
+    </application>
+</manifest>

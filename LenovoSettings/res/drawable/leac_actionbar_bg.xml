@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="77.0dip" android:width="360.0dip" android:viewportWidth="1080.0" android:viewportHeight="231.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="action_layer_path" android:fillColor="#ff1c7220" android:pathData="M-1,-1L1081,-1L1081,384.5L0,384.5L-1,-1z" />
+    <group android:name="action_layer_a" android:pivotX="1064.0" android:pivotY="535.0" android:scaleX="1.1" android:scaleY="1.1">
+        <path android:name="action_layer_path_a" android:fillColor="#ff19adad" android:pathData="M1081.5,391.5H368.703  c33.038-157.384,118.044-295.646,236.248-396H1081.5V391.5z" android:fillAlpha="0.7" />
+    </group>
+    <group android:name="action_layer_b" android:pivotX="105.0" android:pivotY="67.0" android:scaleX="1.0" android:scaleY="1.0">
+        <path android:name="action_layer_path_b" android:fillColor="#ff6bb82d" android:pathData="M715.765,387.5H0v-388h789.377  c2.394,23.341,3.623,47.027,3.623,71C793,184.825,765.104,292.631,715.765,387.5z" android:fillAlpha="0.6" />
+    </group>
+    <group android:name="action_layer_c" android:pivotX="-565.0" android:pivotY="-271.0" android:scaleX="1.0" android:scaleY="1.0">
+        <path android:name="action_layer_path_c" android:fillColor="#ff006f6e" android:pathData="M1,346V2h344L1,346z" android:fillAlpha="0.5" />
+    </group>
+    <group android:name="action_layer_d" android:pivotX="1514.0" android:pivotY="-177.0" android:scaleX="1.0" android:scaleY="1.0">
+        <path android:name="action_layer_path_d" android:fillColor="#ff4aa935" android:pathData="M1085.5,394.5h-80l-402-402h482V394.5z" android:fillAlpha="0.35" />
+    </group>
+</vector>

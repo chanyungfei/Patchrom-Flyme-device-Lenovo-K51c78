@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/location_agps_pref_network_title" android:key="agps_pref_network_settings">
+        <ListPreference android:entries="@array/agps_network_entries" android:title="@string/location_agps_register_network_type" android:key="agps_network" android:summary="@string/location_agps_register_network_type_summary" android:defaultValue="0" android:dialogTitle="@string/location_agps_register_network_type_dialog_title" android:entryValues="@array/agps_network_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/location_agps_pref_si_title" android:key="agps_pref_si_settings">
+        <ListPreference android:entries="@array/agps_si_mode_entries" android:title="@string/location_agps_si_mode" android:key="agps_pref" android:summary="@string/location_agps_si_mode_summary" android:defaultValue="0" android:dialogTitle="@string/location_agps_si_mode_dialog_title" android:entryValues="@array/agps_si_mode_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/location_agps_supl_settings" android:key="agps_server_settings">
+        <EditTextPreference android:singleLine="true" android:title="@string/location_agps_supl_server_addr" android:key="server_addr" android:dialogTitle="@string/location_agps_supl_server_addr" android:inputType="textUri" />
+        <EditTextPreference android:singleLine="true" android:title="@string/location_agps_supl_server_port" android:key="server_port" android:dialogTitle="@string/location_agps_supl_server_port" android:inputType="number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/location_agps_pref_reset_type_title" android:key="agps_pref_reset_type_settings">
+        <ListPreference android:entries="@array/agps_reset_type_entries" android:title="@string/location_agps_reset_type" android:key="agps_reset_type" android:summary="@string/location_agps_reset_type_summary" android:defaultValue="0" android:dialogTitle="@string/location_agps_reset_type_choose_dialog_title" android:entryValues="@array/agps_reset_type_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

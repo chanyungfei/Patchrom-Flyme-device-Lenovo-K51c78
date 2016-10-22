@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pager_tabs_padding">0.0dip</dimen>
+    <dimen name="appwidget_preview_height">80.0dip</dimen>
+    <dimen name="settings_side_margin">32.0dip</dimen>
+    <dimen name="dashboard_padding_start">80.0dip</dimen>
+    <dimen name="dashboard_padding_end">80.0dip</dimen>
+    <dimen name="keyguard_appwidget_picker_width">720.0dip</dimen>
+</resources>

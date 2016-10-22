@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="#ff444444" android:gravity="center" android:id="@id/dialog_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/ue_title" android:layout_centerInParent="true" />
+    <View android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:id="@id/scroll" android:background="#ffffffff" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/summary_color" android:gravity="left" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/uepromotion_protocol" />
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <Button android:textSize="22.0sp" android:textColor="@drawable/btn_ueimprov_font_style" android:id="@id/dialog_btn_agree" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/btn_agree" android:layout_centerInParent="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.settings.dslv.DragSortListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" dslv:collapsedHeight="1.0dip" dslv:dragScrollStart="0.33" dslv:maxDragScrollSpeed="0.5" dslv:trackDragSort="false" dslv:floatAlpha="0.6" dslv:slideShuffleSpeed="0.3" dslv:dragEnabled="true" dslv:useDefaultController="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto" />
