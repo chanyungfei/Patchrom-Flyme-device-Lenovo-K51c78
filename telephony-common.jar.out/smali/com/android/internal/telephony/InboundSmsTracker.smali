@@ -722,26 +722,26 @@
     invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 284
-    const-string v2, "recv_time"
+    #const-string v2, "recv_time"
 
-    iget-wide v4, p0, Lcom/android/internal/telephony/InboundSmsTracker;->mRecvTime:J
+    #iget-wide v4, p0, Lcom/android/internal/telephony/InboundSmsTracker;->mRecvTime:J
 
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    #invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v3
+    #move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
+    #invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 285
-    const-string v2, "upload_flag"
+    #const-string v2, "upload_flag"
 
-    iget v3, p0, Lcom/android/internal/telephony/InboundSmsTracker;->mUploadFlag:I
+    #iget v3, p0, Lcom/android/internal/telephony/InboundSmsTracker;->mUploadFlag:I
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    #invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    #move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    #invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 287
     return-object v1
