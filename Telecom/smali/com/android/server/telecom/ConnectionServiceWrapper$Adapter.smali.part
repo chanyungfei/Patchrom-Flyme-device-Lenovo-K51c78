@@ -1,0 +1,68 @@
+.method public notifyCdmaCallAccepted(Ljava/lang/String;)V
+    .locals 4
+
+    .prologue
+    .line 816
+    iget-object v0, p0, Lcom/android/server/telecom/ConnectionServiceWrapper$Adapter;->this$0:Lcom/android/server/telecom/ConnectionServiceWrapper;
+
+    const-string v1, "notifyCdmaCallAccepted %s"
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    # invokes: Lcom/android/server/telecom/ConnectionServiceWrapper;->logIncoming(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1, v2}, Lcom/android/server/telecom/ConnectionServiceWrapper;->access$500(Lcom/android/server/telecom/ConnectionServiceWrapper;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 817
+    iget-object v0, p0, Lcom/android/server/telecom/ConnectionServiceWrapper$Adapter;->this$0:Lcom/android/server/telecom/ConnectionServiceWrapper;
+
+    # getter for: Lcom/android/server/telecom/ConnectionServiceWrapper;->mCallIdMapper:Lcom/android/server/telecom/CallIdMapper;
+    invoke-static {v0}, Lcom/android/server/telecom/ConnectionServiceWrapper;->access$100(Lcom/android/server/telecom/ConnectionServiceWrapper;)Lcom/android/server/telecom/CallIdMapper;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/android/server/telecom/CallIdMapper;->isValidCallId(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/telecom/ConnectionServiceWrapper$Adapter;->this$0:Lcom/android/server/telecom/ConnectionServiceWrapper;
+
+    # getter for: Lcom/android/server/telecom/ConnectionServiceWrapper;->mCallIdMapper:Lcom/android/server/telecom/CallIdMapper;
+    invoke-static {v0}, Lcom/android/server/telecom/ConnectionServiceWrapper;->access$100(Lcom/android/server/telecom/ConnectionServiceWrapper;)Lcom/android/server/telecom/CallIdMapper;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/android/server/telecom/CallIdMapper;->isValidConferenceId(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 818
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/telecom/ConnectionServiceWrapper$Adapter;->this$0:Lcom/android/server/telecom/ConnectionServiceWrapper;
+
+    # getter for: Lcom/android/server/telecom/ConnectionServiceWrapper;->mHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/server/telecom/ConnectionServiceWrapper;->access$600(Lcom/android/server/telecom/ConnectionServiceWrapper;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    const/16 v1, 0x3ed
+
+    invoke-virtual {v0, v1, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
+
+    .line 820
+    :cond_1
+    return-void
+.end method
