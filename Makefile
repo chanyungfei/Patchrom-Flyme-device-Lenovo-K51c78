@@ -56,7 +56,13 @@ vendor_remove_files := recovery-from-boot.p
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth Nfc KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService LenovoNfc
+                     ProxyHandler Shell DefaultContainerService LenovoNfc MTKLogger MTKSettingsPlugin MTKThermalManager \
+		     FingerprintService FMService HeadsetSettings HifiSettings LenovoBreathingLight LenovoCallSetting \
+		     LenovoFactoryMode LenovoGloveMode LenovoGOProvider LenovoScreenMode LenovoSnapShot LocationEM2 \
+		     NlpService PacProcessor SelfRegister SmartcardService StepCounter Utk YGPS FT_Terminal_Test \
+		     LenovoBlackGestures LenovoCrashCheck LenovoFingerprint LenovoSchedulePowerOnOff LenovoSingleHand \
+		     LenovoVRMode LenovoYPProvider MobileNetworkSettings2 MuteMode QCTestO SimSettings2 SmartStandBy \
+		     Stk1 WideTouch
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
