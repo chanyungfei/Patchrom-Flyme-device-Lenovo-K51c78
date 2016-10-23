@@ -60,9 +60,9 @@ vendor_saved_apps := Bluetooth Nfc KeyChain HTMLViewer UserDictionaryProvider Ba
 		     FingerprintService FMService HeadsetSettings HifiSettings LenovoBreathingLight LenovoCallSetting \
 		     LenovoFactoryMode LenovoGloveMode LenovoGOProvider LenovoScreenMode LenovoSnapShot LocationEM2 \
 		     NlpService PacProcessor SelfRegister SmartcardService StepCounter Utk YGPS FT_Terminal_Test \
-		     LenovoBlackGestures LenovoCrashCheck LenovoFingerprint LenovoSchedulePowerOnOff LenovoSingleHand \
-		     LenovoVRMode LenovoYPProvider MobileNetworkSettings2 MuteMode QCTestO SimSettings2 SmartStandBy \
-		     Stk1 WideTouch
+		     LenovoBlackGestures LenovoCrashCheck LenovoFingerprint LenovoLockScreenPlugin LenovoSchedulePowerOnOff \
+		     LenovoSingleHand LenovoVRMode MobileNetworkSettings2 SimSettings2 Stk1 WideTouch ClearBuildInSDCard \
+		     Bypass DeviceTestApp EngineeringCode EngineerMode WebViewGoogle SoundSettings SystemDaemonService \
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
