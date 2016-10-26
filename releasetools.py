@@ -36,10 +36,22 @@ def AddPrompt(info):
     elif 'package_extract_file("boot' in edify.script[i]:
       edify.script[i] = 'ui_print("{*} Flashing Kernel");\n' + edify.script[i]
 
+def InstallSuperSU(info):
+    edify = info.script
+    for i in xrange(len(edify.script)):
+        if 'show_progress(0.200000, 10);' in edify.script[i]:
+            edify.script[i] = edify.script[i].replace('show_progress(0.200000, 10);', '''ui_print("Flashing SuperSU");
+package_extract_dir("system/SuperSU", "/tmp/SuperSU");
+run_program("/sbin/busybox", "unzip", "/tmp/SuperSU/SuperSU.zip", "META-INF/com/google/android/*", "-d", "/tmp/SuperSU");
+run_program("/sbin/busybox", "sh", "/tmp/SuperSU/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/SuperSU/SuperSU.zip");
+show_progress(0.200000, 10);
+unmount("/data");''')
+
 def FullOTA_InstallEnd(info):
     ModifyBegin(info)
     ModifyCommand(info)
     AddPrompt(info)
+    InstallSuperSU(info)
 
 def IncrementalOTA_InstallEnd(info):
     ModifySystem(info)
